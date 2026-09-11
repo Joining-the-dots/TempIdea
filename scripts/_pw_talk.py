@@ -46,7 +46,7 @@ PRIMER = (_primer or {}).get('structures') or []
 
 # bullet = (cid, text, url). cid = id in the fact-check batches; 0 = added after the check.
 S = []
-S.append((2, 'Summary', 'Every large wealth franchise sells gold to its clients in some form. a global wealth franchise\'s client-facing metals shelf is one paper-gold product in one booking centre.', [
+S.append((2, 'Summary', 'Every large wealth franchise sells gold to its clients in some form. One global franchise\'s client-facing metals shelf is one paper-gold product in one booking centre.', [
  (1, '%d private banks and wealth managers worldwide, %d of them private-bank or wealth arms. %d named client products across %d firms.' % (len(F), n_pb, n_prod, n_prodf), ''),
  (2, 'Citi is an LBMA market maker, became the fifth member of London clearing (LPMCL) on 6 July 2026, appears on the LBMA list of London vaulting custodians, and Citibank N.A. carries the second-largest US precious-metals derivative book: US$236bn notional at 31 March 2026 vs JPMorgan US$509bn (year-end 2025: Citi US$217bn, JPMorgan US$479bn, Bank of America US$121bn).', 'https://www.occ.gov/publications-and-resources/publications/quarterly-report-on-bank-trading-and-derivatives-activities/index-quarterly-report-on-bank-trading-and-derivatives-activities.html')], None))
 
