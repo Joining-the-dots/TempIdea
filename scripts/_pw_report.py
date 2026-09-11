@@ -352,7 +352,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 <a class="dl" href="__SELF__" download="Private-Wealth-Metals-Map.html" title="Save this page to read offline"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download</a>
 </div>
 <h1>Private Wealth Metals Map</h1>
-<p class="lede">Every private bank and private-wealth manager identified worldwide: the metals products each puts in front of clients, and the bullion banks, custodians and refiners that sit behind those products. Built for one question: where could a bullion desk supply, custody, finance or clear what a wealth manager is currently buying from someone else.</p>
+<p class="lede">Private banks and wealth managers worldwide: the metals products each puts in front of clients, and the bullion banks, custodians and refiners that sit behind those products. The question behind it: where can Citi supply, custody, finance or clear what a wealth manager is currently buying from someone else.</p>
 <div class="stats">
 <div class="stat"><b>__N__</b><span>firms covered</span></div>
 <div class="stat"><b>__NVER__</b><span>with web-verified evidence</span></div>
@@ -379,12 +379,12 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 <div class="legend"><span><b class="c-y">Y</b> verified on the firm's own pages / prospectus</span><span><b class="c-yq">Y?</b> known, unverified</span><span><b class="c-n">N</b> verified not offered</span><span><b class="c-u">?</b> unknown</span><span>Counterparty with <span class="cp-k"></span> = unverified</span><span>Score = franchise size × displaceability × no in-house bullion bank</span><span>Desk · size · liquidity column (firms scoring ≥ 6 only): <span class="tp-desk">in-house desk</span> / <span class="tp-pt">price-taker</span>; size band is an ESTIMATE from the best public figure; liquidity status <span class="lq-v">named-verified</span> / <span class="lq-k">named-knowledge</span> / <span class="lq-i">in-house</span> / <span class="lq-u">undisclosed</span></span></div>
 
 <section id="talk">
-<div class="sec-head"><h2>Talking points for the wealth business</h2><p>A 45-minute run-sheet: uptake evidence, the products explained, who is winning by country, competitor designs, one franchise's shelf today, sizing, a potential shelf and the questions to expect.</p></div>
+<div class="sec-head"><h2>Talking points for the wealth business</h2><p>The products, competitor designs, what clients are buying, the largest positions by country, sizing and a potential shelf.</p></div>
 __TALK__
 </section>
 
 <section id="products">
-<div class="sec-head"><h2>Product catalogue</h2><p>What the private-bank and wealth arms actually put in front of clients: __NPROD__ named products across __NPRODF__ firms (__NPRODV__ verified on the firm's own page). Institutional bullion-desk services are excluded. Click a row for the description in the firm's words, pricing basis and the page link.</p></div>
+<div class="sec-head"><h2>Product catalogue</h2><p>What the private-bank and wealth arms actually put in front of clients: __NPROD__ named products across __NPRODF__ firms (__NPRODV__ verified on the firm's own page). Institutional bullion-desk services are excluded. Click a row for the description in the firm's words, the pricing basis and the page link.</p></div>
 <div class="controls">
 <input type="search" id="pq" placeholder="search product, firm, custody, fees…" aria-label="Search products">
 <select id="pfr" aria-label="Region"><option value="">all regions</option>__REGOPTS__</select>

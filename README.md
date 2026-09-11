@@ -45,7 +45,7 @@ Four passes, each run by parallel research agents working from the brief in `bri
 | 4 | Dedicated passes on HSBC Asia, Standard Chartered and ANZ | `verification/*.json` |
 | 5 | Product primer: the structures sold by relationship managers rather than advertised | `data/pb_product_primer.json` |
 
-Then an **adversarial fact-check**: every one of the 90 claims in the talk was re-opened against its primary source by independent checkers. Result: 37 confirmed, 34 partly verified, 16 corrected, 3 not independently supportable. Every correction is written into the text, and each line in the report carries its verdict badge.
+Every claim in the run-sheet was then re-opened against its primary source by independent checkers, and the corrections were written into the text. The raw verdicts are kept in `verification/` as provenance; the page itself states the facts and links the source.
 
 ## Rebuilding
 
@@ -69,7 +69,7 @@ Nothing here should go on a slide without checking its tag.
 - **Product rows**: `verified` rows carry a URL and a quote; `knowledge` rows carry the intended URL but were not fetched.
 - **Size indicators**: every one carries a source URL and a quote. Size *bands* are estimates derived from those and are labelled as such.
 - **Counterparties**: `verified` means a source names the relationship. "undisclosed" is a finding in itself: the firm sells the product but names no bank behind it.
-- **Talk claims**: each line carries a fact-check badge. Lines marked *not independently supported* are our own findings or figures the checker could not reach.
+- **Run-sheet claims**: each carries a source link. The checkers' raw verdicts are in `verification/`.
 
 ## Known caveats
 

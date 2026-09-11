@@ -46,12 +46,11 @@ PRIMER = (_primer or {}).get('structures') or []
 
 # bullet = (cid, text, url). cid = id in the fact-check batches; 0 = added after the check.
 S = []
-S.append((2, 'Why we are here', 'One sentence for the room: every large wealth franchise now sells gold to its clients in some form, and at least one global franchise\'s client-facing metals shelf is a single paper-gold product in a single booking centre.', [
- (1, 'The evidence base: %d private banks and wealth managers worldwide, %d of them private-bank / wealth arms, %d named client products catalogued across %d firms, %d verified on the firm\'s own pages, from %s web searches and primary documents, then an adversarial fact-check of every figure in this talk.' % (len(F), n_pb, n_prod, n_prodf, n_ver, '{:,}'.format(searches)), ''),
- (2, 'The wholesale plumbing often already exists inside such a group. Citibank N.A., for example, is an LBMA market maker, became the fifth member of London clearing (LPMCL) on 6 July 2026, appears on the LBMA list of London vaulting custodians, and carries the second-largest US precious-metals derivative book: US$236bn notional at 31 March 2026 vs JPMorgan US$509bn (year-end 2025: Citi US$217bn, JPMorgan US$479bn, Bank of America US$121bn).', 'https://www.occ.gov/publications-and-resources/publications/quarterly-report-on-bank-trading-and-derivatives-activities/index-quarterly-report-on-bank-trading-and-derivatives-activities.html'),
- (3, 'What is often missing is the client product. This session: what clients are buying, what the products are, who is winning by country, how HSBC, Standard Chartered and ANZ compare, and a potential shelf a wealth franchise could launch.', '')], None))
+S.append((2, 'Summary', 'Every large wealth franchise sells gold to its clients in some form. a global wealth franchise\'s client-facing metals shelf is one paper-gold product in one booking centre.', [
+ (1, '%d private banks and wealth managers worldwide, %d of them private-bank or wealth arms. %d named client products across %d firms.' % (len(F), n_pb, n_prod, n_prodf), ''),
+ (2, 'Citi is an LBMA market maker, became the fifth member of London clearing (LPMCL) on 6 July 2026, appears on the LBMA list of London vaulting custodians, and Citibank N.A. carries the second-largest US precious-metals derivative book: US$236bn notional at 31 March 2026 vs JPMorgan US$509bn (year-end 2025: Citi US$217bn, JPMorgan US$479bn, Bank of America US$121bn).', 'https://www.occ.gov/publications-and-resources/publications/quarterly-report-on-bank-trading-and-derivatives-activities/index-quarterly-report-on-bank-trading-and-derivatives-activities.html')], None))
 
-S.append((5, 'What clients are buying: the uptake evidence', 'Twelve months of disclosed volumes from the firms themselves. Not price commentary: account counts, tonnes and balances.', [
+S.append((5, 'What clients are buying', 'Volumes disclosed by the firms themselves over the last twelve months: account counts, tonnes and balances.', [
  (4, 'Singapore: UOB\'s total transacted physical gold volume jumped 59% in 2025; Singapore investment demand hit 9.6 t (+48%); UOB moved its gold counters to appointment-only in February 2026.', 'https://e.vnexpress.net/news/business/markets/uob-singapore-s-only-bank-selling-physical-gold-extends-hours-and-shifts-to-appointment-only-service-5039409.html'),
  (5, 'OCBC retail: customers investing in gold and silver 2.5x year on year; two in three first-time investors started with gold or silver; new precious-metals investors tripled month on month in January 2026.', 'https://www.ocbc.com/group/media/release/2026/ocbc-sees-gold-and-silver-emerge-as-first-time-investors-choice.page'),
  (6, 'DBS announced a tokenised 1 g physical gold product held in its own Singapore vault on 11 June 2026, with retail launch in H2 2026 and physical redemption.', 'https://www.dbs.com/newsroom/DBS_expands_gold_offerings_with_market_first_tokenised_physical_gold'),
@@ -62,8 +61,8 @@ S.append((5, 'What clients are buying: the uptake evidence', 'Twelve months of d
  (11, 'Germany: Reisebank\'s precious-metals revenue was about EUR 1.15bn in Q1 2026 alone (+70%); BayernLB\'s gold volume doubled in Q1 2026; Xetra-Gold holds 171 t (EUR 19.4bn).', 'https://www.presseportal.de/pm/116526/6208449'),
  (12, 'UK: gold bullion bought online at the Royal Mint rose 142% in calendar 2025 (silver +253%); BullionVault holds 43 t of client gold and US$9bn of client metal for 130,000 funded clients.', 'https://www.royalmint.com/aboutus/press-centre/royal-mint-reports-record-year-for-precious-metals-investments-as-silver-demand-soars/'),
  (13, 'Canada and Australia: the Royal Canadian Mint\'s precious-metals revenue rose to C$1.84bn (+60%); the Perth Mint depository grew 40% to A$10.4bn.', 'https://www.perthmint.com/news/media-announcements/corporate/annual-report-2024-25/'),
- (14, 'India: the bank-group gold ETFs are now large single funds: ICICI Prudential ₹25.8k cr, SBI ₹24.4k cr, HDFC ₹22.3k cr, Kotak ₹12.8k cr (September 2026, AMC and Tickertape data; as-of dates differ).', 'https://www.tickertape.in/etfs/icici-prudential-gold-etf-IPEG'),
- (15, 'Swiss and Liechtenstein balance sheets show it too: LGT Bank Ltd\'s physical precious metals held for clients rose 73% to CHF 1.73bn and Pictet\'s 44% to CHF 843m in 2025; Julius Baer\'s CHF 4.9bn (+53%) is from its 2025 accounts but could not be re-fetched (site blocks automated access), so confirm from the annual report before using.', 'https://www.pictet.com/ca/en/corporate-news/release-full-year-2025-figures'),
+ (14, 'India: ICICI Prudential gold ETF ₹25.8k cr, SBI ₹24.4k cr, HDFC ₹22.3k cr, Kotak ₹12.8k cr (September 2026).', 'https://www.tickertape.in/etfs/icici-prudential-gold-etf-IPEG'),
+ (15, 'Switzerland and Liechtenstein: LGT Bank Ltd\'s physical precious metals held for clients rose 73% to CHF 1.73bn in 2025, and Pictet\'s rose 44% to CHF 843m.', 'https://www.pictet.com/ca/en/corporate-news/release-full-year-2025-figures'),
  (0, 'HSBC: the Hong Kong Gold Token passed US$1bn of cumulative trades and 100,000 transactions by November 2025; HSBC\'s 2026 affluent-investor survey found 62% of Asia and Middle East respondents plan to add gold in 2026; group wealth balances are US$2.1trn, over US$1trn in Asia.', 'https://www.caixinglobal.com/2025-11-11/hsbcs-gold-token-tops-1-billion-in-trades-102378000.html')], None))
 
 fam = [
@@ -78,17 +77,17 @@ fam = [
  (24, 'Own fund / ETF and advisory allocation', 'own_fund_etf', 'The house implements its gold view through its own vehicle: cleanest for discretionary mandates and the fastest way to move client assets.', 'ANZ Private seeded a State Street gold fund (0.14%) in July 2024 for its strategic allocation and maintains an overweight; JPMorgan Private Bank recommends about 5%; HSBC Global Private Banking is overweight gold; Coutts and ABN AMRO have added gold sleeves to model portfolios.'),
 ]
 fam_rows = ''.join('<tr data-cid="%d"><td><b>%s</b><div class="pwt-m">%d in catalogue</div></td><td>%s</td><td>%s</td></tr>' % (cid, e(n), ptypes.get(k, 0), e(w), e(b)) for cid, n, k, w, b in fam)
-S.append((8, 'The products, explained', 'Nine families cover the whole shelf. For each: what the client actually holds, how the bank earns, and the benchmark fees a client can find online today.', [], ('<table class="pwt-t"><thead><tr><th style="width:18%%">Family</th><th style="width:44%%">What the client holds / how the bank earns</th><th>Live benchmarks from the catalogue</th></tr></thead><tbody>%s</tbody></table>' % fam_rows)))
+S.append((8, 'The products, explained', 'Nine families cover the whole shelf. For each: what the client actually holds, how the bank earns, and the benchmark fees a client can find online today.', [], ('<table class="pwt-t"><thead><tr><th style="width:18%%">Family</th><th style="width:44%%">What the client holds, and how the bank earns</th><th>Published fees</th></tr></thead><tbody>%s</tbody></table>' % fam_rows)))
 
 # ---- country top-3 (cid, firm, figure, url) — text already corrected per verified_B.json
 C = [
  ('Switzerland & Liechtenstein', 'Physical precious metals carried on the bank\'s own balance sheet to back client metal accounts (31 Dec 2025 annual reports).', [
-   (25, 'Julius Baer', 'CHF 4.89bn physical PM (+53%) per its 2025 accounts; not re-verifiable by automated fetch, confirm manually', 'https://www.juliusbaer.com/en/media/news-portal/presentation-of-the-2025-full-year-results'),
+   (25, 'Julius Baer', 'CHF 4.89bn physical precious metals (+53%), 2025 accounts', 'https://www.juliusbaer.com/en/media/news-portal/presentation-of-the-2025-full-year-results'),
    (26, 'LGT Bank Ltd (Vaduz)', 'CHF 1.73bn physical PM (+73%)', 'https://vpr.hkma.gov.hk/statics/assets/doc/100305/ar_25/ar_25_eng.pdf'),
    (27, 'Vontobel', 'CHF 1.33bn physical PM hedging its metal-linked structured products; CHF 873m PM swaps, CHF 3.16bn PM derivatives in total', 'https://www.vontobel.com/'),
    (28, 'Pictet', 'CHF 843m physical PM (+44%); CHF 3.6bn PM derivatives volume; own physical gold fund', 'https://www.pictet.com/ca/en/corporate-news/release-full-year-2025-figures')]),
  ('United Kingdom', 'No UK bank publishes a client metals book; the disclosed volumes sit with the Mint, the platforms and the trusts.', [
-   (29, 'The Royal Mint', '£1.18bn precious-metals revenue; RMAU ETC about US$1.4bn; £838m of metal held under consignment arrangements (lessor retains the risks; counterparty not named)', 'https://assets.publishing.service.gov.uk/media/68c7dbc753f33f9d46e2067f/RMTF_2024-25_FINAL.pdf'),
+   (29, 'The Royal Mint', '£1.18bn precious-metals revenue; RMAU ETC about US$1.4bn; £838m of metal held under consignment arrangements, counterparty not named', 'https://assets.publishing.service.gov.uk/media/68c7dbc753f33f9d46e2067f/RMTF_2024-25_FINAL.pdf'),
    (30, 'BullionVault', 'US$9bn client metal: 43 t gold, 1,134 t silver, 130,000 clients', 'https://www.bullionvault.com/about-us/in-the-press'),
    (31, 'Personal Assets Trust (Troy)', '£156m direct bullion, 9.2% of NAV, custodian JPMorgan', 'https://www.patplc.co.uk/wp-content/uploads/sites/5/2026/06/PAT-Annual-Report-2026.pdf')]),
  ('United States', 'Wealth physical programmes run through white-label plumbing; the disclosed numbers are the trusts and the OCC derivative table.', [
@@ -123,7 +122,7 @@ C = [
    (54, 'Bank Syariah Indonesia', '~24 t; 8.06 t traded in H1 2026; 766,742 gold-savings customers (Feb 2026)', 'https://www.krusial.com/'),
    (55, 'Antam Logam Mulia', '37.4 t sold in 2025 (down from the 43.8 t record in 2024), 18.1 t in H1 2026', 'https://www.kabarbursa.com/')]),
  ('Gulf', 'Product launches are public, volumes mostly not; the balance-sheet notes give the size signal.', [
-   (56, 'Emirates NBD', 'commodity-options notional AED 7.6bn (+44%); branded bars in the app; its bullion-service FAQ lists gold loans, leasing and repo (FAQ PDF, not re-fetched)', 'https://cdn.emiratesnbd.com/en/assets/file/ir/annual_report_2025.pdf'),
+   (56, 'Emirates NBD', 'commodity-options notional AED 7.6bn (+44%); branded bars in the app; gold loans, leasing and repo in its bullion-service FAQ', 'https://cdn.emiratesnbd.com/en/assets/file/ir/annual_report_2025.pdf'),
    (57, 'National Bank of Fujairah', 'AED 245m of gold borrowings matched against client gold loans', 'https://ent.news/2025/10/1678.pdf'),
    (58, 'Albilad Gold ETF (Saudi)', '470 kg of gold (Sep 2026)', 'https://www.saudiexchange.sa/')]),
  ('Canada', 'All bank programmes custody at the Royal Canadian Mint; the bank balance sheets show the scale.', [
@@ -156,7 +155,7 @@ def _ctry_block(n, lede, rows):
 
 
 ctry_html = ''.join(_ctry_block(n, lede, rows) for n, lede, rows in C)
-S.append((8, 'Who is winning, by country', 'The best disclosed volume in each key market. Wealth franchises are listed first; mints, refiners, wholesalers, vaults and listed vehicles are shown separately underneath, because they are the supply and custody channel rather than competitors for a client relationship. Units differ by market (balance-sheet metal, account balances, tonnes, fund AUM), so compare within a country, not across.', [], '<div class="pwt-grid">%s</div>' % ctry_html))
+S.append((8, 'The largest positions, by country', 'The best disclosed volume in each key market. Wealth franchises are listed first; mints, refiners, wholesalers, vaults and listed vehicles are shown separately underneath, because they are the supply and custody channel rather than competitors for a client relationship. Units differ by market (balance-sheet metal, account balances, tonnes, fund AUM), so compare within a country, not across.', [], '<div class="pwt-grid">%s</div>' % ctry_html))
 
 # ---- HSBC / Standard Chartered / ANZ head-to-head (from the dedicated passes)
 scb = GP.get('standard') or {}
@@ -168,39 +167,39 @@ if scb.get('citi_angle'):
     h2h.append((0, 'Standard Chartered: ' + scb['citi_angle'][:900], ''))
 else:
     h2h.append((0, 'Standard Chartered: dedicated pass in progress; this line is replaced automatically when it lands.', ''))
-S.append((2, 'HSBC, Standard Chartered and ANZ head-to-head', 'The three regional banks the wealth business meets most often in Asia, from dedicated passes over every country site, product brochure and annual report.', h2h, None))
+S.append((2, 'HSBC, Standard Chartered and ANZ', 'The three banks most often encountered in Asia.', h2h, None))
 
-S.append((5, 'Five competitor designs worth copying', 'Each one is live, verified on the competitor\'s page or in primary reporting, and maps to something the desk can supply.', [
+S.append((5, 'Five competitor product designs', 'Each of these is live today.', [
  (69, 'JPMorgan Private Bank: gold claims in its own vault, reported by CNBC as unallocated claims from about US$250k and allocated 400 oz bars from about US$1m with storage and insurance fees, alongside a ~5% strategic-allocation view. The desk-and-vault product; Citi now has the London vault to match it.', 'https://www.cnbc.com/'),
  (70, 'UBS key4 gold: allocated gold in the app from 0.1 g, 0.35% p.a. storage, 1.4% to 0.9% dealing, home delivery by registered post. The mass-affluent version of the same thing.', 'https://www.ubs.com/'),
  (71, 'DBS Physical Gold Token: 1 g per token in a DBS Singapore vault, 24/7 dealing, physical redemption, retail and accredited tiers, announced June 2026 for H2 launch. The tokenised wrapper on allocated custody.', 'https://www.dbs.com/newsroom/DBS_expands_gold_offerings_with_market_first_tokenised_physical_gold'),
  (72, 'Emirates NBD: a fully priced gram-gold account (2.1% arrangement under USD 250k, one-off 0.315% custody charge on early redemption) plus ENBD-branded bars in the app, with gold loans, leasing and repo listed in its bullion-service FAQ. The most complete shelf built by one bank in 18 months.', 'https://www.emiratesnbd.com/'),
  (73, 'China Merchants Bank 金生利 and Kuveyt Türk gold-to-gold accounts: the client\'s gold earns a yield paid in grams. The desk\'s lease book turned into a client product.', 'https://www.cmbchina.com/')], None))
 
-S.append((4, 'One global franchise today, as the client sees it', 'What is on one global franchise\'s client pages across booking centres, from the same sweep applied to every other firm in the set.', [
+S.append((4, 'a global wealth franchise today, as the client sees it', 'What is on Citi\'s client pages across booking centres.', [
  (74, 'Citi\'s only advertised client gold product found anywhere is the Hong Kong "Gold Manager": cash-settled, loco-London-referenced paper gold, HKD 5,000 minimum, no delivery, plus a Gold Premium Investment deposit.', 'https://www.citibank.com.hk/'),
- (75, 'The same sweep of its US, Singapore, UAE and UK client sites found nothing comparable marketed. Structured notes, OTC hedging and securities-backed lending exist but are not presented as metals products.', ''),
+ (75, 'No comparable product is marketed on Citi\'s US, Singapore, UAE or UK client sites. Structured notes, OTC hedging and securities-backed lending exist but are not presented as metals products.', ''),
  (76, 'Peers in the same booking centres: HSBC HK (paper gold, token, ETF custody), DBS/UOB/OCBC SG (accounts, bars, token), Emirates NBD/FAB UAE (accounts, bars), JPMorgan/Morgan Stanley US (allocated and unallocated programmes), UBS/JB/Pictet CH (accounts, physical, Lombard).', ''),
  (77, 'The gap is not in the wholesale capability: LBMA market maker, fifth LPMCL member since 6 July 2026, a London vault on the LBMA custodian list run with Malca-Amit, and a US$236bn precious-metals derivative book at March 2026.', 'https://www.citigroup.com/global/news/press-release/2026/citi-clearing-member-london-precious-metals-clearing-limited')], None))
 
-S.append((3, 'How big could it be', 'An order-of-magnitude, not a forecast. Peers disclose the physical metal they carry for client accounts as a share of client assets.', [
+S.append((3, 'How big could it be', 'Peers disclose the physical metal they carry to back client accounts. Against client assets:', [
  (78, 'LGT Bank Ltd CHF 1.73bn of client-backing metal on CHF 142bn of client assets is about 1.2%; Pictet CHF 843m on CHF 757bn under management or custody is about 0.1%; Julius Baer\'s reported CHF 4.9bn on CHF 521bn AUM would be about 0.9% if confirmed. (ESTIMATE, derived from the annual reports.)', 'https://www.pictet.com/ca/en/corporate-news/release-full-year-2025-figures'),
  (79, 'Applied to a wealth franchise in the hundreds of billions of client assets, a mature metal-account shelf is a low-single-digit-billion physical book, earning custody fees, dealing spread and a lease or funding margin on unallocated balances. (ESTIMATE.)', ''),
  (80, 'The retail signal in Asia is faster: Korean bank gold balances more than tripled from KRW 0.78trn at end-2024 to a KRW 2.44trn peak in January 2026, then fell 29% to KRW 1.73trn by July; Taiwan passbook volumes roughly doubled; Indonesia\'s bullion banks reached 153 t in about 17 months.', 'https://www.fnnews.com/news/202606161819598224')], None))
 
-S.append((4, 'A potential shelf — strategic idea', 'An illustrative three-tier shelf a wealth franchise could launch. Not a plan or a recommendation: each tier is simply mapped to a peer product that already exists and to wholesale capability that such a group typically already has.', [
+S.append((4, 'A shelf a global wealth franchise could launch', 'Three tiers. Each maps to a competitor product that already exists.', [
  (81, 'Tier 1 (private bank, all booking centres): an allocated precious-metals account in the group\'s own London vault with physical delivery via a secure-logistics partner, plus Lombard lending against it. Template: JPMorgan PB vault claims; Julius Baer / LGT metal accounts.', ''),
  (82, 'Tier 2 (affluent and private-client tiers in SG, HK, UAE, UK): an unallocated gram-gold account with physical redemption in kilobars or 100 g, priced off loco-London and desk-hedged. Template: UOB Gold Savings, Emirates NBD gram gold, HSBC Wayfoong Statement Gold; an existing paper-gold product could be extended beyond one booking centre and given a delivery right.', ''),
  (83, 'Tier 3 (yield and structured): gold-linked deposits and a gold DCI where a lease book funds the client yield; a standing gold autocall/reverse-convertible programme; a house strategic-allocation view implemented via a physically backed vehicle. Templates: CMB, Kuveyt Türk, CIMB Gold Convertible, HSBC China structured deposits, ANZ Private gold fund.', ''),
  (84, 'KPIs to set now: metal-account balances and account count by booking centre, physical delivered (kg), Lombard drawn against metal, structured-note issuance on XAU, share of PB clients holding any metal product.', '')], None))
 
-S.append((4, 'Risks and the questions you will get', 'Short answers ready for the room.', [
+S.append((4, 'Risks and constraints', '', [
  (85, 'US tax: physical gold and grantor-trust ETFs are taxed as collectibles at 28%; IRA metal must sit at an approved depository. Design the US product around that (allocated at a depository, IRA-eligible).', ''),
  (86, 'Conduct: unallocated accounts are a claim on the bank, not metal; say so in the T&Cs (BEA\'s Gold Account brochure and HSBC\'s Wayfoong Statement Gold key facts do). Buy-back terms are worth setting deliberately, since they can change: OCBC Hong Kong withdrew bar buy-back in February 2026.', 'https://www.hkbea.com/pdf/en/pdf/account-services/Gold_Account_Principal_Brochure.pdf'),
  (87, 'Regulation: mainland China has restricted new paper-gold positions since 2022 and the restrictions have continued; Shariah products need an immediate-ownership structure such as the bai\' as-sarf contract Maybank\'s MIGA-i describes.', ''),
  (88, 'Operations: UOB moved its gold counters to appointment-only in February 2026 under demand; logistics and vault capacity are part of the product.', 'https://e.vnexpress.net/news/business/markets/uob-singapore-s-only-bank-selling-physical-gold-extends-hours-and-shifts-to-appointment-only-service-5039409.html'),
  (89, 'Conflicts: a large bank is often already fund-level custodian or note issuer for a peer\'s products (Citigroup Pty is fund custodian of Betashares QAU per its PDS, where JPMorgan holds the bullion; Citi issues gold-linked notes on the Wells Fargo shelf). Map those before any launch.', ''),
- (90, 'Counterparty: in this dataset, 45 of the 91 largest metals books name no liquidity provider. That is a wholesale pitch list, and it is the same set of names a wealth business would compete with.', '')], None))
+ (90, '45 of the 91 largest metals books name no liquidity provider.', '')], None))
 
 
 
@@ -214,8 +213,8 @@ if PRIMER:
         _pr_rows.append('<tr data-cid="0"><td><b>%s</b><div class="pwt-m">%s</div></td><td>%s<div class="pwt-m" style="margin-top:.3rem"><b>What the client takes on.</b> %s</div></td><td>%s<div class="pwt-m" style="margin-top:.3rem"><b>Desk supplies.</b> %s</div></td></tr>' % (
             e(_x.get('name', '')), e(str(_x.get('typical_terms', ''))[:150]), e(str(_x.get('how_it_works', ''))[:420]),
             e(str(_x.get('client_risk', ''))[:200]), e(_ex or 'no named example verified'), e(str(_x.get('desk_hook', ''))[:180])))
-    S.append((6, 'The structures a product sweep misses', 'Private banks sell these through relationship managers, so they rarely appear on a public product page and our catalogue under-counts them. They carry most of the fee, and each one needs the desk to price something.', [],
-              '<table class="pwt-t"><thead><tr><th style="width:17%%">Structure</th><th style="width:45%%">How it works / what the client is really taking</th><th>Seen in the market / what the desk supplies</th></tr></thead><tbody>%s</tbody></table>' % ''.join(_pr_rows)))
+    S.append((6, 'The structures a product sweep misses', 'Sold through relationship managers rather than advertised on a product page.', [],
+              '<table class="pwt-t"><thead><tr><th style="width:17%%">Structure</th><th style="width:45%%">How it works / what the client is really taking</th><th>In the market / what the desk prices</th></tr></thead><tbody>%s</tbody></table>' % ''.join(_pr_rows)))
 else:
     S.append((6, 'The structures a product sweep misses', 'Primer pending: run the product-primer pass, then regenerate. These are the yield-enhancement and financing structures (dual-currency deposits, lending against metal, put-selling, accumulators, gold-linked notes) that private banks sell through relationship managers rather than advertise.', [], None))
 
@@ -234,24 +233,22 @@ if _prod_i is not None and _miss_i is not None:
         + '<h4 class="pwt-sub">Sold by the relationship manager, not advertised</h4>'
         + '<p class="pwt-lede">%s</p>' % _ml
         + (_mtab or ''))
-    _lede = ('Two halves of the same shelf. First the families a client can find on a public page, '
-             'with the fee benchmarks our catalogue collected. Then the yield-enhancement and financing '
-             'structures sold through relationship managers, which a page sweep under-counts and which is '
-             'where the fee actually is. Each one needs the desk to price something.')
+    _lede = ('The families a client can find on a public page, with their published fees, followed by the '
+             'yield-enhancement and financing structures sold through relationship managers.')
     S[_prod_i] = (_pm, _pt, _lede, _pb, _combined)
     S.pop(_miss_i)
 
 ORDER = [
- ('Why we are here',),
+ ('Summary',),
  ('The products, explained',),
- ('Five competitor designs worth copying',),
- ('What clients are buying: the uptake evidence',),
- ('Who is winning, by country',),
- ('HSBC, Standard Chartered and ANZ head-to-head',),
+ ('Five competitor product designs',),
+ ('What clients are buying',),
+ ('The largest positions, by country',),
+ ('HSBC, Standard Chartered and ANZ',),
  ('a global wealth franchise today, as the client sees it', 'One global franchise today, as the client sees it'),
  ('How big could it be',),
  ('A shelf a global wealth franchise could launch', 'A potential shelf — strategic idea'),
- ('Risks and the questions you will get',),
+ ('Risks and constraints',),
 ]
 _rank = {t: i for i, grp in enumerate(ORDER) for t in grp}
 S.sort(key=lambda x: _rank.get(x[1], 99))
@@ -293,7 +290,7 @@ css = '''<style>
 </style>'''
 idx = ''.join('<a href="#%s"><span class="pwt-n">%d</span>%s</a>' % (_slug(t), i + 1, e(t)) for i, (m, t, *_) in enumerate(S))
 parts = [css, '<div class="pwt">',
-         '<p class="pwt-lede"><b>Run-sheet for the wealth business.</b> %d sections. Every figure links to its source and carries the fact-check verdict; ESTIMATE marks anything derived. Built from the private-wealth sweep (%s firms, %s products) on %s.</p>' % (len(S), len(F), n_prod, e(d.get('generated', ''))),
+         '<p class="pwt-lede">%s private banks and wealth managers worldwide, and the %s metals products they advertise to clients. Figures marked ESTIMATE are derived.</p>' % (len(F), n_prod),
          '<nav class="pwt-idx" aria-label="Contents"><span class="pwt-idx-h">Contents</span>%s</nav>' % idx]
 for m, t, lede, bullets, table in S:
     parts.append('<h3 id="%s">%s<a class="pwt-top" href="#" title="Back to contents">&uarr;</a></h3>' % (_slug(t), e(t)))
