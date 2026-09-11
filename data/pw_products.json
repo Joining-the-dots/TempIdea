@@ -261,8 +261,8 @@
    "quote": "a wide variety of structured products and market-linked investments to support your investment goals",
    "confidence": "verified",
    "notes": "Gold-linked specifically: Citigroup Global Markets Holdings issues SEC-registered notes linked to gold spot / SPDR Gold Trust (424B2 filings) distributed on Citi and third-party wealth platforms (knowledge). Citi UK IPB (Citigold) also lists 'Structured Notes.. fixed term, principal protected' (page now redirects).",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "the reference franchise"
   },
   {
@@ -295,8 +295,8 @@
    "quote": "identify uncorrelated assets and implement hedges on specific positions",
    "confidence": "verified",
    "notes": "Page names commodities as an asset class covered by execution; precious-metal specifics come from Citi Markets (Risk PM house of the year), not the PB page.",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "the reference franchise"
   },
   {
@@ -326,8 +326,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "Only generic margin lending seen on the page; bullion-backed Lombard not advertised.",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "the reference franchise"
   },
   {
@@ -451,8 +451,8 @@
    "quote": "Clients can access a variety of gold & silver bullion products at competitive, live market rates. Secure Storage Solutions: State-of-the-art vaulting facilities, available both domestically and internationally",
    "confidence": "verified",
    "notes": "FAQ authored by Group Marketing 21-May-2025. Also lists 'Gold Certificates: a convenient and secure method of owning gold without the need to take physical possession, offering ease of trading and collateralization' and 'Flexible Repurchase Terms'.",
-   "market": "United Arab Emirates",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -1412,8 +1412,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "Standard Swiss private-bank metal account; SG/HK-booked clients are typically held via the Zurich book.",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "unknown"
   },
   {
@@ -1478,8 +1478,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "JB is an active Swiss structured-products issuer (Julius Baer 'Derivatives' platform).",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "unknown"
   },
   {
@@ -1512,8 +1512,8 @@
    "quote": "JB trades FX and precious metals 24h from two centres — Zurich and Singapore; offers gold/silver/platinum/palladium incl. leveraged trading (from pass-2 evidence)",
    "confidence": "knowledge",
    "notes": "Singapore desk is JB's Asian FX/PM trading hub.",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "unknown"
   },
   {
@@ -1546,8 +1546,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "Pass-2 matrix Y; lending value for gold typically ~50-70% (knowledge).",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "unknown"
   },
   {
@@ -2117,8 +2117,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "",
-   "market": "United Kingdom",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -3017,8 +3017,8 @@
    "quote": "You will not be holding physical precious metals. You are buying non-physical precious metals, such as paper gold (XAU), silver (XAG), platinum (XPT) or palladium (XPD).",
    "confidence": "verified",
    "notes": "Platinum/palladium added to the app in 2026 (OCBC press release 'expands precious metal offerings on OCBC app').",
-   "market": "Singapore",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -3655,8 +3655,8 @@
    "quote": "Gold bars on the platform are sourced directly from Swiss refineries, meet the highest standards of 0.9999 fineness, are Shar'iah-compliant, and meet London Bullion Market Association (LBMA) gold bar specifications.",
    "confidence": "verified",
    "notes": "Announced 30-Oct-2024.",
-   "market": "United Arab Emirates",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -6060,8 +6060,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "Pass-2 matrix Y?.",
-   "market": "Singapore",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -6413,8 +6413,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "unknown"
   },
   {
@@ -6695,8 +6695,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "Pass-2 matrix Y?.",
-   "market": "Singapore",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -7618,8 +7618,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "Gold-equity exposure, not bullion.",
-   "market": "United Arab Emirates",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -7650,8 +7650,8 @@
    "confidence": "verified",
    "notes": "Snippet-level verification.",
    "src": "scb.json",
-   "market": "United Arab Emirates",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -7911,8 +7911,8 @@
    "confidence": "verified",
    "notes": "Existence verified; gold-specific term sheets not retrieved. Issuer typically Standard Chartered Bank or third-party issuers.",
    "src": "scb.json",
-   "market": "United Arab Emirates",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -7943,8 +7943,8 @@
    "confidence": "verified",
    "notes": "SG PCI T&Cs (verified) exclude gold. Private-bank availability = knowledge.",
    "src": "scb.json",
-   "market": "Brunei",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -9400,8 +9400,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "Coverage is offshore (US/Swiss booking) - see the Citi Private Bank global entry in the other pass groups.",
-   "market": "United States",
-   "market_source": "text",
+   "market": "Mexico",
+   "market_source": "firm",
    "ref_bank_status": "the reference franchise"
   },
   {
@@ -9492,8 +9492,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "Com/sites/qnb/qnbprivate (banking services, private banking, asset & wealth management); qnb.com EnGOLD (403).",
-   "market": "Turkey",
-   "market_source": "text",
+   "market": "Qatar",
+   "market_source": "firm",
    "ref_bank_status": "unknown"
   },
   {
@@ -9625,8 +9625,8 @@
    "quote": "We also cover silver, gold, platinum and palladium, which can be useful additions to a portfolio … place your orders through your personal relationship manager or online via LGT Smartbanking",
    "confidence": "verified",
    "notes": "",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "unknown"
   },
   {
@@ -10075,8 +10075,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "Knowledge: as a full Swiss private bank JSS books precious-metal accounts and physical custody for clients on request and can pledge them under Lombard, but nothing is marketed. JSS Commodity funds are broad-commodity, not metal-specific.",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Switzerland",
+   "market_source": "firm",
    "ref_bank_status": "unknown"
   },
   {
@@ -10679,8 +10679,8 @@
    "quote": "equities, commodities, fixed income, foreign exchange, rates and hybrids",
    "confidence": "verified",
    "notes": "Same global page; London office page https://www.privatebank.citibank.com/office-locations/london-canary-wharf.",
-   "market": "United Kingdom",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "the reference franchise"
   },
   {
@@ -10744,8 +10744,8 @@
    "quote": "identify uncorrelated assets and implement hedges on specific positions",
    "confidence": "verified",
    "notes": "",
-   "market": "United Kingdom",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "the reference franchise"
   },
   {
@@ -11575,8 +11575,8 @@
    "quote": "Precious Metals and FX Margin (listed under related investment products)",
    "confidence": "verified",
    "notes": "",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -14217,8 +14217,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "HVB (Germany) sells physical bars/coins in branches - not the Italian PB shelf.",
-   "market": "Germany",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "unknown"
   },
   {
@@ -14598,8 +14598,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "No client-facing product page found; BNP Paribas WM Asia site publishes advisory content only.",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -14692,8 +14692,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "Com W&I Johannesburg. Gold exposure for clients via third-party ETFs (NewGold/1nvest) inside portfolios.",
-   "market": "United Kingdom",
-   "market_source": "text",
+   "market": "South Africa",
+   "market_source": "firm",
    "ref_bank_status": "unknown"
   },
   {
@@ -15285,8 +15285,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "",
-   "market": "Switzerland",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank (UBS is a direct peer/competitor bullion bank; fellow LPMCL member)"
   },
   {
@@ -15891,8 +15891,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "",
-   "market": "Canada",
-   "market_source": "text",
+   "market": "United States",
+   "market_source": "firm",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -15953,8 +15953,8 @@
    "quote": "Securities-backed lending",
    "confidence": "verified",
    "notes": "",
-   "market": "United States",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -17004,8 +17004,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "Com/what-we-do/wealth-management (no product detail). Physical gold custody for PWM clients, if any, is arranged case by case — not advertised.",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -17098,8 +17098,8 @@
    "quote": "Leverage ratios up to 15 times",
    "confidence": "verified",
    "notes": "Rare retail-bank leveraged gold product in HK.",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -17259,8 +17259,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "Com/what-we-do/wealth-management/private-wealth-management (no product detail).",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -18232,8 +18232,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "EIBank (eibank.",
-   "market": "United Arab Emirates",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -18263,8 +18263,8 @@
    "quote": "Financing against a wide range of assets",
    "confidence": "verified",
    "notes": "Metal-specific wording only at https://www.asia.privatebanking.hsbc.com.",
-   "market": "United Kingdom",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -18292,8 +18292,8 @@
    "quote": "",
    "confidence": "verified",
    "notes": "HSBC tokenised gold institutional: https://www.ledgerinsights.com/hsbc-tokenizes-gold/.",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "United Kingdom",
+   "market_source": "firm",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -18355,8 +18355,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "HSBC Gold Token retail launch is HK-only; institutional tokenised gold on Evolve (https://www.ledgerinsights.com/hsbc-tokenizes-gold/).",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "United States",
+   "market_source": "firm",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -18517,8 +18517,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -18551,8 +18551,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -18616,8 +18616,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "no public evidence of the reference bank"
   },
   {
@@ -18900,8 +18900,8 @@
    "quote": "",
    "confidence": "knowledge",
    "notes": "Home bank of the desk — recorded for completeness.",
-   "market": "Hong Kong",
-   "market_source": "text",
+   "market": "Multiple markets",
+   "market_source": "capability",
    "ref_bank_status": "the reference franchise"
   }
  ]
