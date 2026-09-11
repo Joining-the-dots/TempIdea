@@ -10,10 +10,10 @@ The prescriptive sections — the run-sheet's proposed shelf, and the per-firm `
 
 | Path | What it is |
 |---|---|
-| `PRIVATE_WEALTH.html` | The report. Open it in any browser, no server needed. Self-contained, ~3.4 MB. |
+| `index.html` | The report, and the site root. Open it in any browser, no server needed. Self-contained, ~3.4 MB, with a download button in its header. |
 | `data/private_wealth.json` | 613 firms: product matrix, counterparties, size indicators, liquidity-provider status, scores. |
 | `data/pw_products.json` | 564 named client products, one row each, with fees, minimums, custody model and source links. |
-| `data/pw_talking_points.html` | The 45-minute run-sheet fragment, embedded in the report and in the desk UI. |
+| `data/pw_talking_points.html` | The run-sheet fragment, embedded in the report and in the desk UI. |
 | `scripts/` | The build pipeline (see below). |
 | `briefs/` | The three research briefs the agents worked from. Provenance for how each field was collected. |
 | `verification/` | Raw output of the adversarial fact-check and the three dedicated bank passes. |
@@ -22,7 +22,7 @@ The prescriptive sections — the run-sheet's proposed shelf, and the per-firm `
 
 An index at the top jumps to any section.
 
-1. **Talking points** — an eleven-section run-sheet. It opens with the proven product shelf: the nine product families with live fee benchmarks, five competitor designs worth copying, and the yield-enhancement and financing structures a public-page sweep under-counts (dual-currency deposits, lending against metal, put-selling, accumulators, gold-linked notes). Then the uptake evidence, who is winning by country, an HSBC / Standard Chartered / ANZ comparison, sizing, a potential shelf and the questions to expect.
+1. **Talking points** — a ten-section run-sheet. It opens with the proven product shelf in one section: the nine families a client can find on a public page with their fee benchmarks, then beneath them the yield-enhancement and financing structures sold through relationship managers and under-counted by a page sweep (dual-currency deposits, lending against metal, put-selling, covered calls, accumulators, gold-linked notes). Then five competitor designs worth copying. Then the uptake evidence, who is winning by country, an HSBC / Standard Chartered / ANZ comparison, sizing, a potential shelf and the questions to expect.
 2. **Product catalogue** — all 564 named client products, filterable by type, metal, region, country and segment.
 3. **Where the gaps are** — the 46 firms scoring 7 or more, each expandable to counterparties, evidence and the strategic idea.
 4. **One global franchise, as the web sees it** — what is publicly documented for one large group per booking centre, shown against the peer shelves.
@@ -56,7 +56,7 @@ python scripts/_pw3_apply.py <dir-with-pw3-json>         # pass 3 -> pw_products
 python scripts/_hsbc_apply.py verification/scb.json      # a dedicated bank pass (generic)
 python scripts/_pw_talk.py                               # regenerate the run-sheet
 python scripts/_talk_verify_apply.py <verify-dir>        # stamp fact-check verdicts
-python scripts/_pw_report.py PRIVATE_WEALTH.html         # render the report
+python scripts/_pw_report.py index.html                  # render the report
 ```
 
 The scripts read and write `private_wealth.json` / `pw_products.json` in the same directory as the scripts, so run them from a working copy with the data files alongside.

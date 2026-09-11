@@ -221,11 +221,30 @@ else:
 
 
 # both title variants: the desk copy keeps the original wording, the published copy is genericised
+
+# --- fold the RM-sold structures into the single products section ---------------------------
+_prod_i = next((i for i, x in enumerate(S) if x[1] == 'The products, explained'), None)
+_miss_i = next((i for i, x in enumerate(S) if x[1] == 'The structures a product sweep misses'), None)
+if _prod_i is not None and _miss_i is not None:
+    _pm, _pt, _pl, _pb, _ptab = S[_prod_i]
+    _mm, _mt, _ml, _mb, _mtab = S[_miss_i]
+    _combined = (
+        '<h4 class="pwt-sub">On the shelf &mdash; what the bank advertises</h4>'
+        + (_ptab or '')
+        + '<h4 class="pwt-sub">Sold by the relationship manager, not advertised</h4>'
+        + '<p class="pwt-lede">%s</p>' % _ml
+        + (_mtab or ''))
+    _lede = ('Two halves of the same shelf. First the families a client can find on a public page, '
+             'with the fee benchmarks our catalogue collected. Then the yield-enhancement and financing '
+             'structures sold through relationship managers, which a page sweep under-counts and which is '
+             'where the fee actually is. Each one needs the desk to price something.')
+    S[_prod_i] = (_pm, _pt, _lede, _pb, _combined)
+    S.pop(_miss_i)
+
 ORDER = [
  ('Why we are here',),
  ('The products, explained',),
  ('Five competitor designs worth copying',),
- ('The structures a product sweep misses',),
  ('What clients are buying: the uptake evidence',),
  ('Who is winning, by country',),
  ('HSBC, Standard Chartered and ANZ head-to-head',),
@@ -249,6 +268,9 @@ css = '''<style>
 .pwt ul{margin:.2rem 0 0 1.2rem;padding:0}.pwt li{margin:.3rem 0}
 .pwt a{font-size:.8em}
 .pwt .pwt-m{color:#7a8696;font-size:.86em}
+.pwt .pwt-sub{font-family:inherit;font-size:.95rem;font-weight:600;margin:1.1rem 0 .15rem;
+ padding-bottom:.22rem;border-bottom:1px solid #c6d2de;color:#1f5b8d;letter-spacing:.01em}
+.pwt .pwt-sub:first-child{margin-top:.3rem}
 .pwt-t{border-collapse:collapse;width:100%;font-size:.93em;margin:.4rem 0}.pwt-t th{text-align:left;font-size:.78em;text-transform:uppercase;letter-spacing:.05em;color:#7a8696;border-bottom:2px solid #1f5b8d;padding:6px 8px}.pwt-t td{vertical-align:top;padding:7px 8px;border-bottom:1px solid #e4e9ef}
 .pwt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px 26px}
 .pwt-c h4{margin:.4rem 0 .1rem;font-size:1rem}.pwt-c ol{margin:.2rem 0 0 1.2rem;padding:0;font-size:.93em}.pwt-c li{margin:.2rem 0}
@@ -265,6 +287,7 @@ css = '''<style>
 .pwt .pwt-chan ol{color:#6b7686}
 .pwt .pwt-b{display:inline-block;font:600 10.5px/1 system-ui,sans-serif;letter-spacing:.03em;border-radius:3px;padding:3px 6px;white-space:nowrap;vertical-align:middle}
 @media (prefers-color-scheme:dark){.pwt .pwt-lede{color:#c3bdb0}.pwt-t td{border-color:#2f3441}
+ .pwt .pwt-sub{color:#8fb0ea;border-bottom-color:#39424f}
  .pwt .pwt-idx{background:#1c2331;border-color:#2f3a4b}.pwt .pwt-idx a{color:#8fb0ea}.pwt .pwt-idx-h{color:#8d9bb0}
  .pwt .pwt-chan{border-top-color:#39424f}.pwt .pwt-chan ol{color:#98a3b4}}
 </style>'''

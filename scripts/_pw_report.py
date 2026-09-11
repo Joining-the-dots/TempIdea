@@ -271,7 +271,10 @@ h1{font-size:clamp(30px,4vw,44px);line-height:1.08;font-variation-settings:"opsz
 h2{font-size:24px;margin:0 0 6px}
 h3{font-size:18px}
 h4{font:600 12px/1.2 "Source Sans 3",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);margin:14px 0 6px}
-.eyebrow{font:600 12px/1 "Source Sans 3",sans-serif;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:12px}
+.eyebrow{font:600 12px/1 "Source Sans 3",sans-serif;text-transform:uppercase;letter-spacing:.1em;color:var(--gold)}
+.hdr{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:12px}
+.dl{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border:1px solid var(--gold);border-radius:4px;background:var(--gold-bg);color:var(--gold);text-decoration:none;font:600 14px/1 "Source Sans 3",sans-serif;white-space:nowrap}
+.dl:hover{box-shadow:0 2px 8px rgba(0,0,0,.12)}
 .lede{max-width:68ch;color:var(--ink2);font-size:17px;margin:14px 0 0}
 p{margin:.5em 0}
 a{color:var(--blue)}
@@ -344,7 +347,10 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 @media (prefers-reduced-motion:no-preference){tr.x td{animation:fade .18s ease-out}}@keyframes fade{from{opacity:.5}to{opacity:1}}
 </style>
 <div class="wrap">
+<div class="hdr">
 <div class="eyebrow">Metals desk · private banks &amp; wealth managers · global mandate · generated __GEN__</div>
+<a class="dl" href="__SELF__" download="Private-Wealth-Metals-Map.html" title="Save this page to read offline"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download</a>
+</div>
 <h1>Private Wealth Metals Map</h1>
 <p class="lede">Every private bank and private-wealth manager identified worldwide: the metals products each puts in front of clients, and the bullion banks, custodians and refiners that sit behind those products. Built for one question: where could a bullion desk supply, custody, finance or clear what a wealth manager is currently buying from someone else.</p>
 <div class="stats">
@@ -517,6 +523,7 @@ page = (page.replace('__GEN__', e(d['generated'])).replace('__N__', str(len(F)))
         .replace('__ALLROWS__', ''.join(row(f) for f in F))
         .replace('__CONF__', e(', '.join('%s %d' % (k, v) for k, v in conf.most_common())))
         .replace('__NBOOK__', str(sum(1 for f in F if f.get('book')))).replace('__NCHAN__', str(len(F) - n_pb))
+        .replace('__SELF__', e(os.path.basename(OUT)))
         .replace('__NPB__', str(n_pb)).replace('__NPROD__', str(n_prod)).replace('__NPRODF__', str(n_prod_firms)).replace('__NPRODV__', str(n_prod_ver))
         .replace('__PCTRYOPTS__', ''.join('<option>%s</option>' % e(c) for c in pcountries)).replace('__PTYPEBOXES__', ptype_boxes).replace('__PMETALBOXES__', pmetal_boxes)
         .replace('__PTHEAD__', p_thead).replace('__PRODROWS__', ''.join(prow(x) for x in PRODS))
