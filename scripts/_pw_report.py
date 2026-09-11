@@ -353,17 +353,6 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 </div>
 <h1>Private Wealth Metals Map</h1>
 <p class="lede">Private banks and wealth managers worldwide: the metals products each puts in front of clients, and the bullion banks, custodians and refiners that sit behind those products. The question behind it: where can Citi supply, custody, finance or clear what a wealth manager is currently buying from someone else.</p>
-<div class="stats">
-<div class="stat"><b>__N__</b><span>firms covered</span></div>
-<div class="stat"><b>__NVER__</b><span>with web-verified evidence</span></div>
-<div class="stat"><b>__NTOP__</b><span>priority targets (score ≥ 7)</span></div>
-<div class="stat"><b>__NOUT__</b><span>reference bank not named</span></div>
-<div class="stat"><b>__NUND__</b><span>counterparty fully undisclosed</span></div>
-<div class="stat"><b>__NPB__</b><span>private-bank / wealth arms</span></div>
-<div class="stat"><b>__NPROD__</b><span>advertised products catalogued</span></div>
-<div class="stat"><b>__P2N__</b><span>enriched for size &amp; liquidity</span></div>
-<div class="stat"><b>__P2NOT__</b><span>with a public size figure</span></div>
-</div>
 <nav class="idx" aria-label="Contents">
   <span class="idx-h">Contents</span>
   <a href="#talk"><span class="idx-n">1</span>Talking points</a>
@@ -375,7 +364,6 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
   <a href="#all"><span class="idx-n">7</span>Every firm</a>
   <a href="#method"><span class="idx-n">8</span>Caveats</a>
 </nav>
-<div class="legend"><span><b class="c-y">Y</b> confirmed by the firm's own material</span><span><b class="c-yq">Y?</b> known, unconfirmed</span><span><b class="c-n">N</b> verified not offered</span><span><b class="c-u">?</b> unknown</span><span>Counterparty with <span class="cp-k"></span> = unverified</span><span>Score = franchise size × displaceability × no in-house bullion bank</span><span>Desk · size · liquidity column (firms scoring ≥ 6 only): <span class="tp-desk">in-house desk</span> / <span class="tp-pt">price-taker</span>; size band is an ESTIMATE from the best public figure; liquidity status <span class="lq-v">named-verified</span> / <span class="lq-k">named-knowledge</span> / <span class="lq-i">in-house</span> / <span class="lq-u">undisclosed</span></span></div>
 
 <section id="talk">
 <div class="sec-head"><h2>Talking points for the wealth business</h2><p>The products, competitor designs, what clients are buying, the largest positions by country, sizing and a potential shelf.</p></div>

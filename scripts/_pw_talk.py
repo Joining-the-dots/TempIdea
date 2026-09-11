@@ -193,13 +193,6 @@ S.append((4, 'A potential shelf', 'Three tiers. Each maps to a competitor produc
  (83, 'Tier 3 (yield and structured): gold-linked deposits and a gold DCI where a lease book funds the client yield; a standing gold autocall/reverse-convertible programme; a house strategic-allocation view implemented via a physically backed vehicle. Templates: CMB, Kuveyt Türk, CIMB Gold Convertible, HSBC China structured deposits, ANZ Private gold fund.', ''),
  (84, 'KPIs to set now: metal-account balances and account count by booking centre, physical delivered (kg), Lombard drawn against metal, structured-note issuance on XAU, share of PB clients holding any metal product.', '')], None))
 
-S.append((4, 'Risks and constraints', '', [
- (85, 'US tax: physical gold and grantor-trust ETFs are taxed as collectibles at 28%; IRA metal must sit at an approved depository. Design the US product around that (allocated at a depository, IRA-eligible).', ''),
- (86, 'Conduct: unallocated accounts are a claim on the bank, not metal; say so in the T&Cs (BEA\'s Gold Account brochure and HSBC\'s Wayfoong Statement Gold key facts do). Buy-back terms are worth setting deliberately, since they can change: OCBC Hong Kong withdrew bar buy-back in February 2026.', 'https://www.hkbea.com/pdf/en/pdf/account-services/Gold_Account_Principal_Brochure.pdf'),
- (87, 'Regulation: mainland China has restricted new paper-gold positions since 2022 and the restrictions have continued; Shariah products need an immediate-ownership structure such as the bai\' as-sarf contract Maybank\'s MIGA-i describes.', ''),
- (88, 'Operations: UOB moved its gold counters to appointment-only in February 2026 under demand; logistics and vault capacity are part of the product.', 'https://e.vnexpress.net/news/business/markets/uob-singapore-s-only-bank-selling-physical-gold-extends-hours-and-shifts-to-appointment-only-service-5039409.html'),
- (89, 'Conflicts: a large bank is often already fund-level custodian or note issuer for a peer\'s products (Citigroup Pty is fund custodian of Betashares QAU per its PDS, where JPMorgan holds the bullion; Citi issues gold-linked notes on the Wells Fargo shelf). Map those before any launch.', ''),
- (90, '45 of the 91 largest metals books name no liquidity provider.', '')], None))
 
 
 
@@ -248,7 +241,6 @@ ORDER = [
  ('One global franchise today, as the client sees it', 'One global franchise today, as the client sees it'),
  ('How big could it be',),
  ('A potential shelf', 'A potential shelf — strategic idea'),
- ('Risks and constraints',),
 ]
 _rank = {t: i for i, grp in enumerate(ORDER) for t in grp}
 S.sort(key=lambda x: _rank.get(x[1], 99))
