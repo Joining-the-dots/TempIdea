@@ -57,24 +57,24 @@
    "client_need": "Clients who want gold as protection rather than as a trade often want to own identified bars, not a claim on an institution. The motivation is usually insurance against a systemic event, so counterparty exposure is the thing they are trying to avoid.",
    "proposition": "An allocated precious-metals account: the client owns specified bars or a pro-rata share of a pool in a named vault, with a custody fee, a dealing spread, and the option to take delivery.",
    "example": {
-    "institution": "UBS",
-    "product": "key4 gold",
-    "detail": "Allocated gold bought in the app from 0.1 g, storage charged at 0.35% a year, tiered dealing fees, and delivery to the client by registered post.",
-    "url": "https://www.ubs.com/ch/en/key4banking/products/key4-gold.html",
-    "jurisdiction": "Switzerland",
+    "institution": "Intesa Sanpaolo",
+    "product": "Deposito Oro",
+    "detail": "Numbered bars from 50 g plaquettes up to Good Delivery size, refined by an LBMA refiner, held segregated and insured in the bank's own vaults under a formal deposit contract, with custody at 0.75% a year.",
+    "url": "https://www.intesasanpaolo.com/",
+    "jurisdiction": "Italy",
     "tag": "FACT"
    },
    "example2": {
-    "institution": "JPMorgan Private Bank",
-    "product": "gold held in its own vault",
-    "detail": "Unallocated claims reported from around USD 250,000 and allocated 400 oz bars from around USD 1m, plus storage and insurance.",
-    "url": "https://privatebank.jpmorgan.com/",
-    "jurisdiction": "United States",
-    "tag": "INTERPRETATION"
+    "institution": "UBS",
+    "product": "key4 gold",
+    "detail": "The convenient version of the same idea, but note the difference: key4 gold is COLLECTIVE custody, not allocated to identified bars. Bought in the app from 0.1 g, custody 0.35% a year, dealing 1.4% falling to 0.9%, delivery available, Swiss-domiciled non-US persons only.",
+    "url": "https://www.ubs.com/ch/en/key4banking.html",
+    "jurisdiction": "Switzerland",
+    "tag": "FACT"
    },
    "commercial": "Recurring custody income on a balance that tends to be held for years rather than traded, plus the dealing spread on entry and exit. It also anchors assets: metal in the bank's own vault is materially harder for a client to move than a fund holding. INTERPRETATION, not a revenue estimate.",
-   "tradeoff": "It is the most operationally demanding option on the list. It needs vault capacity, insurance, an audit trail per bar and a delivery route, and the economics only work at scale or at a premium price point.",
-   "vs_etf": "An exchange-traded fund gives price exposure but the client owns units in a fund, not metal, and cannot take delivery. Allocated custody is what a client is buying when the point of the holding is to not depend on anyone's balance sheet.",
+   "tradeoff": "The most operationally demanding option: vault capacity, insurance, a per-bar audit trail and a delivery route, and the economics only work at scale or at a premium price. The distinction that matters commercially is allocated versus collective custody. Several products marketed as physical gold, including UBS key4 gold, are collective, which is cheaper to run but is not the same promise as title to identified bars.",
+   "vs_etf": "A fund gives price exposure but the client owns units, not metal, and cannot take delivery. Allocated custody is what a client is buying when the point of the holding is not to depend on anyone's balance sheet. Collective custody sits between the two and should be described as such.",
    "angle": "If a client wants gold because they distrust the system, does a fund unit answer the question they are actually asking?"
   },
   {
@@ -138,11 +138,11 @@
    "client_need": "A client who has held metal through a rally faces a tax event and the loss of the hedge if they sell. What they usually want is cash, not an exit.",
    "proposition": "Lending secured on bullion, on a metal account or on metal funds, at a published advance rate, inside the existing Lombard framework.",
    "example": {
-    "institution": "Money Metals",
-    "product": "bullion-backed lending",
-    "detail": "A US lender advancing up to 65% against stored bullion; among the few published advance rates in the catalogue.",
-    "url": "https://www.moneymetals.com/gold-loans",
-    "jurisdiction": "United States",
+    "institution": "Saxo Bank",
+    "product": "published collateral values",
+    "detail": "One of the few lenders publishing a schedule: collateral value by instrument rating, 75% at the highest rating down to zero at the lowest. It is a rating table rather than a gold-specific advance rate, which is itself the point: published advance rates against metal are rare.",
+    "url": "https://www.home.saxo/",
+    "jurisdiction": "Denmark and international",
     "tag": "FACT"
    },
    "example2": {
@@ -153,8 +153,8 @@
     "jurisdiction": "Australia",
     "tag": "FACT"
    },
-   "commercial": "Net interest income on a well-secured, liquid, daily-priced asset, plus the retention effect of a client who no longer needs to sell. Rare among UK and US banks in this catalogue, which is what makes it a differentiator rather than a match. INTERPRETATION.",
-   "tradeoff": "It is a leveraged long position in the form of a loan. A drawdown triggers a margin call, collateral can be sold to meet it, and cross-collateralisation can pull the metal into a shortfall elsewhere. Advance rates, margin triggers and the liquidation route have to be explicit before this is offered.",
+   "commercial": "Net interest income on a well-secured, liquid, daily-priced asset, plus the retention effect of a client who no longer needs to sell. Rare among UK and US banks in this catalogue, so it differentiates rather than matches. INTERPRETATION.",
+   "tradeoff": "It is a leveraged long position in the form of a loan. A drawdown triggers a margin call, collateral can be sold to meet it, and cross-collateralisation can pull the metal into a shortfall elsewhere. Advance rates are rarely published, so the number a client is quoted is negotiated rather than listed, and the margin trigger and liquidation route matter more than the headline rate.",
    "vs_etf": "Not an either/or: fund units are often the easier collateral because they are exchange-priced and simple to sell. The proposition matters most for clients holding allocated metal, which is harder to pledge without a custody arrangement that contemplates it.",
    "angle": "Our client has doubled their gold position and now needs cash. What do we offer them other than a sale?"
   },
@@ -194,7 +194,7 @@
    "example": {
     "institution": "HSBC",
     "product": "Gold Token",
-    "detail": "An SFC-authorised retail product in Hong Kong trading in units of 0.001 troy ounces, with no dealing or storage fee but a bank margin of up to 2%, or 5% outside local hours, no delivery right, and the bullion vaulted in London. More than USD 1bn had traded by November 2025.",
+    "detail": "An SFC-authorised retail product in Hong Kong trading in units of 0.001 troy ounces. There is no explicit fee; HSBC takes a margin capped at 2% during local hours and 5% outside them. There is no right to take physical delivery at any time. The bullion is held loco London at HSBC Bank plc vault premises in England and Wales.",
     "url": "https://www.hsbc.com.hk/investments/products/gold-token/",
     "jurisdiction": "Hong Kong",
     "tag": "FACT"
@@ -208,7 +208,7 @@
     "tag": "FACT"
    },
    "commercial": "The margin is embedded in the price rather than charged as a fee, which is how the headline reads as free. It also reaches clients who would not open a metals account, and the volume figures competitors publish suggest the engagement is real. INTERPRETATION.",
-   "tradeoff": "Requires regulatory authorisation as a retail product, a ledger, and a clear answer on what the token is a claim on. The Hong Kong design has no delivery right at all, which makes it a dealing product rather than an ownership product despite the name.",
+   "tradeoff": "Requires authorisation as a retail product, a ledger, and a clear answer on what the token is a claim on. The Hong Kong design carries no delivery right at all, which makes it a dealing product rather than an ownership product despite the name. The widely quoted volume figure (more than USD 1bn by November 2025) comes from a press statement rather than a product disclosure, so it should be cited as such.",
    "vs_etf": "Continuous dealing, far smaller units, and settlement inside the bank rather than through an exchange. Against that, a listed fund has transparent secondary pricing while a token's price is the bank's own.",
    "angle": "Is our answer to a client who wants to buy fifty pounds of gold at midnight a token, an account, or nothing?"
   },
