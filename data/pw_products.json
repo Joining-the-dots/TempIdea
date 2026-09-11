@@ -651,7 +651,7 @@
    "url": "https://www.reisebank.de/goldsparplan/",
    "quote": "Mit unserem Goldsparplan investieren Sie kontinuierlich in physisches Gold und bauen Stück für Stück eine Rücklage auf.",
    "confidence": "verified",
-   "notes": "Client can alternatively keep saving or sell back at market rate. Reisebank reported >70% jump in metals trading H1-2026 (Bloomberg 2026-05-18).",
+   "notes": "Client can alternatively keep saving or sell back at market rate. Reisebank reported >70% jump in metals trading H1-2026.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -738,7 +738,7 @@
    "pricing_basis": "bank's daily price referenced to international bullion market + import duty/GST",
    "shariah": "n/a",
    "url": "https://www.hdfcbank.com/personal/resources/learning-centre/invest/change-the-way-you-buy-gold-this-dhanteras",
-   "quote": "HDFC Bank offers gold bars of 24 Karat purity in denominations from 5 grams to 100 grams ... Mudra Pure Gold Bars ... imported from Switzerland ... 99.99% purity",
+   "quote": "HDFC Bank offers gold bars of 24 Karat purity in denominations from 5 grams to 100 grams... Mudra Pure Gold Bars... imported from Switzerland... 99.99% purity",
    "confidence": "verified",
    "notes": "Also distributes the BIS-hallmarked MMTC Indian Gold Coin (5/10/20g) since 2016. PAN mandatory above INR 50,000; bank does not buy back.",
    "ref_bank_status": "reference bank not named"
@@ -798,7 +798,7 @@
    "pricing_basis": "domestic gold price (LBMA AM fix converted to INR + customs duty/GST, per SEBI valuation)",
    "shariah": "n/a",
    "url": "https://groww.in/mutual-funds/hdfc-gold-etf-fund-of-fund-direct-plan-growth",
-   "quote": "HDFC Gold ETF Fund of Fund ... invests in units of HDFC Gold ETF",
+   "quote": "HDFC Gold ETF Fund of Fund... invests in units of HDFC Gold ETF",
    "confidence": "knowledge",
    "notes": "HDFC AMC temporarily restricted lump-sum inflows into the Gold ETF FoF in 2025-26 amid the gold rally; own HDFC Silver ETF launched 2022.",
    "ref_bank_status": "reference bank not named"
@@ -1092,7 +1092,7 @@
    "url": "https://www.bankbsi.co.id/news-update/berita/penjualan-emas-bsi-tembus-2-ton-nasabah-nikmati-kenaikan-harga",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Bullion-bank activities = gold savings, gold deposit, gold financing, gold trading, custody (Antara/Kompas).",
+   "notes": "Bullion-bank activities = gold savings, gold deposit, gold financing, gold trading, custody.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -1119,7 +1119,7 @@
    "pricing_basis": "BSI's own two-way price referenced to Antam/global spot",
    "shariah": "Y",
    "url": "https://www.bankbsi.co.id/promo/cara-memulai-tabungan-emas-untuk-pemula-step-by-step",
-   "quote": "BSI Emas ... membeli emas melalui tabungan melalui aplikasi BYOND by BSI dengan pembukaan rekening mulai dari 0,02 gram atau setara Rp50.000",
+   "quote": "BSI Emas... membeli emas melalui tabungan melalui aplikasi BYOND by BSI dengan pembukaan rekening mulai dari 0,02 gram atau setara Rp50.000",
    "confidence": "verified",
    "notes": "767k gold-savings customers, 22.5t gold under management Feb-2026 (bullion bank licensed Feb-2025 under Law 4/2023 + POJK 17/2024).",
    "ref_bank_status": "reference bank not named"
@@ -2360,7 +2360,7 @@
    "pricing_basis": "bank's daily price referenced to international market",
    "shariah": "n/a",
    "url": "https://www.axisbank.com/docs/default-source/default-document-library/find-branches-selling-gold-bars.pdf?sfvrsn=0",
-   "quote": "Gold Mohurs ... 99.99% pure with a 24 karat grade with Assay certification ... denominations 2|5|8|10|20|50|100 grams",
+   "quote": "Gold Mohurs... 99.99% pure with a 24 karat grade with Assay certification... denominations 2|5|8|10|20|50|100 grams",
    "confidence": "verified",
    "notes": "",
    "ref_bank_status": "reference bank named (legacy vendor of the wealth franchise); Citi India institutional relationship retained"
@@ -2690,7 +2690,7 @@
    "pricing_basis": "bank's own two-way price",
    "shariah": "n/a",
    "url": "https://www.lgt.com/ch-en/publications/private-banking-and-banking-services/accounts-cards-and-conditions",
-   "quote": "We can securely store precious metals and coins ... Silver, gold, platinum and palladium ... coins such as Goldvreneli or Krügerrand",
+   "quote": "We can securely store precious metals and coins... Silver, gold, platinum and palladium... coins such as Goldvreneli or Krügerrand",
    "confidence": "verified",
    "notes": "Client brochure 'Radiant assets – Precious metals for investing, gifting, and collecting' (PDF, EN/DE, dated 1 Aug 2018) linked behind a domicile-select gate.",
    "ref_bank_status": "unknown"
@@ -3165,7 +3165,7 @@
    "pricing_basis": "bank's own two-way price",
    "shariah": "n/a",
    "url": "https://www.juliusbaer.com/international/en/our-solutions/investing/other-solutions-and-products/foreign-exchange-and-precious-metals/",
-   "quote": "offering for gold, silver, platinum, and palladium includes leveraged trading, as well as access to derivatives and the physical market ... segregated and global custody in its own vaults",
+   "quote": "offering for gold, silver, platinum, and palladium includes leveraged trading, as well as access to derivatives and the physical market... segregated and global custody in its own vaults",
    "confidence": "verified",
    "notes": "Quote from search index (page 403 on fetch).",
    "ref_bank_status": "reference bank not named"
@@ -3737,7 +3737,7 @@
    "pricing_basis": "ASX-listed ETF prices",
    "shariah": "n/a",
    "url": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/anz-investment-lending-approved-stocks.pdf",
-   "quote": "ETFS Metals. - ETFS GOLD ... GLOBAL X PHYSICAL PRECIOUS METAL BASK ... BetaShares Gold ETF - ETF Units",
+   "quote": "ETFS Metals. - ETFS GOLD... GLOBAL X PHYSICAL PRECIOUS METAL BASK... BetaShares Gold ETF - ETF Units",
    "confidence": "verified",
    "notes": "List date 01-Mar-2023 (may be stale); PMGOLD and NUGG not seen in the parsed rows. State Street Gold Fund (SST4481AU) is NOT on the Mar-2023 approved managed funds list (pre-dates fund launch).",
    "src": "anz.json",
@@ -4150,7 +4150,7 @@
    "pricing_basis": "Linked to GLD and GDX performance",
    "shariah": "n/a",
    "url": "https://finance.sina.com.cn/jjxw/2026-01-20/doc-inhhyfuv7355998.shtml",
-   "quote": "汇丰中国 ... 盈转流动 ... 挂钩 SPDR Gold Trust 和 VanEck Vectors Gold Miners ETF ... 6个月 ... 年化票息7.2% ... 触发水平103%",
+   "quote": "汇丰中国... 盈转流动... 挂钩 SPDR Gold Trust 和 VanEck Vectors Gold Miners ETF... 6个月... 年化票息7.2%... 触发水平103%",
    "confidence": "verified",
    "notes": "Structured deposits page on hsbc.com.cn lists series (Hui/Ying/Feng/Chuang) but not underlyings; gold underlyings confirmed by Sina/Time Weekly reporting.",
    "src": "hsbc_asia.json",
@@ -4180,7 +4180,7 @@
    "pricing_basis": "Linked to gold-mining equities",
    "shariah": "n/a",
    "url": "https://finance.sina.com.cn/jjxw/2026-01-20/doc-inhhyfuv7355998.shtml",
-   "quote": "追踪紫金矿业、纽蒙特黄金、巴里克黄金 ... 3年期 ... 年化票息4.5% ... 最低投资2万美元",
+   "quote": "追踪紫金矿业、纽蒙特黄金、巴里克黄金... 3年期... 年化票息4.5%... 最低投资2万美元",
    "confidence": "verified",
    "notes": "",
    "src": "hsbc_asia.json",
@@ -4513,7 +4513,7 @@
    "pricing_basis": "Loco London USD/oz x USD/HKD; bank-set",
    "shariah": "n/a",
    "url": "https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/investments/gold-price-trading/wayfoong-statement-gold-product-key-fact-statement.pdf",
-   "quote": "One mace of the benchmark asset is equal to 0.11913 troy ounce ... the Bank's trading spread will not exceed 4% of the average of the Bank sell price and the Bank buy price",
+   "quote": "One mace of the benchmark asset is equal to 0.11913 troy ounce... the Bank's trading spread will not exceed 4% of the average of the Bank sell price and the Bank buy price",
    "confidence": "verified",
    "notes": "'Wayfoong' = HSBC's Chinese name. Units held are included in Premier/Premier Elite relationship-balance calculation.",
    "src": "hsbc_asia.json",
@@ -4543,9 +4543,9 @@
    "pricing_basis": "Weight x USD gold price x bank FX x (1 +/- margin)",
    "shariah": "n/a",
    "url": "https://www.hsbc.com.hk/content/dam/hsbc/hk/docs/investments/gold-token/principal-brochure.pdf",
-   "quote": "You will be able to obtain Fractional Ownership of physical Gold in an allocated form ... stored in the vault premises of HSBC Bank plc in England and Wales.",
+   "quote": "You will be able to obtain Fractional Ownership of physical Gold in an allocated form... stored in the vault premises of HSBC Bank plc in England and Wales.",
    "confidence": "verified",
-   "notes": "Press in Nov-2025 (Caixin) says 'since its March 2024 launch'; some sources say June 2024 go-live. Structurally superior to WSG (allocated, insured, bankruptcy-remote via Disposal Agent) but wider spread than WSG's typical quote.",
+   "notes": "Press in Nov-2025 says 'since its March 2024 launch'; some sources say June 2024 go-live. Structurally superior to WSG (allocated, insured, bankruptcy-remote via Disposal Agent) but wider spread than WSG's typical quote.",
    "src": "hsbc_asia.json",
    "ref_bank_status": "reference bank not named"
   },
@@ -4633,7 +4633,7 @@
    "pricing_basis": "Weight x USD gold price x bank FX x (1 +/- Bank Margin)",
    "shariah": "n/a",
    "url": "https://www.hsbc.com.hk/investments/products/gold-token/",
-   "quote": "Each HSBC Gold Token represents the Fractional Ownership record of 0.001 troy ounce of Loco London gold ... stored in the vault premises of HSBC Bank plc in England and Wales.",
+   "quote": "Each HSBC Gold Token represents the Fractional Ownership record of 0.001 troy ounce of Loco London gold... stored in the vault premises of HSBC Bank plc in England and Wales.",
    "confidence": "verified",
    "notes": "GPB-specific take-up not disclosed; product is retail-designed and eligibility is by HK investment account, so PB clients can hold it (knowledge).",
    "src": "hsbc_asia.json",
@@ -4697,7 +4697,7 @@
    "pricing_basis": "OTC, HSBC Markets",
    "shariah": "n/a",
    "url": "https://www.hsbc.com.hk/premier-elite/wealth/structured-products/",
-   "quote": "customisable structured products among their diverse asset classes ... structured product revenue growing year-on-year by strong double-digit percentages.",
+   "quote": "customisable structured products among their diverse asset classes... structured product revenue growing year-on-year by strong double-digit percentages.",
    "confidence": "knowledge",
    "notes": "Public pages confirm structured products; gold as underlying is inferred (standard on HSBC's Asia shelf). Asian Private Banker: HSBC added new structured-product issuers in HK.",
    "src": "hsbc_asia.json",
@@ -4759,7 +4759,7 @@
    "pricing_basis": "n/a",
    "shariah": "n/a",
    "url": "https://hsbc.com.hk/jade/wealth/investment-financing",
-   "quote": "Lombard lending and real estate financing ... lending against concentrated equity positions",
+   "quote": "Lombard lending and real estate financing... lending against concentrated equity positions",
    "confidence": "knowledge",
    "notes": "Lombard verified.",
    "src": "hsbc_asia.json",
@@ -5367,7 +5367,7 @@
    "pricing_basis": "LBMA Gold Price",
    "shariah": "n/a",
    "url": "https://wwt.llb.li/de/die-llb/medien/medienmitteilungen/medienmitteilungen/2020/medienmitteilung-goldfonds",
-   "quote": "The gold is physically stored in vaults of LLB in Vaduz ... On request, the gold can also be physically obtained in 1-kilo units",
+   "quote": "The gold is physically stored in vaults of LLB in Vaduz... On request, the gold can also be physically obtained in 1-kilo units",
    "confidence": "verified",
    "notes": "Launched 2020; ISIN LI0547244512 (finanzfluss). Quote from search index of the press release.",
    "ref_bank_status": "unknown"
@@ -5396,7 +5396,7 @@
    "pricing_basis": "Bank discretion referencing XAU price and USD/MYR",
    "shariah": "n/a (conventional; not offered via Amanah)",
    "url": "https://www.hsbc.com.my/accounts/products/gold/",
-   "quote": "1 GLD unit represents 0.1 unit of XAU ... No physical deposit or withdrawal of gold ... made available through the HSBC Bank branch network only.",
+   "quote": "1 GLD unit represents 0.1 unit of XAU... No physical deposit or withdrawal of gold... made available through the HSBC Bank branch network only.",
    "confidence": "verified",
    "notes": "Counter-only, no digital channel - operationally dated versus Maybank/CIMB/Public Bank e-gold.",
    "src": "hsbc_asia.json",
@@ -5426,7 +5426,7 @@
    "pricing_basis": "bank's daily two-way price",
    "shariah": "N",
    "url": "https://www.pbebank.com/en/invest/gold-egold-investment-account/",
-   "quote": "Invest in gold without having to keep the gold physically ... 99.99% fineness gold purchases at daily prices in Ringgit Malaysia",
+   "quote": "Invest in gold without having to keep the gold physically... 99.99% fineness gold purchases at daily prices in Ringgit Malaysia",
    "confidence": "verified",
    "notes": "Not protected by PIDM; T&C at https://www.pbebank.com/media/fs4fcx2y/gia-tc-en.pdf.",
    "ref_bank_status": "reference bank not named"
@@ -6440,7 +6440,7 @@
    "pricing_basis": "bank's own two-way price",
    "shariah": "n/a",
    "url": "https://www.raiffeisen.ch/rch/de/privatkunden/anlegen/edelmetalle/metallkonto.html",
-   "quote": "Auf einem Metallkonto verwalten wir für Sie gängige Edelmetalle ... Physische Edelmetalle können Sie bei uns einliefern",
+   "quote": "Auf einem Metallkonto verwalten wir für Sie gängige Edelmetalle... Physische Edelmetalle können Sie bei uns einliefern",
    "confidence": "verified",
    "notes": "Physical delivery of a balance is generally VAT-liable except gold.",
    "ref_bank_status": "reference bank not named"
@@ -6501,7 +6501,7 @@
    "pricing_basis": "LBMA Gold Price",
    "shariah": "n/a",
    "url": "https://www.raiffeisen.ch/rch/de/privatkunden/anlegen/anlagefonds/etf-solid-gold.html",
-   "quote": "Die Fonds investieren ausschliesslich in physisches Gold ... Die Gold-Anlagen werden im Tresor von Raiffeisen Schweiz aufbewahrt",
+   "quote": "Die Fonds investieren ausschliesslich in physisches Gold... Die Gold-Anlagen werden im Tresor von Raiffeisen Schweiz aufbewahrt",
    "confidence": "verified",
    "notes": "ISINs CH0134034864 / CH0134034930 / CH1122756740.",
    "ref_bank_status": "reference bank not named"
@@ -6533,7 +6533,7 @@
    "pricing_basis": "spot with tier-dependent spread (gold quality 995)",
    "shariah": "n/a",
    "url": "https://www.swissquote.com/en-ch/private/trade/products/gold",
-   "quote": "The gold you purchase with your Swissquote account is called unallocated ... XAU and XAG positions are 100% backed by physical gold/silver in the form of bars held by Swissquote",
+   "quote": "The gold you purchase with your Swissquote account is called unallocated... XAU and XAG positions are 100% backed by physical gold/silver in the form of bars held by Swissquote",
    "confidence": "verified",
    "notes": "'Gold may not be transferred' and positions 'do not grant the clients any right to physical delivery'.",
    "ref_bank_status": "unknown (Citi is a leading eFX LP — likely already an FX counterparty)"
@@ -7425,7 +7425,7 @@
    "pricing_basis": "LBMA/XAU spot fixings per term sheet",
    "shariah": "n/a",
    "url": "https://www.sc.com/je/priority/wealth-investment/",
-   "quote": "Structured Products ... exposure to equities, currencies, interest rates, credit, indices, and commodities",
+   "quote": "Structured Products... exposure to equities, currencies, interest rates, credit, indices, and commodities",
    "confidence": "verified",
    "notes": "Existence verified; gold-specific term sheets not retrieved. Issuer typically Standard Chartered Bank or third-party issuers.",
    "src": "scb.json",
@@ -8268,7 +8268,7 @@
    "pricing_basis": "domestic gold price (SEBI valuation)",
    "shariah": "n/a",
    "url": "https://www.business-standard.com/amp/markets/mutual-fund/360-one-gold-etf-nfo-opens-check-key-details-this-open-ended-fund-here-125022000573_1.html",
-   "quote": "360 ONE Gold ETF NFO ... tracks domestic prices of gold ... investing at least 95 per cent of its total assets in gold or gold-related instruments",
+   "quote": "360 ONE Gold ETF NFO... tracks domestic prices of gold... investing at least 95 per cent of its total assets in gold or gold-related instruments",
    "confidence": "verified",
    "notes": "",
    "ref_bank_status": "reference bank not named"
@@ -8382,7 +8382,7 @@
    "pricing_basis": "MMTC daily price",
    "shariah": "n/a",
    "url": "https://www.gold.org/news-and-events/press-releases/research-indicates-indian-consumers-preference-indian-gold-coin",
-   "quote": "Indian Gold Coin is currently available at select branches of ... Indian Overseas Bank, Federal Bank, Vijaya Bank and Yes Bank",
+   "quote": "Indian Gold Coin is currently available at select branches of... Indian Overseas Bank, Federal Bank, Vijaya Bank and Yes Bank",
    "confidence": "knowledge",
    "notes": "",
    "ref_bank_status": "reference bank not named"
@@ -9486,7 +9486,7 @@
    "pricing_basis": "bank's own two-way price",
    "shariah": "n/a",
    "url": "https://www.ubp.com/files/live/sites/ubp/files/documents/legal/documentation/LU_PT_fee%20schedule_EN.pdf",
-   "quote": "precious metals in the form of physical deposits and metals accounts ... Precious Metals Custody Service through Metals Accounts",
+   "quote": "precious metals in the form of physical deposits and metals accounts... Precious Metals Custody Service through Metals Accounts",
    "confidence": "verified",
    "notes": "Quote from search index of UBP documents (annual report / fee schedule).",
    "ref_bank_status": "unknown"
@@ -9639,7 +9639,7 @@
    "pricing_basis": "ZKB own price incl. Fairtrade premium",
    "shariah": "n/a",
    "url": "https://www.zkb.ch/de/lps/private/anlegen/fairtrade-gold.html",
-   "quote": "Fairtrade gold bars from 1 to 20 grams ... order ... by phone at tel. 0844 850 860 and pick them up at your local branch",
+   "quote": "Fairtrade gold bars from 1 to 20 grams... order... by phone at tel. 0844 850 860 and pick them up at your local branch",
    "confidence": "verified",
    "notes": "Offered since 2015.",
    "ref_bank_status": "reference bank not named"
@@ -9701,7 +9701,7 @@
    "pricing_basis": "LBMA Gold Price",
    "shariah": "n/a",
    "url": "https://www.swisscanto.com/ch/de/private/swisscanto-fonds/etfs/edelmetall-etf.html",
-   "quote": "invests only in physical gold, which is safely stored in the vault of Zürcher Kantonalbank ... the deposited gold can be delivered",
+   "quote": "invests only in physical gold, which is safely stored in the vault of Zürcher Kantonalbank... the deposited gold can be delivered",
    "confidence": "verified",
    "notes": "First gold ETF in Europe (2006); ZKB Gold ETF AA CHF ISIN CH0139101593 (products.swisscanto.com). Quote from search index.",
    "ref_bank_status": "reference bank not named"
@@ -11964,7 +11964,7 @@
    "pricing_basis": "BCV own price (métaux précieux page)",
    "shariah": "n/a",
    "url": "https://www.bcv.ch/fr/home/private-banking/produits/plaquettes-et-lingots.html",
-   "quote": "L'or Fairtrade est disponible dans nos agences ... prime Fairtrade de USD 2'000 par kilogramme",
+   "quote": "L'or Fairtrade est disponible dans nos agences... prime Fairtrade de USD 2'000 par kilogramme",
    "confidence": "verified",
    "notes": "ESG gold flyer: https://www.bcv.ch/content/dam/bcv/brochure---flyer/44-409_Flyer-_Or-ESG-web.pdf.",
    "ref_bank_status": "unknown"
@@ -12057,7 +12057,7 @@
    "pricing_basis": "bank's own two-way price",
    "shariah": "n/a",
    "url": "https://www.cler.ch/de/privatkunden/anlegen/edelmetallkonto",
-   "quote": "Edelmetallkonten werden ausschliesslich buchhalterisch geführt ... Eine physische Auslieferung der Edelmetalle ist nicht möglich.",
+   "quote": "Edelmetallkonten werden ausschliesslich buchhalterisch geführt... Eine physische Auslieferung der Edelmetalle ist nicht möglich.",
    "confidence": "verified",
    "notes": "",
    "ref_bank_status": "unknown"
@@ -14181,7 +14181,7 @@
    "pricing_basis": "bank's own two-way price",
    "shariah": "n/a",
    "url": "https://www.migrosbank.ch/de/privatpersonen/anlegen/anlageinstrumente/edelmetalle-metallkonto.html",
-   "quote": "1 Kilo gold bar (999.9): CHF 113,870.00 ... 1 Ounce gold (999.9): CHF 3,541.50",
+   "quote": "1 Kilo gold bar (999.9): CHF 113,870.00... 1 Ounce gold (999.9): CHF 3,541.50",
    "confidence": "verified",
    "notes": "",
    "ref_bank_status": "unknown"
@@ -14213,7 +14213,7 @@
    "pricing_basis": "bank's own two-way price",
    "shariah": "n/a",
    "url": "https://www.ubs.com/microsites/credit-suisse/de/private-clients/download-center/_jcr_content/root/contentarea/mainpar/toplevelgrid_1522634695/col_1/accordion/accordionsplit_767398076/linklistnewlook/link_1951277448.0970236479.file/PS9jb250ZW50L2RhbS9hc3NldHMvbWljcm9zaXRlcy9jcmVkaXQtc3Vpc3NlL2RvY3VtZW50cy9wcml2YXRlLWNsaWVudHMvbWV0YWxsa29udG8tZGUucGRm/metallkonto-de.pdf",
-   "quote": "Gold (XAU), Silber (XAG), Platin (XPT), Palladium (XPD) ... 0.80% p.a. ... Minimum CHF 100 p.a.",
+   "quote": "Gold (XAU), Silber (XAG), Platin (XPT), Palladium (XPD)... 0.80% p.a.... Minimum CHF 100 p.a.",
    "confidence": "verified",
    "notes": "The direct PDF fetch returned 0 bytes, so treat the 0.80% as indexed-not-read. The UBS 'Services and prices for private clients' PDF (valid 1 Apr 2026) also lists precious-metal account fees but could not be parsed.",
    "ref_bank_status": "reference bank not named (UBS is a direct peer/competitor bullion bank; fellow LPMCL member)"
@@ -14242,7 +14242,7 @@
    "pricing_basis": "UBS own two-way price (gold of an LBMA-certified producer, fineness >= 0.995)",
    "shariah": "n/a",
    "url": "https://www.ubs.com/ch/de/services/investments/products/ubs-gold.html",
-   "quote": "With UBS key4 gold: you own physical gold ... your gold is stored in a secure UBS vault ... Das Gold gehört Ihnen und nicht UBS",
+   "quote": "With UBS key4 gold: you own physical gold... your gold is stored in a secure UBS vault... Das Gold gehört Ihnen und nicht UBS",
    "confidence": "verified",
    "notes": "Launched Nov-2021 (Handelsblatt). FAQ page https://www.ubs.com/ch/de/help/mobile-banking/ubs-gold.html gives the fee grid; access disabled if domicile moves abroad; delivery by registered post 2–5 days.",
    "ref_bank_status": "reference bank not named (UBS is a direct peer/competitor bullion bank; fellow LPMCL member)"
@@ -14634,7 +14634,7 @@
    "url": "https://privatebank.jpmorgan.com/nam/en/insights/markets-and-investing/is-it-a-golden-era-for-gold",
    "quote": "Some prefer to hold the physical metal and invest in bars, coins and claims linked to individually numbered bars.",
    "confidence": "verified",
-   "notes": "CNBC (Jul-2025) reported JPM PB recommending unallocated gold held in JPM's vault to clients; the insights page confirms the physical route but not fee terms.",
+   "notes": "JPMorgan Private Bank offers clients unallocated gold held in its own vault; the physical route is confirmed on its insights page, the fee terms are not published.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -17012,7 +17012,7 @@
    "pricing_basis": "LBMA Gold Price reference",
    "shariah": "n/a",
    "url": "https://aminagroup.com/individuals/investments/amina-gold-token/",
-   "quote": "Fully regulated under Swiss banking law ... 100% gold-backed ... flexible access to gold starting with 1 gram per AGT",
+   "quote": "Fully regulated under Swiss banking law... 100% gold-backed... flexible access to gold starting with 1 gram per AGT",
    "confidence": "verified",
    "notes": "ERC-20 on Ethereum; launched as SEBA Gold Token 2021/23.",
    "ref_bank_status": "reference bank not named"
