@@ -105,6 +105,28 @@ def p2detail(f):
     return ''.join(out)
 
 
+
+BOOK_LABEL = {'metal_exposure': 'Metal exposure', 'other_banks': 'Banks already named', 'our_bank_status': 'Our status',
+              'our_bank_detail': 'Our relationship', 'hedging_posture': 'Hedging posture', 'gold_deposit_leasing': 'Gold deposit / leasing',
+              'financing_archetype': 'Financing archetype', 'one_line_pitch': 'Desk pitch', 'opportunities': 'Opportunities',
+              'lead_score': 'Book lead score', 'venue': 'Venue', 'basis': 'Basis', 'loco': 'Loco', 'ticker': 'Ticker',
+              'desk_decision': 'Desk decision', 'mandate': 'Mandate', 'blockers': 'Blockers', 'jurisdiction': 'Jurisdiction'}
+
+
+def bookdetail(f):
+    b = f.get('book') or {}
+    if not b: return ''
+    kind = 'group / parent record' if b.get('_parent_record') else 'entity match'
+    if b.get('_grouped'): kind += ', against a grouped row'
+    out = ['<h4>Already in the desk book</h4>',
+           '<p class="mute">Matched to <b>%s</b> in the main lead book (%s, confidence %s). Everything below is what the desk already holds on this name.</p>'
+           % (e(b.get('_match_name', '')), e(kind), e(b.get('_match_score', '')))]
+    rows = [(BOOK_LABEL.get(k, k), v) for k, v in b.items() if not k.startswith('_') and v not in (None, '', [], {})]
+    if rows:
+        out.append('<dl class="kv">' + ''.join('<dt>%s</dt><dd>%s</dd>' % (e(k), e(str(v)[:600])) for k, v in rows) + '</dl>')
+    return ''.join(out)
+
+
 def detail(f):
     p = f['products']
     parts = ['<div class="det">']
@@ -280,6 +302,15 @@ td.sc{text-align:center;font-weight:500}
 td.p2{min-width:150px;max-width:210px;font-size:12.5px;line-height:1.35}
 .ptype{display:inline-block;font:600 11px/1.2 "Source Sans 3",sans-serif;letter-spacing:.03em;padding:3px 7px;border-radius:3px;background:var(--gold-bg);color:var(--gold);white-space:nowrap}
 .pbtog{display:inline-flex;gap:6px;align-items:center;font-size:14px;cursor:pointer}
+.idx{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:2px 22px;margin:18px 0 6px;
+     padding:14px 18px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)}
+.idx-h{grid-column:1/-1;font:600 11px/1 "Source Sans 3",sans-serif;text-transform:uppercase;
+       letter-spacing:.09em;color:var(--mute);margin-bottom:4px}
+.idx a{display:flex;gap:9px;align-items:baseline;text-decoration:none;color:var(--ink);
+       font-weight:600;font-size:14.5px;padding:4px 0}
+.idx a:hover{color:var(--blue);text-decoration:underline}
+.idx-n{min-width:1.2em;text-align:right;color:var(--mute);font-weight:500;font-variant-numeric:tabular-nums}
+section{scroll-margin-top:14px}
 #prod-t td{font-size:13.5px}
 .tp-desk{color:var(--green);font-weight:600}.tp-pt{color:var(--amber);font-weight:600}.tp-dist{color:var(--mute);font-weight:600}.tp-no{color:var(--red);font-weight:600}
 .lq-v{color:var(--green);font-weight:600}.lq-k{color:var(--amber);font-weight:600}.lq-i{color:var(--blue);font-weight:600}.lq-u{color:var(--red);font-weight:600}.lq-na{color:var(--mute)}
@@ -328,11 +359,37 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 <div class="stat"><b>__P2N__</b><span>enriched for size &amp; liquidity</span></div>
 <div class="stat"><b>__P2NOT__</b><span>with a public size figure</span></div>
 </div>
+<nav class="idx" aria-label="Contents">
+  <span class="idx-h">Contents</span>
+  <a href="#talk"><span class="idx-n">1</span>Talking points</a>
+  <a href="#products"><span class="idx-n">2</span>Product catalogue</a>
+  <a href="#targets"><span class="idx-n">3</span>Where the gaps are</a>
+  <a href="#citi"><span class="idx-n">4</span>One global franchise</a>
+  <a href="#banks"><span class="idx-n">5</span>Who they work with</a>
+  <a href="#regions"><span class="idx-n">6</span>Regional read</a>
+  <a href="#all"><span class="idx-n">7</span>Every firm</a>
+  <a href="#method"><span class="idx-n">8</span>Method &amp; caveats</a>
+</nav>
 <div class="legend"><span><b class="c-y">Y</b> verified on the firm's own pages / prospectus</span><span><b class="c-yq">Y?</b> known, unverified</span><span><b class="c-n">N</b> verified not offered</span><span><b class="c-u">?</b> unknown</span><span>Counterparty with <span class="cp-k"></span> = unverified</span><span>Score = franchise size × displaceability × no in-house bullion bank</span><span>Desk · size · liquidity column (firms scoring ≥ 6 only): <span class="tp-desk">in-house desk</span> / <span class="tp-pt">price-taker</span>; size band is an ESTIMATE from the best public figure; liquidity status <span class="lq-v">named-verified</span> / <span class="lq-k">named-knowledge</span> / <span class="lq-i">in-house</span> / <span class="lq-u">undisclosed</span></span></div>
 
 <section id="talk">
 <div class="sec-head"><h2>Talking points for the wealth business</h2><p>A 45-minute run-sheet: uptake evidence, the products explained, who is winning by country, competitor designs, one franchise's shelf today, sizing, a potential shelf and the questions to expect.</p></div>
 __TALK__
+</section>
+
+<section id="products">
+<div class="sec-head"><h2>Product catalogue</h2><p>What the private-bank and wealth arms actually put in front of clients: __NPROD__ named products across __NPRODF__ firms (__NPRODV__ verified on the firm's own page). Institutional bullion-desk services are excluded. Click a row for the description in the firm's words, pricing basis and the page link.</p></div>
+<div class="controls">
+<input type="search" id="pq" placeholder="search product, firm, custody, fees…" aria-label="Search products">
+<select id="pfr" aria-label="Region"><option value="">all regions</option>__REGOPTS__</select>
+<select id="pfc" aria-label="Country"><option value="">all countries</option>__PCTRYOPTS__</select>
+<select id="pfs" aria-label="Segment"><option value="">any segment</option><option value="private">private-banking / HNW</option><option value="uhnw">UHNW / family office</option><option value="affluent">affluent / premier</option><option value="retail">retail</option></select>
+<select id="pfv" aria-label="Confidence"><option value="">any confidence</option><option value="verified">verified only</option></select>
+<button type="button" id="pclr">clear</button><span class="count" id="pcnt"></span>
+</div>
+<div class="boxes" id="ppt"><span class="mute">Type:</span>__PTYPEBOXES__</div>
+<div class="boxes" id="ppm"><span class="mute">Metal:</span>__PMETALBOXES__</div>
+<div class="tbl-wrap"><table id="prod-t"><thead>__PTHEAD__</thead><tbody>__PRODROWS__</tbody></table></div>
 </section>
 
 <section id="targets">
@@ -358,30 +415,15 @@ __TALK__
 <div class="regions">__REGIONS__</div>
 </section>
 
-<section id="products">
-<div class="sec-head"><h2>Product catalogue</h2><p>What the private-bank and wealth arms actually put in front of clients: __NPROD__ named products across __NPRODF__ firms (__NPRODV__ verified on the firm's own page). Institutional bullion-desk services are excluded. Click a row for the description in the firm's words, pricing basis and the page link.</p></div>
-<div class="controls">
-<input type="search" id="pq" placeholder="search product, firm, custody, fees…" aria-label="Search products">
-<select id="pfr" aria-label="Region"><option value="">all regions</option>__REGOPTS__</select>
-<select id="pfc" aria-label="Country"><option value="">all countries</option>__PCTRYOPTS__</select>
-<select id="pfs" aria-label="Segment"><option value="">any segment</option><option value="private">private-banking / HNW</option><option value="uhnw">UHNW / family office</option><option value="affluent">affluent / premier</option><option value="retail">retail</option></select>
-<select id="pfv" aria-label="Confidence"><option value="">any confidence</option><option value="verified">verified only</option></select>
-<button type="button" id="pclr">clear</button><span class="count" id="pcnt"></span>
-</div>
-<div class="boxes" id="ppt"><span class="mute">Type:</span>__PTYPEBOXES__</div>
-<div class="boxes" id="ppm"><span class="mute">Metal:</span>__PMETALBOXES__</div>
-<div class="tbl-wrap"><table id="prod-t"><thead>__PTHEAD__</thead><tbody>__PRODROWS__</tbody></table></div>
-</section>
-
 <section id="all">
-<div class="sec-head"><h2>Every firm</h2><p>All __N__ rows (__NPB__ private-bank / wealth arms shown by default; untick the toggle to include bullion dealers, refiners, mints, vaults and ETF issuers). Filter by region, country, firm type, product and Citi status; free-text search covers the expanded detail too.</p></div>
+<div class="sec-head"><h2>Every firm</h2><p>All __N__ rows (__NPB__ private banks and wealth managers shown by default. The other __NCHAN__ rows are the market channel &mdash; mints, refiners, wholesalers, vaults, exchanges and ETF issuers &mdash; collected because they are who the wealth firms buy metal from and custody with, not because they compete for a client relationship. Untick the toggle to see them.). Filter by region, country, firm type, product and Citi status; free-text search covers the expanded detail too.</p></div>
 <div class="controls">
 <input type="search" id="q" placeholder="search firm, counterparty, evidence…" aria-label="Search">
 <select id="fr" aria-label="Region"><option value="">all regions</option>__REGOPTS__</select>
 <select id="fc" aria-label="Country"><option value="">all countries</option>__CTRYOPTS__</select>
 <select id="ft" aria-label="Firm type"><option value="">all types</option>__TYPEOPTS__</select>
 <select id="fci" aria-label="Reference-bank status"><option value="">any reference-bank status</option><option value="citi">reference franchise</option><option value="in">reference bank named</option><option value="out">reference bank not named</option><option value="unk">unknown</option></select>
-<label class="pbtog"><input type="checkbox" id="fpb" checked> private-bank / wealth arms only</label>
+<label class="pbtog"><input type="checkbox" id="fpb" checked> private banks &amp; wealth managers only</label>
 <select id="fs" aria-label="Minimum score"><option value="0">any score</option><option value="5">score ≥ 5</option><option value="6">score ≥ 6</option><option value="7">score ≥ 7</option><option value="8">score ≥ 8</option></select>
 <button type="button" id="clr">clear</button><span class="count" id="cnt"></span>
 </div>
@@ -462,7 +504,7 @@ for f in citi_rows:
     offered = [l for k, l, _ in PK if p.get(k) == 'Y']; maybe = [l for k, l, _ in PK if p.get(k) == 'Y?']; no = [l for k, l, _ in PK if p.get(k) == 'N']
     citi_li.append('<li><b>%s</b> <span class="mute">(%s)</span> — verified: %s%s%s%s</li>' % (
         e(f['firm']), e(f['country']), e(', '.join(offered) or 'nothing found'), (' · unverified: ' + e(', '.join(maybe))) if maybe else '',
-        (' · not offered: ' + e(', '.join(no))) if no else '', (' · <i>%s</i>' % e(str(f.get('strategic_idea', ''))[:260])) if f.get('strategic_idea') else ''))
+        (' · not offered: ' + e(', '.join(no))) if no else '', (' · <i>%s</i>' % e(str(f.get('desk_angle', ''))[:260])) if f.get('strategic_idea') else ''))
 
 conf = collections.Counter(f['confidence'] for f in F)
 page = (page.replace('__GEN__', e(d['generated'])).replace('__N__', str(len(F))).replace('__NVER__', str(n_ver)).replace('__NTOP__', str(n_top))
@@ -474,6 +516,7 @@ page = (page.replace('__GEN__', e(d['generated'])).replace('__N__', str(len(F)))
         .replace('__TYPEOPTS__', ''.join('<option>%s</option>' % e(t) for t in types)).replace('__PRODBOXES__', prod_boxes)
         .replace('__ALLROWS__', ''.join(row(f) for f in F))
         .replace('__CONF__', e(', '.join('%s %d' % (k, v) for k, v in conf.most_common())))
+        .replace('__NBOOK__', str(sum(1 for f in F if f.get('book')))).replace('__NCHAN__', str(len(F) - n_pb))
         .replace('__NPB__', str(n_pb)).replace('__NPROD__', str(n_prod)).replace('__NPRODF__', str(n_prod_firms)).replace('__NPRODV__', str(n_prod_ver))
         .replace('__PCTRYOPTS__', ''.join('<option>%s</option>' % e(c) for c in pcountries)).replace('__PTYPEBOXES__', ptype_boxes).replace('__PMETALBOXES__', pmetal_boxes)
         .replace('__PTHEAD__', p_thead).replace('__PRODROWS__', ''.join(prow(x) for x in PRODS))

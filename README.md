@@ -20,14 +20,18 @@ The prescriptive sections — the run-sheet's proposed shelf, and the per-firm `
 
 ## The report
 
-Six sections:
+An index at the top jumps to any section.
 
-1. **Talking points** — a timed 45-minute run-sheet: uptake evidence, the nine product families with live fee benchmarks, top three by disclosed volume for 13 markets, competitor designs worth copying, sizing, a proposed shelf, and the questions to expect.
-2. **Where the desk can displace** — the 46 firms scoring 7 or more, each expandable to counterparties, evidence and desk angle.
-3. **One global franchise, as the web sees it** — what is publicly documented for one large group per booking centre, shown against the peer shelves.
-4. **Who the private banks work with** — counterparty leaderboard by number of wealth firms using them.
-5. **Product catalogue** — all 564 products, filterable by type, metal, region, country, segment.
-6. **Every firm** — all 613 rows; private-bank and wealth arms shown by default.
+1. **Talking points** — an eleven-section run-sheet. It opens with the proven product shelf: the nine product families with live fee benchmarks, five competitor designs worth copying, and the yield-enhancement and financing structures a public-page sweep under-counts (dual-currency deposits, lending against metal, put-selling, accumulators, gold-linked notes). Then the uptake evidence, who is winning by country, an HSBC / Standard Chartered / ANZ comparison, sizing, a potential shelf and the questions to expect.
+2. **Product catalogue** — all 564 named client products, filterable by type, metal, region, country and segment.
+3. **Where the gaps are** — the 46 firms scoring 7 or more, each expandable to counterparties, evidence and the strategic idea.
+4. **One global franchise, as the web sees it** — what is publicly documented for one large group per booking centre, shown against the peer shelves.
+5. **Who the private banks work with** — counterparty leaderboard by number of wealth firms using them.
+6. **Regional read**, then **every firm** — all 613 rows, private banks and wealth managers shown by default.
+
+### Private banks vs the market channel
+
+540 of the 613 rows are private banks and wealth managers. The other 73 are the market channel: mints, refiners, wholesalers, vaults, exchanges and ETF issuers. They are in the set because they answer the second half of the question — who the wealth firms buy metal from and custody with — not because they compete for a client relationship. They are hidden by default in the firm table and shown separately in the country tables, so nothing ranks a refinery against a bank's client book.
 
 ## How it was built
 
@@ -39,6 +43,7 @@ Four passes, each run by parallel research agents working from the brief in `bri
 | 2 | The 91 firms scoring 6+: size indicators and liquidity providers | `notional_indicators`, `liquidity` fields |
 | 3 | The 236 private-bank arms with a client product: the advertised catalogue | `pw_products.json` |
 | 4 | Dedicated passes on HSBC Asia, Standard Chartered and ANZ | `verification/*.json` |
+| 5 | Product primer: the structures sold by relationship managers rather than advertised | `data/pb_product_primer.json` |
 
 Then an **adversarial fact-check**: every one of the 90 claims in the talk was re-opened against its primary source by independent checkers. Result: 37 confirmed, 34 partly verified, 16 corrected, 3 not independently supportable. Every correction is written into the text, and each line in the report carries its verdict badge.
 

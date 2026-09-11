@@ -8,7 +8,7 @@ v2 (2026-09-11): every claim carries a claim id (data-cid) matching the adversar
 returned by the fact-check; _talk_verify_apply.py stamps the verdict badge onto each line. New lines added
 after the check (HSBC / Standard Chartered / ANZ passes) carry cid=0 and are badged "sourced, not re-checked".
 """
-import json, os, html, collections
+import json, os, html, collections, re
 HERE = os.path.dirname(os.path.abspath(__file__))
 d = json.load(open(os.path.join(HERE, 'private_wealth.json'), encoding='utf-8')); F = d['firms']
 try: P = [x for x in json.load(open(os.path.join(HERE, 'pw_products.json'), encoding='utf-8'))['products'] if x['product_type'] != 'none_found']
@@ -19,6 +19,30 @@ n_ver = sum(1 for x in P if x['confidence'] == 'verified')
 ptypes = collections.Counter(x['product_type'] for x in P)
 searches = int(d['stats'].get('search_count', 0)) + int(d['stats'].get('pass2_searches', 0)) + int((d['stats'].get('pass3') or {}).get('search_count', 0))
 GP = d['stats'].get('group_passes') or {}
+
+# --- rows in the country tables that are MARKET CHANNEL, not wealth franchises -------------
+# mints, refiners, wholesalers, vaults, exchanges, listed vehicles and market-wide statistics.
+# They answer "who do the private banks buy from and custody with", which is why they were
+# collected, but they are not wealth competitors and must not be ranked as if they were.
+CHANNEL = {
+ 'The Royal Mint', 'BullionVault', 'Gold Bullion International', 'Xetra-Gold (Deutsche Börse Commodities)',
+ 'Reisebank (DZ Bank / co-operative banks)', 'BayernLB (Sparkassen wholesaler)', 'Perth Mint depository',
+ 'Global X GOLD', 'Betashares QAU', 'Loomis FXGS (ex-CPoR Devises)', 'Amundi Physical Gold ETC (CA group)',
+ 'Absa NewGold (JSE)', 'Sprott physical trusts', 'IIBX (GIFT City)', 'Albilad Gold ETF (Saudi)',
+ 'Antam Logam Mulia', 'Precious-metal funds, market-wide', 'Bank derivative books (OCC, 31 Mar 2026)',
+ 'Banking system', 'Royal Canadian Mint', 'Pegadaian',
+}
+
+# --- product primer (structures our page-sweep under-captured) -----------------------------
+_primer = None
+for _p in (os.path.join(HERE, 'pb_product_primer.json'),
+           os.path.join(os.path.dirname(HERE), '_pw_primer.json')):
+    try:
+        _primer = json.load(open(_p, encoding='utf-8')); break
+    except Exception:
+        pass
+PRIMER = (_primer or {}).get('structures') or []
+
 
 # bullet = (cid, text, url). cid = id in the fact-check batches; 0 = added after the check.
 S = []
@@ -117,8 +141,22 @@ C = [
    (67, 'Absa NewGold (JSE)', 'ZAR 40.3bn, 13.6 t, ICBC Standard custodian', 'https://etfsa.co.za/wp-content/uploads/2024/05/absa-newgold-mar2026.pdf'),
    (68, 'Loomis FXGS (ex-CPoR Devises)', 'SEK 689m revenue line (FY2025); CPoR is the French banks\' historical gold wholesaler', 'https://www.loomis.com/')]),
 ]
-ctry_html = ''.join('<div class="pwt-c"><h4>%s</h4>%s<ol>%s</ol></div>' % (e(n), ('<p class="pwt-m">%s</p>' % e(lede)) if lede else '', ''.join('<li data-cid="%d"><b>%s</b> — %s%s</li>' % (cid, e(a), e(b), (' <a href="%s" target="_blank" rel="noopener">src</a>' % e(u)) if u else '') for cid, a, b, u in rows)) for n, lede, rows in C)
-S.append((8, 'Who is winning, by country', 'Top three by the best disclosed volume in each key market. Units differ by market (balance-sheet metal, account balances, tonnes, fund AUM), so compare within a country, not across. Figures are the firms\' own unless marked derived.', [], '<div class="pwt-grid">%s</div>' % ctry_html))
+def _ctry_block(n, lede, rows):
+    wealth = [r for r in rows if r[1] not in CHANNEL]
+    chan = [r for r in rows if r[1] in CHANNEL]
+    def _li(rs):
+        return ''.join('<li data-cid="%d"><b>%s</b> — %s%s</li>' % (cid, e(a), e(b), (' <a href="%s" target="_blank" rel="noopener">src</a>' % e(u)) if u else '') for cid, a, b, u in rs)
+    out = ['<div class="pwt-c"><h4>%s</h4>' % e(n)]
+    if lede: out.append('<p class="pwt-m">%s</p>' % e(lede))
+    if wealth: out.append('<ol>%s</ol>' % _li(wealth))
+    if chan:
+        out.append('<div class="pwt-chan"><span class="pwt-chan-h">Market channel, not a wealth competitor</span><ol>%s</ol></div>' % _li(chan))
+    out.append('</div>')
+    return ''.join(out)
+
+
+ctry_html = ''.join(_ctry_block(n, lede, rows) for n, lede, rows in C)
+S.append((8, 'Who is winning, by country', 'The best disclosed volume in each key market. Wealth franchises are listed first; mints, refiners, wholesalers, vaults and listed vehicles are shown separately underneath, because they are the supply and custody channel rather than competitors for a client relationship. Units differ by market (balance-sheet metal, account balances, tonnes, fund AUM), so compare within a country, not across.', [], '<div class="pwt-grid">%s</div>' % ctry_html))
 
 # ---- HSBC / Standard Chartered / ANZ head-to-head (from the dedicated passes)
 scb = GP.get('standard') or {}
@@ -126,8 +164,8 @@ h2h = [
  (0, 'HSBC (US$2.1trn wealth balances, over US$1trn in Asia): the client gold shelf is deep in Hong Kong and thin everywhere else. Hong Kong has Wayfoong Statement Gold (1 mace units, spread capped at 4%, no delivery, available to Global Private Banking accounts) and the SFC-authorised Gold Token (0.001 oz, no fees, bank margin up to 2%, bullion vaulted by HSBC Bank plc in London), plus custody and dealing for the Hang Seng Gold ETF. Singapore, Taiwan and Australia have no gold product at all; India only the HSBC AMC gold ETF; Malaysia a counter-only gold account (conventional bank, not Amanah); China gold-linked structured deposits. HSBC is not on India\'s 2026 to 2029 list of authorised bullion importers. Global Private Banking is overweight gold and reaches HK products through the local bank.', 'https://www.hsbc.com.hk/investments/products/gold-token/'),
  (0, 'ANZ (Private >A$9bn): a liquidity competitor, not a shelf competitor. ANZ Private\'s only metals product is the State Street Gold Fund it seeded in July 2024 (feeder into SPDR Gold MiniShares, 0.14%, A$128m by Aug 2026, mostly price appreciation), backed by a maintained overweight. No allocated metal, physical, Lombard or gold-linked notes; retail broking went to CMC, Asian wealth to DBS in 2018, the Singapore vault closed in 2019. ANZ is an LBMA full member, not a market maker, and its institutional commodities trading assets rose 42% to A$9.1bn in FY2025.', 'https://www.anz.com.au/personal/private-banking/insights/global-market-outlook-2026/'),
 ]
-if scb.get('strategic_idea'):
-    h2h.append((0, 'Standard Chartered: ' + scb['strategic_idea'][:900], ''))
+if scb.get('citi_angle'):
+    h2h.append((0, 'Standard Chartered: ' + scb['citi_angle'][:900], ''))
 else:
     h2h.append((0, 'Standard Chartered: dedicated pass in progress; this line is replaced automatically when it lands.', ''))
 S.append((2, 'HSBC, Standard Chartered and ANZ head-to-head', 'The three regional banks the wealth business meets most often in Asia, from dedicated passes over every country site, product brochure and annual report.', h2h, None))
@@ -164,11 +202,49 @@ S.append((4, 'Risks and the questions you will get', 'Short answers ready for th
  (89, 'Conflicts: a large bank is often already fund-level custodian or note issuer for a peer\'s products (Citigroup Pty is fund custodian of Betashares QAU per its PDS, where JPMorgan holds the bullion; Citi issues gold-linked notes on the Wells Fargo shelf). Map those before any launch.', ''),
  (90, 'Counterparty: in this dataset, 45 of the 91 largest metals books name no liquidity provider. That is a wholesale pitch list, and it is the same set of names a wealth business would compete with.', '')], None))
 
+
+
+
+
+# ---- structures the public-page sweep under-captures (sold by RMs, not advertised) ----
+if PRIMER:
+    _pr_rows = []
+    for _x in PRIMER:
+        _ex = '; '.join('%s %s' % (str(_v.get('firm', ''))[:34], str(_v.get('product', ''))[:44]) for _v in (_x.get('examples') or [])[:3])
+        _pr_rows.append('<tr data-cid="0"><td><b>%s</b><div class="pwt-m">%s</div></td><td>%s<div class="pwt-m" style="margin-top:.3rem"><b>Client risk.</b> %s</div></td><td>%s<div class="pwt-m" style="margin-top:.3rem"><b>Desk supplies.</b> %s</div></td></tr>' % (
+            e(_x.get('name', '')), e(str(_x.get('typical_terms', ''))[:150]), e(str(_x.get('how_it_works', ''))[:420]),
+            e(str(_x.get('client_risk', ''))[:200]), e(_ex or 'no named example verified'), e(str(_x.get('desk_hook', ''))[:180])))
+    S.append((6, 'The structures a product sweep misses', 'Private banks sell these through relationship managers, so they rarely appear on a public product page and our catalogue under-counts them. They are where the fee actually is, and each one needs the desk to price something.', [],
+              '<table class="pwt-t"><thead><tr><th style="width:17%%">Structure</th><th style="width:45%%">How it works / what the client is really taking</th><th>Seen in the market / what the desk supplies</th></tr></thead><tbody>%s</tbody></table>' % ''.join(_pr_rows)))
+else:
+    S.append((6, 'The structures a product sweep misses', 'Primer pending: run the product-primer pass, then regenerate. These are the yield-enhancement and financing structures (dual-currency deposits, lending against metal, put-selling, accumulators, gold-linked notes) that private banks sell through relationship managers rather than advertise.', [], None))
+
+
+# both title variants: the desk copy keeps the original wording, the published copy is genericised
+ORDER = [
+ ('Why we are here',),
+ ('The products, explained',),
+ ('Five competitor designs worth copying',),
+ ('The structures a product sweep misses',),
+ ('What clients are buying: the uptake evidence',),
+ ('Who is winning, by country',),
+ ('HSBC, Standard Chartered and ANZ head-to-head',),
+ ('a global wealth franchise today, as the client sees it', 'One global franchise today, as the client sees it'),
+ ('How big could it be',),
+ ('A shelf a global wealth franchise could launch', 'A potential shelf — strategic idea'),
+ ('Risks and the questions you will get',),
+]
+_rank = {t: i for i, grp in enumerate(ORDER) for t in grp}
+S.sort(key=lambda x: _rank.get(x[1], 99))
+
+
+def _slug(t):
+    return 'pwt-' + re.sub(r'[^a-z0-9]+', '-', str(t).lower()).strip('-')[:40]
+
 total = sum(m for m, *_ in S)
 css = '''<style>
 .pwt{max-width:1100px;font-size:15px;line-height:1.5}
 .pwt h3{font-size:1.25rem;margin:1.6rem 0 .2rem;display:flex;align-items:baseline;gap:10px}
-.pwt .pwt-min{font:600 11px/1 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#1f5b8d;border-radius:3px;padding:4px 7px;white-space:nowrap}
 .pwt .pwt-lede{color:#43536b;margin:.2rem 0 .6rem;max-width:80ch}
 .pwt ul{margin:.2rem 0 0 1.2rem;padding:0}.pwt li{margin:.3rem 0}
 .pwt a{font-size:.8em}
@@ -176,18 +252,32 @@ css = '''<style>
 .pwt-t{border-collapse:collapse;width:100%;font-size:.93em;margin:.4rem 0}.pwt-t th{text-align:left;font-size:.78em;text-transform:uppercase;letter-spacing:.05em;color:#7a8696;border-bottom:2px solid #1f5b8d;padding:6px 8px}.pwt-t td{vertical-align:top;padding:7px 8px;border-bottom:1px solid #e4e9ef}
 .pwt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px 26px}
 .pwt-c h4{margin:.4rem 0 .1rem;font-size:1rem}.pwt-c ol{margin:.2rem 0 0 1.2rem;padding:0;font-size:.93em}.pwt-c li{margin:.2rem 0}
-.pwt .pwt-run{display:flex;flex-wrap:wrap;gap:6px;margin:.4rem 0 .2rem}.pwt .pwt-run span{font-size:.82em;background:#eef3f8;border-left:3px solid #1f5b8d;padding:3px 8px}
+.pwt .pwt-idx{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2px 18px;margin:.7rem 0 .3rem;padding:.7rem .9rem;background:#f4f7fa;border:1px solid #dbe3ec;border-radius:4px}
+.pwt .pwt-idx-h{grid-column:1/-1;font:600 11px/1 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.09em;color:#5a708a;margin-bottom:.3rem}
+.pwt .pwt-idx a{display:flex;gap:8px;align-items:baseline;font-size:.93em;text-decoration:none;color:#1f5b8d;padding:3px 0;font-weight:600}
+.pwt .pwt-idx a:hover{text-decoration:underline}
+.pwt .pwt-n{display:inline-block;min-width:1.35em;text-align:right;color:#8a97a8;font-weight:500;font-variant-numeric:tabular-nums}
+.pwt h3{scroll-margin-top:12px}
+.pwt .pwt-top{margin-left:auto;font-size:.7em;color:#b4bdc8;text-decoration:none;font-weight:400}
+.pwt .pwt-top:hover{color:#1f5b8d}
+.pwt .pwt-chan{margin-top:.45rem;padding-top:.35rem;border-top:1px dashed #cfd8e2}
+.pwt .pwt-chan-h{display:block;font:600 10px/1.3 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.07em;color:#8a97a8;margin-bottom:.15rem}
+.pwt .pwt-chan ol{color:#6b7686}
 .pwt .pwt-b{display:inline-block;font:600 10.5px/1 system-ui,sans-serif;letter-spacing:.03em;border-radius:3px;padding:3px 6px;white-space:nowrap;vertical-align:middle}
-@media (prefers-color-scheme:dark){.pwt .pwt-lede{color:#c3bdb0}.pwt-t td{border-color:#2f3441}.pwt .pwt-run span{background:#1f2a40;color:#e9e4d8}}
+@media (prefers-color-scheme:dark){.pwt .pwt-lede{color:#c3bdb0}.pwt-t td{border-color:#2f3441}
+ .pwt .pwt-idx{background:#1c2331;border-color:#2f3a4b}.pwt .pwt-idx a{color:#8fb0ea}.pwt .pwt-idx-h{color:#8d9bb0}
+ .pwt .pwt-chan{border-top-color:#39424f}.pwt .pwt-chan ol{color:#98a3b4}}
 </style>'''
-run = ''.join('<span>%d′ %s</span>' % (m, e(t)) for m, t, *_ in S)
-parts = [css, '<div class="pwt">', '<p class="pwt-lede"><b>45-minute run-sheet for the wealth business.</b> %d sections, %d minutes. Every figure links to its source and carries the fact-check verdict; ESTIMATE marks anything derived. Built from the private-wealth sweep (%s firms, %s products) on %s.</p>' % (len(S), total, len(F), n_prod, e(d.get('generated', ''))), '<div class="pwt-run">%s</div>' % run]
+idx = ''.join('<a href="#%s"><span class="pwt-n">%d</span>%s</a>' % (_slug(t), i + 1, e(t)) for i, (m, t, *_) in enumerate(S))
+parts = [css, '<div class="pwt">',
+         '<p class="pwt-lede"><b>Run-sheet for the wealth business.</b> %d sections. Every figure links to its source and carries the fact-check verdict; ESTIMATE marks anything derived. Built from the private-wealth sweep (%s firms, %s products) on %s.</p>' % (len(S), len(F), n_prod, e(d.get('generated', ''))),
+         '<nav class="pwt-idx" aria-label="Contents"><span class="pwt-idx-h">Contents</span>%s</nav>' % idx]
 for m, t, lede, bullets, table in S:
-    parts.append('<h3><span class="pwt-min">%d min</span>%s</h3>' % (m, e(t)))
+    parts.append('<h3 id="%s">%s<a class="pwt-top" href="#" title="Back to contents">&uarr;</a></h3>' % (_slug(t), e(t)))
     if lede: parts.append('<p class="pwt-lede">%s</p>' % e(lede))
     if bullets: parts.append('<ul>' + ''.join('<li data-cid="%d">%s%s</li>' % (cid, e(b), (' <a href="%s" target="_blank" rel="noopener">src</a>' % e(u)) if u else '') for cid, b, u in bullets) + '</ul>')
     if table: parts.append(table)
 parts.append('</div>')
 out = os.path.join(HERE, 'pw_talking_points.html')
 open(out, 'w', encoding='utf-8').write('\n'.join(parts))
-print('wrote', out, '|', len(S), 'sections,', total, 'minutes,', sum(len(b) for *_, b, _ in S), 'bullets,', len(C), 'country tables; SCB pass loaded:', bool(scb))
+print('wrote', out, '|', len(S), 'sections,', sum(len(b) for *_, b, _ in S), 'bullets,', len(C), 'country tables; SCB pass loaded:', bool(scb))
