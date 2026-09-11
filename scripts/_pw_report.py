@@ -61,6 +61,18 @@ def cp_short_list(f, n=5):
     return s or '<span class="mute">—</span>'
 
 
+def clip(v, n):
+    """Cut to at most n characters on a word boundary, never mid-word."""
+    t = ' '.join(str(v or '').split())
+    if len(t) <= n:
+        return t
+    cut = t[:n]
+    sp = cut.rfind(' ')
+    if sp > 0:
+        cut = cut[:sp]
+    return cut.rstrip(' ,;:-\u2013\u2014.') + '\u2026'
+
+
 TP = {'yes-in-house-desk': ('in-house desk', 'tp-desk'), 'yes-price-taker': ('price-taker', 'tp-pt'), 'distributes-only': ('distributes only', 'tp-dist'), 'no': ('no PM', 'tp-no')}
 LQ = {'named-verified': 'lq-v', 'named-knowledge': 'lq-k', 'in-house': 'lq-i', 'undisclosed': 'lq-u', 'n/a': 'lq-na'}
 
@@ -70,38 +82,38 @@ def p2cell(f):
     tp = str(f.get('trades_pm') or ''); tl, tc = TP.get(tp, (tp or '?', 'tp-dist'))
     ni = f.get('notional_indicators') or []; top = ni[0] if ni else None
     sz = '<b>%s</b>' % e(f.get('size_band_key') or 'unknown')
-    if top: sz += ' <span class="mono">%s %s</span>' % (e(str(top.get('value', ''))[:16]), e(str(top.get('unit', ''))[:10]))
+    if top: sz += ' <span class="mono">%s %s</span>' % (e(clip(top.get('value', ''), 16)), e(clip(top.get('unit', ''), 10)))
     elif f.get('none_found'): sz += ' <span class="mute">nothing public</span>'
     lq = f.get('liquidity') or {}; ls = str(lq.get('status') or '?')
-    names = [str(p.get('name', ''))[:24] for p in (lq.get('providers') or []) if p.get('name')][:3]
+    names = [clip(p.get('name', ''), 24) for p in (lq.get('providers') or []) if p.get('name')][:3]
     return '<td class="p2"><div class="%s">%s</div><div>%s</div><div><span class="%s">%s</span>%s</div></td>' % (tc, e(tl), sz, LQ.get(ls, 'lq-na'), e(ls), (' ' + e(', '.join(names))) if names else '')
 
 
 def p2detail(f):
     if not f.get('pass2'): return ''
     out = ['<h4>Size and liquidity (pass 2)</h4>']
-    out.append('<p><b>Size band:</b> %s <span class="mute">%s</span></p>' % (e(f.get('size_band') or 'unknown'), e(str(f.get('size_band_basis') or '')[:300])))
+    out.append('<p><b>Size band:</b> %s <span class="mute">%s</span></p>' % (e(f.get('size_band') or 'unknown'), e(str(f.get('size_band_basis') or ''))))
     ni = f.get('notional_indicators') or []
     if ni:
         out.append('<ul class="ev">')
         for n in ni[:8]:
-            out.append('<li><b>%s</b>: <span class="mono">%s %s</span>%s%s%s</li>' % (e(str(n.get('metric', ''))[:90]), e(str(n.get('value', ''))[:40]), e(str(n.get('unit', ''))[:20]),
-                (' <span class="mute">(%s)</span>' % e(str(n.get('as_of', ''))[:24])) if n.get('as_of') else '',
-                (' <q>%s</q>' % e(str(n.get('quote', ''))[:260])) if n.get('quote') else '',
+            out.append('<li><b>%s</b>: <span class="mono">%s %s</span>%s%s%s</li>' % (e(str(n.get('metric', ''))), e(str(n.get('value', ''))), e(str(n.get('unit', ''))),
+                (' <span class="mute">(%s)</span>' % e(str(n.get('as_of', '')))) if n.get('as_of') else '',
+                (' <q>%s</q>' % e(str(n.get('quote', '')))) if n.get('quote') else '',
                 (' <a href="%s" target="_blank" rel="noopener">source</a>' % e(n['source_url'])) if n.get('source_url') else ''))
         out.append('</ul>')
     elif f.get('none_found'): out.append('<p class="mute">No public size or notional figure found.</p>')
     lq = f.get('liquidity') or {}
-    out.append('<p><b>Liquidity / physical provider:</b> <span class="%s">%s</span>%s</p>' % (LQ.get(str(lq.get('status')), 'lq-na'), e(lq.get('status') or '?'), (' — ' + e(str(lq.get('notes') or '')[:400])) if lq.get('notes') else ''))
+    out.append('<p><b>Liquidity / physical provider:</b> <span class="%s">%s</span>%s</p>' % (LQ.get(str(lq.get('status')), 'lq-na'), e(lq.get('status') or '?'), (' — ' + e(str(lq.get('notes') or ''))) if lq.get('notes') else ''))
     if lq.get('providers'):
         out.append('<ul class="cps">')
         for p in lq['providers'][:8]:
-            out.append('<li><b>%s</b> <span class="role">%s</span>%s%s%s</li>' % (e(str(p.get('name', ''))[:70]), e(str(p.get('role', ''))),
+            out.append('<li><b>%s</b> <span class="role">%s</span>%s%s%s</li>' % (e(str(p.get('name', ''))), e(str(p.get('role', ''))),
                 ' <span class="tag-k">unverified</span>' if p.get('confidence') != 'verified' else '',
-                (' — %s' % e(str(p.get('evidence', ''))[:320])) if p.get('evidence') else '',
+                (' — %s' % e(str(p.get('evidence', '')))) if p.get('evidence') else '',
                 (' <a href="%s" target="_blank" rel="noopener">source</a>' % e(p['source_url'])) if p.get('source_url') else ''))
         out.append('</ul>')
-    if f.get('new_products_found'): out.append('<p><b>New products found:</b> %s</p>' % e('; '.join(str(v) for v in f['new_products_found'])[:400]))
+    if f.get('new_products_found'): out.append('<p><b>New products found:</b> %s</p>' % e('; '.join(str(v) for v in f['new_products_found'])))
     return ''.join(out)
 
 
@@ -123,7 +135,7 @@ def bookdetail(f):
            % (e(b.get('_match_name', '')), e(kind), e(b.get('_match_score', '')))]
     rows = [(BOOK_LABEL.get(k, k), v) for k, v in b.items() if not k.startswith('_') and v not in (None, '', [], {})]
     if rows:
-        out.append('<dl class="kv">' + ''.join('<dt>%s</dt><dd>%s</dd>' % (e(k), e(str(v)[:600])) for k, v in rows) + '</dl>')
+        out.append('<dl class="kv">' + ''.join('<dt>%s</dt><dd>%s</dd>' % (e(k), e(str(v))) for k, v in rows) + '</dl>')
     return ''.join(out)
 
 
@@ -143,23 +155,23 @@ def detail(f):
     if f.get('lombard_ltv'): kv.append(('Lombard LTV', f['lombard_ltv']))
     if f.get('advisory_view'): kv.append(('House view on gold', f['advisory_view']))
     kv.append(('Reference-bank status', f['ref_bank_status']))
-    parts.append('<dl class="kv">' + ''.join('<dt>%s</dt><dd>%s</dd>' % (e(k), e(str(v)[:400])) for k, v in kv) + '</dl>')
+    parts.append('<dl class="kv">' + ''.join('<dt>%s</dt><dd>%s</dd>' % (e(k), e(str(v))) for k, v in kv) + '</dl>')
     if f['counterparties']:
         parts.append('<h4>Works with</h4><ul class="cps">')
         for c in f['counterparties']:
             nf = str(c.get('name_full') or '')
             parts.append('<li><b>%s</b>%s <span class="role">%s</span>%s%s%s</li>' % (
-                e(c['name']), (' <span class="mute">%s</span>' % e(nf[:140])) if nf and nf != c['name'] else '', e(ROLE.get(c.get('role'), 'other')),
+                e(c['name']), (' <span class="mute">%s</span>' % e(nf)) if nf and nf != c['name'] else '', e(ROLE.get(c.get('role'), 'other')),
                 ' <span class="tag-k">unverified</span>' if c.get('confidence') != 'verified' else '',
-                (' — %s' % e(str(c.get('evidence', ''))[:360])) if c.get('evidence') else '',
+                (' — %s' % e(str(c.get('evidence', '')))) if c.get('evidence') else '',
                 (' <a href="%s" target="_blank" rel="noopener">source</a>' % e(c['url'])) if c.get('url') else ''))
         parts.append('</ul>')
     ev = f.get('product_evidence') or []
     if ev:
         parts.append('<h4>Product evidence</h4><ul class="ev">')
         for x in ev[:6]:
-            parts.append('<li>%s%s%s</li>' % (e(str(x.get('claim', ''))[:220]),
-                                              (' <q>%s</q>' % e(str(x.get('quote', ''))[:320])) if x.get('quote') else '',
+            parts.append('<li>%s%s%s</li>' % (e(str(x.get('claim', ''))),
+                                              (' <q>%s</q>' % e(str(x.get('quote', '')))) if x.get('quote') else '',
                                               (' <a href="%s" target="_blank" rel="noopener">source</a>' % e(x['url'])) if x.get('url') else ''))
         parts.append('</ul>')
     if f.get('sources'):
@@ -186,10 +198,10 @@ def prow(x):
     mets = ', '.join(str(m) for m in (x.get('metals') or []))
     url = x.get('url') or ''
     det = '<div class="det">'
-    if x.get('description'): det += '<p class="angle">%s</p>' % e(str(x['description'])[:700])
+    if x.get('description'): det += '<p class="angle">%s</p>' % e(str(x['description']))
     kv = [(lab, x.get(k)) for lab, k in (('Unit / minimum', 'unit_and_minimum'), ('Fees', 'fees'), ('Custody', 'custody'), ('Pricing basis', 'pricing_basis'), ('Currency', 'currency'), ('Shariah', 'shariah'), ('Notes', 'notes')) if x.get(k) and str(x.get(k)) not in ('?', 'n/a')]
-    if kv: det += '<dl class="kv">' + ''.join('<dt>%s</dt><dd>%s</dd>' % (e(k), e(str(v)[:400])) for k, v in kv) + '</dl>'
-    if x.get('quote'): det += '<p><q>%s</q></p>' % e(str(x['quote'])[:300])
+    if kv: det += '<dl class="kv">' + ''.join('<dt>%s</dt><dd>%s</dd>' % (e(k), e(str(v))) for k, v in kv) + '</dl>'
+    if x.get('quote'): det += '<p><q>%s</q></p>' % e(str(x['quote']))
     if url: det += '<p class="src">Source: <a href="%s" target="_blank" rel="noopener">%s</a></p>' % (e(url), e(re.sub(r'^https?://(www\.)?', '', url)[:90]))
     det += '<p class="src">Firm row: %s · %s</p>' % (e(x.get('firm_actual') or x.get('firm')), e(x.get('firm_type') or ''))
     det += '</div>'
@@ -197,8 +209,8 @@ def prow(x):
             '<td class="fm"><b>%s</b><div class="mute">%s</div></td><td><b>%s</b>%s</td><td><span class="ptype">%s</span></td><td class="ct">%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td class="sc">%s</td></tr>'
             '<tr class="x" hidden><td colspan="10">%s</td></tr>') % (
         e(x.get('region') or ''), e(x.get('market') or x.get('country') or ''), e(x.get('product_type') or ''), e(str(x.get('segment') or '').lower()[:40]), e(x.get('confidence') or ''), e('|'.join(str(m) for m in x.get('metals') or [])),
-        e(str(x.get('pb_arm') or '')[:60]), e((x.get('market') or x.get('country') or '')) + ((' <span class="mute">(%s parent)</span>' % e(x['country'])) if x.get('market') and x.get('country') and x['market'] != x['country'] else ''), e(str(x.get('product_name') or '')[:80]), '' if x.get('confidence') == 'verified' else ' <span class="tag-k">knowledge</span>',
-        e(PTL.get(x.get('product_type'), x.get('product_type'))), e(str(x.get('segment') or '')[:30]), e(mets), e(str(x.get('unit_and_minimum') or '?')[:70]), e(str(x.get('fees') or '?')[:80]), e(str(x.get('custody') or '?')[:70]), e(x.get('physical_delivery') or '?'), det)
+        e(str(x.get('pb_arm') or '')), e((x.get('market') or x.get('country') or '')) + ((' <span class="mute">(%s parent)</span>' % e(x['country'])) if x.get('market') and x.get('country') and x['market'] != x['country'] else ''), e(str(x.get('product_name') or '')), '' if x.get('confidence') == 'verified' else ' <span class="tag-k">knowledge</span>',
+        e(PTL.get(x.get('product_type'), x.get('product_type'))), e(clip(x.get('segment') or '', 48)), e(mets), e(clip(x.get('unit_and_minimum') or '?', 70)), e(clip(x.get('fees') or '?', 80)), e(clip(x.get('custody') or '?', 70)), e(x.get('physical_delivery') or '?'), det)
 
 
 n_prod = len(PRODS); n_prod_firms = len({x['firm'] for x in PRODS}); n_prod_ver = sum(1 for x in PRODS if x.get('confidence') == 'verified')
@@ -638,7 +650,7 @@ for f in citi_rows:
     offered = [l for k, l, _ in PK if p.get(k) == 'Y']; maybe = [l for k, l, _ in PK if p.get(k) == 'Y?']; no = [l for k, l, _ in PK if p.get(k) == 'N']
     citi_li.append('<li><b>%s</b> <span class="mute">(%s)</span> — verified: %s%s%s%s</li>' % (
         e(f['firm']), e(f['country']), e(', '.join(offered) or 'nothing found'), (' · unverified: ' + e(', '.join(maybe))) if maybe else '',
-        (' · not offered: ' + e(', '.join(no))) if no else '', (' · <i>%s</i>' % e(str(f.get('desk_angle', ''))[:260])) if f.get('strategic_idea') else ''))
+        (' · not offered: ' + e(', '.join(no))) if no else '', (' · <i>%s</i>' % e(str(f.get('desk_angle', '')))) if f.get('strategic_idea') else ''))
 
 conf = collections.Counter(f['confidence'] for f in F)
 page = (page.replace('__GEN__', e(d['generated'])).replace('__N__', str(len(F))).replace('__NVER__', str(n_ver)).replace('__NTOP__', str(n_top))
