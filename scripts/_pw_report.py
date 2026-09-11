@@ -37,9 +37,9 @@ REG_NAME = {'EMEA': 'EMEA', 'APAC': 'APAC', 'NAM': 'North America', 'LATAM': 'La
 
 def citi_cls(v):
     v = str(v or '').lower()
-    if v.startswith('citi is'): return ('citi', 'Citi')
-    if 'named as counterparty' in v: return ('in', 'Citi in')
-    if 'not named' in v: return ('out', 'Not in')
+    if v.startswith('reference franchise'): return ('citi', 'Ref.')
+    if 'reference bank named' in v: return ('in', 'Named')
+    if 'not named' in v: return ('out', 'Not named')
     return ('unk', '?')
 
 
@@ -111,7 +111,7 @@ def detail(f):
     parts.append('<div class="det-meta">%s · %s · booking: %s · confidence: %s%s</div>' % (
         e(f['type']), e(f['country']), e(', '.join(f['booking_centres']) or '?'), e(f['confidence']),
         (' · client assets US$%sbn' % e(f['client_assets_usd_bn'])) if f.get('client_assets_usd_bn') else ''))
-    if f.get('desk_angle'): parts.append('<p class="angle"><b>Desk angle.</b> %s</p>' % e(f['desk_angle']))
+    if f.get('strategic_idea'): parts.append('<p class="angle"><b>Strategic idea.</b> %s</p>' % e(f['strategic_idea']))
     parts.append(p2detail(f))
     kv = []
     if f.get('metals_covered'): kv.append(('Metals', ', '.join(map(str, f['metals_covered']))))
@@ -120,7 +120,7 @@ def detail(f):
     if f.get('own_etf_detail'): kv.append(('Own ETF / ETC', f['own_etf_detail']))
     if f.get('lombard_ltv'): kv.append(('Lombard LTV', f['lombard_ltv']))
     if f.get('advisory_view'): kv.append(('House view on gold', f['advisory_view']))
-    kv.append(('Citi status', f['citi_status']))
+    kv.append(('Reference-bank status', f['ref_bank_status']))
     parts.append('<dl class="kv">' + ''.join('<dt>%s</dt><dd>%s</dd>' % (e(k), e(str(v)[:400])) for k, v in kv) + '</dl>')
     if f['counterparties']:
         parts.append('<h4>Works with</h4><ul class="cps">')
@@ -147,7 +147,7 @@ def detail(f):
 
 
 def row(f, rank=None):
-    p = f['products']; cc, cl = citi_cls(f['citi_status'])
+    p = f['products']; cc, cl = citi_cls(f['ref_bank_status'])
     ykeys = ' '.join(k for k, _, _ in PK if p.get(k) in ('Y', 'Y?'))
     aum = f.get('client_assets_usd_bn')
     aums = ('<span class="mute mono">US$%sbn</span>' % ('{:,.0f}'.format(float(aum)) if float(aum) >= 10 else aum)) if isinstance(aum, (int, float)) else ''
@@ -197,7 +197,7 @@ except Exception:
 # ---- headline numbers
 n_ver = sum(1 for f in F if str(f['confidence']).startswith('verified')) + sum(1 for f in F if f['confidence'] == 'mixed')
 n_top = sum(1 for f in F if (f['score'] or 0) >= 7)
-n_out = sum(1 for f in F if citi_cls(f['citi_status'])[0] == 'out')
+n_out = sum(1 for f in F if citi_cls(f['ref_bank_status'])[0] == 'out')
 n_und = sum(1 for f in F if f['counterparties'] and all(c['name'] == 'undisclosed' for c in f['counterparties']))
 top = [f for f in F if (f['score'] or 0) >= 7]
 
@@ -214,7 +214,7 @@ lb_html = ''.join('<li><span class="lb-n">%s</span><span class="lb-bar"><i style
     e(n), 100.0 * k / mx, k, e(', '.join('%s %d' % (ROLE[r], len(s)) for r, s in sorted(rr.items(), key=lambda z: -len(z[1]))[:3]))) for n, k, rr in lb)
 
 # ---- Citi's own shelf
-citi_rows = [f for f in F if citi_cls(f['citi_status'])[0] == 'citi']
+citi_rows = [f for f in F if citi_cls(f['ref_bank_status'])[0] == 'citi']
 
 REGIONAL = [
     ('Switzerland & Liechtenstein', 'Only UBS, ZKB and Julius Baer run bullion desks; every other house (Pictet, Lombard Odier, UBP, EFG, Safra Sarasin, Vontobel, LGT, VP Bank, LLB, all cantonal banks) buys metal in. Pictet is the prime target: a multi-billion physical metals fund self-custodied at the bank, no LBMA membership, a US$780bn book. Raiffeisen self-vaults its Solid Gold ETFs with Argor-Heraeus as refiner and no LBMA membership. Swiss Lombard LTV on bullion is capped around 60%. Deutsche (Suisse) and Barclays (Suisse) lost their group desks and are the most displaceable foreign arms.'),
@@ -231,7 +231,7 @@ regions_opts = ''.join('<option value="%s">%s (%d)</option>' % (r, REG_NAME.get(
 countries = sorted({f['country'] for f in F if f['country']})
 types = [t for t, _ in collections.Counter(f['type'] for f in F).most_common() if t]
 prod_boxes = ''.join('<label><input type="checkbox" value="%s"> %s <span class="mono mute">%d</span></label>' % (k, l, sum(1 for f in F if f['products'].get(k) in ('Y', 'Y?'))) for k, l, _ in PK)
-thead = '<tr><th class="fm">Firm</th><th>Country</th><th title="Pass 2: trades PM / size band + best public figure / liquidity-provider status">Desk · size · liquidity</th>' + ''.join('<th class="c" title="%s">%s</th>' % (e(t), l) for k, l, t in PK) + '<th>Works with</th><th>Citi</th><th>Score</th></tr>'
+thead = '<tr><th class="fm">Firm</th><th>Country</th><th title="Pass 2: trades PM / size band + best public figure / liquidity-provider status">Desk · size · liquidity</th>' + ''.join('<th class="c" title="%s">%s</th>' % (e(t), l) for k, l, t in PK) + '<th>Works with</th><th>Ref.&nbsp;bank</th><th>Score</th></tr>'
 
 page = '''<title>Private Wealth Metals Map</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -315,12 +315,12 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 <div class="wrap">
 <div class="eyebrow">Metals desk · private banks &amp; wealth managers · global mandate · generated __GEN__</div>
 <h1>Private Wealth Metals Map</h1>
-<p class="lede">Every private bank and private-wealth manager we could find, worldwide: the metals products each puts in front of clients, and the bullion banks, custodians and refiners that sit behind those products. Built for one question: where can Citi supply, custody, finance or clear what a wealth manager is currently buying from someone else.</p>
+<p class="lede">Every private bank and private-wealth manager identified worldwide: the metals products each puts in front of clients, and the bullion banks, custodians and refiners that sit behind those products. Built for one question: where could a bullion desk supply, custody, finance or clear what a wealth manager is currently buying from someone else.</p>
 <div class="stats">
 <div class="stat"><b>__N__</b><span>firms covered</span></div>
 <div class="stat"><b>__NVER__</b><span>with web-verified evidence</span></div>
 <div class="stat"><b>__NTOP__</b><span>priority targets (score ≥ 7)</span></div>
-<div class="stat"><b>__NOUT__</b><span>Citi not named anywhere</span></div>
+<div class="stat"><b>__NOUT__</b><span>reference bank not named</span></div>
 <div class="stat"><b>__NUND__</b><span>counterparty fully undisclosed</span></div>
 <div class="stat"><b>__NS__</b><span>web searches behind it</span></div>
 <div class="stat"><b>__NPB__</b><span>private-bank / wealth arms</span></div>
@@ -331,17 +331,17 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 <div class="legend"><span><b class="c-y">Y</b> verified on the firm's own pages / prospectus</span><span><b class="c-yq">Y?</b> known, unverified</span><span><b class="c-n">N</b> verified not offered</span><span><b class="c-u">?</b> unknown</span><span>Counterparty with <span class="cp-k"></span> = unverified</span><span>Score = franchise size × displaceability × no in-house bullion bank</span><span>Desk · size · liquidity column (firms scoring ≥ 6 only): <span class="tp-desk">in-house desk</span> / <span class="tp-pt">price-taker</span>; size band is an ESTIMATE from the best public figure; liquidity status <span class="lq-v">named-verified</span> / <span class="lq-k">named-knowledge</span> / <span class="lq-i">in-house</span> / <span class="lq-u">undisclosed</span></span></div>
 
 <section id="talk">
-<div class="sec-head"><h2>Talking points for the wealth business</h2><p>A 45-minute run-sheet: uptake evidence, the products explained, who is winning by country, competitor designs, Citi's shelf today, sizing, a proposed shelf and the questions to expect.</p></div>
+<div class="sec-head"><h2>Talking points for the wealth business</h2><p>A 45-minute run-sheet: uptake evidence, the products explained, who is winning by country, competitor designs, one franchise's shelf today, sizing, a potential shelf and the questions to expect.</p></div>
 __TALK__
 </section>
 
 <section id="targets">
-<div class="sec-head"><h2>Where Citi can displace</h2><p>The __NTOP__ firms scoring 7 or more. Click a row for the counterparty list with evidence, the product evidence and the desk angle.</p></div>
+<div class="sec-head"><h2>Where a bullion desk could displace</h2><p>The __NTOP__ firms scoring 7 or more. Click a row for the counterparty list with evidence, the product evidence and the strategic idea.</p></div>
 <div class="tbl-wrap"><table><thead>__THEAD__</thead><tbody>__TOPROWS__</tbody></table></div>
 </section>
 
 <section id="citi">
-<div class="sec-head"><h2>Citi's own shelf, as the web sees it</h2><p>What is publicly documented for Citi Wealth / Citi Private Bank / Citigold across booking centres, and the gaps against the competitor shelves above.</p></div>
+<div class="sec-head"><h2>One global franchise, as the web sees it</h2><p>What is publicly documented for one global franchise across booking centres, shown against the peer shelves above. Included because the same sweep was run on every firm in the set.</p></div>
 <div class="citibox">
 <ul>__CITI__</ul>
 </div>
@@ -380,7 +380,7 @@ __TALK__
 <select id="fr" aria-label="Region"><option value="">all regions</option>__REGOPTS__</select>
 <select id="fc" aria-label="Country"><option value="">all countries</option>__CTRYOPTS__</select>
 <select id="ft" aria-label="Firm type"><option value="">all types</option>__TYPEOPTS__</select>
-<select id="fci" aria-label="Citi status"><option value="">any Citi status</option><option value="citi">Citi's own arm</option><option value="in">Citi already in</option><option value="out">Citi not named</option><option value="unk">unknown</option></select>
+<select id="fci" aria-label="Reference-bank status"><option value="">any reference-bank status</option><option value="citi">reference franchise</option><option value="in">reference bank named</option><option value="out">reference bank not named</option><option value="unk">unknown</option></select>
 <label class="pbtog"><input type="checkbox" id="fpb" checked> private-bank / wealth arms only</label>
 <select id="fs" aria-label="Minimum score"><option value="0">any score</option><option value="5">score ≥ 5</option><option value="6">score ≥ 6</option><option value="7">score ≥ 7</option><option value="8">score ≥ 8</option></select>
 <button type="button" id="clr">clear</button><span class="count" id="cnt"></span>
@@ -462,7 +462,7 @@ for f in citi_rows:
     offered = [l for k, l, _ in PK if p.get(k) == 'Y']; maybe = [l for k, l, _ in PK if p.get(k) == 'Y?']; no = [l for k, l, _ in PK if p.get(k) == 'N']
     citi_li.append('<li><b>%s</b> <span class="mute">(%s)</span> — verified: %s%s%s%s</li>' % (
         e(f['firm']), e(f['country']), e(', '.join(offered) or 'nothing found'), (' · unverified: ' + e(', '.join(maybe))) if maybe else '',
-        (' · not offered: ' + e(', '.join(no))) if no else '', (' · <i>%s</i>' % e(str(f.get('desk_angle', ''))[:260])) if f.get('desk_angle') else ''))
+        (' · not offered: ' + e(', '.join(no))) if no else '', (' · <i>%s</i>' % e(str(f.get('strategic_idea', ''))[:260])) if f.get('strategic_idea') else ''))
 
 conf = collections.Counter(f['confidence'] for f in F)
 page = (page.replace('__GEN__', e(d['generated'])).replace('__N__', str(len(F))).replace('__NVER__', str(n_ver)).replace('__NTOP__', str(n_top))

@@ -1,125 +1,978 @@
-{"generated":"2026-09-11","search_count":45,"status":"complete","group":"Standard Chartered",
- "method_note":"Knowledge-first, then verified on sc.com country sites, SCB press releases, the PLC 2025 Annual Report PDF (downloaded, 481pp, grepped locally), DGFT notice summaries and trade press. 'verified' = seen on a fetched page this session; 'knowledge' = not verified. SCB's institutional bullion desk (LBMA market maker spot+options, HK PM desk, HKPMCC board seat) is recorded as in-house liquidity only; products below are client-facing wealth shelf.",
- "entities":[
-  {"entity":"Standard Chartered Private Bank","country":"Singapore","pb_arm_name":"Standard Chartered Private Bank (booking: Singapore, Hong Kong, Dubai/DIFC, Jersey, London); wealth CIO = Global CIO Office (Wealth Solutions)",
-   "shelf_summary":"No dedicated 'precious metals' service page. Gold is delivered mainly through (i) CIO advisory allocation (Overweight gold, 7% in balanced foundation portfolio, USD 5,100 target), (ii) the new in-house VCC sub-fund Signature Select Enhanced Gold Income Fund (AllianzGI, gold ETFs + covered calls, Aug-2026, Priority/Priority Private/Private Bank in HK/SG/UAE/Jersey/Kenya/Nigeria), (iii) gold-linked structured products / Gold Premium Currency Investment (XAU dual-currency) and (iv) Lombard lending across asset classes. Unallocated precious-metal balances are offered through the Jersey booking centre's FX desk. No physical-bullion / allocated custody shelf found for wealth clients; SCB's physical gold, vaulting (planned HK vault) and options-financing are CIB-only.",
-   "gold_view":"Overweight gold. H2-2026 Global Market Outlook (19-Jun-2026): USD 5,100/oz by mid-2027, 'gold remains the preferred diversifier'. Dec-2025 SG insight: 'Our balanced asset allocation strategy has a 7% allocation to gold' with 3m USD 4,300 / 12m USD 4,500 targets; Nov-2025: pullback to 3,945-4,060 'an opportunity to add'. SG piece titled 'Why gold remains our top conviction for 2026'.",
-   "size_band":"large (group PM balance sheet) / medium (wealth gold shelf)","size_band_basis":"Group precious-metals inventory $25.1bn at 31-Dec-2025 (vs $5.6bn 2024) is institutional/CIB; Wealth Solutions income $1.1bn in Q2-2026 (+43% y/y) with no gold split disclosed; gold fund AUM not disclosed.",
-   "products":[
-    {"product_name":"CIO strategic/tactical allocation to gold (Global Market Outlook, foundation portfolios, Signature CIO funds)","product_type":"advisory_allocation","segment":"Private Bank + Priority Private + Priority","metals":["Au"],"description":"Gold held as a standalone sleeve in SC Wealth Select foundation portfolios and discretionary Signature portfolios; house view Overweight since 2024; 7% weight in balanced allocation (Dec-2025).","unit_and_minimum":"n/a","fees":"n/a","custody":"n/a (implemented via ETFs/funds)","physical_delivery":"N","currency":"USD","pricing_basis":"n/a","shariah":"n/a","url":"https://www.sc.com/sg/wealth/insights/why-gold-remains-our-top-conviction-for-2026/","quote":"Our balanced asset allocation strategy has a 7% allocation to gold.","confidence":"verified","notes":"H2-2026 GMO: target USD 5,100 by mid-2027; press release https://www.sc.com/en/press-release/standard-chartered-h2-2026-global-market-outlook-navigating-shifting-sands/"},
-    {"product_name":"Signature Select Enhanced Gold Income Fund (SC VCC sub-fund #9, sub-managed by Allianz Global Investors)","product_type":"own_fund_etf","segment":"Accredited/Professional investors in Priority, Priority Private and Private Banking","metals":["Au"],"description":"Invests in gold ETFs and runs a covered-call (options) overlay to pay regular income while keeping long-gold participation. Launched Aug-2026 in HK, SG, UAE, Jersey, Kenya, Nigeria; Taiwan expected later in 2026.","unit_and_minimum":"not disclosed","fees":"not disclosed","custody":"fund-level (underlying gold ETFs)","physical_delivery":"N","currency":"USD (assumed)","pricing_basis":"NAV","shariah":"n/a","url":"https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/","quote":"invests in gold exchange-traded funds (ETFs) and uses a covered call strategy to seek regular income while allowing investors to participate in the potential long-term appreciation of gold.","confidence":"verified","notes":"Quoted: Sumeet Bhambri (Global Head of Advisory & Managed Investments); Marc Gualandi (AllianzGI). VCC platform est. Jun-2024. No AUM disclosed."},
-    {"product_name":"Gold-linked structured notes / commodity-linked structured investments","product_type":"structured_note","segment":"Private Bank / Priority Private","metals":["Au"],"description":"Bespoke and flow structured notes referencing XAU (capital-protected, autocall, income/ELN-style). Jersey shelf page confirms structured products with commodities exposure; UAE insight confirms gold as an underlying.","unit_and_minimum":"typically USD 100k-250k per bespoke note (knowledge)","fees":"embedded","custody":"note held in SC custody","physical_delivery":"N","currency":"USD/SGD/HKD","pricing_basis":"LBMA/XAU spot fixings per term sheet","shariah":"n/a","url":"https://www.sc.com/je/priority/wealth-investment/","quote":"Structured Products ... exposure to equities, currencies, interest rates, credit, indices, and commodities","confidence":"verified","notes":"Existence verified; gold-specific term sheets not retrieved. Issuer typically Standard Chartered Bank or third-party issuers."},
-    {"product_name":"Gold Premium Currency Investment (XAU dual-currency investment)","product_type":"gold_deposit_dci","segment":"Priority / Priority Private / Private Bank (market-dependent)","metals":["Au"],"description":"Dual-currency structure pairing a base currency (USD/SGD/AUD) against XAU with a Target Conversion Rate; principal + coupon repaid in base currency or in XAU (gold) at TCR. Verified live on sc.com/bn (Brunei); SG PCI T&Cs list only 11 fiat currencies, so SG retail PCI does NOT include XAU.","unit_and_minimum":"Brunei: min SGD 30,000; tenors 1 week-3 months","fees":"embedded in TCR/yield","custody":"gold leg settled as unallocated XAU balance (knowledge)","physical_delivery":"N","currency":"USD/SGD/AUD vs XAU","pricing_basis":"XAU spot vs TCR","shariah":"n/a","url":"https://www.sc.com/bn/invest/gold-premium-currency-investment/","quote":"you will get both principal and coupon in either gold (XAU) or the base currency","confidence":"verified","notes":"Brunei page returned 404 on direct fetch but content indexed in search; SG PCI T&Cs (verified) exclude gold. Private-bank availability = knowledge."},
-    {"product_name":"OTC gold options / accumulators-decumulators on XAU","product_type":"otc_derivative","segment":"Private Bank (accredited)","metals":["Au","Ag"],"description":"Leveraged FX-style structures (accumulators, target-redemption, vanilla options) written on XAU/USD by SCB's bullion/FX desk for PB clients.","unit_and_minimum":"knowledge: USD 250k+ notional","fees":"embedded","custody":"unallocated metal / cash settled","physical_delivery":"N","currency":"USD","pricing_basis":"XAU spot","shariah":"n/a","url":"","quote":"","confidence":"knowledge","notes":"Not verified on any SC page this session; inferred from SCB being an LBMA market maker in spot and options and from PB FX-derivative shelf."},
-    {"product_name":"Lombard lending (gold ETFs / gold funds / metal balances as collateral)","product_type":"lombard_vs_metal","segment":"Private Bank","metals":["Au"],"description":"PB Lombard facility 'across a variety of asset classes' in all major currencies; gold ETFs and the gold income fund are lendable collateral (knowledge). No dedicated bullion-backed loan product found.","unit_and_minimum":"not disclosed","fees":"not disclosed","custody":"n/a","physical_delivery":"N","currency":"multi","pricing_basis":"n/a","shariah":"n/a","url":"https://www.sc.com/en/wealth-retail-banking/private-banking/wealth-solutions/","quote":"Enhance your investment returns with Lombard lending across a variety of asset classes, and meet your liquidity needs with credit facilities available in all major global currencies.","confidence":"verified","notes":"Lombard verified; metal-collateral eligibility = knowledge."},
-    {"product_name":"Unallocated precious-metals balances (via Jersey booking centre FX desk)","product_type":"gold_account_unallocated","segment":"Priority / International / Private Bank clients booked in Jersey","metals":["Au","Ag","Pt","Pd"],"description":"Jersey wealth page states clients have access to all tradable currencies and unallocated precious metals at competitive rates of exchange - i.e. paper-metal balances via the FX desk.","unit_and_minimum":"not disclosed","fees":"spread","custody":"unallocated (SCB balance-sheet claim)","physical_delivery":"N","currency":"USD/GBP","pricing_basis":"XAU spot","shariah":"n/a","url":"https://www.sc.com/je/priority/wealth-investment/","quote":"in Jersey you have access to all tradable currencies and unallocated precious metals at competitive rates of exchange.","confidence":"verified","notes":"Only SC wealth page found that explicitly offers a metal balance."},
-    {"product_name":"Physical bullion / allocated custody for wealth clients","product_type":"none_found","segment":"Private Bank","metals":["Au"],"description":"No allocated-gold or physical delivery product found on any SC wealth site. Physical gold trading, financing and (planned) HK vaulting are offered to CIB clients only.","unit_and_minimum":"n/a","fees":"n/a","custody":"n/a","physical_delivery":"N","currency":"n/a","pricing_basis":"n/a","shariah":"n/a","url":"https://www.wenweipo.com/a/202606/15/AP6a2f0c5be4b0b49ad1bf5ff7.html","quote":"The bank currently provides physical gold trading and related options financing to Corporate and Investment Banking (CIB) clients.","confidence":"verified","notes":"Gap vs Bank of Singapore/UBS/HSBC PB physical offerings."}
+{
+ "generated": "2026-09-11",
+ "search_count": 45,
+ "status": "complete",
+ "group": "Standard Chartered",
+ "method_note": "Knowledge-first, then verified on sc.com country sites, SCB press releases, the PLC 2025 Annual Report PDF (downloaded, 481pp, grepped locally), DGFT notice summaries and trade press. 'verified' = seen on a fetched page this session; 'knowledge' = not verified. SCB's institutional bullion desk (LBMA market maker spot+options, HK PM desk, HKPMCC board seat) is recorded as in-house liquidity only; products below are client-facing wealth shelf.",
+ "entities": [
+  {
+   "entity": "Standard Chartered Private Bank",
+   "country": "Singapore",
+   "pb_arm_name": "Standard Chartered Private Bank (booking: Singapore, Hong Kong, Dubai/DIFC, Jersey, London); wealth CIO = Global CIO Office (Wealth Solutions)",
+   "shelf_summary": "No dedicated 'precious metals' service page. Gold is delivered mainly through (i) CIO advisory allocation (Overweight gold, 7% in balanced foundation portfolio, USD 5,100 target), (ii) the new in-house VCC sub-fund Signature Select Enhanced Gold Income Fund (AllianzGI, gold ETFs + covered calls, Aug-2026, Priority/Priority Private/Private Bank in HK/SG/UAE/Jersey/Kenya/Nigeria), (iii) gold-linked structured products / Gold Premium Currency Investment (XAU dual-currency) and (iv) Lombard lending across asset classes. Unallocated precious-metal balances are offered through the Jersey booking centre's FX desk. No physical-bullion / allocated custody shelf found for wealth clients; SCB's physical gold, vaulting (planned HK vault) and options-financing are CIB-only.",
+   "gold_view": "Overweight gold. H2-2026 Global Market Outlook (19-Jun-2026): USD 5,100/oz by mid-2027, 'gold remains the preferred diversifier'. Dec-2025 SG insight: 'Our balanced asset allocation strategy has a 7% allocation to gold' with 3m USD 4,300 / 12m USD 4,500 targets; Nov-2025: pullback to 3,945-4,060 'an opportunity to add'. SG piece titled 'Why gold remains our top conviction for 2026'.",
+   "size_band": "large (group PM balance sheet) / medium (wealth gold shelf)",
+   "size_band_basis": "Group precious-metals inventory $25.1bn at 31-Dec-2025 (vs $5.6bn 2024) is institutional/CIB; Wealth Solutions income $1.1bn in Q2-2026 (+43% y/y) with no gold split disclosed; gold fund AUM not disclosed.",
+   "products": [
+    {
+     "product_name": "CIO strategic/tactical allocation to gold (Global Market Outlook, foundation portfolios, Signature CIO funds)",
+     "product_type": "advisory_allocation",
+     "segment": "Private Bank + Priority Private + Priority",
+     "metals": [
+      "Au"
+     ],
+     "description": "Gold held as a standalone sleeve in SC Wealth Select foundation portfolios and discretionary Signature portfolios; house view Overweight since 2024; 7% weight in balanced allocation (Dec-2025).",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "n/a (implemented via ETFs/funds)",
+     "physical_delivery": "N",
+     "currency": "USD",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/sg/wealth/insights/why-gold-remains-our-top-conviction-for-2026/",
+     "quote": "Our balanced asset allocation strategy has a 7% allocation to gold.",
+     "confidence": "verified",
+     "notes": "H2-2026 GMO: target USD 5,100 by mid-2027; press release https://www.sc.com/en/press-release/standard-chartered-h2-2026-global-market-outlook-navigating-shifting-sands/"
+    },
+    {
+     "product_name": "Signature Select Enhanced Gold Income Fund (SC VCC sub-fund #9, sub-managed by Allianz Global Investors)",
+     "product_type": "own_fund_etf",
+     "segment": "Accredited/Professional investors in Priority, Priority Private and Private Banking",
+     "metals": [
+      "Au"
+     ],
+     "description": "Invests in gold ETFs and runs a covered-call (options) overlay to pay regular income while keeping long-gold participation. Launched Aug-2026 in HK, SG, UAE, Jersey, Kenya, Nigeria; Taiwan expected later in 2026.",
+     "unit_and_minimum": "not disclosed",
+     "fees": "not disclosed",
+     "custody": "fund-level (underlying gold ETFs)",
+     "physical_delivery": "N",
+     "currency": "USD (assumed)",
+     "pricing_basis": "NAV",
+     "shariah": "n/a",
+     "url": "https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/",
+     "quote": "invests in gold exchange-traded funds (ETFs) and uses a covered call strategy to seek regular income while allowing investors to participate in the potential long-term appreciation of gold.",
+     "confidence": "verified",
+     "notes": "Quoted: Sumeet Bhambri (Global Head of Advisory & Managed Investments); Marc Gualandi (AllianzGI). VCC platform est. Jun-2024. No AUM disclosed."
+    },
+    {
+     "product_name": "Gold-linked structured notes / commodity-linked structured investments",
+     "product_type": "structured_note",
+     "segment": "Private Bank / Priority Private",
+     "metals": [
+      "Au"
+     ],
+     "description": "Bespoke and flow structured notes referencing XAU (capital-protected, autocall, income/ELN-style). Jersey shelf page confirms structured products with commodities exposure; UAE insight confirms gold as an underlying.",
+     "unit_and_minimum": "typically USD 100k-250k per bespoke note (knowledge)",
+     "fees": "embedded",
+     "custody": "note held in SC custody",
+     "physical_delivery": "N",
+     "currency": "USD/SGD/HKD",
+     "pricing_basis": "LBMA/XAU spot fixings per term sheet",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/je/priority/wealth-investment/",
+     "quote": "Structured Products ... exposure to equities, currencies, interest rates, credit, indices, and commodities",
+     "confidence": "verified",
+     "notes": "Existence verified; gold-specific term sheets not retrieved. Issuer typically Standard Chartered Bank or third-party issuers."
+    },
+    {
+     "product_name": "Gold Premium Currency Investment (XAU dual-currency investment)",
+     "product_type": "gold_deposit_dci",
+     "segment": "Priority / Priority Private / Private Bank (market-dependent)",
+     "metals": [
+      "Au"
+     ],
+     "description": "Dual-currency structure pairing a base currency (USD/SGD/AUD) against XAU with a Target Conversion Rate; principal + coupon repaid in base currency or in XAU (gold) at TCR. Verified live on sc.com/bn (Brunei); SG PCI T&Cs list only 11 fiat currencies, so SG retail PCI does NOT include XAU.",
+     "unit_and_minimum": "Brunei: min SGD 30,000; tenors 1 week-3 months",
+     "fees": "embedded in TCR/yield",
+     "custody": "gold leg settled as unallocated XAU balance (knowledge)",
+     "physical_delivery": "N",
+     "currency": "USD/SGD/AUD vs XAU",
+     "pricing_basis": "XAU spot vs TCR",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/bn/invest/gold-premium-currency-investment/",
+     "quote": "you will get both principal and coupon in either gold (XAU) or the base currency",
+     "confidence": "verified",
+     "notes": "Brunei page returned 404 on direct fetch but content indexed in search; SG PCI T&Cs (verified) exclude gold. Private-bank availability = knowledge."
+    },
+    {
+     "product_name": "OTC gold options / accumulators-decumulators on XAU",
+     "product_type": "otc_derivative",
+     "segment": "Private Bank (accredited)",
+     "metals": [
+      "Au",
+      "Ag"
+     ],
+     "description": "Leveraged FX-style structures (accumulators, target-redemption, vanilla options) written on XAU/USD by SCB's bullion/FX desk for PB clients.",
+     "unit_and_minimum": "knowledge: USD 250k+ notional",
+     "fees": "embedded",
+     "custody": "unallocated metal / cash settled",
+     "physical_delivery": "N",
+     "currency": "USD",
+     "pricing_basis": "XAU spot",
+     "shariah": "n/a",
+     "url": "",
+     "quote": "",
+     "confidence": "knowledge",
+     "notes": "Not verified on any SC page this session; inferred from SCB being an LBMA market maker in spot and options and from PB FX-derivative shelf."
+    },
+    {
+     "product_name": "Lombard lending (gold ETFs / gold funds / metal balances as collateral)",
+     "product_type": "lombard_vs_metal",
+     "segment": "Private Bank",
+     "metals": [
+      "Au"
+     ],
+     "description": "PB Lombard facility 'across a variety of asset classes' in all major currencies; gold ETFs and the gold income fund are lendable collateral (knowledge). No dedicated bullion-backed loan product found.",
+     "unit_and_minimum": "not disclosed",
+     "fees": "not disclosed",
+     "custody": "n/a",
+     "physical_delivery": "N",
+     "currency": "multi",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/en/wealth-retail-banking/private-banking/wealth-solutions/",
+     "quote": "Enhance your investment returns with Lombard lending across a variety of asset classes, and meet your liquidity needs with credit facilities available in all major global currencies.",
+     "confidence": "verified",
+     "notes": "Lombard verified; metal-collateral eligibility = knowledge."
+    },
+    {
+     "product_name": "Unallocated precious-metals balances (via Jersey booking centre FX desk)",
+     "product_type": "gold_account_unallocated",
+     "segment": "Priority / International / Private Bank clients booked in Jersey",
+     "metals": [
+      "Au",
+      "Ag",
+      "Pt",
+      "Pd"
+     ],
+     "description": "Jersey wealth page states clients have access to all tradable currencies and unallocated precious metals at competitive rates of exchange - i.e. paper-metal balances via the FX desk.",
+     "unit_and_minimum": "not disclosed",
+     "fees": "spread",
+     "custody": "unallocated (SCB balance-sheet claim)",
+     "physical_delivery": "N",
+     "currency": "USD/GBP",
+     "pricing_basis": "XAU spot",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/je/priority/wealth-investment/",
+     "quote": "in Jersey you have access to all tradable currencies and unallocated precious metals at competitive rates of exchange.",
+     "confidence": "verified",
+     "notes": "Only SC wealth page found that explicitly offers a metal balance."
+    },
+    {
+     "product_name": "Physical bullion / allocated custody for wealth clients",
+     "product_type": "none_found",
+     "segment": "Private Bank",
+     "metals": [
+      "Au"
+     ],
+     "description": "No allocated-gold or physical delivery product found on any SC wealth site. Physical gold trading, financing and (planned) HK vaulting are offered to CIB clients only.",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "n/a",
+     "physical_delivery": "N",
+     "currency": "n/a",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://www.wenweipo.com/a/202606/15/AP6a2f0c5be4b0b49ad1bf5ff7.html",
+     "quote": "The bank currently provides physical gold trading and related options financing to Corporate and Investment Banking (CIB) clients.",
+     "confidence": "verified",
+     "notes": "Gap vs Bank of Singapore/UBS/HSBC PB physical offerings."
+    }
    ],
-   "notional_indicators":[
-    {"metric":"Gold weight in balanced foundation allocation","value":"7","unit":"%","as_of":"2025-12-03","source_url":"https://www.sc.com/sg/wealth/insights/why-gold-remains-our-top-conviction-for-2026/","quote":"Our balanced asset allocation strategy has a 7% allocation to gold."},
-    {"metric":"CIO 12-month gold target","value":"5,100","unit":"USD/oz (by mid-2027)","as_of":"2026-06-19","source_url":"https://www.sc.com/en/press-release/standard-chartered-h2-2026-global-market-outlook-navigating-shifting-sands/","quote":"a target of 7,950 for the US S&P 500 index and USD 5,100 for gold by mid-2027"},
-    {"metric":"Wealth Solutions income Q2-2026","value":"1.1","unit":"USD bn (+43% y/y); ~76,000 new wealth clients in the quarter","as_of":"2026-07","source_url":"https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/","quote":"with income surging 43% year-on-year to USD1.1 billion"},
-    {"metric":"Private bank hiring","value":"up to 50 new RMs in Singapore (doubling coverage of wealthy Chinese clients)","unit":"headcount","as_of":"2026","source_url":"https://finance.yahoo.com/news/standard-chartered-expand-private-banking-114424327.html","quote":"up to 50 new relationship managers expected to be hired"}
+   "notional_indicators": [
+    {
+     "metric": "Gold weight in balanced foundation allocation",
+     "value": "7",
+     "unit": "%",
+     "as_of": "2025-12-03",
+     "source_url": "https://www.sc.com/sg/wealth/insights/why-gold-remains-our-top-conviction-for-2026/",
+     "quote": "Our balanced asset allocation strategy has a 7% allocation to gold."
+    },
+    {
+     "metric": "CIO 12-month gold target",
+     "value": "5,100",
+     "unit": "USD/oz (by mid-2027)",
+     "as_of": "2026-06-19",
+     "source_url": "https://www.sc.com/en/press-release/standard-chartered-h2-2026-global-market-outlook-navigating-shifting-sands/",
+     "quote": "a target of 7,950 for the US S&P 500 index and USD 5,100 for gold by mid-2027"
+    },
+    {
+     "metric": "Wealth Solutions income Q2-2026",
+     "value": "1.1",
+     "unit": "USD bn (+43% y/y); ~76,000 new wealth clients in the quarter",
+     "as_of": "2026-07",
+     "source_url": "https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/",
+     "quote": "with income surging 43% year-on-year to USD1.1 billion"
+    },
+    {
+     "metric": "Private bank hiring",
+     "value": "up to 50 new RMs in Singapore (doubling coverage of wealthy Chinese clients)",
+     "unit": "headcount",
+     "as_of": "2026",
+     "source_url": "https://finance.yahoo.com/news/standard-chartered-expand-private-banking-114424327.html",
+     "quote": "up to 50 new relationship managers expected to be hired"
+    }
    ],
-   "liquidity":{"status":"in-house","providers":["Standard Chartered Bank bullion desk (LBMA market maker: spot + options; LPPM member)","SCB Hong Kong precious-metals trading desk (loco-London + HKPMCC participant; own HK vault under study)"],"notes":"Third-party wrappers: AllianzGI (fund sub-manager); gold ETFs for fund/Online-Trading exposure. SCB is custodian/trustee for LionGlobal Singapore Physical Gold Fund and ChinaAMC Digital Gold ETF (HK) but does not surface its own allocated custody to wealth clients."},
-   "sources":["https://www.sc.com/en/wealth-retail-banking/private-banking/wealth-solutions/","https://www.sc.com/sg/wealth/insights/why-gold-remains-our-top-conviction-for-2026/","https://www.sc.com/en/press-release/standard-chartered-h2-2026-global-market-outlook-navigating-shifting-sands/","https://www.wealthbriefing.com/html/article.php/use-recent-gold-correction-to-get-back-in--standard-chartered","https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/","https://www.sc.com/je/priority/wealth-investment/","https://www.sc.com/bn/invest/gold-premium-currency-investment/"]},
-
-  {"entity":"Standard Chartered Singapore (Priority Private / Priority / Premium)","country":"Singapore","pb_arm_name":"SC Priority Private (min SGD 1.5m AUM) / Priority Banking / Premium Banking",
-   "shelf_summary":"Verified: SC SG has NO gold savings/paper-gold account (unlike UOB/OCBC) and the Singapore Premium Currency Investment T&Cs list only 11 fiat currencies (no XAU). Gold exposure = gold ETFs (SPDR Gold Shares etc.) via SC Online Trading, gold/precious-metal-equity unit trusts, Signature CIO funds carrying the CIO gold sleeve, gold-linked structured notes (accredited), and from Aug-2026 the Signature Select Enhanced Gold Income Fund. SC SG's own gold 'how-to' page describes physical bullion, ETFs, unit trusts and commodity-linked structured investments generically without naming an SC physical product.",
-   "gold_view":"Same Global CIO Office view (Overweight; 7% in balanced; 'top conviction for 2026').",
-   "size_band":"small-medium","size_band_basis":"No gold uptake figures; gold is a fund/ETF/structured-note line within SG Wealth Solutions.",
-   "products":[
-    {"product_name":"Gold savings / paper-gold account","product_type":"none_found","segment":"Priority/Premium","metals":["Au"],"description":"Not offered. SC SG gold insight page lists physical bullion, ETFs, UTs and commodity-linked structured investments generically; no SC gold account exists.","unit_and_minimum":"n/a","fees":"n/a","custody":"n/a","physical_delivery":"N","currency":"n/a","pricing_basis":"n/a","shariah":"n/a","url":"https://www.sc.com/sg/wealth/insights/how-to-start-investing-in-gold/","quote":"A gold Exchange Traded Fund (ETF) allows you to invest in gold, without having to buy the physical gold assets.","confidence":"verified","notes":"Confirms the prior belief that SC SG has never run a gold savings account."},
-    {"product_name":"Premium Currency Investment (PCI) - Singapore","product_type":"gold_deposit_dci","segment":"Priority / Priority Private","metals":[],"description":"Dual-currency investment; SG T&Cs list AUD, CAD, CHF, EUR, GBP, HKD, JPY, NZD, SGD, USD, ZAR only - gold/XAU is NOT an eligible currency in Singapore (contrast Brunei's Gold PCI).","unit_and_minimum":"min SGD 50,000","fees":"embedded","custody":"n/a","physical_delivery":"N","currency":"11 fiat","pricing_basis":"FX","shariah":"n/a","url":"https://www.sc.com/sg/terms-and-conditions/premium-currency-investments-terms-and-conditions/","quote":"PCI is available in these currencies: AUD, CAD, CHF, EUR, GBP, HKD, JPY, NZD, SGD, USD and ZAR.","confidence":"verified","notes":"Recorded as a negative finding (no XAU leg in SG)."},
-    {"product_name":"Gold ETFs via SC Online Trading (SGX: SPDR Gold Shares O87/GSD; US-listed GLD/IAU)","product_type":"third_party_fund_etf","segment":"Priority/Premium/Personal (Online Trading account)","metals":["Au"],"description":"Exchange-traded gold ETFs bought through the SC Online Trading platform (SGX, NYSE, HKEX access).","unit_and_minimum":"1 share; brokerage per SC OT schedule","fees":"brokerage 0.18-0.25% (knowledge)","custody":"SC nominee","physical_delivery":"N","currency":"SGD/USD","pricing_basis":"exchange","shariah":"n/a","url":"","quote":"","confidence":"knowledge","notes":"Platform verified to exist; gold ETF listing not individually verified."},
-    {"product_name":"Signature Select Enhanced Gold Income Fund (VCC)","product_type":"own_fund_etf","segment":"Accredited investors - Priority/Priority Private/Private Bank","metals":["Au"],"description":"See PB entity; Singapore is a launch market (Aug-2026).","unit_and_minimum":"not disclosed","fees":"not disclosed","custody":"fund","physical_delivery":"N","currency":"USD","pricing_basis":"NAV","shariah":"n/a","url":"https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/","quote":"available to Accredited and Professional Investors across the Bank's Priority, Priority Private and Private Banking segments in Hong Kong, Singapore, the United Arab Emirates, Jersey, Kenya and Nigeria","confidence":"verified","notes":""},
-    {"product_name":"Gold / precious-metal-equity unit trusts and commodity-linked structured investments","product_type":"structured_note","segment":"Priority (structured notes: accredited)","metals":["Au"],"description":"SC SG gold page describes 'Commodity-Linked Structured Investment' where the client agrees a tenor and conversion rate with the bank; gold unit trusts on the UT platform.","unit_and_minimum":"structured notes typically SGD/USD 50k-100k (knowledge)","fees":"embedded / fund TER","custody":"SC","physical_delivery":"N","currency":"SGD/USD","pricing_basis":"XAU","shariah":"n/a","url":"https://www.sc.com/sg/wealth/insights/how-to-start-investing-in-gold/","quote":"as a Commodity-Linked Structured Investment where you agree on investment duration and conversion rates","confidence":"verified","notes":"Generic description; no live SG gold-CLSI product page found."}
+   "liquidity": {
+    "status": "in-house",
+    "providers": [
+     "Standard Chartered Bank bullion desk (LBMA market maker: spot + options; LPPM member)",
+     "SCB Hong Kong precious-metals trading desk (loco-London + HKPMCC participant; own HK vault under study)"
+    ],
+    "notes": "Third-party wrappers: AllianzGI (fund sub-manager); gold ETFs for fund/Online-Trading exposure. SCB is custodian/trustee for LionGlobal Singapore Physical Gold Fund and ChinaAMC Digital Gold ETF (HK) but does not surface its own allocated custody to wealth clients."
+   },
+   "sources": [
+    "https://www.sc.com/en/wealth-retail-banking/private-banking/wealth-solutions/",
+    "https://www.sc.com/sg/wealth/insights/why-gold-remains-our-top-conviction-for-2026/",
+    "https://www.sc.com/en/press-release/standard-chartered-h2-2026-global-market-outlook-navigating-shifting-sands/",
+    "https://www.wealthbriefing.com/html/article.php/use-recent-gold-correction-to-get-back-in--standard-chartered",
+    "https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/",
+    "https://www.sc.com/je/priority/wealth-investment/",
+    "https://www.sc.com/bn/invest/gold-premium-currency-investment/"
+   ]
+  },
+  {
+   "entity": "Standard Chartered Singapore (Priority Private / Priority / Premium)",
+   "country": "Singapore",
+   "pb_arm_name": "SC Priority Private (min SGD 1.5m AUM) / Priority Banking / Premium Banking",
+   "shelf_summary": "Verified: SC SG has NO gold savings/paper-gold account (unlike UOB/OCBC) and the Singapore Premium Currency Investment T&Cs list only 11 fiat currencies (no XAU). Gold exposure = gold ETFs (SPDR Gold Shares etc.) via SC Online Trading, gold/precious-metal-equity unit trusts, Signature CIO funds carrying the CIO gold sleeve, gold-linked structured notes (accredited), and from Aug-2026 the Signature Select Enhanced Gold Income Fund. SC SG's own gold 'how-to' page describes physical bullion, ETFs, unit trusts and commodity-linked structured investments generically without naming an SC physical product.",
+   "gold_view": "Same Global CIO Office view (Overweight; 7% in balanced; 'top conviction for 2026').",
+   "size_band": "small-medium",
+   "size_band_basis": "No gold uptake figures; gold is a fund/ETF/structured-note line within SG Wealth Solutions.",
+   "products": [
+    {
+     "product_name": "Gold savings / paper-gold account",
+     "product_type": "none_found",
+     "segment": "Priority/Premium",
+     "metals": [
+      "Au"
+     ],
+     "description": "Not offered. SC SG gold insight page lists physical bullion, ETFs, UTs and commodity-linked structured investments generically; no SC gold account exists.",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "n/a",
+     "physical_delivery": "N",
+     "currency": "n/a",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/sg/wealth/insights/how-to-start-investing-in-gold/",
+     "quote": "A gold Exchange Traded Fund (ETF) allows you to invest in gold, without having to buy the physical gold assets.",
+     "confidence": "verified",
+     "notes": "Confirms the prior belief that SC SG has never run a gold savings account."
+    },
+    {
+     "product_name": "Premium Currency Investment (PCI) - Singapore",
+     "product_type": "gold_deposit_dci",
+     "segment": "Priority / Priority Private",
+     "metals": [],
+     "description": "Dual-currency investment; SG T&Cs list AUD, CAD, CHF, EUR, GBP, HKD, JPY, NZD, SGD, USD, ZAR only - gold/XAU is NOT an eligible currency in Singapore (contrast Brunei's Gold PCI).",
+     "unit_and_minimum": "min SGD 50,000",
+     "fees": "embedded",
+     "custody": "n/a",
+     "physical_delivery": "N",
+     "currency": "11 fiat",
+     "pricing_basis": "FX",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/sg/terms-and-conditions/premium-currency-investments-terms-and-conditions/",
+     "quote": "PCI is available in these currencies: AUD, CAD, CHF, EUR, GBP, HKD, JPY, NZD, SGD, USD and ZAR.",
+     "confidence": "verified",
+     "notes": "Recorded as a negative finding (no XAU leg in SG)."
+    },
+    {
+     "product_name": "Gold ETFs via SC Online Trading (SGX: SPDR Gold Shares O87/GSD; US-listed GLD/IAU)",
+     "product_type": "third_party_fund_etf",
+     "segment": "Priority/Premium/Personal (Online Trading account)",
+     "metals": [
+      "Au"
+     ],
+     "description": "Exchange-traded gold ETFs bought through the SC Online Trading platform (SGX, NYSE, HKEX access).",
+     "unit_and_minimum": "1 share; brokerage per SC OT schedule",
+     "fees": "brokerage 0.18-0.25% (knowledge)",
+     "custody": "SC nominee",
+     "physical_delivery": "N",
+     "currency": "SGD/USD",
+     "pricing_basis": "exchange",
+     "shariah": "n/a",
+     "url": "",
+     "quote": "",
+     "confidence": "knowledge",
+     "notes": "Platform verified to exist; gold ETF listing not individually verified."
+    },
+    {
+     "product_name": "Signature Select Enhanced Gold Income Fund (VCC)",
+     "product_type": "own_fund_etf",
+     "segment": "Accredited investors - Priority/Priority Private/Private Bank",
+     "metals": [
+      "Au"
+     ],
+     "description": "See PB entity; Singapore is a launch market (Aug-2026).",
+     "unit_and_minimum": "not disclosed",
+     "fees": "not disclosed",
+     "custody": "fund",
+     "physical_delivery": "N",
+     "currency": "USD",
+     "pricing_basis": "NAV",
+     "shariah": "n/a",
+     "url": "https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/",
+     "quote": "available to Accredited and Professional Investors across the Bank's Priority, Priority Private and Private Banking segments in Hong Kong, Singapore, the United Arab Emirates, Jersey, Kenya and Nigeria",
+     "confidence": "verified",
+     "notes": ""
+    },
+    {
+     "product_name": "Gold / precious-metal-equity unit trusts and commodity-linked structured investments",
+     "product_type": "structured_note",
+     "segment": "Priority (structured notes: accredited)",
+     "metals": [
+      "Au"
+     ],
+     "description": "SC SG gold page describes 'Commodity-Linked Structured Investment' where the client agrees a tenor and conversion rate with the bank; gold unit trusts on the UT platform.",
+     "unit_and_minimum": "structured notes typically SGD/USD 50k-100k (knowledge)",
+     "fees": "embedded / fund TER",
+     "custody": "SC",
+     "physical_delivery": "N",
+     "currency": "SGD/USD",
+     "pricing_basis": "XAU",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/sg/wealth/insights/how-to-start-investing-in-gold/",
+     "quote": "as a Commodity-Linked Structured Investment where you agree on investment duration and conversion rates",
+     "confidence": "verified",
+     "notes": "Generic description; no live SG gold-CLSI product page found."
+    }
    ],
-   "notional_indicators":[],
-   "liquidity":{"status":"in-house","providers":["SCB bullion desk (structured/PCI hedging)","ETF issuers (SPDR/iShares) for fund/OT exposure"],"notes":""},
-   "sources":["https://www.sc.com/sg/wealth/insights/how-to-start-investing-in-gold/","https://www.sc.com/sg/terms-and-conditions/premium-currency-investments-terms-and-conditions/","https://www.sc.com/sg/wealth/insights/why-gold-remains-our-top-conviction-for-2026/"]},
-
-  {"entity":"Standard Chartered Hong Kong (Priority Private / Priority / Premium)","country":"Hong Kong","pb_arm_name":"SC Priority Private HK (HKD 8m) / Priority Banking (HKD 1m) / Premium Banking",
-   "shelf_summary":"Verified: SC HK's investment page lists funds (incl. Signature CIO Funds, money-market), FX (11 currencies), HK/US/China stocks, ELIs, bonds & structured notes and wealth financing - NO gold trading/paper-gold account and no XAU leg in the Premium (currency-linked) Deposit. Only gold reference on the retail site is a promotional 'Mickey 999.9 Gold Coin' for Bonus Saver. Gold exposure for HK wealth clients = gold ETFs via securities account (e.g., SPDR Gold Trust 2840, ChinaAMC Digital Gold ETF for which SCB is custodian/trustee), gold-linked structured notes/ELIs, Signature CIO funds and the Aug-2026 Enhanced Gold Income Fund. Institutionally SCB HK is one of few foreign banks with a HK precious-metals desk: HKPMCC board member + first-day clearing participant (7 trades 7-Jul-2026), studying its own HK gold vault, Q1-2026 gold revenue up high double digits.",
-   "gold_view":"Global CIO Office view; SCB HK unveiled 2026 GMO locally (SCMP sponsored feature) positioning gold as defensive holding.",
-   "size_band":"medium (wealth) / large (institutional HK desk)","size_band_basis":"No wealth gold uptake disclosed; HK desk gold revenue growth 'high double-digit' Q1-2026.",
-   "products":[
-    {"product_name":"Gold trading / paper-gold account","product_type":"none_found","segment":"Priority/Premium","metals":["Au"],"description":"Not offered on the current SC HK retail shelf (HSBC/BOCHK/Hang Seng run paper-gold; SCB does not).","unit_and_minimum":"n/a","fees":"n/a","custody":"n/a","physical_delivery":"N","currency":"n/a","pricing_basis":"n/a","shariah":"n/a","url":"https://www.sc.com/hk/investment/","quote":"Limited Edition Standard Chartered Mickey Keep It Real 999.9 Gold Coin","confidence":"verified","notes":"Gold coin is a deposit-campaign gift, not a product."},
-    {"product_name":"Premium Deposit (currency-linked deposit)","product_type":"gold_deposit_dci","segment":"Priority/Premium","metals":[],"description":"Choose deposit and linked currency from 11 currencies; no gold/XAU pair offered.","unit_and_minimum":"not captured","fees":"embedded","custody":"n/a","physical_delivery":"N","currency":"11 fiat","pricing_basis":"FX","shariah":"n/a","url":"https://www.sc.com/hk/zh/investment/premium-deposit/","quote":"允許客戶從11種貨幣中選擇兩種分別作為存款貨幣及掛鈎貨幣","confidence":"verified","notes":"Negative finding (search-snippet level)."},
-    {"product_name":"Gold ETFs via SC HK securities account (SPDR Gold Trust 2840, Value Gold ETF 3081, ChinaAMC Digital Gold ETF)","product_type":"third_party_fund_etf","segment":"Priority Private / Priority / Premium (USD0 brokerage 12m promo for new securities accounts)","metals":["Au"],"description":"HKEX-listed gold ETFs incl. ChinaAMC (HK) Digital Gold ETF (listed 29-May-2026) for which Standard Chartered is custodian, trustee, fund administrator and tokenisation provider with gold stored in HK vaults.","unit_and_minimum":"1 board lot","fees":"brokerage","custody":"SC nominee (ETF gold at HK vaults)","physical_delivery":"N","currency":"HKD/USD","pricing_basis":"exchange","shariah":"n/a","url":"https://www.hubbis.com/news/chinaamc-hk-launches-hong-kong-s-first-tokenized-gold-etf-trading-starts-may-29","quote":"Standard Chartered provides custody, trustee, fund administration and tokenisation services for the product.","confidence":"verified","notes":"SCB HK also launching virtual-asset ETF trading (Nov)."},
-    {"product_name":"Gold-linked structured notes / ELIs","product_type":"structured_note","segment":"Priority Private / Priority (professional investors for some)","metals":["Au"],"description":"'Bonds & Structured Notes' and 'Equity Linked Investments' shelf; gold-referenced notes issued on demand.","unit_and_minimum":"knowledge: USD 50k-100k","fees":"embedded","custody":"SC","physical_delivery":"N","currency":"HKD/USD","pricing_basis":"XAU","shariah":"n/a","url":"https://www.sc.com/hk/investment/","quote":"","confidence":"knowledge","notes":"Shelf verified; gold-specific issuance not verified."},
-    {"product_name":"Signature Select Enhanced Gold Income Fund (VCC)","product_type":"own_fund_etf","segment":"Professional investors - Priority/Priority Private/Private Bank","metals":["Au"],"description":"HK is a launch market (Aug-2026).","unit_and_minimum":"not disclosed","fees":"not disclosed","custody":"fund","physical_delivery":"N","currency":"USD","pricing_basis":"NAV","shariah":"n/a","url":"https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/","quote":"","confidence":"verified","notes":""},
-    {"product_name":"Loco-Hong Kong client product (HKPMCC-cleared)","product_type":"none_found","segment":"wealth","metals":["Au"],"description":"No wealth-client loco-HK product yet; HKPMCC first trades were CIB (Chow Sang Sang, Haitong Intl, JD Technology, SPD Bank). Own HK vault under feasibility study would add trading/clearing/storage for CIB.","unit_and_minimum":"n/a","fees":"n/a","custody":"n/a","physical_delivery":"?","currency":"n/a","pricing_basis":"n/a","shariah":"n/a","url":"https://www.sc.com/en/press-release/standard-chartered-completes-seven-gold-transactions-through-hong-kongs-gold-central-clearing-and-settlement-system/","quote":"Standard Chartered is a Board member of Hong Kong Precious Metals Central Clearing Company Limited (PMCC) and a participating bank of the trial operation.","confidence":"verified","notes":"Watch for a retail/wealth loco-HK gold account once the vault is built."}
+   "notional_indicators": [],
+   "liquidity": {
+    "status": "in-house",
+    "providers": [
+     "SCB bullion desk (structured/PCI hedging)",
+     "ETF issuers (SPDR/iShares) for fund/OT exposure"
+    ],
+    "notes": ""
+   },
+   "sources": [
+    "https://www.sc.com/sg/wealth/insights/how-to-start-investing-in-gold/",
+    "https://www.sc.com/sg/terms-and-conditions/premium-currency-investments-terms-and-conditions/",
+    "https://www.sc.com/sg/wealth/insights/why-gold-remains-our-top-conviction-for-2026/"
+   ]
+  },
+  {
+   "entity": "Standard Chartered Hong Kong (Priority Private / Priority / Premium)",
+   "country": "Hong Kong",
+   "pb_arm_name": "SC Priority Private HK (HKD 8m) / Priority Banking (HKD 1m) / Premium Banking",
+   "shelf_summary": "Verified: SC HK's investment page lists funds (incl. Signature CIO Funds, money-market), FX (11 currencies), HK/US/China stocks, ELIs, bonds & structured notes and wealth financing - NO gold trading/paper-gold account and no XAU leg in the Premium (currency-linked) Deposit. Only gold reference on the retail site is a promotional 'Mickey 999.9 Gold Coin' for Bonus Saver. Gold exposure for HK wealth clients = gold ETFs via securities account (e.g., SPDR Gold Trust 2840, ChinaAMC Digital Gold ETF for which SCB is custodian/trustee), gold-linked structured notes/ELIs, Signature CIO funds and the Aug-2026 Enhanced Gold Income Fund. Institutionally SCB HK is one of few foreign banks with a HK precious-metals desk: HKPMCC board member + first-day clearing participant (7 trades 7-Jul-2026), studying its own HK gold vault, Q1-2026 gold revenue up high double digits.",
+   "gold_view": "Global CIO Office view; SCB HK unveiled 2026 GMO locally (SCMP sponsored feature) positioning gold as defensive holding.",
+   "size_band": "medium (wealth) / large (institutional HK desk)",
+   "size_band_basis": "No wealth gold uptake disclosed; HK desk gold revenue growth 'high double-digit' Q1-2026.",
+   "products": [
+    {
+     "product_name": "Gold trading / paper-gold account",
+     "product_type": "none_found",
+     "segment": "Priority/Premium",
+     "metals": [
+      "Au"
+     ],
+     "description": "Not offered on the current SC HK retail shelf (HSBC/BOCHK/Hang Seng run paper-gold; SCB does not).",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "n/a",
+     "physical_delivery": "N",
+     "currency": "n/a",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/hk/investment/",
+     "quote": "Limited Edition Standard Chartered Mickey Keep It Real 999.9 Gold Coin",
+     "confidence": "verified",
+     "notes": "Gold coin is a deposit-campaign gift, not a product."
+    },
+    {
+     "product_name": "Premium Deposit (currency-linked deposit)",
+     "product_type": "gold_deposit_dci",
+     "segment": "Priority/Premium",
+     "metals": [],
+     "description": "Choose deposit and linked currency from 11 currencies; no gold/XAU pair offered.",
+     "unit_and_minimum": "not captured",
+     "fees": "embedded",
+     "custody": "n/a",
+     "physical_delivery": "N",
+     "currency": "11 fiat",
+     "pricing_basis": "FX",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/hk/zh/investment/premium-deposit/",
+     "quote": "允許客戶從11種貨幣中選擇兩種分別作為存款貨幣及掛鈎貨幣",
+     "confidence": "verified",
+     "notes": "Negative finding (search-snippet level)."
+    },
+    {
+     "product_name": "Gold ETFs via SC HK securities account (SPDR Gold Trust 2840, Value Gold ETF 3081, ChinaAMC Digital Gold ETF)",
+     "product_type": "third_party_fund_etf",
+     "segment": "Priority Private / Priority / Premium (USD0 brokerage 12m promo for new securities accounts)",
+     "metals": [
+      "Au"
+     ],
+     "description": "HKEX-listed gold ETFs incl. ChinaAMC (HK) Digital Gold ETF (listed 29-May-2026) for which Standard Chartered is custodian, trustee, fund administrator and tokenisation provider with gold stored in HK vaults.",
+     "unit_and_minimum": "1 board lot",
+     "fees": "brokerage",
+     "custody": "SC nominee (ETF gold at HK vaults)",
+     "physical_delivery": "N",
+     "currency": "HKD/USD",
+     "pricing_basis": "exchange",
+     "shariah": "n/a",
+     "url": "https://www.hubbis.com/news/chinaamc-hk-launches-hong-kong-s-first-tokenized-gold-etf-trading-starts-may-29",
+     "quote": "Standard Chartered provides custody, trustee, fund administration and tokenisation services for the product.",
+     "confidence": "verified",
+     "notes": "SCB HK also launching virtual-asset ETF trading (Nov)."
+    },
+    {
+     "product_name": "Gold-linked structured notes / ELIs",
+     "product_type": "structured_note",
+     "segment": "Priority Private / Priority (professional investors for some)",
+     "metals": [
+      "Au"
+     ],
+     "description": "'Bonds & Structured Notes' and 'Equity Linked Investments' shelf; gold-referenced notes issued on demand.",
+     "unit_and_minimum": "knowledge: USD 50k-100k",
+     "fees": "embedded",
+     "custody": "SC",
+     "physical_delivery": "N",
+     "currency": "HKD/USD",
+     "pricing_basis": "XAU",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/hk/investment/",
+     "quote": "",
+     "confidence": "knowledge",
+     "notes": "Shelf verified; gold-specific issuance not verified."
+    },
+    {
+     "product_name": "Signature Select Enhanced Gold Income Fund (VCC)",
+     "product_type": "own_fund_etf",
+     "segment": "Professional investors - Priority/Priority Private/Private Bank",
+     "metals": [
+      "Au"
+     ],
+     "description": "HK is a launch market (Aug-2026).",
+     "unit_and_minimum": "not disclosed",
+     "fees": "not disclosed",
+     "custody": "fund",
+     "physical_delivery": "N",
+     "currency": "USD",
+     "pricing_basis": "NAV",
+     "shariah": "n/a",
+     "url": "https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/",
+     "quote": "",
+     "confidence": "verified",
+     "notes": ""
+    },
+    {
+     "product_name": "Loco-Hong Kong client product (HKPMCC-cleared)",
+     "product_type": "none_found",
+     "segment": "wealth",
+     "metals": [
+      "Au"
+     ],
+     "description": "No wealth-client loco-HK product yet; HKPMCC first trades were CIB (Chow Sang Sang, Haitong Intl, JD Technology, SPD Bank). Own HK vault under feasibility study would add trading/clearing/storage for CIB.",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "n/a",
+     "physical_delivery": "?",
+     "currency": "n/a",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/en/press-release/standard-chartered-completes-seven-gold-transactions-through-hong-kongs-gold-central-clearing-and-settlement-system/",
+     "quote": "Standard Chartered is a Board member of Hong Kong Precious Metals Central Clearing Company Limited (PMCC) and a participating bank of the trial operation.",
+     "confidence": "verified",
+     "notes": "Watch for a retail/wealth loco-HK gold account once the vault is built."
+    }
    ],
-   "notional_indicators":[
-    {"metric":"HKPMCC trial first-batch trades","value":"7","unit":"gold transactions settled","as_of":"2026-07-07","source_url":"https://www.sc.com/en/press-release/standard-chartered-completes-seven-gold-transactions-through-hong-kongs-gold-central-clearing-and-settlement-system/","quote":"successfully completed its first batch of seven gold transactions and settlements"},
-    {"metric":"SCB HK gold-related revenue growth","value":"high double-digit % y/y","unit":"Q1-2026","as_of":"2026-06-15","source_url":"https://www.wenweipo.com/a/202606/15/AP6a2f0c5be4b0b49ad1bf5ff7.html","quote":"First quarter gold-related revenue recorded high double-digit growth year-on-year"}
+   "notional_indicators": [
+    {
+     "metric": "HKPMCC trial first-batch trades",
+     "value": "7",
+     "unit": "gold transactions settled",
+     "as_of": "2026-07-07",
+     "source_url": "https://www.sc.com/en/press-release/standard-chartered-completes-seven-gold-transactions-through-hong-kongs-gold-central-clearing-and-settlement-system/",
+     "quote": "successfully completed its first batch of seven gold transactions and settlements"
+    },
+    {
+     "metric": "SCB HK gold-related revenue growth",
+     "value": "high double-digit % y/y",
+     "unit": "Q1-2026",
+     "as_of": "2026-06-15",
+     "source_url": "https://www.wenweipo.com/a/202606/15/AP6a2f0c5be4b0b49ad1bf5ff7.html",
+     "quote": "First quarter gold-related revenue recorded high double-digit growth year-on-year"
+    }
    ],
-   "liquidity":{"status":"in-house","providers":["SCB HK precious-metals trading desk (loco-London + HKPMCC)","HKEX gold ETFs (SPDR, Value, ChinaAMC)"],"notes":"SCB is custodian for ChinaAMC Digital Gold ETF; HKPMCC board (11 banks incl. HSBC/JPM/UBS/Citi)."},
-   "sources":["https://www.sc.com/hk/investment/","https://www.sc.com/hk/zh/investment/premium-deposit/","https://www.sc.com/en/press-release/standard-chartered-completes-seven-gold-transactions-through-hong-kongs-gold-central-clearing-and-settlement-system/","https://www.wenweipo.com/a/202606/15/AP6a2f0c5be4b0b49ad1bf5ff7.html","https://www.hubbis.com/news/chinaamc-hk-launches-hong-kong-s-first-tokenized-gold-etf-trading-starts-may-29"]},
-
-  {"entity":"Standard Chartered UAE (Priority Private / Priority / Private Bank DIFC / Saadiq)","country":"United Arab Emirates","pb_arm_name":"SC Private Bank Dubai (DIFC) / Priority Private / Priority Banking (AED 370k AUM)",
-   "shelf_summary":"Structured notes (SC UAE insight explicitly cites commodities 'like gold' as an underlying), mutual funds, and from Aug-2026 the Signature Select Enhanced Gold Income Fund (UAE is a launch market). No gold account, no physical bullion, no Saadiq gold product found. Priority Private uses SC Wealth Select (CIO gold sleeve).",
-   "gold_view":"Global CIO Office view.","size_band":"small-medium","size_band_basis":"No gold-specific disclosures.",
-   "products":[
-    {"product_name":"Structured notes referencing gold","product_type":"structured_note","segment":"Priority / Priority Private / Private Bank","metals":["Au"],"description":"SC UAE 'Structured Notes vs Bonds' insight describes notes paying on underlyings including commodities such as gold, with capital protection variants.","unit_and_minimum":"knowledge: USD 50k-100k","fees":"embedded","custody":"SC","physical_delivery":"N","currency":"USD","pricing_basis":"XAU","shariah":"conventional","url":"https://www.sc.com/ae/wealth-insights/structured-notes-vs-bonds/","quote":"returns based on the performance of underlying assets such as commodities like gold","confidence":"verified","notes":"Snippet-level verification."},
-    {"product_name":"Signature Select Enhanced Gold Income Fund (VCC)","product_type":"own_fund_etf","segment":"Professional/Accredited - Priority/Priority Private/Private Bank","metals":["Au"],"description":"UAE is a launch market (Aug-2026).","unit_and_minimum":"not disclosed","fees":"not disclosed","custody":"fund","physical_delivery":"N","currency":"USD","pricing_basis":"NAV","shariah":"conventional","url":"https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/","quote":"","confidence":"verified","notes":""},
-    {"product_name":"Saadiq gold product","product_type":"none_found","segment":"Saadiq (Islamic)","metals":["Au"],"description":"Saadiq UAE shelf = Islamic deposits (Term Account), cards, finance, investment solutions; no Shariah gold account/ETF found.","unit_and_minimum":"n/a","fees":"n/a","custody":"n/a","physical_delivery":"N","currency":"n/a","pricing_basis":"n/a","shariah":"n/a","url":"https://www.sc.com/ae/islamic/saadiq-term-account/","quote":"","confidence":"verified","notes":"Absence check at search-result level."}
+   "liquidity": {
+    "status": "in-house",
+    "providers": [
+     "SCB HK precious-metals trading desk (loco-London + HKPMCC)",
+     "HKEX gold ETFs (SPDR, Value, ChinaAMC)"
+    ],
+    "notes": "SCB is custodian for ChinaAMC Digital Gold ETF; HKPMCC board (11 banks incl. HSBC/JPM/UBS/Citi)."
+   },
+   "sources": [
+    "https://www.sc.com/hk/investment/",
+    "https://www.sc.com/hk/zh/investment/premium-deposit/",
+    "https://www.sc.com/en/press-release/standard-chartered-completes-seven-gold-transactions-through-hong-kongs-gold-central-clearing-and-settlement-system/",
+    "https://www.wenweipo.com/a/202606/15/AP6a2f0c5be4b0b49ad1bf5ff7.html",
+    "https://www.hubbis.com/news/chinaamc-hk-launches-hong-kong-s-first-tokenized-gold-etf-trading-starts-may-29"
+   ]
+  },
+  {
+   "entity": "Standard Chartered UAE (Priority Private / Priority / Private Bank DIFC / Saadiq)",
+   "country": "United Arab Emirates",
+   "pb_arm_name": "SC Private Bank Dubai (DIFC) / Priority Private / Priority Banking (AED 370k AUM)",
+   "shelf_summary": "Structured notes (SC UAE insight explicitly cites commodities 'like gold' as an underlying), mutual funds, and from Aug-2026 the Signature Select Enhanced Gold Income Fund (UAE is a launch market). No gold account, no physical bullion, no Saadiq gold product found. Priority Private uses SC Wealth Select (CIO gold sleeve).",
+   "gold_view": "Global CIO Office view.",
+   "size_band": "small-medium",
+   "size_band_basis": "No gold-specific disclosures.",
+   "products": [
+    {
+     "product_name": "Structured notes referencing gold",
+     "product_type": "structured_note",
+     "segment": "Priority / Priority Private / Private Bank",
+     "metals": [
+      "Au"
+     ],
+     "description": "SC UAE 'Structured Notes vs Bonds' insight describes notes paying on underlyings including commodities such as gold, with capital protection variants.",
+     "unit_and_minimum": "knowledge: USD 50k-100k",
+     "fees": "embedded",
+     "custody": "SC",
+     "physical_delivery": "N",
+     "currency": "USD",
+     "pricing_basis": "XAU",
+     "shariah": "conventional",
+     "url": "https://www.sc.com/ae/wealth-insights/structured-notes-vs-bonds/",
+     "quote": "returns based on the performance of underlying assets such as commodities like gold",
+     "confidence": "verified",
+     "notes": "Snippet-level verification."
+    },
+    {
+     "product_name": "Signature Select Enhanced Gold Income Fund (VCC)",
+     "product_type": "own_fund_etf",
+     "segment": "Professional/Accredited - Priority/Priority Private/Private Bank",
+     "metals": [
+      "Au"
+     ],
+     "description": "UAE is a launch market (Aug-2026).",
+     "unit_and_minimum": "not disclosed",
+     "fees": "not disclosed",
+     "custody": "fund",
+     "physical_delivery": "N",
+     "currency": "USD",
+     "pricing_basis": "NAV",
+     "shariah": "conventional",
+     "url": "https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/",
+     "quote": "",
+     "confidence": "verified",
+     "notes": ""
+    },
+    {
+     "product_name": "Saadiq gold product",
+     "product_type": "none_found",
+     "segment": "Saadiq (Islamic)",
+     "metals": [
+      "Au"
+     ],
+     "description": "Saadiq UAE shelf = Islamic deposits (Term Account), cards, finance, investment solutions; no Shariah gold account/ETF found.",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "n/a",
+     "physical_delivery": "N",
+     "currency": "n/a",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/ae/islamic/saadiq-term-account/",
+     "quote": "",
+     "confidence": "verified",
+     "notes": "Absence check at search-result level."
+    }
    ],
-   "notional_indicators":[],
-   "liquidity":{"status":"in-house","providers":["SCB bullion desk"],"notes":""},
-   "sources":["https://www.sc.com/ae/wealth-insights/structured-notes-vs-bonds/","https://www.sc.com/ae/priority/priority-private/","https://www.sc.com/ae/islamic/saadiq-term-account/"]},
-
-  {"entity":"Standard Chartered India (Priority / Private)","country":"India","pb_arm_name":"SC India Priority Banking / Private Banking (site moved to sc.bank.in)",
-   "shelf_summary":"SC India is NOT on the DGFT/RBI list of banks authorised to import gold and silver for 1-Apr-2026 to 31-Mar-2029 (17 banks: 15 gold+silver incl. Deutsche Bank and ICBC as the only foreign names, plus Union Bank of India and SBEC gold-only) - verified. SC India sold branded 24k gold coins at branches c.2008-2014 (discontinued; knowledge). Current shelf: mutual funds (incl. gold ETFs/FoFs via MF platform), PMS/structured products through SC Private; Sovereign Gold Bond distribution historically (knowledge). No gold account.",
-   "gold_view":"Global CIO Office view.","size_band":"small","size_band_basis":"No gold products verified; import licence lapsed.",
-   "products":[
-    {"product_name":"Gold/silver import (nominated bank status)","product_type":"none_found","segment":"institutional/corporate","metals":["Au","Ag"],"description":"Not on DGFT Public Notice (17-Apr-2026) Appendix 4B list valid 1-Apr-2026 to 31-Mar-2029. Historically SCB India was an RBI-authorised gold importer (knowledge).","unit_and_minimum":"n/a","fees":"n/a","custody":"n/a","physical_delivery":"N","currency":"n/a","pricing_basis":"n/a","shariah":"n/a","url":"https://a2ztaxcorp.net/dgft-updates-list-of-17-banks-authorised-for-import-of-gold-and-silver/","quote":"Standard Chartered Bank does not appear on either list of authorized banks in this public notice.","confidence":"verified","notes":"Notice number cited as 02/2026-27 (a2ztaxcorp) and 04/2026-27 (taxguru) - both dated 17-Apr-2026; foreign banks listed: Deutsche Bank, ICBC."},
-    {"product_name":"Gold coins / bars at branches","product_type":"physical_bullion","segment":"retail/Priority","metals":["Au"],"description":"SC India sold 24k gold coins (2g-50g) at branches in the late-2000s/early-2010s; withdrawn after the 2013 import curbs. Not on current site.","unit_and_minimum":"historic","fees":"historic","custody":"client","physical_delivery":"Y","currency":"INR","pricing_basis":"historic","shariah":"n/a","url":"","quote":"","confidence":"knowledge","notes":"Discontinued (knowledge)."},
-    {"product_name":"Gold ETFs / gold FoFs via SC India mutual-fund platform","product_type":"third_party_fund_etf","segment":"Priority/Private","metals":["Au"],"description":"Third-party AMC gold ETFs and fund-of-funds distributed through SC India MF platform.","unit_and_minimum":"INR 500-5,000 SIP (knowledge)","fees":"AMC TER","custody":"demat/MF","physical_delivery":"N","currency":"INR","pricing_basis":"NAV","shariah":"n/a","url":"https://www.sc.bank.in/investment/","quote":"","confidence":"knowledge","notes":"sc.com/in redirected to sc.bank.in; not fetched (budget)."}
+   "notional_indicators": [],
+   "liquidity": {
+    "status": "in-house",
+    "providers": [
+     "SCB bullion desk"
+    ],
+    "notes": ""
+   },
+   "sources": [
+    "https://www.sc.com/ae/wealth-insights/structured-notes-vs-bonds/",
+    "https://www.sc.com/ae/priority/priority-private/",
+    "https://www.sc.com/ae/islamic/saadiq-term-account/"
+   ]
+  },
+  {
+   "entity": "Standard Chartered India (Priority / Private)",
+   "country": "India",
+   "pb_arm_name": "SC India Priority Banking / Private Banking (site moved to sc.bank.in)",
+   "shelf_summary": "SC India is NOT on the DGFT/RBI list of banks authorised to import gold and silver for 1-Apr-2026 to 31-Mar-2029 (17 banks: 15 gold+silver incl. Deutsche Bank and ICBC as the only foreign names, plus Union Bank of India and SBEC gold-only) - verified. SC India sold branded 24k gold coins at branches c.2008-2014 (discontinued; knowledge). Current shelf: mutual funds (incl. gold ETFs/FoFs via MF platform), PMS/structured products through SC Private; Sovereign Gold Bond distribution historically (knowledge). No gold account.",
+   "gold_view": "Global CIO Office view.",
+   "size_band": "small",
+   "size_band_basis": "No gold products verified; import licence lapsed.",
+   "products": [
+    {
+     "product_name": "Gold/silver import (nominated bank status)",
+     "product_type": "none_found",
+     "segment": "institutional/corporate",
+     "metals": [
+      "Au",
+      "Ag"
+     ],
+     "description": "Not on DGFT Public Notice (17-Apr-2026) Appendix 4B list valid 1-Apr-2026 to 31-Mar-2029. Historically SCB India was an RBI-authorised gold importer (knowledge).",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "n/a",
+     "physical_delivery": "N",
+     "currency": "n/a",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://a2ztaxcorp.net/dgft-updates-list-of-17-banks-authorised-for-import-of-gold-and-silver/",
+     "quote": "Standard Chartered Bank does not appear on either list of authorized banks in this public notice.",
+     "confidence": "verified",
+     "notes": "Notice number cited as 02/2026-27 (a2ztaxcorp) and 04/2026-27 (taxguru) - both dated 17-Apr-2026; foreign banks listed: Deutsche Bank, ICBC."
+    },
+    {
+     "product_name": "Gold coins / bars at branches",
+     "product_type": "physical_bullion",
+     "segment": "retail/Priority",
+     "metals": [
+      "Au"
+     ],
+     "description": "SC India sold 24k gold coins (2g-50g) at branches in the late-2000s/early-2010s; withdrawn after the 2013 import curbs. Not on current site.",
+     "unit_and_minimum": "historic",
+     "fees": "historic",
+     "custody": "client",
+     "physical_delivery": "Y",
+     "currency": "INR",
+     "pricing_basis": "historic",
+     "shariah": "n/a",
+     "url": "",
+     "quote": "",
+     "confidence": "knowledge",
+     "notes": "Discontinued (knowledge)."
+    },
+    {
+     "product_name": "Gold ETFs / gold FoFs via SC India mutual-fund platform",
+     "product_type": "third_party_fund_etf",
+     "segment": "Priority/Private",
+     "metals": [
+      "Au"
+     ],
+     "description": "Third-party AMC gold ETFs and fund-of-funds distributed through SC India MF platform.",
+     "unit_and_minimum": "INR 500-5,000 SIP (knowledge)",
+     "fees": "AMC TER",
+     "custody": "demat/MF",
+     "physical_delivery": "N",
+     "currency": "INR",
+     "pricing_basis": "NAV",
+     "shariah": "n/a",
+     "url": "https://www.sc.bank.in/investment/",
+     "quote": "",
+     "confidence": "knowledge",
+     "notes": "sc.com/in redirected to sc.bank.in; not fetched (budget)."
+    }
    ],
-   "notional_indicators":[],
-   "liquidity":{"status":"third-party","providers":["Indian AMCs (gold ETFs)"],"notes":"No import licence for 2026-29 -> SCB cannot source physical gold in India for clients."},
-   "sources":["https://a2ztaxcorp.net/dgft-updates-list-of-17-banks-authorised-for-import-of-gold-and-silver/","https://taxguru.in/dgft/dgft-updates-list-of-authorized-banks-for-gold-and-silver-import.html"]},
-
-  {"entity":"Standard Chartered Malaysia / Saadiq, Taiwan, Korea, Pakistan, Bangladesh, Kenya, Nigeria, Ghana","country":"Malaysia (+ other markets)","pb_arm_name":"SC Malaysia Priority / Saadiq Berhad; SC Taiwan Priority Private; SC First Bank Korea Priority; SC Kenya/Nigeria Priority (Wealth Select)",
-   "shelf_summary":"MALAYSIA: verified NO gold investment account (SC MY's own gold guide points clients only to 'gold-related investment funds' via SC Mobile/unit trusts); Saadiq offers Investment Services-i (Islamic UTs) - a third-party site's claim of a 'Saadiq Gold Account' could NOT be verified on sc.com/my and is treated as unreliable; structured investments shelf exists (gold underlying possible). TAIWAN: no 黃金存摺 (gold passbook) at SC Taiwan; gold via funds/ETFs under trust; SC TW insight compares gold vs gold-miner equities; Gold Income Fund expected later 2026. KOREA: no 골드뱅킹 (gold banking) product found at SC First Bank - gold banking market is KB/Shinhan/Woori (search returned no SC product; knowledge: SC First Bank never listed gold banking). KENYA & NIGERIA: Signature Select Enhanced Gold Income Fund available Aug-2026 via SC Wealth Select (verified). PAKISTAN/BANGLADESH/GHANA: no gold product found (mutual funds/bancassurance only).",
-   "gold_view":"Global CIO Office view.","size_band":"small","size_band_basis":"Only fund wrappers; no gold accounts.",
-   "products":[
-    {"product_name":"SC Malaysia gold investment account / Saadiq gold account","product_type":"none_found","segment":"Priority / Saadiq","metals":["Au"],"description":"Not offered. SC MY gold guide: clients should log in to SC Mobile to explore gold-related investment funds.","unit_and_minimum":"n/a","fees":"n/a","custody":"n/a","physical_delivery":"N","currency":"MYR","pricing_basis":"n/a","shariah":"n/a","url":"https://www.sc.com/my/investments/wealthinsights/gold-investment-malaysia/","quote":"If you're a Standard Chartered client with a Current or Savings account, login to SC Mobile to explore gold-related investments funds available.","confidence":"verified","notes":"goldinvestment.com.my claim of a 'Saadiq Gold Account' not corroborated on sc.com/my."},
-    {"product_name":"SC Malaysia gold-related unit trusts (incl. Shariah funds via Saadiq Investment Services-i) and Structured Investments","product_type":"third_party_fund_etf","segment":"Priority / Saadiq","metals":["Au"],"description":"Third-party gold/precious-metal-equity funds; structured investments 'across asset classes' (gold-linked possible).","unit_and_minimum":"UT: MYR 1,000 (knowledge)","fees":"fund TER","custody":"fund","physical_delivery":"N","currency":"MYR/USD","pricing_basis":"NAV","shariah":"Saadiq funds Shariah-compliant","url":"https://www.sc.com/my/saadiq/investments/investment-service-i/","quote":"","confidence":"verified","notes":"Shelf verified; gold-fund names not captured."},
-    {"product_name":"SC Taiwan gold products","product_type":"third_party_fund_etf","segment":"Priority Private / Priority","metals":["Au"],"description":"No gold passbook; gold via funds/ETFs under specific money trust; SC TW insight 'Gold vs gold-mining stocks?' recommends diversified staged entry. Gold Income Fund expected in Taiwan later 2026.","unit_and_minimum":"n/a","fees":"fund TER","custody":"trust","physical_delivery":"N","currency":"TWD/USD","pricing_basis":"NAV","shariah":"n/a","url":"https://www.sc.com/tw/investment/stories/gold/","quote":"","confidence":"knowledge","notes":"TW page 404 on fetch; existence from search index."},
-    {"product_name":"SC First Bank Korea gold banking (골드뱅킹) / gold bar sales","product_type":"none_found","segment":"retail/Priority","metals":["Au"],"description":"No SC First Bank gold banking or gold-bar product found; Korean gold banking (KRW 2.44tn peak Jan-2026) is KB/Shinhan/Woori.","unit_and_minimum":"n/a","fees":"n/a","custody":"n/a","physical_delivery":"N","currency":"KRW","pricing_basis":"n/a","shariah":"n/a","url":"https://biz.newdaily.co.kr/site/data/html/2026/07/02/2026070200117.html","quote":"","confidence":"knowledge","notes":"Absence at search level; SC Korea site not crawled."},
-    {"product_name":"Signature Select Enhanced Gold Income Fund - Kenya & Nigeria","product_type":"own_fund_etf","segment":"Priority / Priority Private (eligible investors)","metals":["Au"],"description":"Available in Kenya and Nigeria from Aug-2026 (first SC gold wrapper in Africa).","unit_and_minimum":"not disclosed","fees":"not disclosed","custody":"fund","physical_delivery":"N","currency":"USD","pricing_basis":"NAV","shariah":"n/a","url":"https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/","quote":"","confidence":"verified","notes":"Pakistan/Bangladesh/Ghana: none found."}
+   "notional_indicators": [],
+   "liquidity": {
+    "status": "third-party",
+    "providers": [
+     "Indian AMCs (gold ETFs)"
+    ],
+    "notes": "No import licence for 2026-29 -> SCB cannot source physical gold in India for clients."
+   },
+   "sources": [
+    "https://a2ztaxcorp.net/dgft-updates-list-of-17-banks-authorised-for-import-of-gold-and-silver/",
+    "https://taxguru.in/dgft/dgft-updates-list-of-authorized-banks-for-gold-and-silver-import.html"
+   ]
+  },
+  {
+   "entity": "Standard Chartered Malaysia / Saadiq, Taiwan, Korea, Pakistan, Bangladesh, Kenya, Nigeria, Ghana",
+   "country": "Malaysia (+ other markets)",
+   "pb_arm_name": "SC Malaysia Priority / Saadiq Berhad; SC Taiwan Priority Private; SC First Bank Korea Priority; SC Kenya/Nigeria Priority (Wealth Select)",
+   "shelf_summary": "MALAYSIA: verified NO gold investment account (SC MY's own gold guide points clients only to 'gold-related investment funds' via SC Mobile/unit trusts); Saadiq offers Investment Services-i (Islamic UTs) - a third-party site's claim of a 'Saadiq Gold Account' could NOT be verified on sc.com/my and is treated as unreliable; structured investments shelf exists (gold underlying possible). TAIWAN: no 黃金存摺 (gold passbook) at SC Taiwan; gold via funds/ETFs under trust; SC TW insight compares gold vs gold-miner equities; Gold Income Fund expected later 2026. KOREA: no 골드뱅킹 (gold banking) product found at SC First Bank - gold banking market is KB/Shinhan/Woori (search returned no SC product; knowledge: SC First Bank never listed gold banking). KENYA & NIGERIA: Signature Select Enhanced Gold Income Fund available Aug-2026 via SC Wealth Select (verified). PAKISTAN/BANGLADESH/GHANA: no gold product found (mutual funds/bancassurance only).",
+   "gold_view": "Global CIO Office view.",
+   "size_band": "small",
+   "size_band_basis": "Only fund wrappers; no gold accounts.",
+   "products": [
+    {
+     "product_name": "SC Malaysia gold investment account / Saadiq gold account",
+     "product_type": "none_found",
+     "segment": "Priority / Saadiq",
+     "metals": [
+      "Au"
+     ],
+     "description": "Not offered. SC MY gold guide: clients should log in to SC Mobile to explore gold-related investment funds.",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "n/a",
+     "physical_delivery": "N",
+     "currency": "MYR",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/my/investments/wealthinsights/gold-investment-malaysia/",
+     "quote": "If you're a Standard Chartered client with a Current or Savings account, login to SC Mobile to explore gold-related investments funds available.",
+     "confidence": "verified",
+     "notes": "goldinvestment.com.my claim of a 'Saadiq Gold Account' not corroborated on sc.com/my."
+    },
+    {
+     "product_name": "SC Malaysia gold-related unit trusts (incl. Shariah funds via Saadiq Investment Services-i) and Structured Investments",
+     "product_type": "third_party_fund_etf",
+     "segment": "Priority / Saadiq",
+     "metals": [
+      "Au"
+     ],
+     "description": "Third-party gold/precious-metal-equity funds; structured investments 'across asset classes' (gold-linked possible).",
+     "unit_and_minimum": "UT: MYR 1,000 (knowledge)",
+     "fees": "fund TER",
+     "custody": "fund",
+     "physical_delivery": "N",
+     "currency": "MYR/USD",
+     "pricing_basis": "NAV",
+     "shariah": "Saadiq funds Shariah-compliant",
+     "url": "https://www.sc.com/my/saadiq/investments/investment-service-i/",
+     "quote": "",
+     "confidence": "verified",
+     "notes": "Shelf verified; gold-fund names not captured."
+    },
+    {
+     "product_name": "SC Taiwan gold products",
+     "product_type": "third_party_fund_etf",
+     "segment": "Priority Private / Priority",
+     "metals": [
+      "Au"
+     ],
+     "description": "No gold passbook; gold via funds/ETFs under specific money trust; SC TW insight 'Gold vs gold-mining stocks?' recommends diversified staged entry. Gold Income Fund expected in Taiwan later 2026.",
+     "unit_and_minimum": "n/a",
+     "fees": "fund TER",
+     "custody": "trust",
+     "physical_delivery": "N",
+     "currency": "TWD/USD",
+     "pricing_basis": "NAV",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/tw/investment/stories/gold/",
+     "quote": "",
+     "confidence": "knowledge",
+     "notes": "TW page 404 on fetch; existence from search index."
+    },
+    {
+     "product_name": "SC First Bank Korea gold banking (골드뱅킹) / gold bar sales",
+     "product_type": "none_found",
+     "segment": "retail/Priority",
+     "metals": [
+      "Au"
+     ],
+     "description": "No SC First Bank gold banking or gold-bar product found; Korean gold banking (KRW 2.44tn peak Jan-2026) is KB/Shinhan/Woori.",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "n/a",
+     "physical_delivery": "N",
+     "currency": "KRW",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://biz.newdaily.co.kr/site/data/html/2026/07/02/2026070200117.html",
+     "quote": "",
+     "confidence": "knowledge",
+     "notes": "Absence at search level; SC Korea site not crawled."
+    },
+    {
+     "product_name": "Signature Select Enhanced Gold Income Fund - Kenya & Nigeria",
+     "product_type": "own_fund_etf",
+     "segment": "Priority / Priority Private (eligible investors)",
+     "metals": [
+      "Au"
+     ],
+     "description": "Available in Kenya and Nigeria from Aug-2026 (first SC gold wrapper in Africa).",
+     "unit_and_minimum": "not disclosed",
+     "fees": "not disclosed",
+     "custody": "fund",
+     "physical_delivery": "N",
+     "currency": "USD",
+     "pricing_basis": "NAV",
+     "shariah": "n/a",
+     "url": "https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/",
+     "quote": "",
+     "confidence": "verified",
+     "notes": "Pakistan/Bangladesh/Ghana: none found."
+    }
    ],
-   "notional_indicators":[],
-   "liquidity":{"status":"third-party","providers":["fund managers (AllianzGI for the VCC fund; local AMCs)"],"notes":""},
-   "sources":["https://www.sc.com/my/investments/wealthinsights/gold-investment-malaysia/","https://www.sc.com/my/saadiq/investments/investment-service-i/","https://www.sc.com/tw/investment/stories/gold/","https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/"]},
-
-  {"entity":"Standard Chartered Jersey (International / Priority / Private Bank booking)","country":"Jersey","pb_arm_name":"Standard Chartered Bank, Jersey Branch (JFSC-regulated) - Priority & International Banking; PB offshore booking",
-   "shelf_summary":"The one SC wealth site that explicitly offers metal: 'all tradable currencies and unallocated precious metals at competitive rates of exchange' via the FX desk, plus mutual funds (Funds Select), Signature discretionary portfolios, securities/ETFs (gold ETFs), structured products incl. commodities, and the Enhanced Gold Income Fund (Jersey launch market). Accounts in 25 currencies; Global Link to 19 countries.",
-   "gold_view":"Global CIO Office view.","size_band":"small-medium","size_band_basis":"No metal balances disclosed.",
-   "products":[
-    {"product_name":"Unallocated precious metals (FX-desk metal balances)","product_type":"gold_account_unallocated","segment":"Priority / International / PB","metals":["Au","Ag","Pt","Pd"],"description":"Paper-metal balances traded like currencies at SCB rates; unallocated claim on SCB.","unit_and_minimum":"not disclosed","fees":"spread","custody":"unallocated","physical_delivery":"N","currency":"USD/GBP/EUR","pricing_basis":"XAU/XAG spot","shariah":"n/a","url":"https://www.sc.com/je/priority/wealth-investment/","quote":"in Jersey you have access to all tradable currencies and unallocated precious metals at competitive rates of exchange.","confidence":"verified","notes":""},
-    {"product_name":"Structured products (commodities incl. gold) / Signature Select Enhanced Gold Income Fund","product_type":"structured_note","segment":"Priority / PB","metals":["Au"],"description":"Structured products with commodity exposure; gold income VCC fund available in Jersey from Aug-2026.","unit_and_minimum":"not disclosed","fees":"embedded / fund fees","custody":"SC","physical_delivery":"N","currency":"USD/GBP","pricing_basis":"XAU / NAV","shariah":"n/a","url":"https://www.sc.com/je/priority/wealth-investment/","quote":"Structured Products - Customized solutions providing exposure to equities, currencies, interest rates, credit, indices, and commodities","confidence":"verified","notes":""}
+   "notional_indicators": [],
+   "liquidity": {
+    "status": "third-party",
+    "providers": [
+     "fund managers (AllianzGI for the VCC fund; local AMCs)"
+    ],
+    "notes": ""
+   },
+   "sources": [
+    "https://www.sc.com/my/investments/wealthinsights/gold-investment-malaysia/",
+    "https://www.sc.com/my/saadiq/investments/investment-service-i/",
+    "https://www.sc.com/tw/investment/stories/gold/",
+    "https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/"
+   ]
+  },
+  {
+   "entity": "Standard Chartered Jersey (International / Priority / Private Bank booking)",
+   "country": "Jersey",
+   "pb_arm_name": "Standard Chartered Bank, Jersey Branch (JFSC-regulated) - Priority & International Banking; PB offshore booking",
+   "shelf_summary": "The one SC wealth site that explicitly offers metal: 'all tradable currencies and unallocated precious metals at competitive rates of exchange' via the FX desk, plus mutual funds (Funds Select), Signature discretionary portfolios, securities/ETFs (gold ETFs), structured products incl. commodities, and the Enhanced Gold Income Fund (Jersey launch market). Accounts in 25 currencies; Global Link to 19 countries.",
+   "gold_view": "Global CIO Office view.",
+   "size_band": "small-medium",
+   "size_band_basis": "No metal balances disclosed.",
+   "products": [
+    {
+     "product_name": "Unallocated precious metals (FX-desk metal balances)",
+     "product_type": "gold_account_unallocated",
+     "segment": "Priority / International / PB",
+     "metals": [
+      "Au",
+      "Ag",
+      "Pt",
+      "Pd"
+     ],
+     "description": "Paper-metal balances traded like currencies at SCB rates; unallocated claim on SCB.",
+     "unit_and_minimum": "not disclosed",
+     "fees": "spread",
+     "custody": "unallocated",
+     "physical_delivery": "N",
+     "currency": "USD/GBP/EUR",
+     "pricing_basis": "XAU/XAG spot",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/je/priority/wealth-investment/",
+     "quote": "in Jersey you have access to all tradable currencies and unallocated precious metals at competitive rates of exchange.",
+     "confidence": "verified",
+     "notes": ""
+    },
+    {
+     "product_name": "Structured products (commodities incl. gold) / Signature Select Enhanced Gold Income Fund",
+     "product_type": "structured_note",
+     "segment": "Priority / PB",
+     "metals": [
+      "Au"
+     ],
+     "description": "Structured products with commodity exposure; gold income VCC fund available in Jersey from Aug-2026.",
+     "unit_and_minimum": "not disclosed",
+     "fees": "embedded / fund fees",
+     "custody": "SC",
+     "physical_delivery": "N",
+     "currency": "USD/GBP",
+     "pricing_basis": "XAU / NAV",
+     "shariah": "n/a",
+     "url": "https://www.sc.com/je/priority/wealth-investment/",
+     "quote": "Structured Products - Customized solutions providing exposure to equities, currencies, interest rates, credit, indices, and commodities",
+     "confidence": "verified",
+     "notes": ""
+    }
    ],
-   "notional_indicators":[],
-   "liquidity":{"status":"in-house","providers":["SCB bullion/FX desk (London)"],"notes":""},
-   "sources":["https://www.sc.com/je/priority/wealth-investment/","https://www.sc.com/je/priority/"]}
+   "notional_indicators": [],
+   "liquidity": {
+    "status": "in-house",
+    "providers": [
+     "SCB bullion/FX desk (London)"
+    ],
+    "notes": ""
+   },
+   "sources": [
+    "https://www.sc.com/je/priority/wealth-investment/",
+    "https://www.sc.com/je/priority/"
+   ]
+  }
  ],
- "group_indicators":[
-  {"metric":"Precious metals inventory (non-financial assets, Level 1)","value":"25.1","unit":"USD bn at 31-Dec-2025 (31-Dec-2024: 5.6)","as_of":"2025-12-31","source_url":"https://www.sc.com/en/uploads/sites/66/content/docs/standard-chartered-plc-2025-annual-report.pdf","quote":"$25.1 billion is precious metals which are classified as Level 1 ... (31 December 2024: $5.6 billion). (Note, p.388)"},
-  {"metric":"Commodities and emissions certificates (other assets line)","value":"30,619","unit":"USD m (2024: 8,358); incl. $5.5bn emissions certificates/other commodity balances Level 2","as_of":"2025-12-31","source_url":"https://www.sc.com/en/uploads/sites/66/content/docs/standard-chartered-plc-2025-annual-report.pdf","quote":"a $22 billion increase in non-financial assets mainly an increase in precious metals inventory and price (p.62)"},
-  {"metric":"Commodity derivative contracts","value":"185,432 notional; FV assets 2,782 / liabilities 2,464","unit":"USD m (2024: 142,393 / 1,274 / 1,052); note: precious-metal derivatives are booked within FX derivatives","as_of":"2025-12-31","source_url":"https://www.sc.com/en/uploads/sites/66/content/docs/standard-chartered-plc-2025-annual-report.pdf","quote":"Foreign exchange derivative contracts include precious metals derivatives. (p.376)"},
-  {"metric":"Trading-book Commodity Risk VaR (99%, 1-day)","value":"avg 9.9 / high 21.7 / low 2.9 / year-end 6.3","unit":"USD m (2024 avg 4.8 / high 10.0)","as_of":"2025-12-31","source_url":"https://www.sc.com/en/uploads/sites/66/content/docs/standard-chartered-plc-2025-annual-report.pdf","quote":"the price of gold increasing by 65 per cent as it is increasingly perceived as a safe haven asset (p.279)"},
-  {"metric":"Collateral held - commodities","value":"11","unit":"USD m (2024: 33) - negligible metal-backed lending on group book","as_of":"2025-12-31","source_url":"https://www.sc.com/en/uploads/sites/66/content/docs/standard-chartered-plc-2025-annual-report.pdf","quote":"Commodities 11 33 (collateral table p.258)"},
-  {"metric":"LBMA market-making status","value":"Market Maker in spot and options (not full: no forwards); LPPM member","unit":"status","as_of":"2026-05","source_url":"https://www.lbma.org.uk/membership/market-making-membership","quote":"Standard Chartered Bank (spot, options)"},
-  {"metric":"HKPMCC role","value":"Board member + participating bank; 7 trades on day one (7-Jul-2026); own HK gold vault feasibility study (Jun-2026)","unit":"text","as_of":"2026-07-07","source_url":"https://www.sc.com/en/press-release/standard-chartered-completes-seven-gold-transactions-through-hong-kongs-gold-central-clearing-and-settlement-system/","quote":"Gold is becoming increasingly important as investors and central banks seek diversification in a more uncertain environment. (Bill Winters)"},
-  {"metric":"Wealth Solutions income FY2025","value":"record; Q4-2025 +27% y/y; FY2025 group income +6% to USD 20.9bn driven by record Wealth Solutions and Global Markets; record NNM USD 16bn in a quarter","unit":"text","as_of":"2025-12-31","source_url":"https://www.marketscreener.com/news/standard-chartered-annual-report-2025-ce7e5dd3dd8ef222","quote":"record quarter in Wealth Solutions with income up 27%, with strong performance in investment products"},
-  {"metric":"Wealth Solutions income Q2-2026","value":"1.1","unit":"USD bn, +43% y/y; ~76,000 new wealth clients in the quarter; 2026 guidance raised","as_of":"2026-07-31","source_url":"https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/","quote":"with income surging 43% year-on-year to USD1.1 billion"},
-  {"metric":"Gold wrapper launch","value":"Signature Select Enhanced Gold Income Fund (VCC sub-fund #9, AllianzGI sub-manager; gold ETFs + covered calls) - HK/SG/UAE/Jersey/Kenya/Nigeria; Taiwan later 2026","unit":"product","as_of":"2026-08","source_url":"https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/","quote":"Standard Chartered established its VCC platform in June 2024"},
-  {"metric":"Digital gold","value":"Libeara (SC Ventures) MG 999 tokenised gold fund for institutional investors, Singapore; Zodia Custody/Markets for digital assets","unit":"text","as_of":"2025","source_url":"https://hubbis.com/article/riding-the-global-wave-of-demand-for-gold-and-other-precious-metals","quote":"broadening its presence in tokenised assets through Libeara's MG 999 fund"},
-  {"metric":"India gold import licence 2026-29","value":"NOT listed (17 banks; foreign banks on list: Deutsche Bank, ICBC)","unit":"status","as_of":"2026-04-17","source_url":"https://a2ztaxcorp.net/dgft-updates-list-of-17-banks-authorised-for-import-of-gold-and-silver/","quote":"Validity: April 1, 2026 to March 31, 2029"}
+ "group_indicators": [
+  {
+   "metric": "Precious metals inventory (non-financial assets, Level 1)",
+   "value": "25.1",
+   "unit": "USD bn at 31-Dec-2025 (31-Dec-2024: 5.6)",
+   "as_of": "2025-12-31",
+   "source_url": "https://www.sc.com/en/uploads/sites/66/content/docs/standard-chartered-plc-2025-annual-report.pdf",
+   "quote": "$25.1 billion is precious metals which are classified as Level 1 ... (31 December 2024: $5.6 billion). (Note, p.388)"
+  },
+  {
+   "metric": "Commodities and emissions certificates (other assets line)",
+   "value": "30,619",
+   "unit": "USD m (2024: 8,358); incl. $5.5bn emissions certificates/other commodity balances Level 2",
+   "as_of": "2025-12-31",
+   "source_url": "https://www.sc.com/en/uploads/sites/66/content/docs/standard-chartered-plc-2025-annual-report.pdf",
+   "quote": "a $22 billion increase in non-financial assets mainly an increase in precious metals inventory and price (p.62)"
+  },
+  {
+   "metric": "Commodity derivative contracts",
+   "value": "185,432 notional; FV assets 2,782 / liabilities 2,464",
+   "unit": "USD m (2024: 142,393 / 1,274 / 1,052); note: precious-metal derivatives are booked within FX derivatives",
+   "as_of": "2025-12-31",
+   "source_url": "https://www.sc.com/en/uploads/sites/66/content/docs/standard-chartered-plc-2025-annual-report.pdf",
+   "quote": "Foreign exchange derivative contracts include precious metals derivatives. (p.376)"
+  },
+  {
+   "metric": "Trading-book Commodity Risk VaR (99%, 1-day)",
+   "value": "avg 9.9 / high 21.7 / low 2.9 / year-end 6.3",
+   "unit": "USD m (2024 avg 4.8 / high 10.0)",
+   "as_of": "2025-12-31",
+   "source_url": "https://www.sc.com/en/uploads/sites/66/content/docs/standard-chartered-plc-2025-annual-report.pdf",
+   "quote": "the price of gold increasing by 65 per cent as it is increasingly perceived as a safe haven asset (p.279)"
+  },
+  {
+   "metric": "Collateral held - commodities",
+   "value": "11",
+   "unit": "USD m (2024: 33) - negligible metal-backed lending on group book",
+   "as_of": "2025-12-31",
+   "source_url": "https://www.sc.com/en/uploads/sites/66/content/docs/standard-chartered-plc-2025-annual-report.pdf",
+   "quote": "Commodities 11 33 (collateral table p.258)"
+  },
+  {
+   "metric": "LBMA market-making status",
+   "value": "Market Maker in spot and options (not full: no forwards); LPPM member",
+   "unit": "status",
+   "as_of": "2026-05",
+   "source_url": "https://www.lbma.org.uk/membership/market-making-membership",
+   "quote": "Standard Chartered Bank (spot, options)"
+  },
+  {
+   "metric": "HKPMCC role",
+   "value": "Board member + participating bank; 7 trades on day one (7-Jul-2026); own HK gold vault feasibility study (Jun-2026)",
+   "unit": "text",
+   "as_of": "2026-07-07",
+   "source_url": "https://www.sc.com/en/press-release/standard-chartered-completes-seven-gold-transactions-through-hong-kongs-gold-central-clearing-and-settlement-system/",
+   "quote": "Gold is becoming increasingly important as investors and central banks seek diversification in a more uncertain environment. (Bill Winters)"
+  },
+  {
+   "metric": "Wealth Solutions income FY2025",
+   "value": "record; Q4-2025 +27% y/y; FY2025 group income +6% to USD 20.9bn driven by record Wealth Solutions and Global Markets; record NNM USD 16bn in a quarter",
+   "unit": "text",
+   "as_of": "2025-12-31",
+   "source_url": "https://www.marketscreener.com/news/standard-chartered-annual-report-2025-ce7e5dd3dd8ef222",
+   "quote": "record quarter in Wealth Solutions with income up 27%, with strong performance in investment products"
+  },
+  {
+   "metric": "Wealth Solutions income Q2-2026",
+   "value": "1.1",
+   "unit": "USD bn, +43% y/y; ~76,000 new wealth clients in the quarter; 2026 guidance raised",
+   "as_of": "2026-07-31",
+   "source_url": "https://thedigitalbanker.com/standard-chartered-raises-2026-outlook-as-wealth-business-drives-record-first-half-performance/",
+   "quote": "with income surging 43% year-on-year to USD1.1 billion"
+  },
+  {
+   "metric": "Gold wrapper launch",
+   "value": "Signature Select Enhanced Gold Income Fund (VCC sub-fund #9, AllianzGI sub-manager; gold ETFs + covered calls) - HK/SG/UAE/Jersey/Kenya/Nigeria; Taiwan later 2026",
+   "unit": "product",
+   "as_of": "2026-08",
+   "source_url": "https://businesspost.ng/banking/standard-chartered-launches-gold-income-fund-for-investors-in-nigeria-five-other-markets/",
+   "quote": "Standard Chartered established its VCC platform in June 2024"
+  },
+  {
+   "metric": "Digital gold",
+   "value": "Libeara (SC Ventures) MG 999 tokenised gold fund for institutional investors, Singapore; Zodia Custody/Markets for digital assets",
+   "unit": "text",
+   "as_of": "2025",
+   "source_url": "https://hubbis.com/article/riding-the-global-wave-of-demand-for-gold-and-other-precious-metals",
+   "quote": "broadening its presence in tokenised assets through Libeara's MG 999 fund"
+  },
+  {
+   "metric": "India gold import licence 2026-29",
+   "value": "NOT listed (17 banks; foreign banks on list: Deutsche Bank, ICBC)",
+   "unit": "status",
+   "as_of": "2026-04-17",
+   "source_url": "https://a2ztaxcorp.net/dgft-updates-list-of-17-banks-authorised-for-import-of-gold-and-silver/",
+   "quote": "Validity: April 1, 2026 to March 31, 2029"
+  }
  ],
- "citi_angle":"SCB's wealth gold shelf is thin relative to its bullion-desk footprint: the only explicit metal balance for wealth clients is an unallocated line in Jersey, there is no gold account in SG/HK/MY/KR/TW, no physical/allocated custody for PB clients (physical gold, options financing and the planned HK vault are CIB-only), Singapore PCI excludes XAU, and India has lost its import licence for 2026-29. Gold reaches SCB wealth clients through the CIO 7% allocation, gold ETFs, gold-linked structured notes and the new AllianzGI-managed Enhanced Gold Income Fund (gold ETFs + covered calls). For Citi: (1) the Enhanced Gold Income Fund and SCB PB structured-note desk need cheap gold-ETF/XAU option liquidity - Citi (full LBMA market maker incl. forwards; SCB quotes only spot+options) can be a forwards/vol provider to SCB's structuring desk; (2) SCB is now a $25bn precious-metals balance-sheet holder (from $5.6bn) with rising commodity VaR - a natural counterparty for balance-sheet relief via metal repo/lease and for loco-London <-> loco-HK swaps as HKPMCC scales; (3) SCB PB clients wanting allocated physical, PM-margin loans or loco-Singapore/HK physical have no in-house product - Citi PB/markets can position allocated custody and share-/bullion-backed lending against that gap; (4) SCB is custodian/trustee for LionGlobal Physical Gold (SG) and ChinaAMC Digital Gold ETF (HK), so the ETF-custody battleground in Asia is SCB vs JPM/HSBC/ICBC - Citi should pitch on the next HK/SG physical/tokenised gold ETF mandate before SCB's HK vault is built."
+ "strategic_idea": "SCB's wealth gold shelf is thin relative to its bullion-desk footprint: the only explicit metal balance for wealth clients is an unallocated line in Jersey, there is no gold account in SG/HK/MY/KR/TW, no physical/allocated custody for PB clients (physical gold, options financing and the planned HK vault are CIB-only), Singapore PCI excludes XAU, and India has lost its import licence for 2026-29. Gold reaches SCB wealth clients through the CIO 7% allocation, gold ETFs, gold-linked structured notes and the new AllianzGI-managed Enhanced Gold Income Fund (gold ETFs + covered calls). For a bullion desk: (1) the Enhanced Gold Income Fund and SCB PB structured-note desk need cheap gold-ETF/XAU option liquidity - a bullion desk (full LBMA market maker incl. forwards; SCB quotes only spot+options) can be a forwards/vol provider to SCB's structuring desk; (2) SCB is now a $25bn precious-metals balance-sheet holder (from $5.6bn) with rising commodity VaR - a natural counterparty for balance-sheet relief via metal repo/lease and for loco-London <-> loco-HK swaps as HKPMCC scales; (3) SCB PB clients wanting allocated physical, PM-margin loans or loco-Singapore/HK physical have no in-house product - a bullion desk PB/markets can position allocated custody and share-/bullion-backed lending against that gap; (4) SCB is custodian/trustee for LionGlobal Physical Gold (SG) and ChinaAMC Digital Gold ETF (HK), so the ETF-custody battleground in Asia is SCB vs JPM/HSBC/ICBC - a bullion desk could pitch on the next HK/SG physical/tokenised gold ETF mandate before SCB's HK vault is built."
 }

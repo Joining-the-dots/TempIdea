@@ -1,329 +1,557 @@
 {
-  "generated": "2026-09-11",
-  "search_count": 39,
-  "group": "ANZ",
-  "entities": [
+ "generated": "2026-09-11",
+ "search_count": 39,
+ "group": "ANZ",
+ "entities": [
+  {
+   "entity": "ANZ Private",
+   "country": "Australia",
+   "pb_arm_name": "ANZ Private (ANZ Private Bank / ANZ Private Advice; CIO Lakshman Anantakrishnan)",
+   "shelf_summary": "ANZ Private's only dedicated metals product is a paper-gold managed fund it commissioned: the unlisted State Street Gold Fund (SST4481AU, PDS 24-Jun-2024, inception 26-Jun-2024), which holds SPDR Gold MiniShares (GLDM) and tracks LBMA Gold Price PM in AUD, unhedged, fee 0.14% pa, min A$25,000. ANZ Private seeded ~A$50m from client money as part of a refreshed strategic asset allocation that introduced gold for the first time; fund AUM A$128.4m at 31-Aug-2026. The CIO has held an OVERWEIGHT to gold through Oct-2025 and Jan-2026. No allocated/unallocated gold account, no physical bullion, no gold-linked structured note and no explicit Lombard-vs-gold product were found; the only lending hook is ANZ Investment Lending's approved-securities list (Mar-2023) which includes GOLD, QAU, GDX and the Global X ETPMAG/ETPMPD/ETPMPM/ETPMPT physical-metal ETCs.",
+   "gold_view": "Strategic (debut 2024) + tactical overweight. Jan-2026 Global Market Outlook: 'Having introduced a strategic position in portfolios several years ago, we maintain an overweight as the year commences' and sees 'little reason for this to be cut materially in the period ahead'; Oct-2025: 'we maintain our current overweight to gold' as a stagflation hedge.",
+   "size_band": "A$100-250m gold fund / ~A$9bn AUM private bank",
+   "size_band_basis": "State Street Gold Fund net assets A$128.4m (SSGA factsheet, 31-Aug-2026) vs ~A$50m seed (Jul-2024); ANZ Private manages >A$9bn (Financial Newswire / Stockhead, Jul-2024).",
+   "products": [
     {
-      "entity": "ANZ Private",
-      "country": "Australia",
-      "pb_arm_name": "ANZ Private (ANZ Private Bank / ANZ Private Advice; CIO Lakshman Anantakrishnan)",
-      "shelf_summary": "ANZ Private's only dedicated metals product is a paper-gold managed fund it commissioned: the unlisted State Street Gold Fund (SST4481AU, PDS 24-Jun-2024, inception 26-Jun-2024), which holds SPDR Gold MiniShares (GLDM) and tracks LBMA Gold Price PM in AUD, unhedged, fee 0.14% pa, min A$25,000. ANZ Private seeded ~A$50m from client money as part of a refreshed strategic asset allocation that introduced gold for the first time; fund AUM A$128.4m at 31-Aug-2026. The CIO has held an OVERWEIGHT to gold through Oct-2025 and Jan-2026. No allocated/unallocated gold account, no physical bullion, no gold-linked structured note and no explicit Lombard-vs-gold product were found; the only lending hook is ANZ Investment Lending's approved-securities list (Mar-2023) which includes GOLD, QAU, GDX and the Global X ETPMAG/ETPMPD/ETPMPM/ETPMPT physical-metal ETCs.",
-      "gold_view": "Strategic (debut 2024) + tactical overweight. Jan-2026 Global Market Outlook: 'Having introduced a strategic position in portfolios several years ago, we maintain an overweight as the year commences' and sees 'little reason for this to be cut materially in the period ahead'; Oct-2025: 'we maintain our current overweight to gold' as a stagflation hedge.",
-      "size_band": "A$100-250m gold fund / ~A$9bn AUM private bank",
-      "size_band_basis": "State Street Gold Fund net assets A$128.4m (SSGA factsheet, 31-Aug-2026) vs ~A$50m seed (Jul-2024); ANZ Private manages >A$9bn (Financial Newswire / Stockhead, Jul-2024).",
-      "products": [
-        {
-          "product_name": "State Street Gold Fund (ARSN 677 945 621, APIR SST4481AU) - ANZ Private-commissioned",
-          "product_type": "third_party_fund_etf",
-          "segment": "ANZ Private clients (wholesale, or retail with personal advice); also open to advised retail/platform investors",
-          "metals": ["Au"],
-          "description": "Unlisted Australian registered managed investment scheme; RE State Street Global Advisors, Australia Services Ltd; invests in SPDR Gold MiniShares ETF (GLDM, NYSE Arca) which is backed by allocated physical gold. Objective: spot gold price in AUD before costs; no currency hedging; no income distributions expected. Constitution allows later ASX/Cboe quotation. Seeded by ANZ Private (~A$50m) at launch, Jul-2024, as part of its debut strategic allocation to gold.",
-          "unit_and_minimum": "Units, daily priced; minimum initial A$25,000 (waivable); minimum remaining balance A$15,000; withdrawals normally paid within 3 business days (up to 30+21 days permitted)",
-          "fees": "Management fees and costs 0.14% pa of NAV (0.10% pa deducted inside GLDM + 0.04% pa fund level); performance fee nil; transaction costs est. 0.00% pa; buy/sell spread allowance per unit pricing policy",
-          "custody": "Fund custodian/administrator State Street Australia Ltd; underlying GLDM gold held in allocated form by ICBC Standard Bank (London) and JPMorgan Chase Bank (London / New York / Zurich)",
-          "physical_delivery": "N",
-          "currency": "AUD",
-          "pricing_basis": "LBMA Gold Price PM converted to AUD (benchmark), via GLDM NAV",
-          "shariah": "n/a",
-          "url": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/private-bank/state-street-gold-fund.pdf",
-          "quote": "The Fund invests in the SPDR Gold MiniShares ETF (Gold ETF)... backed by physical gold bullion held in secured vaults... without having to take physical delivery or arrange storage.",
-          "confidence": "verified",
-          "notes": "PDS hosted on anz.com.au private-bank folder (verified, issued 24-Jun-2024). SSGA factsheet: net assets AUD 128.4mn as of 31-Aug-2026; inception 26-Jun-2024; NAV A$1.6994 at 10-Sep-2026. Fund is a feeder into GLDM (World Gold Trust, CIK 1618181), not a direct bullion holder; GLDM custodians per desk ETF map (knowledge)."
-        },
-        {
-          "product_name": "ANZ Private strategic allocation to gold (multi-asset / discretionary portfolios)",
-          "product_type": "advisory_allocation",
-          "segment": "ANZ Private discretionary and advised multi-asset portfolios",
-          "metals": ["Au"],
-          "description": "Debut strategic gold allocation introduced in ANZ Private's refreshed strategic asset allocation (mid-2024), implemented through the State Street Gold Fund; CIO has since run a tactical overweight (Oct-2025, Jan-2026). Allocation percentage not disclosed.",
-          "unit_and_minimum": "n/a (portfolio weight)",
-          "fees": "n/a (advice/DIMS fees)",
-          "custody": "via State Street Gold Fund",
-          "physical_delivery": "N",
-          "currency": "AUD",
-          "pricing_basis": "LBMA Gold Price PM (AUD)",
-          "shariah": "n/a",
-          "url": "https://www.anz.com.au/personal/private-banking/insights/global-market-outlook-2026/",
-          "quote": "Having introduced a strategic position in portfolios several years ago, we maintain an overweight as the year commences.",
-          "confidence": "verified",
-          "notes": "Also bluenotes 20-Oct-2025 (Anantakrishnan, CIO ANZ Private): 'we maintain our current overweight to gold accordingly'. Jul-2024 launch coverage: ANZ Private 'seeded the State Street Gold Fund as part of a broader change to its strategic asset allocation that includes a debut allocation to gold'; CIO: decision 'focused on improving the risk characteristics of its multi-asset portfolios'."
-        },
-        {
-          "product_name": "ANZ Investment Lending (ANZ Share Investment Loan) - gold/precious-metal ETFs on approved securities list",
-          "product_type": "lombard_vs_metal",
-          "segment": "ANZ Private / retail investors with an ANZ Share Investment Loan",
-          "metals": ["Au", "Ag", "Pt", "Pd"],
-          "description": "ANZ's margin-lending approved-stocks list (01-Mar-2023) includes ETFS/Global X Physical Gold (GOLD), BetaShares Gold Bullion ETF (QAU), Global X Physical Silver (ETPMAG), Physical Palladium (ETPMPD), Physical Precious Metals Basket (ETPMPM), Physical Platinum (ETPMPT) and VanEck Gold Miners (GDX); approved managed funds list includes BlackRock Wholesale International Gold fund. LVRs per security not extracted. This is lending against listed metal ETCs, not against bullion; no true Lombard-vs-physical-metal product found.",
-          "unit_and_minimum": "per ANZ Investment Lending terms",
-          "fees": "margin loan interest; LVR by security",
-          "custody": "ETF units held via ANZ Investment Lending nominee/sponsorship",
-          "physical_delivery": "N",
-          "currency": "AUD",
-          "pricing_basis": "ASX-listed ETF prices",
-          "shariah": "n/a",
-          "url": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/anz-investment-lending-approved-stocks.pdf",
-          "quote": "ETFS Metals. - ETFS GOLD ... GLOBAL X PHYSICAL PRECIOUS METAL BASK ... BetaShares Gold ETF - ETF Units",
-          "confidence": "verified",
-          "notes": "List date 01-Mar-2023 (may be stale); PMGOLD and NUGG not seen in the parsed rows. State Street Gold Fund (SST4481AU) is NOT on the Mar-2023 approved managed funds list (pre-dates fund launch)."
-        },
-        {
-          "product_name": "Allocated physical bullion / gold-linked structured notes / OTC gold for private clients",
-          "product_type": "none_found",
-          "segment": "ANZ Private",
-          "metals": ["Au"],
-          "description": "No allocated or unallocated metal account, physical bullion delivery, gold-linked structured note or private-client OTC gold product found on anz.com.au private-banking pages or in press coverage. ANZ's group-level physical custody offer (Singapore vault) was closed in 2019.",
-          "unit_and_minimum": "n/a",
-          "fees": "n/a",
-          "custody": "n/a",
-          "physical_delivery": "?",
-          "currency": "AUD",
-          "pricing_basis": "n/a",
-          "shariah": "n/a",
-          "url": "https://www.anz.com.au/personal/private-banking/",
-          "quote": "",
-          "confidence": "knowledge",
-          "notes": "Absence-of-evidence; ANZ Private product shelf is advice/DIMS/bespoke bond solutions (2025 UHNW bond solution with an external manager) rather than bank-manufactured metal products."
-        }
-      ],
-      "notional_indicators": [
-        {"metric": "State Street Gold Fund net assets", "value": "128.4", "unit": "A$m", "as_of": "2026-08-31", "source_url": "https://www.ssga.com/au/en_gb/institutional/mf/state-street-gold-fund-sst4481au", "quote": "AUD $128.4 mn as of 31 Aug 2026"},
-        {"metric": "State Street Gold Fund seed from ANZ Private clients", "value": "~50", "unit": "A$m", "as_of": "2024-07", "source_url": "https://stockhead.com.au/resources/gold-digger-state-street-and-anz-bring-golden-days-to-aussie-investors/", "quote": "seeded with around $50 million from ANZ Private Bank clients"},
-        {"metric": "ANZ Private funds managed for clients", "value": ">9", "unit": "A$bn", "as_of": "2024-07", "source_url": "https://financialnewswire.com.au/funds-management/state-street-launches-low-cost-gold-fund-backed-by-anz-private/", "quote": "ANZ Private Bank, which manages more than AU$9bn on behalf of its clients"},
-        {"metric": "State Street Gold Fund unit price", "value": "1.6994", "unit": "A$/unit", "as_of": "2026-09-10", "source_url": "https://www.ssga.com/au/en_gb/institutional/mf/state-street-gold-fund-sst4481au", "quote": "AUD $1.6994 as of 10 Sep 2026"}
-      ],
-      "liquidity": {
-        "status": "in-house",
-        "providers": ["State Street Global Advisors (fund manager)", "SPDR Gold MiniShares / World Gold Council (underlying)", "ANZ Institutional Markets precious metals desk (group bullion liquidity, not used by the fund)"],
-        "notes": "The private-bank gold product is entirely outsourced to SSGA/GLDM; ANZ's own bullion desk is not the liquidity provider. Fund AUM growth (A$50m -> A$128m in ~2 years) is mostly price (gold ~+70% in AUD since launch) plus modest net inflow."
-      },
-      "sources": [
-        "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/private-bank/state-street-gold-fund.pdf",
-        "https://www.ssga.com/au/en_gb/institutional/mf/state-street-gold-fund-sst4481au",
-        "https://www.ssga.com/au/en_gb/intermediary/insights/gold-fund-quarterly-commentary",
-        "https://financialnewswire.com.au/funds-management/state-street-launches-low-cost-gold-fund-backed-by-anz-private/",
-        "https://stockhead.com.au/resources/gold-digger-state-street-and-anz-bring-golden-days-to-aussie-investors/",
-        "https://www.anz.com.au/bluenotes/2025/october/lakshman-goldilocks-market-economy-private/",
-        "https://www.anz.com.au/personal/private-banking/insights/global-market-outlook-2026/",
-        "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/anz-investment-lending-approved-stocks.pdf",
-        "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/anz-investment-lending-approved-managed-funds.pdf"
-      ]
+     "product_name": "State Street Gold Fund (ARSN 677 945 621, APIR SST4481AU) - ANZ Private-commissioned",
+     "product_type": "third_party_fund_etf",
+     "segment": "ANZ Private clients (wholesale, or retail with personal advice); also open to advised retail/platform investors",
+     "metals": [
+      "Au"
+     ],
+     "description": "Unlisted Australian registered managed investment scheme; RE State Street Global Advisors, Australia Services Ltd; invests in SPDR Gold MiniShares ETF (GLDM, NYSE Arca) which is backed by allocated physical gold. Objective: spot gold price in AUD before costs; no currency hedging; no income distributions expected. Constitution allows later ASX/Cboe quotation. Seeded by ANZ Private (~A$50m) at launch, Jul-2024, as part of its debut strategic allocation to gold.",
+     "unit_and_minimum": "Units, daily priced; minimum initial A$25,000 (waivable); minimum remaining balance A$15,000; withdrawals normally paid within 3 business days (up to 30+21 days permitted)",
+     "fees": "Management fees and costs 0.14% pa of NAV (0.10% pa deducted inside GLDM + 0.04% pa fund level); performance fee nil; transaction costs est. 0.00% pa; buy/sell spread allowance per unit pricing policy",
+     "custody": "Fund custodian/administrator State Street Australia Ltd; underlying GLDM gold held in allocated form by ICBC Standard Bank (London) and JPMorgan Chase Bank (London / New York / Zurich)",
+     "physical_delivery": "N",
+     "currency": "AUD",
+     "pricing_basis": "LBMA Gold Price PM converted to AUD (benchmark), via GLDM NAV",
+     "shariah": "n/a",
+     "url": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/private-bank/state-street-gold-fund.pdf",
+     "quote": "The Fund invests in the SPDR Gold MiniShares ETF (Gold ETF)... backed by physical gold bullion held in secured vaults... without having to take physical delivery or arrange storage.",
+     "confidence": "verified",
+     "notes": "PDS hosted on anz.com.au private-bank folder (verified, issued 24-Jun-2024). SSGA factsheet: net assets AUD 128.4mn as of 31-Aug-2026; inception 26-Jun-2024; NAV A$1.6994 at 10-Sep-2026. Fund is a feeder into GLDM (World Gold Trust, CIK 1618181), not a direct bullion holder; GLDM custodians per desk ETF map (knowledge)."
     },
     {
-      "entity": "ANZ Retail / ANZ Plus / former ANZ Share Investing",
-      "country": "Australia",
-      "pb_arm_name": "ANZ Australia Retail (ANZ Plus app; ANZ Share Investing closed and migrated to CMC Markets Invest 2022-23)",
-      "shelf_summary": "No retail metals product. ANZ does not sell bullion coins or bars in branches and ANZ Plus has no investing/gold feature. ANZ exited retail broking: ANZ Share Investing (>500,000 clients, >A$45bn assets) was transitioned to CMC Markets Invest between Oct-2022 and 15-Mar-2023 for A$25m, so gold ETFs (GOLD, PMGOLD, QAU, NUGG) are now accessed by ex-ANZ retail clients on CMC, not an ANZ shelf. Historic: ANZ co-branded a physical gold ETF (ANZ ETFS Physical Gold, ASX: ZGOL, 2015) via the ANZ-ETF Securities JV and sold its stake in 2018. Do not confuse with the ANZ 'Gold' credit card (ANZ Rewards/Low Rate Gold cards), which is a card tier, not a metal product.",
-      "gold_view": "n/a (retail); ANZ Research (Daniel Hynes/Soni Kumari) is publicly bullish - US$4,400 YE-2025, US$5,800 Q2-2026 peak.",
-      "size_band": "none",
-      "size_band_basis": "No metal product on shelf; ex-Share Investing base of >500k clients / >A$45bn moved to CMC (Sep-2021 announcement, completed 15-Mar-2023).",
-      "products": [
-        {
-          "product_name": "Retail gold ETF / bullion / gold savings",
-          "product_type": "none_found",
-          "segment": "ANZ retail, ANZ Plus",
-          "metals": ["Au"],
-          "description": "No gold ETF shelf, bullion sales, gold savings plan or digital gold on ANZ retail; share trading was outsourced to CMC Markets Invest (transition complete 15-Mar-2023). ANZ branches do not sell bullion (no evidence of any branch bullion service; ANZ's physical distribution was wholesale via the Perth Mint agreement that lapsed in 2016).",
-          "unit_and_minimum": "n/a",
-          "fees": "n/a",
-          "custody": "n/a",
-          "physical_delivery": "N",
-          "currency": "AUD",
-          "pricing_basis": "n/a",
-          "shariah": "n/a",
-          "url": "https://media.anz.com/posts/2021/september/anz-share-investing-customers-to-transition-to-cmc-markets-platf",
-          "quote": "All ANZ Share Investing accounts began transitioning to CMC Markets from October 2022 and were completed by 15 March 2023.",
-          "confidence": "verified",
-          "notes": "CMC press release: >500,000 clients, total assets >A$45bn, consideration A$25m. ANZ 'Gold' = credit-card tier, ignore."
-        },
-        {
-          "product_name": "ANZ ETFS Physical Gold ETF (ASX: ZGOL) - historic, exited",
-          "product_type": "own_fund_etf",
-          "segment": "Australian retail/SMSF (2015-2018)",
-          "metals": ["Au"],
-          "description": "Physically backed gold ETF launched 2015 by the ANZ ETFS Management (AUS) joint venture with ETF Securities; ANZ sold its stake in the JV to ETF Securities in 2018 (the 'sale of its stake in an exchange-traded fund backed by physical gold' referenced in Jan-2019 vault-closure coverage); ZGOL was subsequently folded into the ETFS/Global X GOLD line.",
-          "unit_and_minimum": "ASX units",
-          "fees": "was ~0.40% pa (knowledge)",
-          "custody": "was JPMorgan London (knowledge)",
-          "physical_delivery": "N",
-          "currency": "AUD",
-          "pricing_basis": "LBMA Gold Price (AUD)",
-          "shariah": "n/a",
-          "url": "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault",
-          "quote": "The move follows the bank's sale last year of its stake in an exchange-traded fund backed by physical gold",
-          "confidence": "knowledge",
-          "notes": "JV identity (ANZ ETFS / ZGOL) from knowledge; Reuters/Euronews verifies only that a physical-gold ETF stake was sold in 2018 as part of scaling back precious metals."
-        }
-      ],
-      "notional_indicators": [
-        {"metric": "ANZ Share Investing client base transferred to CMC Markets", "value": ">500,000 clients / >45", "unit": "clients / A$bn assets", "as_of": "2023-03-15", "source_url": "https://www.cmcmarkets.com/group/press-releases/anzs-share-investing-client-base-transitions-to-cmc", "quote": "transition of over 500,000 ANZ Share Investing clients with total assets exceeding AUD 45 billion"}
-      ],
-      "liquidity": {"status": "in-house", "providers": [], "notes": "Not applicable - no retail metal product; ETF liquidity sits with Global X / Perth Mint / BetaShares / VanEck on CMC's platform."},
-      "sources": [
-        "https://media.anz.com/posts/2021/september/anz-share-investing-customers-to-transition-to-cmc-markets-platf",
-        "https://www.cmcmarkets.com/group/press-releases/anzs-share-investing-client-base-transitions-to-cmc",
-        "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault"
-      ]
+     "product_name": "ANZ Private strategic allocation to gold (multi-asset / discretionary portfolios)",
+     "product_type": "advisory_allocation",
+     "segment": "ANZ Private discretionary and advised multi-asset portfolios",
+     "metals": [
+      "Au"
+     ],
+     "description": "Debut strategic gold allocation introduced in ANZ Private's refreshed strategic asset allocation (mid-2024), implemented through the State Street Gold Fund; CIO has since run a tactical overweight (Oct-2025, Jan-2026). Allocation percentage not disclosed.",
+     "unit_and_minimum": "n/a (portfolio weight)",
+     "fees": "n/a (advice/DIMS fees)",
+     "custody": "via State Street Gold Fund",
+     "physical_delivery": "N",
+     "currency": "AUD",
+     "pricing_basis": "LBMA Gold Price PM (AUD)",
+     "shariah": "n/a",
+     "url": "https://www.anz.com.au/personal/private-banking/insights/global-market-outlook-2026/",
+     "quote": "Having introduced a strategic position in portfolios several years ago, we maintain an overweight as the year commences.",
+     "confidence": "verified",
+     "notes": "Also bluenotes 20-Oct-2025 (Anantakrishnan, CIO ANZ Private): 'we maintain our current overweight to gold accordingly'. Jul-2024 launch coverage: ANZ Private 'seeded the State Street Gold Fund as part of a broader change to its strategic asset allocation that includes a debut allocation to gold'; CIO: decision 'focused on improving the risk characteristics of its multi-asset portfolios'."
     },
     {
-      "entity": "ANZ New Zealand (ANZ Private Bank NZ / ANZ Investments)",
-      "country": "New Zealand",
-      "pb_arm_name": "ANZ Private Bank (NZ) - DIMS, ANZ Investment Funds, custodial Trading Service; ANZ Investments (largest KiwiSaver manager)",
-      "shelf_summary": "No metals product found. ANZ Private Bank NZ (entry >NZ$1.5m investable or NZ$400k+ income with significant lending) offers a Discretionary Investment Management Service, ANZ Investment Funds and a custodial self-directed Trading Service; the page makes no mention of gold, precious metals or commodities. ANZ Investments (>NZ$30bn, NZ's largest KiwiSaver provider) runs diversified multi-asset funds with no disclosed dedicated gold sleeve. No NZ Mint partnership and no branch bullion service found.",
-      "gold_view": "none published by ANZ NZ wealth; ANZ Research (group) bullish.",
-      "size_band": "none (metals); >NZ$30bn total ANZ Investments FUM",
-      "size_band_basis": "ANZ Private Bank NZ page: 'ANZ Investments manages over $30 billion for New Zealand investors'.",
-      "products": [
-        {
-          "product_name": "Gold / precious-metal product (NZ)",
-          "product_type": "none_found",
-          "segment": "ANZ Private Bank NZ, ANZ Investments, KiwiSaver",
-          "metals": ["Au"],
-          "description": "No gold fund, bullion, metal account or KiwiSaver gold option; NZ Private Bank clients could buy ASX/NZX-listed gold ETFs through the custodial Trading Service (self-directed), but ANZ NZ does not put a metals product forward.",
-          "unit_and_minimum": "n/a",
-          "fees": "n/a",
-          "custody": "n/a",
-          "physical_delivery": "N",
-          "currency": "NZD",
-          "pricing_basis": "n/a",
-          "shariah": "n/a",
-          "url": "https://www.anz.co.nz/personal/private-bank/",
-          "quote": "Discretionary Investment Management Service or ANZ Investment Funds",
-          "confidence": "verified",
-          "notes": "Absence verified on the ANZ Private Bank NZ page (no gold/commodity mention). Third-party guides confirm KiwiSaver schemes generally hold no direct gold. Note: some SGEI international-member listings show 'ANZ (New Zealand)' - this is the Australia and New Zealand Banking Group, not ANZ Bank New Zealand Ltd."
-        }
-      ],
-      "notional_indicators": [
-        {"metric": "ANZ Investments funds under management (NZ)", "value": ">30", "unit": "NZ$bn", "as_of": "2026", "source_url": "https://www.anz.co.nz/personal/private-bank/", "quote": "ANZ Investments manages over $30 billion for New Zealand investors"}
-      ],
-      "liquidity": {"status": "in-house", "providers": [], "notes": "n/a"},
-      "sources": [
-        "https://www.anz.co.nz/personal/private-bank/",
-        "https://www.anz.co.nz/personal/investing-kiwisaver/about-anz-investments/"
-      ]
+     "product_name": "ANZ Investment Lending (ANZ Share Investment Loan) - gold/precious-metal ETFs on approved securities list",
+     "product_type": "lombard_vs_metal",
+     "segment": "ANZ Private / retail investors with an ANZ Share Investment Loan",
+     "metals": [
+      "Au",
+      "Ag",
+      "Pt",
+      "Pd"
+     ],
+     "description": "ANZ's margin-lending approved-stocks list (01-Mar-2023) includes ETFS/Global X Physical Gold (GOLD), BetaShares Gold Bullion ETF (QAU), Global X Physical Silver (ETPMAG), Physical Palladium (ETPMPD), Physical Precious Metals Basket (ETPMPM), Physical Platinum (ETPMPT) and VanEck Gold Miners (GDX); approved managed funds list includes BlackRock Wholesale International Gold fund. LVRs per security not extracted. This is lending against listed metal ETCs, not against bullion; no true Lombard-vs-physical-metal product found.",
+     "unit_and_minimum": "per ANZ Investment Lending terms",
+     "fees": "margin loan interest; LVR by security",
+     "custody": "ETF units held via ANZ Investment Lending nominee/sponsorship",
+     "physical_delivery": "N",
+     "currency": "AUD",
+     "pricing_basis": "ASX-listed ETF prices",
+     "shariah": "n/a",
+     "url": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/anz-investment-lending-approved-stocks.pdf",
+     "quote": "ETFS Metals. - ETFS GOLD ... GLOBAL X PHYSICAL PRECIOUS METAL BASK ... BetaShares Gold ETF - ETF Units",
+     "confidence": "verified",
+     "notes": "List date 01-Mar-2023 (may be stale); PMGOLD and NUGG not seen in the parsed rows. State Street Gold Fund (SST4481AU) is NOT on the Mar-2023 approved managed funds list (pre-dates fund launch)."
     },
     {
-      "entity": "ANZ Asia (Singapore, Hong Kong, China, India, Japan) - institutional only",
-      "country": "Singapore",
-      "pb_arm_name": "None - ANZ Asia retail & wealth (incl. Private Bank) sold to DBS (SG, HK, CN, TW, ID; completed 12-Feb-2018) and Shinhan (Vietnam retail, end-2017)",
-      "shelf_summary": "No client-facing wealth metal product remains in Asia. ANZ transferred SGD 17bn deposits, SGD 11bn loans and SGD 6.5bn investment AUM to DBS (deal announced Oct-2016). What remains is the Institutional bank: precious-metals sales/trading in Singapore/HK/Shanghai serving refiners, miners, jewellers, banks and SGE participants. ANZ's Singapore 50-tonne bullion vault (opened Jul-2013) was closed in Jan-2019 and physical custody suspended. ANZ Shanghai holds a PBoC gold import licence (granted Dec-2013 alongside HSBC and China Everbright), was a first-tier market maker in the CFETS/SGE interbank gold market (Jan-2016) and is one of the 12 fixing banks of the Shanghai Gold Benchmark Price; ANZ is an SGE International Board (SGEI) member.",
-      "gold_view": "ANZ Research (Singapore-based commodity strategists Daniel Hynes / Soni Kumari): US$4,400 YE-2025, US$4,600 mid-2026 (Oct-2025); raised to US$5,800 Q2-2026 (Feb-2026).",
-      "size_band": "institutional flow only",
-      "size_band_basis": "DBS acquired SGD 6.5bn investment AUM from ANZ Asia wealth (FY2016); no ANZ Asia wealth remains.",
-      "products": [
-        {
-          "product_name": "Asia wealth / priority gold product",
-          "product_type": "none_found",
-          "segment": "Asia retail/wealth (divested)",
-          "metals": ["Au"],
-          "description": "ANZ has had no Asian retail/wealth client base since Feb-2018; gold products for those clients (e.g. former ANZ Singapore/HK wealth) now sit with DBS.",
-          "unit_and_minimum": "n/a",
-          "fees": "n/a",
-          "custody": "n/a",
-          "physical_delivery": "N",
-          "currency": "SGD/HKD",
-          "pricing_basis": "n/a",
-          "shariah": "n/a",
-          "url": "https://www.anz.com.au/newsroom/media/2018/02/anz-finalises-sale-of-six-asian-retail-and-wealth-businesses/",
-          "quote": "ANZ successfully transferred its retail and wealth businesses in Indonesia, China, Hong Kong, Taiwan and Singapore to DBS Bank",
-          "confidence": "verified",
-          "notes": "DBS completion 12-Feb-2018; ~SGD 110m above book value."
-        },
-        {
-          "product_name": "ANZ Singapore precious metals vault / physical custody (closed)",
-          "product_type": "other",
-          "segment": "institutional & (historically) HNW custody clients in Asia",
-          "metals": ["Au", "Ag", "Pt", "Pd"],
-          "description": "50-tonne-capacity Singapore bullion vault opened July 2013 to serve Asian demand; ANZ 'suspended its physical precious metals custody service' in January 2019 as it 'does not align to our business strategy at this time'. No ANZ metal custody offer remains.",
-          "unit_and_minimum": "n/a",
-          "fees": "n/a",
-          "custody": "closed 2019",
-          "physical_delivery": "N",
-          "currency": "USD",
-          "pricing_basis": "n/a",
-          "shariah": "n/a",
-          "url": "https://www.euronews.com/2019/01/24/australias-ANZ-bank-closes-singapore-gold-vault",
-          "quote": "This is a very small change in our precious metals and commodities business, which remains more broadly an important part of the ANZ Markets business.",
-          "confidence": "verified",
-          "notes": "Bloomberg 31-Jul-2013 'ANZ Opens 50-Ton Gold Vault in Singapore'; Reuters/Euronews 24-Jan-2019 closure."
-        }
-      ],
-      "notional_indicators": [
-        {"metric": "Investment AUM transferred to DBS (ANZ Asia wealth)", "value": "6.5", "unit": "SGD bn", "as_of": "FY2016 (completed 2018-02-12)", "source_url": "https://www.dbs.com/newsroom/DBS_completes_acquisition_of_ANZs_wealth_management_and_retail_banking_business_in_five_markets", "quote": "total deposits of SGD 17 billion, loans of SGD 11 billion, investment AUM of SGD 6.5 billion"},
-        {"metric": "ANZ Singapore vault capacity (closed)", "value": "50", "unit": "tonnes Au", "as_of": "2013-2019", "source_url": "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault", "quote": "the vault - which could hold 50 tonnes of gold worth around $2 billion"}
-      ],
-      "liquidity": {"status": "in-house", "providers": ["ANZ Institutional Markets precious metals desk (Singapore/HK/Shanghai)"], "notes": "Institutional-only; ANZ Shanghai gold import licence + SGE/SGEI membership give ANZ onshore CNY gold access that Citi lacks."},
-      "sources": [
-        "https://www.anz.com.au/newsroom/media/2018/02/anz-finalises-sale-of-six-asian-retail-and-wealth-businesses/",
-        "https://www.dbs.com/newsroom/DBS_completes_acquisition_of_ANZs_wealth_management_and_retail_banking_business_in_five_markets",
-        "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault",
-        "https://www.bullionstar.com/gold-university/chinese-gold-market",
-        "https://www.bullionstar.com/gold-university/the-mechanics-of-the-shanghai-international-gold-exchange"
-      ]
-    },
-    {
-      "entity": "ANZ Institutional Markets - Commodities / Precious Metals desk (context)",
-      "country": "Australia",
-      "pb_arm_name": "ANZ Institutional > Markets > Commodities (subsidiary ANZ Commodity Trading Pty Ltd); hubs Sydney, Singapore, Hong Kong, Shanghai, London",
-      "shelf_summary": "In-house bullion liquidity, not a client-wealth shelf. ANZ is an LBMA FULL member (NOT one of the 12 LBMA Market Makers - correct the premise), a Shanghai Gold Benchmark fixing bank (1 of 12), SGEI international member, PBoC-licensed gold importer via ANZ Shanghai (Dec-2013), and a CFETS interbank gold first-tier market maker (2016). Historically one of Asia's largest bullion businesses (c.15% of world primary gold production distributed in 2013; Perth Mint overseas-distribution agreement not renewed in 2016; Risk 'Asia metals dealer of the year' 2015 and Energy Risk Asia Precious Metals House of the Year under Eddie Listorti). Scaled back 2018-19 (sold physical-gold ETF JV stake 2018; closed Singapore vault Jan-2019) but FY25 shows a re-expansion: commodities trading assets A$9.08bn (+42% yoy), commodity derivative fair values doubled, commodities VaR A$8.9m as at 30-Sep-2025 vs A$3.3m. Institutional product page: swaps and options in gold, silver, platinum, palladium (options via FX Options desk) plus inventory finance, flow hedging and structured/bundled commodity finance. The '2016 precious-metals spot-fixing settlement' in the brief could NOT be verified - ANZ's 2016-17 ASIC settlement was BBSW (A$50m, Nov-2017), not metals.",
-      "gold_view": "ANZ Research bullish: US$4,400/oz YE-2025 and US$4,600 mid-2026 (Oct-2025); US$5,800/oz Q2-2026 (Feb-2026); Chief Economist Yetsenga: 'structural drivers for gold are likely to remain in place'.",
-      "size_band": "A$9-10bn commodity trading assets (group, mostly precious metals inventory - knowledge)",
-      "size_band_basis": "ANZ 2025 Annual Report Note 10: Trading assets - Commodities A$9,076m (30-Sep-2025) vs A$6,399m (2024); Reuters 2019 estimate commodities division revenue US$50-80m/yr with precious metals the bulk.",
-      "products": [
-        {
-          "product_name": "Precious metals swaps / options / forwards (institutional)",
-          "product_type": "otc_derivative",
-          "segment": "corporates, miners, refiners, jewellers, banks, official sector",
-          "metals": ["Au", "Ag", "Pt", "Pd"],
-          "description": "Institutional commodities risk-management page lists swaps and options for gold, silver, platinum, palladium (options 'Offered by FX Options Desk'), alongside inventory finance, flow hedging and structured/bundled finance.",
-          "unit_and_minimum": "institutional",
-          "fees": "n/a",
-          "custody": "n/a (physical custody service suspended 2019)",
-          "physical_delivery": "?",
-          "currency": "USD/AUD/CNY",
-          "pricing_basis": "LBMA / SGE benchmarks",
-          "shariah": "n/a",
-          "url": "https://www.anz.com/institutional/solutions/financial-markets/commodities/",
-          "quote": "Precious metals: Gold, Silver, Platinum, Palladium",
-          "confidence": "verified",
-          "notes": "Context row only - not a wealth product."
-        }
-      ],
-      "notional_indicators": [
-        {"metric": "Trading assets - Commodities (commodity inventories at fair value less cost to sell, AASB 102 broker-trader exemption)", "value": "9,076 (2024: 6,399)", "unit": "A$m", "as_of": "2025-09-30", "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf", "quote": "Commodities 9,076 6,399 ... Trading assets include commodity inventories measured at fair value less cost to sell"},
-        {"metric": "Derivatives held for trading - Commodity and other contracts, fair value assets / (liabilities)", "value": "3,052 / (3,974) (2024: 1,537 / (1,896))", "unit": "A$m", "as_of": "2025-09-30", "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf", "quote": "Commodity and other contracts 3,052 (3,974) 1,537 (1,896)"},
-        {"metric": "Traded VaR 99% - Commodities (Group excl. Suncorp: as at / high / low / average)", "value": "8.9 / 11.3 / 2.3 / 6.3 (2024: 3.3 / 5.0 / 1.8 / 2.9)", "unit": "A$m", "as_of": "2025-09-30", "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf", "quote": "Commodities 8.9 3.3 8.9 11.3 2.3 6.3 3.3 5.0 1.8 2.9"},
-        {"metric": "Share of world primary gold production distributed by ANZ", "value": "~15", "unit": "%", "as_of": "2013", "source_url": "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault", "quote": "2013 distribution: Close to 15% of world's primary gold production"},
-        {"metric": "Commodities division revenue (estimate, precious metals the bulk)", "value": "50-80", "unit": "US$m/yr", "as_of": "2019-01", "source_url": "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault", "quote": "Commodities division revenue: Estimated $50-80 million annually, with precious metals accounting for the bulk"}
-      ],
-      "liquidity": {
-        "status": "in-house",
-        "providers": ["ANZ Markets precious metals desk", "LBMA full member", "SGE/SGEI member + Shanghai Gold Benchmark fixing bank", "PBoC gold import licence (ANZ Shanghai)", "CFETS interbank gold market maker"],
-        "notes": "ANZ has never been an LBMA Market Maker; its hedging/liquidity role in Australia was the Perth Mint pipeline (ended 2016) and Australia/Asia physical flows into China and India. FY25 doubling of commodity trading assets/VaR indicates the desk is re-growing inventory (likely gold in transit/consignment for Asian refiner-jeweller flows)."
-      },
-      "sources": [
-        "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf",
-        "https://www.anz.com/institutional/solutions/financial-markets/commodities/",
-        "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault",
-        "https://www.risk.net/awards/2426038/asia-metals-dealer-year-anz",
-        "https://www.risk.net/commodities/metals/2364053/energy-risk-asia-precious-metals-house-year-anz",
-        "https://www.bullionstar.com/gold-university/london-gold-market-trading",
-        "https://www.lbma.org.uk/membership/current-membership",
-        "https://www.anz.com/institutional/insights/articles/2025-10/what-gold-is-telling-us-about-the-global-economy/",
-        "https://www.kitco.com/news/article/2026-02-16/anz-sees-gold-hitting-5800-ounce-second-quarter"
-      ]
+     "product_name": "Allocated physical bullion / gold-linked structured notes / OTC gold for private clients",
+     "product_type": "none_found",
+     "segment": "ANZ Private",
+     "metals": [
+      "Au"
+     ],
+     "description": "No allocated or unallocated metal account, physical bullion delivery, gold-linked structured note or private-client OTC gold product found on anz.com.au private-banking pages or in press coverage. ANZ's group-level physical custody offer (Singapore vault) was closed in 2019.",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "n/a",
+     "physical_delivery": "?",
+     "currency": "AUD",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://www.anz.com.au/personal/private-banking/",
+     "quote": "",
+     "confidence": "knowledge",
+     "notes": "Absence-of-evidence; ANZ Private product shelf is advice/DIMS/bespoke bond solutions (2025 UHNW bond solution with an external manager) rather than bank-manufactured metal products."
     }
-  ],
-  "group_indicators": [
-    {"metric": "ANZ Group trading assets - Commodities", "value": "9,076", "unit": "A$m", "as_of": "2025-09-30", "prior": "6,399 (2024-09-30)", "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf", "quote": "Commodities 9,076 6,399", "confidence": "verified"},
-    {"metric": "ANZ Group commodity derivatives held for trading (FV assets / liabilities)", "value": "3,052 / 3,974", "unit": "A$m", "as_of": "2025-09-30", "prior": "1,537 / 1,896", "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf", "quote": "Commodity and other contracts 3,052 (3,974) 1,537 (1,896)", "confidence": "verified"},
-    {"metric": "ANZ Group traded VaR - Commodities (as at)", "value": "8.9", "unit": "A$m (99%, 1-day)", "as_of": "2025-09-30", "prior": "3.3 (2024)", "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf", "quote": "Commodities 8.9 3.3 8.9 11.3 2.3 6.3", "confidence": "verified"},
-    {"metric": "Annual Report 'precious metals' mentions", "value": "0 explicit; gold cited once as example of 'hard commodities' in derivatives note; subsidiary 'ANZ Commodity Trading Pty Ltd' listed", "unit": "text", "as_of": "FY2025", "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf", "quote": "hard commodities (that is, mined products such as gold, oil and gas)", "confidence": "verified"},
-    {"metric": "ANZ Private AUM", "value": ">9", "unit": "A$bn", "as_of": "2024-07", "source_url": "https://financialnewswire.com.au/funds-management/state-street-launches-low-cost-gold-fund-backed-by-anz-private/", "quote": "manages more than AU$9bn on behalf of its clients", "confidence": "verified"},
-    {"metric": "State Street Gold Fund AUM growth since launch", "value": "~50 (Jul-2024 seed) -> 128.4 (31-Aug-2026)", "unit": "A$m", "as_of": "2026-08-31", "source_url": "https://www.ssga.com/au/en_gb/institutional/mf/state-street-gold-fund-sst4481au", "quote": "AUD $128.4 mn as of 31 Aug 2026", "confidence": "verified", "notes": "Unit price A$1.6994 (10-Sep-2026) vs presumed A$1.00 launch implies most of the growth is gold price; net new client money since seed is modest (order of A$40-50m)."},
-    {"metric": "Client gold uptake statement", "value": "ANZ Private: strategic gold position introduced 2024, overweight maintained Oct-2025 and Jan-2026; no client-count or % allocation disclosed", "unit": "text", "as_of": "2026-01-19", "source_url": "https://www.anz.com.au/personal/private-banking/insights/global-market-outlook-2026/", "quote": "we maintain an overweight as the year commences", "confidence": "verified"},
-    {"metric": "ANZ NZ Investments FUM", "value": ">30", "unit": "NZ$bn", "as_of": "2026", "source_url": "https://www.anz.co.nz/personal/private-bank/", "quote": "manages over $30 billion for New Zealand investors", "confidence": "verified"},
-    {"metric": "LBMA status", "value": "Full Member (not Market Maker)", "unit": "text", "as_of": "2026", "source_url": "https://www.bullionstar.com/gold-university/london-gold-market-trading", "quote": "Ordinary member banks include Bank of China, ICBC, Westpac, ANZ", "confidence": "verified (secondary source)"},
-    {"metric": "2016 'precious metals spot-fixing settlement'", "value": "NOT FOUND - likely conflation with ASIC BBSW case (settled A$50m, court-approved Nov-2017)", "unit": "text", "as_of": "2026-09-11", "source_url": "https://media.anz.com/posts/2017/11/court-approves-anz-and-asic-settlement-over-bank-trading-and-the", "quote": "", "confidence": "knowledge"}
-  ],
-  "citi_angle": "ANZ is a liquidity competitor, not a wealth-shelf competitor: its only client-facing metals product is the A$128m State Street Gold Fund feeder into GLDM that ANZ Private commissioned in 2024 (0.14% fee, no physical, no Lombard, no structured notes), while retail broking, Asian wealth and physical custody have all been divested (CMC 2023, DBS 2018, Singapore vault closed 2019). Three angles for Citi. (1) ANZ Private white-space: with a ~A$9bn book running an explicit gold overweight, ANZ Private has no allocated-metal, delivery, gold-collateral lending or gold-linked note capability - Citi can offer ANZ Private/its DIMS (or the ex-ANZ HNW clients now at CMC/DBS) allocated loco-London gold, gold-backed Lombard lines and AUD gold-linked structured notes that the SSGA fund cannot. (2) Institutional: ANZ's commodity trading assets jumped to A$9.1bn and commodity VaR nearly tripled in FY25 - the desk is rebuilding physical/consignment inventory for Asian refiner-jeweller flows using its PBoC import licence, SGE fixing seat and CFETS market-making status; ANZ is an LBMA full member (not a market maker) and now lacks its own vault, so it needs loco-London/Zurich liquidity, leasing, swaps and custody from market makers - Citi (LPMCL member since Jul-2026) should be a counterparty of choice for ANZ's Asia book (location swaps London<>Shanghai/Singapore, consignment funding, Pt/Pd options which ANZ only offers via its FX options desk). (3) Product intel: the State Street/GLDM feeder shows Australian private banks will outsource gold to a US ETF rather than build accounts - a Citi-custodied AUD unallocated/allocated account or feeder with delivery optionality priced near 0.14% would be a direct displacement pitch to ANZ Private, NAB/CBA/Westpac private and Australian IFAs."
+   ],
+   "notional_indicators": [
+    {
+     "metric": "State Street Gold Fund net assets",
+     "value": "128.4",
+     "unit": "A$m",
+     "as_of": "2026-08-31",
+     "source_url": "https://www.ssga.com/au/en_gb/institutional/mf/state-street-gold-fund-sst4481au",
+     "quote": "AUD $128.4 mn as of 31 Aug 2026"
+    },
+    {
+     "metric": "State Street Gold Fund seed from ANZ Private clients",
+     "value": "~50",
+     "unit": "A$m",
+     "as_of": "2024-07",
+     "source_url": "https://stockhead.com.au/resources/gold-digger-state-street-and-anz-bring-golden-days-to-aussie-investors/",
+     "quote": "seeded with around $50 million from ANZ Private Bank clients"
+    },
+    {
+     "metric": "ANZ Private funds managed for clients",
+     "value": ">9",
+     "unit": "A$bn",
+     "as_of": "2024-07",
+     "source_url": "https://financialnewswire.com.au/funds-management/state-street-launches-low-cost-gold-fund-backed-by-anz-private/",
+     "quote": "ANZ Private Bank, which manages more than AU$9bn on behalf of its clients"
+    },
+    {
+     "metric": "State Street Gold Fund unit price",
+     "value": "1.6994",
+     "unit": "A$/unit",
+     "as_of": "2026-09-10",
+     "source_url": "https://www.ssga.com/au/en_gb/institutional/mf/state-street-gold-fund-sst4481au",
+     "quote": "AUD $1.6994 as of 10 Sep 2026"
+    }
+   ],
+   "liquidity": {
+    "status": "in-house",
+    "providers": [
+     "State Street Global Advisors (fund manager)",
+     "SPDR Gold MiniShares / World Gold Council (underlying)",
+     "ANZ Institutional Markets precious metals desk (group bullion liquidity, not used by the fund)"
+    ],
+    "notes": "The private-bank gold product is entirely outsourced to SSGA/GLDM; ANZ's own bullion desk is not the liquidity provider. Fund AUM growth (A$50m -> A$128m in ~2 years) is mostly price (gold ~+70% in AUD since launch) plus modest net inflow."
+   },
+   "sources": [
+    "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/private-bank/state-street-gold-fund.pdf",
+    "https://www.ssga.com/au/en_gb/institutional/mf/state-street-gold-fund-sst4481au",
+    "https://www.ssga.com/au/en_gb/intermediary/insights/gold-fund-quarterly-commentary",
+    "https://financialnewswire.com.au/funds-management/state-street-launches-low-cost-gold-fund-backed-by-anz-private/",
+    "https://stockhead.com.au/resources/gold-digger-state-street-and-anz-bring-golden-days-to-aussie-investors/",
+    "https://www.anz.com.au/bluenotes/2025/october/lakshman-goldilocks-market-economy-private/",
+    "https://www.anz.com.au/personal/private-banking/insights/global-market-outlook-2026/",
+    "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/anz-investment-lending-approved-stocks.pdf",
+    "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/anz-investment-lending-approved-managed-funds.pdf"
+   ]
+  },
+  {
+   "entity": "ANZ Retail / ANZ Plus / former ANZ Share Investing",
+   "country": "Australia",
+   "pb_arm_name": "ANZ Australia Retail (ANZ Plus app; ANZ Share Investing closed and migrated to CMC Markets Invest 2022-23)",
+   "shelf_summary": "No retail metals product. ANZ does not sell bullion coins or bars in branches and ANZ Plus has no investing/gold feature. ANZ exited retail broking: ANZ Share Investing (>500,000 clients, >A$45bn assets) was transitioned to CMC Markets Invest between Oct-2022 and 15-Mar-2023 for A$25m, so gold ETFs (GOLD, PMGOLD, QAU, NUGG) are now accessed by ex-ANZ retail clients on CMC, not an ANZ shelf. Historic: ANZ co-branded a physical gold ETF (ANZ ETFS Physical Gold, ASX: ZGOL, 2015) via the ANZ-ETF Securities JV and sold its stake in 2018. Do not confuse with the ANZ 'Gold' credit card (ANZ Rewards/Low Rate Gold cards), which is a card tier, not a metal product.",
+   "gold_view": "n/a (retail); ANZ Research (Daniel Hynes/Soni Kumari) is publicly bullish - US$4,400 YE-2025, US$5,800 Q2-2026 peak.",
+   "size_band": "none",
+   "size_band_basis": "No metal product on shelf; ex-Share Investing base of >500k clients / >A$45bn moved to CMC (Sep-2021 announcement, completed 15-Mar-2023).",
+   "products": [
+    {
+     "product_name": "Retail gold ETF / bullion / gold savings",
+     "product_type": "none_found",
+     "segment": "ANZ retail, ANZ Plus",
+     "metals": [
+      "Au"
+     ],
+     "description": "No gold ETF shelf, bullion sales, gold savings plan or digital gold on ANZ retail; share trading was outsourced to CMC Markets Invest (transition complete 15-Mar-2023). ANZ branches do not sell bullion (no evidence of any branch bullion service; ANZ's physical distribution was wholesale via the Perth Mint agreement that lapsed in 2016).",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "n/a",
+     "physical_delivery": "N",
+     "currency": "AUD",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://media.anz.com/posts/2021/september/anz-share-investing-customers-to-transition-to-cmc-markets-platf",
+     "quote": "All ANZ Share Investing accounts began transitioning to CMC Markets from October 2022 and were completed by 15 March 2023.",
+     "confidence": "verified",
+     "notes": "CMC press release: >500,000 clients, total assets >A$45bn, consideration A$25m. ANZ 'Gold' = credit-card tier, ignore."
+    },
+    {
+     "product_name": "ANZ ETFS Physical Gold ETF (ASX: ZGOL) - historic, exited",
+     "product_type": "own_fund_etf",
+     "segment": "Australian retail/SMSF (2015-2018)",
+     "metals": [
+      "Au"
+     ],
+     "description": "Physically backed gold ETF launched 2015 by the ANZ ETFS Management (AUS) joint venture with ETF Securities; ANZ sold its stake in the JV to ETF Securities in 2018 (the 'sale of its stake in an exchange-traded fund backed by physical gold' referenced in Jan-2019 vault-closure coverage); ZGOL was subsequently folded into the ETFS/Global X GOLD line.",
+     "unit_and_minimum": "ASX units",
+     "fees": "was ~0.40% pa (knowledge)",
+     "custody": "was JPMorgan London (knowledge)",
+     "physical_delivery": "N",
+     "currency": "AUD",
+     "pricing_basis": "LBMA Gold Price (AUD)",
+     "shariah": "n/a",
+     "url": "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault",
+     "quote": "The move follows the bank's sale last year of its stake in an exchange-traded fund backed by physical gold",
+     "confidence": "knowledge",
+     "notes": "JV identity (ANZ ETFS / ZGOL) from knowledge; Reuters/Euronews verifies only that a physical-gold ETF stake was sold in 2018 as part of scaling back precious metals."
+    }
+   ],
+   "notional_indicators": [
+    {
+     "metric": "ANZ Share Investing client base transferred to CMC Markets",
+     "value": ">500,000 clients / >45",
+     "unit": "clients / A$bn assets",
+     "as_of": "2023-03-15",
+     "source_url": "https://www.cmcmarkets.com/group/press-releases/anzs-share-investing-client-base-transitions-to-cmc",
+     "quote": "transition of over 500,000 ANZ Share Investing clients with total assets exceeding AUD 45 billion"
+    }
+   ],
+   "liquidity": {
+    "status": "in-house",
+    "providers": [],
+    "notes": "Not applicable - no retail metal product; ETF liquidity sits with Global X / Perth Mint / BetaShares / VanEck on CMC's platform."
+   },
+   "sources": [
+    "https://media.anz.com/posts/2021/september/anz-share-investing-customers-to-transition-to-cmc-markets-platf",
+    "https://www.cmcmarkets.com/group/press-releases/anzs-share-investing-client-base-transitions-to-cmc",
+    "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault"
+   ]
+  },
+  {
+   "entity": "ANZ New Zealand (ANZ Private Bank NZ / ANZ Investments)",
+   "country": "New Zealand",
+   "pb_arm_name": "ANZ Private Bank (NZ) - DIMS, ANZ Investment Funds, custodial Trading Service; ANZ Investments (largest KiwiSaver manager)",
+   "shelf_summary": "No metals product found. ANZ Private Bank NZ (entry >NZ$1.5m investable or NZ$400k+ income with significant lending) offers a Discretionary Investment Management Service, ANZ Investment Funds and a custodial self-directed Trading Service; the page makes no mention of gold, precious metals or commodities. ANZ Investments (>NZ$30bn, NZ's largest KiwiSaver provider) runs diversified multi-asset funds with no disclosed dedicated gold sleeve. No NZ Mint partnership and no branch bullion service found.",
+   "gold_view": "none published by ANZ NZ wealth; ANZ Research (group) bullish.",
+   "size_band": "none (metals); >NZ$30bn total ANZ Investments FUM",
+   "size_band_basis": "ANZ Private Bank NZ page: 'ANZ Investments manages over $30 billion for New Zealand investors'.",
+   "products": [
+    {
+     "product_name": "Gold / precious-metal product (NZ)",
+     "product_type": "none_found",
+     "segment": "ANZ Private Bank NZ, ANZ Investments, KiwiSaver",
+     "metals": [
+      "Au"
+     ],
+     "description": "No gold fund, bullion, metal account or KiwiSaver gold option; NZ Private Bank clients could buy ASX/NZX-listed gold ETFs through the custodial Trading Service (self-directed), but ANZ NZ does not put a metals product forward.",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "n/a",
+     "physical_delivery": "N",
+     "currency": "NZD",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://www.anz.co.nz/personal/private-bank/",
+     "quote": "Discretionary Investment Management Service or ANZ Investment Funds",
+     "confidence": "verified",
+     "notes": "Absence verified on the ANZ Private Bank NZ page (no gold/commodity mention). Third-party guides confirm KiwiSaver schemes generally hold no direct gold. Note: some SGEI international-member listings show 'ANZ (New Zealand)' - this is the Australia and New Zealand Banking Group, not ANZ Bank New Zealand Ltd."
+    }
+   ],
+   "notional_indicators": [
+    {
+     "metric": "ANZ Investments funds under management (NZ)",
+     "value": ">30",
+     "unit": "NZ$bn",
+     "as_of": "2026",
+     "source_url": "https://www.anz.co.nz/personal/private-bank/",
+     "quote": "ANZ Investments manages over $30 billion for New Zealand investors"
+    }
+   ],
+   "liquidity": {
+    "status": "in-house",
+    "providers": [],
+    "notes": "n/a"
+   },
+   "sources": [
+    "https://www.anz.co.nz/personal/private-bank/",
+    "https://www.anz.co.nz/personal/investing-kiwisaver/about-anz-investments/"
+   ]
+  },
+  {
+   "entity": "ANZ Asia (Singapore, Hong Kong, China, India, Japan) - institutional only",
+   "country": "Singapore",
+   "pb_arm_name": "None - ANZ Asia retail & wealth (incl. Private Bank) sold to DBS (SG, HK, CN, TW, ID; completed 12-Feb-2018) and Shinhan (Vietnam retail, end-2017)",
+   "shelf_summary": "No client-facing wealth metal product remains in Asia. ANZ transferred SGD 17bn deposits, SGD 11bn loans and SGD 6.5bn investment AUM to DBS (deal announced Oct-2016). What remains is the Institutional bank: precious-metals sales/trading in Singapore/HK/Shanghai serving refiners, miners, jewellers, banks and SGE participants. ANZ's Singapore 50-tonne bullion vault (opened Jul-2013) was closed in Jan-2019 and physical custody suspended. ANZ Shanghai holds a PBoC gold import licence (granted Dec-2013 alongside HSBC and China Everbright), was a first-tier market maker in the CFETS/SGE interbank gold market (Jan-2016) and is one of the 12 fixing banks of the Shanghai Gold Benchmark Price; ANZ is an SGE International Board (SGEI) member.",
+   "gold_view": "ANZ Research (Singapore-based commodity strategists Daniel Hynes / Soni Kumari): US$4,400 YE-2025, US$4,600 mid-2026 (Oct-2025); raised to US$5,800 Q2-2026 (Feb-2026).",
+   "size_band": "institutional flow only",
+   "size_band_basis": "DBS acquired SGD 6.5bn investment AUM from ANZ Asia wealth (FY2016); no ANZ Asia wealth remains.",
+   "products": [
+    {
+     "product_name": "Asia wealth / priority gold product",
+     "product_type": "none_found",
+     "segment": "Asia retail/wealth (divested)",
+     "metals": [
+      "Au"
+     ],
+     "description": "ANZ has had no Asian retail/wealth client base since Feb-2018; gold products for those clients (e.g. former ANZ Singapore/HK wealth) now sit with DBS.",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "n/a",
+     "physical_delivery": "N",
+     "currency": "SGD/HKD",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://www.anz.com.au/newsroom/media/2018/02/anz-finalises-sale-of-six-asian-retail-and-wealth-businesses/",
+     "quote": "ANZ successfully transferred its retail and wealth businesses in Indonesia, China, Hong Kong, Taiwan and Singapore to DBS Bank",
+     "confidence": "verified",
+     "notes": "DBS completion 12-Feb-2018; ~SGD 110m above book value."
+    },
+    {
+     "product_name": "ANZ Singapore precious metals vault / physical custody (closed)",
+     "product_type": "other",
+     "segment": "institutional & (historically) HNW custody clients in Asia",
+     "metals": [
+      "Au",
+      "Ag",
+      "Pt",
+      "Pd"
+     ],
+     "description": "50-tonne-capacity Singapore bullion vault opened July 2013 to serve Asian demand; ANZ 'suspended its physical precious metals custody service' in January 2019 as it 'does not align to our business strategy at this time'. No ANZ metal custody offer remains.",
+     "unit_and_minimum": "n/a",
+     "fees": "n/a",
+     "custody": "closed 2019",
+     "physical_delivery": "N",
+     "currency": "USD",
+     "pricing_basis": "n/a",
+     "shariah": "n/a",
+     "url": "https://www.euronews.com/2019/01/24/australias-ANZ-bank-closes-singapore-gold-vault",
+     "quote": "This is a very small change in our precious metals and commodities business, which remains more broadly an important part of the ANZ Markets business.",
+     "confidence": "verified",
+     "notes": "Bloomberg 31-Jul-2013 'ANZ Opens 50-Ton Gold Vault in Singapore'; Reuters/Euronews 24-Jan-2019 closure."
+    }
+   ],
+   "notional_indicators": [
+    {
+     "metric": "Investment AUM transferred to DBS (ANZ Asia wealth)",
+     "value": "6.5",
+     "unit": "SGD bn",
+     "as_of": "FY2016 (completed 2018-02-12)",
+     "source_url": "https://www.dbs.com/newsroom/DBS_completes_acquisition_of_ANZs_wealth_management_and_retail_banking_business_in_five_markets",
+     "quote": "total deposits of SGD 17 billion, loans of SGD 11 billion, investment AUM of SGD 6.5 billion"
+    },
+    {
+     "metric": "ANZ Singapore vault capacity (closed)",
+     "value": "50",
+     "unit": "tonnes Au",
+     "as_of": "2013-2019",
+     "source_url": "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault",
+     "quote": "the vault - which could hold 50 tonnes of gold worth around $2 billion"
+    }
+   ],
+   "liquidity": {
+    "status": "in-house",
+    "providers": [
+     "ANZ Institutional Markets precious metals desk (Singapore/HK/Shanghai)"
+    ],
+    "notes": "Institutional-only; ANZ Shanghai gold import licence + SGE/SGEI membership give ANZ onshore CNY gold access that Citi lacks."
+   },
+   "sources": [
+    "https://www.anz.com.au/newsroom/media/2018/02/anz-finalises-sale-of-six-asian-retail-and-wealth-businesses/",
+    "https://www.dbs.com/newsroom/DBS_completes_acquisition_of_ANZs_wealth_management_and_retail_banking_business_in_five_markets",
+    "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault",
+    "https://www.bullionstar.com/gold-university/chinese-gold-market",
+    "https://www.bullionstar.com/gold-university/the-mechanics-of-the-shanghai-international-gold-exchange"
+   ]
+  },
+  {
+   "entity": "ANZ Institutional Markets - Commodities / Precious Metals desk (context)",
+   "country": "Australia",
+   "pb_arm_name": "ANZ Institutional > Markets > Commodities (subsidiary ANZ Commodity Trading Pty Ltd); hubs Sydney, Singapore, Hong Kong, Shanghai, London",
+   "shelf_summary": "In-house bullion liquidity, not a client-wealth shelf. ANZ is an LBMA FULL member (NOT one of the 12 LBMA Market Makers - correct the premise), a Shanghai Gold Benchmark fixing bank (1 of 12), SGEI international member, PBoC-licensed gold importer via ANZ Shanghai (Dec-2013), and a CFETS interbank gold first-tier market maker (2016). Historically one of Asia's largest bullion businesses (c.15% of world primary gold production distributed in 2013; Perth Mint overseas-distribution agreement not renewed in 2016; Risk 'Asia metals dealer of the year' 2015 and Energy Risk Asia Precious Metals House of the Year under Eddie Listorti). Scaled back 2018-19 (sold physical-gold ETF JV stake 2018; closed Singapore vault Jan-2019) but FY25 shows a re-expansion: commodities trading assets A$9.08bn (+42% yoy), commodity derivative fair values doubled, commodities VaR A$8.9m as at 30-Sep-2025 vs A$3.3m. Institutional product page: swaps and options in gold, silver, platinum, palladium (options via FX Options desk) plus inventory finance, flow hedging and structured/bundled commodity finance. The '2016 precious-metals spot-fixing settlement' in the brief could NOT be verified - ANZ's 2016-17 ASIC settlement was BBSW (A$50m, Nov-2017), not metals.",
+   "gold_view": "ANZ Research bullish: US$4,400/oz YE-2025 and US$4,600 mid-2026 (Oct-2025); US$5,800/oz Q2-2026 (Feb-2026); Chief Economist Yetsenga: 'structural drivers for gold are likely to remain in place'.",
+   "size_band": "A$9-10bn commodity trading assets (group, mostly precious metals inventory - knowledge)",
+   "size_band_basis": "ANZ 2025 Annual Report Note 10: Trading assets - Commodities A$9,076m (30-Sep-2025) vs A$6,399m (2024); Reuters 2019 estimate commodities division revenue US$50-80m/yr with precious metals the bulk.",
+   "products": [
+    {
+     "product_name": "Precious metals swaps / options / forwards (institutional)",
+     "product_type": "otc_derivative",
+     "segment": "corporates, miners, refiners, jewellers, banks, official sector",
+     "metals": [
+      "Au",
+      "Ag",
+      "Pt",
+      "Pd"
+     ],
+     "description": "Institutional commodities risk-management page lists swaps and options for gold, silver, platinum, palladium (options 'Offered by FX Options Desk'), alongside inventory finance, flow hedging and structured/bundled finance.",
+     "unit_and_minimum": "institutional",
+     "fees": "n/a",
+     "custody": "n/a (physical custody service suspended 2019)",
+     "physical_delivery": "?",
+     "currency": "USD/AUD/CNY",
+     "pricing_basis": "LBMA / SGE benchmarks",
+     "shariah": "n/a",
+     "url": "https://www.anz.com/institutional/solutions/financial-markets/commodities/",
+     "quote": "Precious metals: Gold, Silver, Platinum, Palladium",
+     "confidence": "verified",
+     "notes": "Context row only - not a wealth product."
+    }
+   ],
+   "notional_indicators": [
+    {
+     "metric": "Trading assets - Commodities (commodity inventories at fair value less cost to sell, AASB 102 broker-trader exemption)",
+     "value": "9,076 (2024: 6,399)",
+     "unit": "A$m",
+     "as_of": "2025-09-30",
+     "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf",
+     "quote": "Commodities 9,076 6,399 ... Trading assets include commodity inventories measured at fair value less cost to sell"
+    },
+    {
+     "metric": "Derivatives held for trading - Commodity and other contracts, fair value assets / (liabilities)",
+     "value": "3,052 / (3,974) (2024: 1,537 / (1,896))",
+     "unit": "A$m",
+     "as_of": "2025-09-30",
+     "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf",
+     "quote": "Commodity and other contracts 3,052 (3,974) 1,537 (1,896)"
+    },
+    {
+     "metric": "Traded VaR 99% - Commodities (Group excl. Suncorp: as at / high / low / average)",
+     "value": "8.9 / 11.3 / 2.3 / 6.3 (2024: 3.3 / 5.0 / 1.8 / 2.9)",
+     "unit": "A$m",
+     "as_of": "2025-09-30",
+     "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf",
+     "quote": "Commodities 8.9 3.3 8.9 11.3 2.3 6.3 3.3 5.0 1.8 2.9"
+    },
+    {
+     "metric": "Share of world primary gold production distributed by ANZ",
+     "value": "~15",
+     "unit": "%",
+     "as_of": "2013",
+     "source_url": "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault",
+     "quote": "2013 distribution: Close to 15% of world's primary gold production"
+    },
+    {
+     "metric": "Commodities division revenue (estimate, precious metals the bulk)",
+     "value": "50-80",
+     "unit": "US$m/yr",
+     "as_of": "2019-01",
+     "source_url": "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault",
+     "quote": "Commodities division revenue: Estimated $50-80 million annually, with precious metals accounting for the bulk"
+    }
+   ],
+   "liquidity": {
+    "status": "in-house",
+    "providers": [
+     "ANZ Markets precious metals desk",
+     "LBMA full member",
+     "SGE/SGEI member + Shanghai Gold Benchmark fixing bank",
+     "PBoC gold import licence (ANZ Shanghai)",
+     "CFETS interbank gold market maker"
+    ],
+    "notes": "ANZ has never been an LBMA Market Maker; its hedging/liquidity role in Australia was the Perth Mint pipeline (ended 2016) and Australia/Asia physical flows into China and India. FY25 doubling of commodity trading assets/VaR indicates the desk is re-growing inventory (likely gold in transit/consignment for Asian refiner-jeweller flows)."
+   },
+   "sources": [
+    "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf",
+    "https://www.anz.com/institutional/solutions/financial-markets/commodities/",
+    "https://www.euronews.com/2019/01/24/australias-anz-bank-closes-singapore-gold-vault",
+    "https://www.risk.net/awards/2426038/asia-metals-dealer-year-anz",
+    "https://www.risk.net/commodities/metals/2364053/energy-risk-asia-precious-metals-house-year-anz",
+    "https://www.bullionstar.com/gold-university/london-gold-market-trading",
+    "https://www.lbma.org.uk/membership/current-membership",
+    "https://www.anz.com/institutional/insights/articles/2025-10/what-gold-is-telling-us-about-the-global-economy/",
+    "https://www.kitco.com/news/article/2026-02-16/anz-sees-gold-hitting-5800-ounce-second-quarter"
+   ]
+  }
+ ],
+ "group_indicators": [
+  {
+   "metric": "ANZ Group trading assets - Commodities",
+   "value": "9,076",
+   "unit": "A$m",
+   "as_of": "2025-09-30",
+   "prior": "6,399 (2024-09-30)",
+   "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf",
+   "quote": "Commodities 9,076 6,399",
+   "confidence": "verified"
+  },
+  {
+   "metric": "ANZ Group commodity derivatives held for trading (FV assets / liabilities)",
+   "value": "3,052 / 3,974",
+   "unit": "A$m",
+   "as_of": "2025-09-30",
+   "prior": "1,537 / 1,896",
+   "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf",
+   "quote": "Commodity and other contracts 3,052 (3,974) 1,537 (1,896)",
+   "confidence": "verified"
+  },
+  {
+   "metric": "ANZ Group traded VaR - Commodities (as at)",
+   "value": "8.9",
+   "unit": "A$m (99%, 1-day)",
+   "as_of": "2025-09-30",
+   "prior": "3.3 (2024)",
+   "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf",
+   "quote": "Commodities 8.9 3.3 8.9 11.3 2.3 6.3",
+   "confidence": "verified"
+  },
+  {
+   "metric": "Annual Report 'precious metals' mentions",
+   "value": "0 explicit; gold cited once as example of 'hard commodities' in derivatives note; subsidiary 'ANZ Commodity Trading Pty Ltd' listed",
+   "unit": "text",
+   "as_of": "FY2025",
+   "source_url": "https://www.anz.com/content/dam/anzcom/debtinvestors/anzghl-fy25-audited-financial-statements-pp95-222.pdf",
+   "quote": "hard commodities (that is, mined products such as gold, oil and gas)",
+   "confidence": "verified"
+  },
+  {
+   "metric": "ANZ Private AUM",
+   "value": ">9",
+   "unit": "A$bn",
+   "as_of": "2024-07",
+   "source_url": "https://financialnewswire.com.au/funds-management/state-street-launches-low-cost-gold-fund-backed-by-anz-private/",
+   "quote": "manages more than AU$9bn on behalf of its clients",
+   "confidence": "verified"
+  },
+  {
+   "metric": "State Street Gold Fund AUM growth since launch",
+   "value": "~50 (Jul-2024 seed) -> 128.4 (31-Aug-2026)",
+   "unit": "A$m",
+   "as_of": "2026-08-31",
+   "source_url": "https://www.ssga.com/au/en_gb/institutional/mf/state-street-gold-fund-sst4481au",
+   "quote": "AUD $128.4 mn as of 31 Aug 2026",
+   "confidence": "verified",
+   "notes": "Unit price A$1.6994 (10-Sep-2026) vs presumed A$1.00 launch implies most of the growth is gold price; net new client money since seed is modest (order of A$40-50m)."
+  },
+  {
+   "metric": "Client gold uptake statement",
+   "value": "ANZ Private: strategic gold position introduced 2024, overweight maintained Oct-2025 and Jan-2026; no client-count or % allocation disclosed",
+   "unit": "text",
+   "as_of": "2026-01-19",
+   "source_url": "https://www.anz.com.au/personal/private-banking/insights/global-market-outlook-2026/",
+   "quote": "we maintain an overweight as the year commences",
+   "confidence": "verified"
+  },
+  {
+   "metric": "ANZ NZ Investments FUM",
+   "value": ">30",
+   "unit": "NZ$bn",
+   "as_of": "2026",
+   "source_url": "https://www.anz.co.nz/personal/private-bank/",
+   "quote": "manages over $30 billion for New Zealand investors",
+   "confidence": "verified"
+  },
+  {
+   "metric": "LBMA status",
+   "value": "Full Member (not Market Maker)",
+   "unit": "text",
+   "as_of": "2026",
+   "source_url": "https://www.bullionstar.com/gold-university/london-gold-market-trading",
+   "quote": "Ordinary member banks include Bank of China, ICBC, Westpac, ANZ",
+   "confidence": "verified (secondary source)"
+  },
+  {
+   "metric": "2016 'precious metals spot-fixing settlement'",
+   "value": "NOT FOUND - likely conflation with ASIC BBSW case (settled A$50m, court-approved Nov-2017)",
+   "unit": "text",
+   "as_of": "2026-09-11",
+   "source_url": "https://media.anz.com/posts/2017/11/court-approves-anz-and-asic-settlement-over-bank-trading-and-the",
+   "quote": "",
+   "confidence": "knowledge"
+  }
+ ],
+ "strategic_idea": "ANZ is a liquidity competitor, not a wealth-shelf competitor: its only client-facing metals product is the A$128m State Street Gold Fund feeder into GLDM that ANZ Private commissioned in 2024 (0.14% fee, no physical, no Lombard, no structured notes), while retail broking, Asian wealth and physical custody have all been divested (CMC 2023, DBS 2018, Singapore vault closed 2019). Three angles for a bullion desk. (1) ANZ Private white-space: with a ~A$9bn book running an explicit gold overweight, ANZ Private has no allocated-metal, delivery, gold-collateral lending or gold-linked note capability - a bullion desk could offer ANZ Private/its DIMS (or the ex-ANZ HNW clients now at CMC/DBS) allocated loco-London gold, gold-backed Lombard lines and AUD gold-linked structured notes that the SSGA fund cannot. (2) Institutional: ANZ's commodity trading assets jumped to A$9.1bn and commodity VaR nearly tripled in FY25 - the desk is rebuilding physical/consignment inventory for Asian refiner-jeweller flows using its PBoC import licence, SGE fixing seat and CFETS market-making status; ANZ is an LBMA full member (not a market maker) and now lacks its own vault, so it needs loco-London/Zurich liquidity, leasing, swaps and custody from market makers - a bullion desk (LPMCL member since Jul-2026) should be a counterparty of choice for ANZ's Asia book (location swaps London<>Shanghai/Singapore, consignment funding, Pt/Pd options which ANZ only offers via its FX options desk). (3) Product intel: the State Street/GLDM feeder shows Australian private banks will outsource gold to a US ETF rather than build accounts - a a bullion desk-custodied AUD unallocated/allocated account or feeder with delivery optionality priced near 0.14% would be a direct displacement pitch to ANZ Private, NAB/CBA/Westpac private and Australian IFAs."
 }

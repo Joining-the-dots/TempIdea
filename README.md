@@ -2,7 +2,9 @@
 
 A global survey of private banks and wealth managers: **what precious-metals products each one advertises to its clients, and which bullion banks, custodians and refiners sit behind those products.**
 
-Built for a bank precious-metals desk. The question it answers: where can a metals desk supply, custody, finance or clear what a wealth manager is currently buying from someone else.
+The question it answers: where could a bullion desk supply, custody, finance or clear what a wealth manager is currently buying from someone else.
+
+The prescriptive sections — the run-sheet's proposed shelf, and the per-firm `strategic_idea` field — are **illustrative strategic ideas**, not anyone's plan or recommendation. They exist to show what the research implies. Everything else is market observation, collected identically for every firm in the set.
 
 ## What is in here
 
@@ -22,7 +24,7 @@ Six sections:
 
 1. **Talking points** — a timed 45-minute run-sheet: uptake evidence, the nine product families with live fee benchmarks, top three by disclosed volume for 13 markets, competitor designs worth copying, sizing, a proposed shelf, and the questions to expect.
 2. **Where the desk can displace** — the 46 firms scoring 7 or more, each expandable to counterparties, evidence and desk angle.
-3. **The home bank's own shelf** — what is publicly documented per booking centre.
+3. **One global franchise, as the web sees it** — what is publicly documented for one large group per booking centre, shown against the peer shelves.
 4. **Who the private banks work with** — counterparty leaderboard by number of wealth firms using them.
 5. **Product catalogue** — all 564 products, filterable by type, metal, region, country, segment.
 6. **Every firm** — all 613 rows; private-bank and wealth arms shown by default.
