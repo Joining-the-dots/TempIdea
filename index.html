@@ -4,26 +4,140 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Private Wealth Metals Map</title>
-<meta http-equiv="refresh" content="0; url=PRIVATE_WEALTH.html">
-<link rel="canonical" href="PRIVATE_WEALTH.html">
+<meta name="description" content="Global survey of private banks and wealth managers: the precious-metals products they advertise and the bullion banks behind them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-:root{color-scheme:light dark}
-body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f6f4ee;color:#1b2233;
-     font:16px/1.5 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
-@media (prefers-color-scheme:dark){body{background:#15181f;color:#e9e4d8}}
-.card{max-width:44ch;padding:2rem;text-align:center}
-h1{font:600 1.4rem/1.2 Georgia,"Times New Roman",serif;margin:0 0 .6rem}
-p{margin:.4rem 0;color:#5a6478}
-@media (prefers-color-scheme:dark){p{color:#a9b1c0}}
-a{color:#2c4f8f;font-weight:600}
-@media (prefers-color-scheme:dark){a{color:#8fb0ea}}
+:root{
+  --bg:#f6f4ee; --surface:#fffdf8; --ink:#1b2233; --ink2:#4a5468; --mute:#7a8394;
+  --rule:#dcd6c8; --rule2:#ebe6da; --gold:#a67c1e; --gold-bg:#f3e9cf;
+  --blue:#2c4f8f; --blue-bg:#e3eaf7; --green:#2e7d4f; --focus:#2c4f8f;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#15181f; --surface:#1c2029; --ink:#e9e4d8; --ink2:#c3bdb0; --mute:#8d95a4;
+  --rule:#2f3441; --rule2:#262b36; --gold:#d5a94a; --gold-bg:#2f2a1b;
+  --blue:#8fb0ea; --blue-bg:#1f2a40; --green:#6fc292; --focus:#8fb0ea;
+}}
+:root[data-theme="dark"]{
+  --bg:#15181f; --surface:#1c2029; --ink:#e9e4d8; --ink2:#c3bdb0; --mute:#8d95a4;
+  --rule:#2f3441; --rule2:#262b36; --gold:#d5a94a; --gold-bg:#2f2a1b;
+  --blue:#8fb0ea; --blue-bg:#1f2a40; --green:#6fc292; --focus:#8fb0ea;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+     font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:clamp(32px,7vw,72px) 24px 64px}
+.eyebrow{font:600 12px/1 "Source Sans 3",sans-serif;text-transform:uppercase;
+         letter-spacing:.11em;color:var(--gold);margin-bottom:14px}
+h1{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:600;
+   font-size:clamp(30px,5.5vw,46px);line-height:1.06;letter-spacing:-.015em;
+   margin:0 0 14px;text-wrap:balance;font-variation-settings:"opsz" 96}
+.lede{color:var(--ink2);font-size:clamp(16px,2.2vw,18px);margin:0;max-width:58ch}
+.figs{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--rule);
+      border-bottom:1px solid var(--rule);margin:30px 0 34px}
+.fig{padding:13px 22px 12px;border-right:1px solid var(--rule2);flex:1 1 auto;min-width:116px}
+.fig:last-child{border-right:0}
+.fig b{display:block;font:500 25px/1 "IBM Plex Mono",ui-monospace,monospace;
+       font-variant-numeric:tabular-nums}
+.fig span{display:block;font-size:12px;color:var(--mute);margin-top:6px;
+          text-transform:uppercase;letter-spacing:.05em}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 14px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 22px;border-radius:4px;
+     font:600 16px/1 "Source Sans 3",sans-serif;text-decoration:none;border:1px solid transparent;
+     transition:transform .08s ease, box-shadow .15s ease}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--ink);color:var(--bg);box-shadow:0 1px 2px rgba(0,0,0,.18)}
+.btn-primary:hover{box-shadow:0 3px 10px rgba(0,0,0,.22)}
+.btn-download{background:var(--gold-bg);color:var(--gold);border-color:var(--gold)}
+.btn-download:hover{box-shadow:0 3px 10px rgba(0,0,0,.10)}
+.btn svg{flex:none}
+.hint{font-size:14px;color:var(--mute);margin:0 0 34px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:20px;margin:34px 0 8px}
+p{margin:.55em 0;color:var(--ink2)}
+ul{margin:.5em 0;padding-left:20px;color:var(--ink2)}
+li{margin:.32em 0}
+a{color:var(--blue)}
+code{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.87em;
+     background:var(--rule2);padding:2px 6px;border-radius:3px;color:var(--ink)}
+.files{border:1px solid var(--rule);border-radius:4px;background:var(--surface);
+       margin:12px 0 0;overflow:hidden}
+.files a{display:flex;justify-content:space-between;align-items:center;gap:14px;
+         padding:11px 16px;border-bottom:1px solid var(--rule2);text-decoration:none;color:var(--ink)}
+.files a:last-child{border-bottom:0}
+.files a:hover{background:var(--gold-bg)}
+.files .nm{font-weight:600;font-size:15px}
+.files .ds{color:var(--mute);font-size:13.5px;text-align:right}
+footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--rule);
+       font-size:13.5px;color:var(--mute)}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+@media (max-width:560px){.actions{flex-direction:column}.btn{justify-content:center}}
 </style>
 </head>
 <body>
-<div class="card">
-<h1>Private Wealth Metals Map</h1>
-<p>Loading the report&hellip;</p>
-<p>If nothing happens, <a href="PRIVATE_WEALTH.html">open it directly</a>.</p>
+<div class="wrap">
+
+  <div class="eyebrow">Metals research &middot; global mandate</div>
+  <h1>Private Wealth Metals Map</h1>
+  <p class="lede">Every private bank and wealth manager identified worldwide: the precious-metals
+  products each one advertises to its clients, and the bullion banks, custodians and refiners
+  that sit behind those products.</p>
+
+  <div class="figs">
+    <div class="fig"><b>613</b><span>firms</span></div>
+    <div class="fig"><b>564</b><span>products</span></div>
+    <div class="fig"><b>13</b><span>markets ranked</span></div>
+    <div class="fig"><b>90</b><span>claims fact-checked</span></div>
+  </div>
+
+  <div class="actions">
+    <a class="btn btn-primary" href="PRIVATE_WEALTH.html">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+      Read the report
+    </a>
+    <a class="btn btn-download" href="PRIVATE_WEALTH.html" download="PRIVATE_WEALTH.html">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download the HTML &nbsp;<span style="font-weight:400;opacity:.75">3.4&nbsp;MB</span>
+    </a>
+  </div>
+  <p class="hint">The downloaded file is self-contained. Double-click it and it opens in any
+  browser, fully working offline: filters, expandable rows and all.</p>
+
+  <h2>What is in the report</h2>
+  <ul>
+    <li><b>Talking points</b> &mdash; a timed 45-minute run-sheet: uptake evidence, the product
+        families with live fee benchmarks, who is winning by country, and a potential shelf.</li>
+    <li><b>Product catalogue</b> &mdash; 564 named client products with fees, minimums, custody
+        model and a link to the page each was read from.</li>
+    <li><b>Every firm</b> &mdash; 613 rows, filterable by region, country, type and product.</li>
+    <li><b>Counterparty map</b> &mdash; which bullion banks and custodians each wealth manager
+        works with, and where none is disclosed.</li>
+  </ul>
+
+  <h2>The underlying data</h2>
+  <p>Everything in the report is reproducible from these files, and the build scripts are in
+  <code>scripts/</code> in the repository.</p>
+  <div class="files">
+    <a href="data/private_wealth.json" download><span class="nm">private_wealth.json</span><span class="ds">613 firms &middot; 1.8&nbsp;MB</span></a>
+    <a href="data/pw_products.json" download><span class="nm">pw_products.json</span><span class="ds">564 products &middot; 795&nbsp;KB</span></a>
+    <a href="https://github.com/Joining-the-dots/TempIdea"><span class="nm">Browse the repository</span><span class="ds">scripts, briefs, fact-check output</span></a>
+  </div>
+
+  <h2>How to read the confidence tags</h2>
+  <p>Nothing here should go on a slide without checking its tag. Product cells marked
+  <b>Y</b> were verified on the firm's own page or a primary document; <b>Y?</b> is known but
+  unverified. Every size figure carries a source link and a quote, while size <i>bands</i> are
+  estimates and are labelled as such. In the run-sheet, each line carries the verdict of an
+  independent fact-check: 37 confirmed, 34 partly verified, 16 corrected in the text, and 3 that
+  could not be independently supported.</p>
+
+  <footer>
+    Figures are as of the dates stated in each record, largely 2025 annual reports and 2026
+    interim data. The prescriptive sections are illustrative strategic ideas, not anyone's plan
+    or recommendation.
+  </footer>
+
 </div>
 </body>
 </html>
