@@ -19,6 +19,7 @@ n_ver = sum(1 for x in P if x['confidence'] == 'verified')
 ptypes = collections.Counter(x['product_type'] for x in P)
 searches = int(d['stats'].get('search_count', 0)) + int(d['stats'].get('pass2_searches', 0)) + int((d['stats'].get('pass3') or {}).get('search_count', 0))
 GP = d['stats'].get('group_passes') or {}
+n_markets = len({x.get('market') or x.get('country') for x in P if (x.get('market') or x.get('country'))})
 
 # --- rows in the country tables that are MARKET CHANNEL, not wealth franchises -------------
 # mints, refiners, wholesalers, vaults, exchanges, listed vehicles and market-wide statistics.
@@ -46,8 +47,8 @@ PRIMER = (_primer or {}).get('structures') or []
 
 # bullet = (cid, text, url). cid = id in the fact-check batches; 0 = added after the check.
 S = []
-S.append((2, 'Summary', 'Every large wealth franchise sells gold to its clients in some form. One global franchise\'s client-facing metals shelf is one paper-gold product in one booking centre.', [
- (1, '%d private banks and wealth managers worldwide, %d of them private-bank or wealth arms. %d named client products across %d firms.' % (len(F), n_pb, n_prod, n_prodf), ''),
+S.append((2, 'Summary', 'Every large wealth franchise now offers clients some way into gold. The question is which parts of the shelf to build and where the capability already sits, because the retail expression and the institutional franchise can look very different inside the same group.', [
+ (1, '%d catalogue entries in total: %d private-bank or wealth-manager entries and %d market-channel entries. %d named client products recorded across %d entries, in %d markets.' % (len(F), n_pb, len(F) - n_pb, n_prod, n_prodf, n_markets), ''),
  (2, 'Citi is an LBMA market maker, became the fifth member of London clearing (LPMCL) on 6 July 2026, appears on the LBMA list of London vaulting custodians, and Citibank N.A. carries the second-largest US precious-metals derivative book: US$236bn notional at 31 March 2026 vs JPMorgan US$509bn (year-end 2025: Citi US$217bn, JPMorgan US$479bn, Bank of America US$121bn).', 'https://www.occ.gov/publications-and-resources/publications/quarterly-report-on-bank-trading-and-derivatives-activities/index-quarterly-report-on-bank-trading-and-derivatives-activities.html')], None))
 
 S.append((5, 'What clients are buying', 'Volumes disclosed by the firms themselves over the last twelve months: account counts, tonnes and balances.', [
@@ -158,11 +159,38 @@ C = [
    (67, 'Absa NewGold (JSE)', 'ZAR 40.3bn, 13.6 t, ICBC Standard custodian', 'https://etfsa.co.za/wp-content/uploads/2024/05/absa-newgold-mar2026.pdf'),
    (68, 'Loomis FXGS (ex-CPoR Devises)', 'SEK 689m revenue line (FY2025); CPoR is the French banks\' historical gold wholesaler', 'https://www.loomis.com/')]),
 ]
+
+# What a figure actually measures. These are not interchangeable: a bank's own metal, a client
+# balance, a fund's assets and a derivative notional describe completely different things.
+_MEAS = [
+ (re.compile(r'\bnotional\b', re.I), 'derivative notional', 'm-not'),
+ (re.compile(r'physical (precious )?(pm|metals?)|physical PM|own physical|inventory|on its own balance sheet|balance-sheet metal', re.I), "bank's own metal", 'm-bank'),
+ (re.compile(r'\b(etf|etc|fund|nav|net assets|aum)\b', re.I), 'fund assets', 'm-fund'),
+ (re.compile(r'\b(deposits?)\b', re.I), 'client deposits', 'm-cli'),
+ (re.compile(r'client (metal|gold)|accounts?\b|balance|under management|depository|passbook|savings', re.I), 'client holdings', 'm-cli'),
+ (re.compile(r'\b(sold|sales|revenue|traded|volume|purchases|imported?)\b', re.I), 'sales or volume', 'm-flow'),
+ (re.compile(r'\bborrowings?\b|gold loans', re.I), 'lending book', 'm-bank'),
+]
+
+
+def _measure(txt):
+    for rx, lbl, cls in _MEAS:
+        if rx.search(str(txt or '')): return lbl, cls
+    return '', ''
+
+
 def _ctry_block(n, lede, rows):
     wealth = [r for r in rows if r[1] not in CHANNEL]
     chan = [r for r in rows if r[1] in CHANNEL]
     def _li(rs):
-        return ''.join('<li data-cid="%d"><b>%s</b> — %s%s</li>' % (cid, e(a), e(b), (' <a href="%s" target="_blank" rel="noopener">src</a>' % e(u)) if u else '') for cid, a, b, u in rs)
+        out = []
+        for cid, a, b, u in rs:
+            lbl, cls = _measure(b)
+            tagh = (' <span class="meas %s">%s</span>' % (cls, e(lbl))) if lbl else ''
+            out.append('<li data-cid="%d"><b>%s</b> — %s%s%s</li>' % (
+                cid, e(a), e(b), tagh,
+                (' <a href="%s" target="_blank" rel="noopener">src</a>' % e(u)) if u else ''))
+        return ''.join(out)
     out = ['<div class="pwt-c"><h4>%s</h4>' % e(n)]
     if lede: out.append('<p class="pwt-m">%s</p>' % e(lede))
     if wealth: out.append('<ol>%s</ol>' % _li(wealth))
@@ -173,7 +201,7 @@ def _ctry_block(n, lede, rows):
 
 
 ctry_html = ''.join(_ctry_block(n, lede, rows) for n, lede, rows in C)
-S.append((8, 'The largest positions, by country', 'The best disclosed volume in each key market. Wealth franchises are listed first; mints, refiners, wholesalers, vaults and listed vehicles are shown separately underneath, because they are the supply and custody channel rather than competitors for a client relationship. Units differ by market (balance-sheet metal, account balances, tonnes, fund AUM), so compare within a country, not across.', [], '<div class="pwt-grid">%s</div>' % ctry_html))
+S.append((8, 'The largest positions, by country', 'The best disclosed volume in each key market. Wealth franchises are listed first; mints, refiners, wholesalers, vaults and listed vehicles are shown separately underneath, because they are the supply and custody channel rather than competitors for a client relationship. Each figure is tagged with what it actually measures. A bank\'s own metal, a client balance, a fund\'s assets and a derivative notional are different things and cannot be added together or read as market share.', [], '<div class="pwt-grid">%s</div>' % ctry_html))
 
 # ---- HSBC / Standard Chartered / ANZ head-to-head (from the dedicated passes)
 scb = GP.get('standard') or {}
@@ -181,10 +209,9 @@ h2h = [
  (0, 'HSBC (US$2.1trn wealth balances, over US$1trn in Asia): the client gold shelf is concentrated in Hong Kong. Hong Kong has Wayfoong Statement Gold (1 mace units, spread capped at 4%, no delivery, available to Global Private Banking accounts) and the SFC-authorised Gold Token (0.001 oz, no fees, bank margin up to 2%, bullion vaulted by HSBC Bank plc in London), plus custody and dealing for the Hang Seng Gold ETF. Singapore, Taiwan and Australia carry no gold product; India is served by the HSBC AMC gold ETF; Malaysia has a counter-only gold account (conventional bank, not Amanah); China gold-linked structured deposits. HSBC is not on India\'s 2026 to 2029 list of authorised bullion importers. Global Private Banking is overweight gold and reaches HK products through the local bank.', 'https://www.hsbc.com.hk/investments/products/gold-token/'),
  (0, 'ANZ (Private >A$9bn): a liquidity competitor, not a shelf competitor. ANZ Private\'s only metals product is the State Street Gold Fund it seeded in July 2024 (feeder into SPDR Gold MiniShares, 0.14%, A$128m by Aug 2026, mostly price appreciation), backed by a maintained overweight. No allocated metal, physical, Lombard or gold-linked notes; retail broking went to CMC, Asian wealth to DBS in 2018, the Singapore vault closed in 2019. ANZ is an LBMA full member, not a market maker, and its institutional commodities trading assets rose 42% to A$9.1bn in FY2025.', 'https://www.anz.com.au/personal/private-banking/insights/global-market-outlook-2026/'),
 ]
-if scb.get('citi_angle'):
-    h2h.append((0, 'Standard Chartered: ' + scb['citi_angle'][:900], ''))
-else:
-    h2h.append((0, 'Standard Chartered: dedicated pass in progress; this line is replaced automatically when it lands.', ''))
+_scb_txt = scb.get('strategic_idea') or scb.get('citi_angle') or ''
+if _scb_txt:
+    h2h.append((0, 'Standard Chartered: ' + str(_scb_txt), ''))
 S.append((2, 'HSBC, Standard Chartered and ANZ', 'The three banks most often encountered in Asia.', h2h, None))
 
 S.append((5, 'Five competitor product designs', 'Each of these is live today.', [
@@ -194,11 +221,14 @@ S.append((5, 'Five competitor product designs', 'Each of these is live today.', 
  (72, 'Emirates NBD: a fully priced gram-gold account (2.1% arrangement under USD 250k, one-off 0.315% custody charge on early redemption) plus ENBD-branded bars in the app, with gold loans, leasing and repo listed in its bullion-service FAQ. The most complete shelf built by one bank in 18 months.', 'https://www.emiratesnbd.com/'),
  (73, 'China Merchants Bank 金生利 and Kuveyt Türk gold-to-gold accounts: the client\'s gold earns a yield paid in grams. The desk\'s lease book turned into a client product.', 'https://www.cmbchina.com/')], None))
 
-S.append((4, 'One global franchise today, as the client sees it', 'What is on Citi\'s client pages across booking centres.', [
- (74, 'Citi\'s only advertised client gold product found anywhere is the Hong Kong "Gold Manager": cash-settled, loco-London-referenced paper gold, HKD 5,000 minimum, no delivery, plus a Gold Premium Investment deposit.', 'https://www.citibank.com.hk/'),
- (75, 'No comparable product is marketed on Citi\'s US, Singapore, UAE or UK client sites. Structured notes, OTC hedging and securities-backed lending exist but are not presented as metals products.', ''),
- (76, 'Peers in the same booking centres: HSBC HK (paper gold, token, ETF custody), DBS/UOB/OCBC SG (accounts, bars, token), Emirates NBD/FAB UAE (accounts, bars), JPMorgan/Morgan Stanley US (allocated and unallocated programmes), UBS/JB/Pictet CH (accounts, physical, Lombard).', ''),
- (77, 'The gap is not in the wholesale capability: LBMA market maker, fifth LPMCL member since 6 July 2026, a London vault on the LBMA custodian list run with Malca-Amit, and a US$236bn precious-metals derivative book at March 2026.', 'https://www.citigroup.com/global/news/press-release/2026/citi-clearing-member-london-precious-metals-clearing-limited')], None))
+S.append((4, 'Citi today, as the client sees it', 'What is publicly advertised to clients, market by market, kept separate from private-bank capability and from the institutional franchise. Checked 11 September 2026.', [
+ (0, 'Hong Kong advertises two distinct gold products: the Gold Manager account, an SFC-authorised paper-gold scheme with the bank margin capped at 1.5% each way, and Gold Premium Investment. Citibank Singapore separately advertises a Gold Account with a USD 25,000 minimum, and Citibanamex deals physical Centenario and Libertad coins over the counter in Mexico.', 'https://www.citibank.com.hk/english/wealth-management/investment/gold.htm'),
+ (0, 'Gold Premium Investment is not a deposit. Its own information sheet, updated 15 September 2023, describes an unlisted, non-capital-protected structured investment product involving derivatives, in which the investor sells a put option on the alternate choice. Gold is compulsorily one of the two choices, the minimum is USD 10,000, tenors run from one week to six months, there is no early termination, the maximum gain is the interest amount and the stated maximum loss is 100% of the investment.', 'https://www.citibank.com.hk/english/wealth-management/pdf/investment/gold-premium-investment-ifs-eng.pdf'),
+ (0, 'No gold or precious-metals product was found on the pages checked for the UAE or the United States. In the United Kingdom, Australia, India, Taiwan and Poland there is no Citi consumer bank at all, so the absence of a retail metals product there reflects the absence of a retail bank rather than a decision about metals.', ''),
+ (0, 'Above the retail tier, gold is a standing house allocation: the Chief Investment Office describes a core position in gold as portfolio ballast for Citigold, Citigold Private Client and Private Bank clients, and the Private Bank covers commodities among the underlyings for structured products and derivatives. Its published custody and margin-lending pages, however, name only securities and cash, with no precious metals listed as custody assets or eligible collateral.', ''),
+ (0, 'The institutional franchise is the part that is already large. Citibank N.A. is one of only six LBMA full market makers quoting spot, forwards and options in gold and silver; Citi is one of eight custodians listed by the LBMA as offering vaulting in London; it became the fifth LPMCL clearing member on 6 July 2026; and it carried USD 235.6bn of precious-metals derivative notional at 31 March 2026, the second-largest book of any US bank.', 'https://www.occ.gov/publications-and-resources/publications/quarterly-report-on-bank-trading-and-derivatives-activities/'),
+ (0, 'The honest characterisation is a large institutional metals franchise with a narrow and largely synthetic retail expression. What a retail client can buy is mostly notional exposure to the price; the physical, clearing and market-making capability sits in the institutional bank and is not marketed as a client product.', ''),
+], None))
 
 S.append((3, 'How big could it be', 'Peers disclose the physical metal they carry to back client accounts. Against client assets:', [
  (78, 'LGT Bank Ltd CHF 1.73bn of client-backing metal on CHF 142bn of client assets is about 1.2%; Pictet CHF 843m on CHF 757bn under management or custody is about 0.1%; Julius Baer\'s reported CHF 4.9bn on CHF 521bn AUM would be about 0.9% if confirmed. (ESTIMATE, derived from the annual reports.)', 'https://www.pictet.com/ca/en/corporate-news/release-full-year-2025-figures'),
@@ -208,7 +238,7 @@ S.append((3, 'How big could it be', 'Peers disclose the physical metal they carr
 S.append((4, 'A potential shelf', 'Three tiers. Each maps to a competitor product that already exists.', [
  (81, 'Tier 1 (private bank, all booking centres): an allocated precious-metals account in the group\'s own London vault with physical delivery via a secure-logistics partner, plus Lombard lending against it. Template: JPMorgan PB vault claims; Julius Baer / LGT metal accounts.', ''),
  (82, 'Tier 2 (affluent and private-client tiers in SG, HK, UAE, UK): an unallocated gram-gold account with physical redemption in kilobars or 100 g, priced off loco-London and desk-hedged. Template: UOB Gold Savings, Emirates NBD gram gold, HSBC Wayfoong Statement Gold; an existing paper-gold product could be extended beyond one booking centre and given a delivery right.', ''),
- (83, 'Tier 3 (yield and structured): gold-linked deposits and a gold DCI where a lease book funds the client yield; a standing gold autocall/reverse-convertible programme; a house strategic-allocation view implemented via a physically backed vehicle. Templates: CMB, Kuveyt Türk, CIMB Gold Convertible, HSBC China structured deposits, ANZ Private gold fund.', ''),
+ (83, 'Tier 3 (yield and structured): two income sources that must be kept apart. A gold dual-currency investment, in which the client sells an option and the desk prices and hedges it, so the enhanced return is option premium. Separately, a gold deposit paying a return in metal, where the return comes from lending the metal on at the lease rate; a standing gold autocall/reverse-convertible programme; a house strategic-allocation view implemented via a physically backed vehicle. Templates: CMB, Kuveyt Türk, CIMB Gold Convertible, HSBC China structured deposits, ANZ Private gold fund.', ''),
  (84, 'KPIs to set now: metal-account balances and account count by booking centre, physical delivered (kg), Lombard drawn against metal, structured-note issuance on XAU, share of PB clients holding any metal product.', '')], None))
 
 
@@ -220,10 +250,10 @@ S.append((4, 'A potential shelf', 'Three tiers. Each maps to a competitor produc
 if PRIMER:
     _pr_rows = []
     for _x in PRIMER:
-        _ex = '; '.join('%s %s' % (str(_v.get('firm', ''))[:34], str(_v.get('product', ''))[:44]) for _v in (_x.get('examples') or [])[:3])
+        _ex = '; '.join('%s %s' % (str(_v.get('firm', '')), str(_v.get('product', ''))) for _v in (_x.get('examples') or [])[:3])
         _pr_rows.append('<tr data-cid="0"><td><b>%s</b><div class="pwt-m">%s</div></td><td>%s<div class="pwt-m" style="margin-top:.3rem"><b>What the client takes on.</b> %s</div></td><td>%s<div class="pwt-m" style="margin-top:.3rem"><b>Desk supplies.</b> %s</div></td></tr>' % (
-            e(_x.get('name', '')), e(str(_x.get('typical_terms', ''))[:150]), e(str(_x.get('how_it_works', ''))[:420]),
-            e(str(_x.get('client_risk', ''))[:200]), e(_ex or 'no named example verified'), e(str(_x.get('desk_hook', ''))[:180])))
+            e(_x.get('name', '')), e(str(_x.get('typical_terms', ''))), e(str(_x.get('how_it_works', ''))),
+            e(str(_x.get('client_risk', ''))), e(_ex or 'no named example verified'), e(str(_x.get('desk_hook', '')))))
     S.append((6, 'The structures a product sweep misses', 'Sold through relationship managers rather than advertised on a product page.', [],
               '<table class="pwt-t"><thead><tr><th style="width:17%%">Structure</th><th style="width:45%%">How it works / what the client is really taking</th><th>In the market / what the desk prices</th></tr></thead><tbody>%s</tbody></table>' % ''.join(_pr_rows)))
 else:
@@ -256,7 +286,7 @@ ORDER = [
  ('What clients are buying',),
  ('The largest positions, by country',),
  ('HSBC, Standard Chartered and ANZ',),
- ('One global franchise today, as the client sees it', 'One global franchise today, as the client sees it'),
+ ('Citi today, as the client sees it', 'One global franchise today, as the client sees it', 'One global franchise today, as the client sees it'),
  ('How big could it be',),
  ('A potential shelf', 'A potential shelf — strategic idea'),
 ]
@@ -281,27 +311,34 @@ css = '''<style>
 .pwt-t{border-collapse:collapse;width:100%;font-size:.93em;line-height:1.52;margin:.5rem 0 1rem}.pwt-t th{text-align:left;font-size:.78em;text-transform:uppercase;letter-spacing:.05em;color:#7a8696;border-bottom:2px solid #1f5b8d;padding:8px 14px 8px 0}.pwt-t td{vertical-align:top;padding:14px 22px 14px 0;border-bottom:1px solid #e4e9ef}.pwt-t td:last-child{padding-right:0}.pwt-t tr:last-child td{border-bottom:0}
 .pwt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px 26px}
 .pwt-c h4{margin:.4rem 0 .1rem;font-size:1rem}.pwt-c ol{margin:.2rem 0 0 1.2rem;padding:0;font-size:.93em}.pwt-c li{margin:.2rem 0}
-.pwt .pwt-idx{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2px 18px;margin:.7rem 0 .3rem;padding:.7rem .9rem;background:#f4f7fa;border:1px solid #dbe3ec;border-radius:4px}
+.pwt .pwt-idx{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px 18px;margin:.5rem 0 .2rem;padding:.5rem 0 .6rem;border-bottom:1px solid #dbe3ec}
 .pwt .pwt-idx-h{grid-column:1/-1;font:600 11px/1 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.09em;color:#5a708a;margin-bottom:.3rem}
-.pwt .pwt-idx a{display:flex;gap:8px;align-items:baseline;font-size:.93em;text-decoration:none;color:#1f5b8d;padding:3px 0;font-weight:600}
+.pwt .pwt-idx a{display:flex;gap:8px;align-items:baseline;font-size:.88em;text-decoration:none;color:#5a708a;padding:2px 0;font-weight:400}
 .pwt .pwt-idx a:hover{text-decoration:underline}
 .pwt .pwt-n{display:inline-block;min-width:1.35em;text-align:right;color:#8a97a8;font-weight:500;font-variant-numeric:tabular-nums}
 .pwt h3{scroll-margin-top:12px}
 .pwt .pwt-top{margin-left:auto;font-size:.7em;color:#b4bdc8;text-decoration:none;font-weight:400}
 .pwt .pwt-top:hover{color:#1f5b8d}
+.pwt .meas{display:inline-block;font:600 9.5px/1 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.05em;
+ padding:3px 5px;border-radius:2px;margin-left:5px;vertical-align:middle;white-space:nowrap}
+.pwt .m-bank{background:#e8f0fe;color:#2c4f8f}.pwt .m-cli{background:#e3f5e8;color:#2e7d4f}
+.pwt .m-fund{background:#f3e9cf;color:#8a6d00}.pwt .m-not{background:#efe6f7;color:#5b2a86}
+.pwt .m-flow{background:#f0f0f0;color:#555}
 .pwt .pwt-chan{margin-top:.45rem;padding-top:.35rem;border-top:1px dashed #cfd8e2}
 .pwt .pwt-chan-h{display:block;font:600 10px/1.3 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.07em;color:#8a97a8;margin-bottom:.15rem}
 .pwt .pwt-chan ol{color:#6b7686}
 .pwt .pwt-b{display:inline-block;font:600 10.5px/1 system-ui,sans-serif;letter-spacing:.03em;border-radius:3px;padding:3px 6px;white-space:nowrap;vertical-align:middle}
-@media (prefers-color-scheme:dark){.pwt .pwt-lede{color:#c3bdb0}.pwt-t td{border-color:#2f3441}
+@media (prefers-color-scheme:dark){.pwt .pwt-lede{color:#c3bdb0}
+ .pwt .m-bank{background:#1f2a40;color:#8fb0ea}.pwt .m-cli{background:#1c3226;color:#6fc292}
+ .pwt .m-fund{background:#2f2a1b;color:#d5a94a}.pwt .m-not{background:#2a2233;color:#b795d8}.pwt .m-flow{background:#2a2f39;color:#aab3c0}.pwt-t td{border-color:#2f3441}
  .pwt .pwt-sub{color:#8fb0ea;border-bottom-color:#39424f}
- .pwt .pwt-idx{background:#1c2331;border-color:#2f3a4b}.pwt .pwt-idx a{color:#8fb0ea}.pwt .pwt-idx-h{color:#8d9bb0}
+ .pwt .pwt-idx{border-bottom-color:#2f3a4b}.pwt .pwt-idx a{color:#8fb0ea}.pwt .pwt-idx-h{color:#8d9bb0}
  .pwt .pwt-chan{border-top-color:#39424f}.pwt .pwt-chan ol{color:#98a3b4}}
 </style>'''
 idx = ''.join('<a href="#%s"><span class="pwt-n">%d</span>%s</a>' % (_slug(t), i + 1, e(t)) for i, (m, t, *_) in enumerate(S))
 parts = [css, '<div class="pwt">',
-         '<p class="pwt-lede">%s private banks and wealth managers worldwide, and the %s metals products they advertise to clients. Figures marked ESTIMATE are derived.</p>' % (len(F), n_prod),
-         '<nav class="pwt-idx" aria-label="Contents"><span class="pwt-idx-h">Contents</span>%s</nav>' % idx]
+         '<p class="pwt-lede">Background for the ideas above. Figures marked ESTIMATE are derived.</p>',
+         '<nav class="pwt-idx" aria-label="Sections of this briefing"><span class="pwt-idx-h">In this briefing</span>%s</nav>' % idx]
 for m, t, lede, bullets, table in S:
     parts.append('<h3 id="%s">%s<a class="pwt-top" href="#" title="Back to contents">&uarr;</a></h3>' % (_slug(t), e(t)))
     if lede: parts.append('<p class="pwt-lede">%s</p>' % e(lede))

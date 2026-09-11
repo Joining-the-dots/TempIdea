@@ -1,0 +1,243 @@
+{
+ "generated": "2026-09-11",
+ "note": "Presentation ideas drawn from the catalogue. Each statement is tagged: FACT (verified against a primary source, with the source and its date), INTERPRETATION (our commercial reading, not the institution's claim), or DISCUSSION (a proposal to test, not a statement of capability).",
+ "priorities": {
+  "heading": "Three to explore first",
+  "basis": "Chosen on client relevance and implementation complexity, not on any assessment of internal readiness. These are discussion priorities.",
+  "items": [
+   {
+    "idea": "gold-account",
+    "why": "The largest body of live competitor evidence in the catalogue and the lowest build complexity: a book-entry account, priced off an existing desk, with no vault or logistics dependency on day one. It is also the product most peers use as the entry point into the rest of the shelf."
+   },
+   {
+    "idea": "structured-income",
+    "why": "Uses capability a markets business already has rather than new infrastructure, addresses the most common client objection to gold (it pays nothing), and there is a documented competitor product with published worked examples to point at."
+   },
+   {
+    "idea": "lending-against-metal",
+    "why": "Rare among UK and US banks in the catalogue, so it differentiates rather than matches. It monetises holdings the client already has, and for clients who bought metal for protection it answers the liquidity problem without forcing a sale."
+   }
+  ]
+ },
+ "outline": {
+  "heading": "A five-slide outline",
+  "slides": [
+   {
+    "n": 1,
+    "title": "Client need",
+    "content": "Why clients are asking for metal now: account counts, tonnes and balances disclosed by peers over the last twelve months. Use two or three markets, not all of them."
+   },
+   {
+    "n": 2,
+    "title": "The opportunity",
+    "content": "What the shelf looks like across the market: the nine product families, what each earns, and where the gaps sit in our own offering by booking centre."
+   },
+   {
+    "n": 3,
+    "title": "Selected propositions",
+    "content": "Two or three ideas from this page, each with the client need, the proposition and the trade-off. Resist showing all seven."
+   },
+   {
+    "n": 4,
+    "title": "Competitor evidence",
+    "content": "The named products and published terms behind each proposition, with the source and its date on the slide."
+   },
+   {
+    "n": 5,
+    "title": "Questions and next steps",
+    "content": "What has to be true to proceed: booking centre, custody route, client segment, pricing owner, and who confirms internal capability."
+   }
+  ]
+ },
+ "ideas": [
+  {
+   "id": "physical-custody",
+   "theme": "Physical ownership and custody",
+   "title": "Allocated metal the client actually owns",
+   "client_need": "Clients who want gold as protection rather than as a trade often want to own identified bars, not a claim on an institution. The motivation is usually insurance against a systemic event, so counterparty exposure is the thing they are trying to avoid.",
+   "proposition": "An allocated precious-metals account: the client owns specified bars or a pro-rata share of a pool in a named vault, with a custody fee, a dealing spread, and the option to take delivery.",
+   "example": {
+    "institution": "UBS",
+    "product": "key4 gold",
+    "detail": "Allocated gold bought in the app from 0.1 g, storage charged at 0.35% a year, tiered dealing fees, and delivery to the client by registered post.",
+    "url": "https://www.ubs.com/ch/en/key4banking/products/key4-gold.html",
+    "jurisdiction": "Switzerland",
+    "tag": "FACT"
+   },
+   "example2": {
+    "institution": "JPMorgan Private Bank",
+    "product": "gold held in its own vault",
+    "detail": "Unallocated claims reported from around USD 250,000 and allocated 400 oz bars from around USD 1m, plus storage and insurance.",
+    "url": "https://privatebank.jpmorgan.com/",
+    "jurisdiction": "United States",
+    "tag": "INTERPRETATION"
+   },
+   "commercial": "Recurring custody income on a balance that tends to be held for years rather than traded, plus the dealing spread on entry and exit. It also anchors assets: metal in the bank's own vault is materially harder for a client to move than a fund holding. INTERPRETATION, not a revenue estimate.",
+   "tradeoff": "It is the most operationally demanding option on the list. It needs vault capacity, insurance, an audit trail per bar and a delivery route, and the economics only work at scale or at a premium price point.",
+   "vs_etf": "An exchange-traded fund gives price exposure but the client owns units in a fund, not metal, and cannot take delivery. Allocated custody is what a client is buying when the point of the holding is to not depend on anyone's balance sheet.",
+   "angle": "If a client wants gold because they distrust the system, does a fund unit answer the question they are actually asking?"
+  },
+  {
+   "id": "gold-account",
+   "theme": "Convenient gold accounts",
+   "title": "Gold in the banking app, priced like a currency",
+   "client_need": "Most clients do not want a vault. They want gold exposure in the same place as the rest of their money, in small size, without opening a brokerage account or thinking about storage.",
+   "proposition": "A gold account denominated in grams or ounces, priced off the benchmark or a two-way house price, held on the bank's books and hedged in the interbank market. Optionally with a conversion right into physical at a stated size.",
+   "example": {
+    "institution": "UOB",
+    "product": "Gold Savings Account",
+    "detail": "A gold account for Singapore clients charged at 0.25% a year, alongside the bank's physical bar business; UOB reported its total transacted physical gold volume rose 59% in 2025.",
+    "url": "https://www.uob.com.sg/personal/investments/gold-silver/gold-savings-account.page",
+    "jurisdiction": "Singapore",
+    "tag": "FACT"
+   },
+   "example2": {
+    "institution": "HSBC",
+    "product": "Wayfoong Statement Gold",
+    "detail": "A Hong Kong paper-gold account in units of one mace, with the dealing spread capped at 4% of the mid price and no right to delivery; available to private-banking accounts and counting toward Premier relationship balances.",
+    "url": "https://www.hsbc.com.hk/investments/products/gold-services/",
+    "jurisdiction": "Hong Kong",
+    "tag": "FACT"
+   },
+   "commercial": "The spread on every transaction plus, in most competitor designs, an annual fee on the balance. Unallocated balances also sit on the bank's own book rather than in a segregated vault, which is why competitors price this product the most keenly. INTERPRETATION.",
+   "tradeoff": "The client holds a claim on the bank, not metal. That must be stated plainly in the terms, and it is precisely the feature a protection-motivated client is trying to avoid. Where delivery is offered, the conversion size and cost decide whether the right is real.",
+   "vs_etf": "Lower friction than a fund for an existing banking client: no brokerage account, no settlement cycle, fractional size, and it appears next to their cash. The trade-off is that a fund's metal sits with a custodian for the fund, while this sits on the bank's balance sheet.",
+   "angle": "Where should gold live for a client who has never opened a brokerage account?"
+  },
+  {
+   "id": "accumulation",
+   "theme": "Regular accumulation",
+   "title": "A monthly plan that builds a position quietly",
+   "client_need": "Clients who believe in gold but hesitate over timing, and younger or mass-affluent clients whose first allocation is too small to justify a bar. Regular buying removes the entry-point decision.",
+   "proposition": "A standing monthly purchase in grams or whole coins from a small minimum, accumulating into an account, with delivery once the balance reaches a deliverable unit.",
+   "example": {
+    "institution": "Reisebank",
+    "product": "Goldsparplan",
+    "detail": "A monthly gold savings plan from EUR 25, run by the wholesale gold business of the German co-operative banking group.",
+    "url": "https://www.reisebank.de/edelmetalle/goldsparplan",
+    "jurisdiction": "Germany",
+    "tag": "FACT"
+   },
+   "example2": {
+    "institution": "Garanti BBVA",
+    "product": "Birikimli Altın Hesabı",
+    "detail": "A monthly gram-gold accumulation plan that can be funded from the client's credit-card limit rather than only from the account balance.",
+    "url": "https://www.garantibbva.com.tr/",
+    "jurisdiction": "Turkey",
+    "tag": "FACT"
+   },
+   "commercial": "Small individually, but the balances are sticky and the flow is predictable, and it is the recognised feeder into the account and physical business. Competitors treat it as an acquisition product for the mass-affluent rather than a profit centre in itself. INTERPRETATION.",
+   "tradeoff": "Ticket sizes are tiny relative to the servicing cost, so it only works if it is fully automated and priced with a spread rather than a per-transaction fee.",
+   "vs_etf": "A regular fund purchase does much the same thing where a platform supports it. The differences are the minimum, whether the client needs a brokerage relationship at all, and whether the accumulated balance can become physical metal.",
+   "angle": "What is our entry product for a client whose first gold allocation is worth two hundred pounds?"
+  },
+  {
+   "id": "lending-against-metal",
+   "theme": "Borrowing against gold",
+   "title": "Liquidity without selling the position",
+   "client_need": "A client who has held metal through a rally faces a tax event and the loss of the hedge if they sell. What they usually want is cash, not an exit.",
+   "proposition": "Lending secured on bullion, on a metal account or on metal funds, at a published advance rate, inside the existing Lombard framework.",
+   "example": {
+    "institution": "Money Metals",
+    "product": "bullion-backed lending",
+    "detail": "A US lender advancing up to 65% against stored bullion; among the few published advance rates in the catalogue.",
+    "url": "https://www.moneymetals.com/gold-loans",
+    "jurisdiction": "United States",
+    "tag": "FACT"
+   },
+   "example2": {
+    "institution": "ANZ",
+    "product": "Investment Lending approved securities",
+    "detail": "ANZ's margin-lending approved list includes the ASX-listed physical gold products, so metal funds are accepted collateral.",
+    "url": "https://www.anz.com.au/personal/investing-super/investment-lending/",
+    "jurisdiction": "Australia",
+    "tag": "FACT"
+   },
+   "commercial": "Net interest income on a well-secured, liquid, daily-priced asset, plus the retention effect of a client who no longer needs to sell. Rare among UK and US banks in this catalogue, which is what makes it a differentiator rather than a match. INTERPRETATION.",
+   "tradeoff": "It is a leveraged long position in the form of a loan. A drawdown triggers a margin call, collateral can be sold to meet it, and cross-collateralisation can pull the metal into a shortfall elsewhere. Advance rates, margin triggers and the liquidation route have to be explicit before this is offered.",
+   "vs_etf": "Not an either/or: fund units are often the easier collateral because they are exchange-priced and simple to sell. The proposition matters most for clients holding allocated metal, which is harder to pledge without a custody arrangement that contemplates it.",
+   "angle": "Our client has doubled their gold position and now needs cash. What do we offer them other than a sale?"
+  },
+  {
+   "id": "structured-income",
+   "theme": "Structured income",
+   "title": "Income from a holding that pays nothing",
+   "client_need": "The most common objection to gold is that it yields nothing. Clients who already hold it, or who would buy lower, will trade some upside for a coupon.",
+   "proposition": "Two related structures. In a dual-currency investment the client places a sum linked to gold and sells the bank an option, receiving an enhanced coupon and accepting conversion at a set level. In a covered call the client sells upside on metal they already own for a premium.",
+   "example": {
+    "institution": "Citi Hong Kong",
+    "product": "Gold Premium Investment",
+    "detail": "Its information sheet, updated 15 September 2023, describes an unlisted, non-capital-protected structured investment product involving derivatives, in which the investor sells a put option on the alternate choice. Gold must be one of the two choices. Minimum USD 10,000, tenors of one week to six months, no early termination. The maximum gain is the interest amount; the stated maximum loss is 100% of the investment, as an unsecured claim on the bank.",
+    "url": "https://www.citibank.com.hk/english/wealth-management/pdf/investment/gold-premium-investment-ifs-eng.pdf",
+    "jurisdiction": "Hong Kong",
+    "tag": "FACT"
+   },
+   "example2": {
+    "institution": "Standard Chartered",
+    "product": "Signature Select Enhanced Gold Income Fund",
+    "detail": "Launched August 2026 on the bank's Singapore variable capital company, running a covered-call overlay on gold exchange-traded funds with AllianzGI as sub-manager, offered to accredited and professional investors in several markets.",
+    "url": "https://www.sc.com/en/",
+    "jurisdiction": "Singapore and other markets",
+    "tag": "FACT"
+   },
+   "commercial": "The economics are the option premium: the client sells optionality, the desk prices and hedges it, and the margin is the difference between the premium passed to the client and the cost of hedging. This is a separate source of return from metal lending or leasing, which earns a lease rate on metal lent on. The two should not be described as the same thing. INTERPRETATION where it concerns our own margin.",
+   "tradeoff": "It is not a deposit and must never be presented as one. The client is short an option, so if the metal moves through the strike they are repaid in whichever choice is worth less, and the coupon only partly offsets that. In an unleveraged short put the downside is substantial but bounded, because the price cannot fall below zero; leveraged, accumulating or knock-out variants behave differently and can lose the whole amount invested. Citi's own sheet states a maximum loss of 100% of the investment and no early termination.",
+   "vs_etf": "A fund holding produces no income at all. This converts a non-yielding asset into a coupon, at the cost of capping the upside or accepting conversion. It suits a client with a view on a range, not a client who wants unconditional exposure.",
+   "angle": "Gold pays nothing. What would it take for a client to earn a coupon on it, and what are they giving up?"
+  },
+  {
+   "id": "digital-ownership",
+   "theme": "Digital ownership",
+   "title": "Tokenised gold, dealt around the clock",
+   "client_need": "Younger and self-directed clients expect to buy in fractions, at any hour, on a phone, and to see the holding settle immediately rather than in two days.",
+   "proposition": "A tokenised claim on vaulted metal, dealt continuously in very small units, with a defined redemption route into physical where the market allows.",
+   "example": {
+    "institution": "HSBC",
+    "product": "Gold Token",
+    "detail": "An SFC-authorised retail product in Hong Kong trading in units of 0.001 troy ounces, with no dealing or storage fee but a bank margin of up to 2%, or 5% outside local hours, no delivery right, and the bullion vaulted in London. More than USD 1bn had traded by November 2025.",
+    "url": "https://www.hsbc.com.hk/investments/products/gold-token/",
+    "jurisdiction": "Hong Kong",
+    "tag": "FACT"
+   },
+   "example2": {
+    "institution": "DBS",
+    "product": "Physical Gold Token",
+    "detail": "Announced in June 2026: one gram per token held in the bank's own Singapore vault, for retail release in the second half of the year, with redemption into physical.",
+    "url": "https://www.dbs.com/newsroom/DBS_expands_gold_offerings_with_market_first_tokenised_physical_gold",
+    "jurisdiction": "Singapore",
+    "tag": "FACT"
+   },
+   "commercial": "The margin is embedded in the price rather than charged as a fee, which is how the headline reads as free. It also reaches clients who would not open a metals account, and the volume figures competitors publish suggest the engagement is real. INTERPRETATION.",
+   "tradeoff": "Requires regulatory authorisation as a retail product, a ledger, and a clear answer on what the token is a claim on. The Hong Kong design has no delivery right at all, which makes it a dealing product rather than an ownership product despite the name.",
+   "vs_etf": "Continuous dealing, far smaller units, and settlement inside the bank rather than through an exchange. Against that, a listed fund has transparent secondary pricing while a token's price is the bank's own.",
+   "angle": "Is our answer to a client who wants to buy fifty pounds of gold at midnight a token, an account, or nothing?"
+  },
+  {
+   "id": "house-allocation",
+   "theme": "Advice turned into a product",
+   "title": "Implementing the house view in a vehicle we control",
+   "client_need": "When the investment office publishes a strategic allocation to gold, discretionary mandates need an instrument to implement it consistently, at a known cost, across thousands of portfolios.",
+   "proposition": "A physically backed vehicle the house controls, used as the default implementation of its own published allocation, alongside the advisory line that justifies it.",
+   "example": {
+    "institution": "ANZ Private",
+    "product": "State Street Gold Fund",
+    "detail": "ANZ Private seeded a gold fund charging 0.14% in July 2024 to implement its first strategic allocation to gold, and has maintained an overweight since.",
+    "url": "https://www.ssga.com/au/en_gb/institutional/mf/state-street-gold-fund-sst4481au",
+    "jurisdiction": "Australia",
+    "tag": "FACT"
+   },
+   "example2": {
+    "institution": "HSBC Global Private Banking",
+    "product": "house view",
+    "detail": "Overweight gold in its published asset allocation; the bank's own 2026 affluent-investor survey found 62% of Asia and Middle East respondents intended to add gold.",
+    "url": "https://www.privatebanking.hsbc.com/",
+    "jurisdiction": "Global",
+    "tag": "FACT"
+   },
+   "commercial": "Fee on the vehicle plus the flows that follow a published allocation, which in a discretionary book move without a per-client conversation. The fastest route from an investment view to assets. INTERPRETATION.",
+   "tradeoff": "Only works if there is a genuine house view to implement, and a vehicle the firm controls invites questions about cost versus a third-party fund. The ANZ example is instructive on scale: the fund reached about A$128m by August 2026, and most of the growth was price rather than new money.",
+   "vs_etf": "This is a fund, so the comparison is between ours and someone else's: control of the mandate and the fee against the liquidity and track record of an established listed product.",
+   "angle": "We publish a view on gold. What do our discretionary portfolios actually buy to express it?"
+  }
+ ]
+}

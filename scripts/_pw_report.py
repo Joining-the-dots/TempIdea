@@ -173,7 +173,7 @@ def row(f, rank=None):
     ykeys = ' '.join(k for k, _, _ in PK if p.get(k) in ('Y', 'Y?'))
     aum = f.get('client_assets_usd_bn')
     aums = ('<span class="mute mono">US$%sbn</span>' % ('{:,.0f}'.format(float(aum)) if float(aum) >= 10 else aum)) if isinstance(aum, (int, float)) else ''
-    return ('<tr class="r" data-region="%s" data-country="%s" data-type="%s" data-p="%s" data-citi="%s" data-score="%s" data-pb="%s" tabindex="0">'
+    return ('<tr class="r" data-region="%s" data-country="%s" data-type="%s" data-p="%s" data-citi="%s" data-score="%s" data-pb="%s" tabindex="0" role="button" aria-expanded="false">'
             '<td class="fm"><b>%s</b>%s%s</td><td class="ct">%s</td>%s%s<td class="ww">%s</td><td class="ci"><span class="pill pill-%s">%s</span></td><td class="sc mono">%s</td></tr>'
             '<tr class="x" hidden><td colspan="%d">%s</td></tr>') % (
         e(f['region']), e(f['country']), e(f['type']), ykeys, cc, f.get('score') or 0, '1' if f.get('is_pb', True) else '0',
@@ -193,11 +193,11 @@ def prow(x):
     if url: det += '<p class="src">Source: <a href="%s" target="_blank" rel="noopener">%s</a></p>' % (e(url), e(re.sub(r'^https?://(www\.)?', '', url)[:90]))
     det += '<p class="src">Firm row: %s · %s</p>' % (e(x.get('firm_actual') or x.get('firm')), e(x.get('firm_type') or ''))
     det += '</div>'
-    return ('<tr class="r" data-region="%s" data-country="%s" data-ptype="%s" data-seg="%s" data-conf="%s" data-metals="%s" tabindex="0">'
+    return ('<tr class="r" data-region="%s" data-country="%s" data-ptype="%s" data-seg="%s" data-conf="%s" data-metals="%s" tabindex="0" role="button" aria-expanded="false">'
             '<td class="fm"><b>%s</b><div class="mute">%s</div></td><td><b>%s</b>%s</td><td><span class="ptype">%s</span></td><td class="ct">%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td class="sc">%s</td></tr>'
             '<tr class="x" hidden><td colspan="10">%s</td></tr>') % (
-        e(x.get('region') or ''), e(x.get('country') or ''), e(x.get('product_type') or ''), e(str(x.get('segment') or '').lower()[:40]), e(x.get('confidence') or ''), e('|'.join(str(m) for m in x.get('metals') or [])),
-        e(str(x.get('pb_arm') or '')[:60]), e(x.get('country') or ''), e(str(x.get('product_name') or '')[:80]), '' if x.get('confidence') == 'verified' else ' <span class="tag-k">knowledge</span>',
+        e(x.get('region') or ''), e(x.get('market') or x.get('country') or ''), e(x.get('product_type') or ''), e(str(x.get('segment') or '').lower()[:40]), e(x.get('confidence') or ''), e('|'.join(str(m) for m in x.get('metals') or [])),
+        e(str(x.get('pb_arm') or '')[:60]), e((x.get('market') or x.get('country') or '')) + ((' <span class="mute">(%s parent)</span>' % e(x['country'])) if x.get('market') and x.get('country') and x['market'] != x['country'] else ''), e(str(x.get('product_name') or '')[:80]), '' if x.get('confidence') == 'verified' else ' <span class="tag-k">knowledge</span>',
         e(PTL.get(x.get('product_type'), x.get('product_type'))), e(str(x.get('segment') or '')[:30]), e(mets), e(str(x.get('unit_and_minimum') or '?')[:70]), e(str(x.get('fees') or '?')[:80]), e(str(x.get('custody') or '?')[:70]), e(x.get('physical_delivery') or '?'), det)
 
 
@@ -206,8 +206,8 @@ ptypes = collections.Counter(x['product_type'] for x in PRODS)
 ptype_boxes = ''.join('<label><input type="checkbox" value="%s"> %s <span class="mono mute">%d</span></label>' % (t, e(PTL.get(t, t)), n) for t, n in ptypes.most_common())
 pmetals = collections.Counter(str(m) for x in PRODS for m in (x.get('metals') or []))
 pmetal_boxes = ''.join('<label><input type="checkbox" value="%s"> %s <span class="mono mute">%d</span></label>' % (e(m), e(m), n) for m, n in pmetals.most_common())
-pcountries = sorted({x['country'] for x in PRODS if x.get('country')})
-p_thead = '<tr><th class="fm">PB / wealth arm</th><th>Product</th><th>Type</th><th>Segment</th><th>Metals</th><th>Unit / minimum</th><th>Fees</th><th>Custody</th><th>Deliv.</th></tr>'
+pcountries = sorted({(x.get('market') or x.get('country')) for x in PRODS if (x.get('market') or x.get('country'))})
+p_thead = '<tr><th class="fm">Wealth arm and market</th><th>Product</th><th>Type</th><th>Segment</th><th>Metals</th><th>Unit / minimum</th><th>Fees</th><th>Custody</th><th>Deliv.</th></tr>'
 # the three most common product designs per type, for the intro
 n_pb = sum(1 for f in F if f.get('is_pb', True))
 
@@ -215,6 +215,95 @@ try:
     TALK = open(os.path.join(HERE, 'pw_talking_points.html'), encoding='utf-8').read()
 except Exception:
     TALK = ''
+
+
+try:
+    IDEAS = json.load(open(os.path.join(HERE, 'pw_ideas.json'), encoding='utf-8'))
+except Exception:
+    IDEAS = {}
+
+TAGCLS = {'FACT': ('tg-f', 'verified'), 'INTERPRETATION': ('tg-i', 'our reading'), 'DISCUSSION': ('tg-d', 'to test')}
+
+
+def tag(t):
+    c, lbl = TAGCLS.get(str(t or '').upper(), ('tg-d', 'to test'))
+    return '<span class="tg %s">%s</span>' % (c, e(lbl))
+
+
+def ex_block(x, label):
+    if not x: return ''
+    u = x.get('url') or ''
+    return ('<div class="ex"><div class="ex-h">%s %s</div>'
+            '<div class="ex-b"><b>%s</b> &mdash; %s</div>'
+            '<div class="ex-m">%s%s</div></div>') % (
+        e(label), tag(x.get('tag')),
+        e(x.get('institution', '')), e(x.get('product', '')),
+        e(x.get('detail', '')),
+        (' <a href="%s" target="_blank" rel="noopener">source</a> <span class="mute">%s</span>' % (e(u), e(x.get('jurisdiction', '')))) if u else '')
+
+
+def idea_plain(i):
+    """plain text for the copy control, sources included"""
+    L = ['%s — %s' % (i.get('theme', ''), i.get('title', '')), '',
+         'CLIENT NEED: ' + str(i.get('client_need', '')), '',
+         'PROPOSITION: ' + str(i.get('proposition', '')), '']
+    for k, lbl in (('example', 'EXAMPLE'), ('example2', 'EXAMPLE')):
+        x = i.get(k)
+        if x:
+            L += ['%s: %s — %s. %s [%s; %s]' % (lbl, x.get('institution', ''), x.get('product', ''),
+                                                x.get('detail', ''), x.get('jurisdiction', ''), x.get('tag', '')),
+                  '  source: ' + str(x.get('url', '')), '']
+    L += ['COMMERCIAL APPEAL: ' + str(i.get('commercial', '')), '',
+          'KEY TRADE-OFF: ' + str(i.get('tradeoff', '')), '']
+    if i.get('vs_etf'): L += ['WHY NOT JUST A GOLD ETF: ' + str(i['vs_etf']), '']
+    L += ['PRESENTATION ANGLE: ' + str(i.get('angle', ''))]
+    return '\n'.join(L)
+
+
+def ideas_html():
+    if not IDEAS: return '<p class="mute">Ideas file not found.</p>'
+    out = []
+    pr = IDEAS.get('priorities') or {}
+    if pr.get('items'):
+        byid = {x['id']: x for x in IDEAS.get('ideas', [])}
+        out.append('<div class="prio"><div class="prio-h">%s</div><p class="mute">%s</p><ol>' % (e(pr.get('heading', '')), e(pr.get('basis', ''))))
+        for it in pr['items']:
+            t = byid.get(it.get('idea'), {})
+            out.append('<li><a href="#idea-%s"><b>%s</b></a> &mdash; %s</li>' % (e(it.get('idea', '')), e(t.get('title', it.get('idea', ''))), e(it.get('why', ''))))
+        out.append('</ol></div>')
+    for i in IDEAS.get('ideas', []):
+        iid = e(i.get('id', ''))
+        out.append('<article class="idea" id="idea-%s">' % iid)
+        out.append('<div class="idea-top"><div><div class="idea-theme">%s</div><h3>%s</h3></div>'
+                   '<button type="button" class="cpy" onclick="copyIdea(this)">Copy with sources</button></div>' % (
+                       e(i.get('theme', '')), e(i.get('title', ''))))
+        out.append('<div class="idea-grid">')
+        out.append('<div class="f"><div class="fl">Client need</div><p>%s</p></div>' % e(i.get('client_need', '')))
+        out.append('<div class="f"><div class="fl">Proposition</div><p>%s</p></div>' % e(i.get('proposition', '')))
+        out.append('</div>')
+        out.append(ex_block(i.get('example'), 'Real example'))
+        out.append(ex_block(i.get('example2'), 'Also in the market'))
+        out.append('<div class="idea-grid">')
+        out.append('<div class="f"><div class="fl">Commercial appeal %s</div><p>%s</p></div>' % (tag('INTERPRETATION'), e(i.get('commercial', ''))))
+        out.append('<div class="f"><div class="fl">Key trade-off</div><p>%s</p></div>' % e(i.get('tradeoff', '')))
+        out.append('</div>')
+        if i.get('vs_etf'):
+            out.append('<div class="f wide"><div class="fl">Why not simply buy a gold ETF</div><p>%s</p></div>' % e(i['vs_etf']))
+        out.append('<div class="angle-box"><span class="fl">Presentation angle</span> %s</div>' % e(i.get('angle', '')))
+        out.append('<textarea class="cpy-src" hidden>%s</textarea>' % e(idea_plain(i)))
+        out.append('</article>')
+    ol = IDEAS.get('outline') or {}
+    if ol.get('slides'):
+        out.append('<div class="outline"><div class="prio-h">%s</div><ol>' % e(ol.get('heading', '')))
+        for sl in ol['slides']:
+            out.append('<li><b>%s</b> &mdash; %s</li>' % (e(sl.get('title', '')), e(sl.get('content', ''))))
+        out.append('</ol></div>')
+    return ''.join(out)
+
+
+IDEANOTE = 'Seven propositions drawn from the catalogue below, each with a named competitor product and its source. Statements are tagged: <span class="tg tg-f">verified</span> against a primary source, <span class="tg tg-i">our reading</span> for commercial interpretation, <span class="tg tg-d">to test</span> for proposals rather than confirmed capability. The full research sits underneath.'
+
+n_grouped = sum(1 for f in F if len(re.split(r'\s*/\s*', re.sub(r'\(.*?\)', '', f['firm']))) >= 3)
 
 # ---- headline numbers
 n_ver = sum(1 for f in F if str(f['confidence']).startswith('verified')) + sum(1 for f in F if f['confidence'] == 'mixed')
@@ -287,7 +376,8 @@ a{color:var(--blue)}
 section{margin-top:44px}
 .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:14px}
 .sec-head p{margin:0;color:var(--mute);font-size:14px;max-width:70ch}
-.tbl-wrap{overflow-x:auto;border:1px solid var(--rule);background:var(--surface)}
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--rule);background:var(--surface)}
+@media (max-width:620px){.controls input[type=search],.controls select{min-width:100%;flex:1 1 100%}.controls button{min-height:44px}.cpy{min-height:44px}.dl{min-height:44px}}
 table{border-collapse:collapse;width:100%;min-width:1100px;font-size:14px}
 th{position:sticky;top:0;background:var(--surface);text-align:left;font:600 11.5px/1.2 "Source Sans 3",sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);padding:10px 8px;border-bottom:1px solid var(--rule);z-index:1}
 td{padding:9px 8px;border-bottom:1px solid var(--rule2);vertical-align:top}
@@ -305,6 +395,36 @@ td.sc{text-align:center;font-weight:500}
 td.p2{min-width:150px;max-width:210px;font-size:12.5px;line-height:1.35}
 .ptype{display:inline-block;font:600 11px/1.2 "Source Sans 3",sans-serif;letter-spacing:.03em;padding:3px 7px;border-radius:3px;background:var(--gold-bg);color:var(--gold);white-space:nowrap}
 .pbtog{display:inline-flex;gap:6px;align-items:center;font-size:14px;cursor:pointer}
+.empty{padding:14px 16px;border:1px dashed var(--rule);border-radius:4px;color:var(--mute);font-size:14.5px;margin:0 0 10px}
+.prio{border:1px solid var(--rule);border-left:3px solid var(--gold);background:var(--surface);padding:16px 20px;margin:0 0 26px;border-radius:3px}
+.prio-h{font:600 12px/1 "Source Sans 3",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin-bottom:8px}
+.prio ol,.outline ol{margin:6px 0 0;padding-left:20px}.prio li,.outline li{margin:7px 0;color:var(--ink2)}
+.prio a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+.prio a:hover{color:var(--blue)}
+.idea{border:1px solid var(--rule);border-radius:4px;background:var(--surface);padding:20px 24px 18px;margin:0 0 20px;scroll-margin-top:14px}
+.idea-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.idea-theme{font:600 11px/1 "Source Sans 3",sans-serif;text-transform:uppercase;letter-spacing:.09em;color:var(--mute);margin-bottom:5px}
+.idea h3{font-family:Fraunces,Georgia,serif;font-size:21px;font-weight:600;margin:0 0 12px;letter-spacing:-.01em}
+.idea-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:6px 30px;margin:0 0 12px}
+.f p{margin:.2em 0 0;color:var(--ink2);font-size:14.5px;line-height:1.55}
+.f.wide{margin:4px 0 12px}
+.fl{font:600 11px/1.3 "Source Sans 3",sans-serif;text-transform:uppercase;letter-spacing:.07em;color:var(--ink);display:inline-block;margin-bottom:2px}
+.ex{border-left:2px solid var(--gold);padding:2px 0 2px 14px;margin:0 0 12px}
+.ex-h{font:600 11px/1.3 "Source Sans 3",sans-serif;text-transform:uppercase;letter-spacing:.07em;color:var(--mute);margin-bottom:3px}
+.ex-b{font-size:15px}.ex-m{color:var(--ink2);font-size:14.5px;line-height:1.55}
+.tg{display:inline-block;font:600 10px/1 "Source Sans 3",sans-serif;letter-spacing:.04em;text-transform:uppercase;
+    padding:3px 6px;border-radius:3px;margin-left:5px;vertical-align:middle}
+.tg-f{background:var(--green-bg);color:var(--green)}
+.tg-i{background:var(--blue-bg);color:var(--blue)}
+.tg-d{background:var(--gold-bg);color:var(--gold)}
+.angle-box{margin-top:12px;padding:11px 14px;background:var(--gold-bg);border-radius:3px;font-size:15px;color:var(--ink)}
+.angle-box .fl{color:var(--gold);margin-right:6px}
+.cpy{font:600 13px/1 "Source Sans 3",sans-serif;padding:8px 13px;border:1px solid var(--rule);border-radius:3px;
+     background:var(--bg);color:var(--ink2);cursor:pointer;white-space:nowrap}
+.cpy:hover{border-color:var(--gold);color:var(--gold)}
+.outline{border:1px solid var(--rule);border-radius:3px;background:var(--surface);padding:16px 20px;margin:22px 0 0}
+@media (max-width:620px){.idea{padding:16px 15px}.idea-top{flex-direction:column}}
+
 .idx{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:2px 22px;margin:18px 0 6px;
      padding:14px 18px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)}
 .idx-h{grid-column:1/-1;font:600 11px/1 "Source Sans 3",sans-serif;text-transform:uppercase;
@@ -349,13 +469,14 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 <div class="wrap">
 <div class="hdr">
 <div class="eyebrow">Metals desk · private banks &amp; wealth managers · global mandate · generated __GEN__</div>
-<a class="dl" href="__SELF__" download="Private-Wealth-Metals-Map.html" title="Save this page to read offline"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download</a>
+<a class="dl" href="__SELF__" download="Private-Wealth-Metals-Map.html" title="Save this page as a single HTML file to read offline"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download HTML report</a>
 </div>
 <h1>Private Wealth Metals Map</h1>
-<p class="lede">Private banks and wealth managers worldwide: the metals products each puts in front of clients, and the bullion banks, custodians and refiners that sit behind those products. The question behind it: where can Citi supply, custody, finance or clear what a wealth manager is currently buying from someone else.</p>
+<p class="lede">__NPB__ private-bank and wealth-manager entries worldwide, plus __NCHAN__ market-channel entries (mints, refiners, wholesalers, vaults, exchanges and fund issuers) that show who the wealth firms buy from and custody with. __NGRP__ of the __N__ entries are grouped rows covering several smaller firms at once, so the row count is not a count of distinct banking groups. The question behind it: where can Citi supply, custody, finance or clear what a wealth manager is currently buying from someone else.</p>
 <nav class="idx" aria-label="Contents">
   <span class="idx-h">Contents</span>
-  <a href="#talk"><span class="idx-n">1</span>Talking points</a>
+  <a href="#ideas"><span class="idx-n">1</span>Presentation ideas</a>
+  <a href="#talk"><span class="idx-n">9</span>Background briefing</a>
   <a href="#products"><span class="idx-n">2</span>Product catalogue</a>
   <a href="#targets"><span class="idx-n">3</span>Where the gaps are</a>
   <a href="#citi"><span class="idx-n">4</span>One global franchise</a>
@@ -364,6 +485,11 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
   <a href="#all"><span class="idx-n">7</span>Every firm</a>
   <a href="#method"><span class="idx-n">8</span>Caveats</a>
 </nav>
+
+<section id="ideas">
+<div class="sec-head"><h2>Presentation ideas</h2><p>__IDEANOTE__</p></div>
+__IDEAS__
+</section>
 
 <section id="talk">
 <div class="sec-head"><h2>Talking points for the wealth business</h2><p>The products, competitor designs, what clients are buying, the largest positions by country, sizing and a potential shelf.</p></div>
@@ -375,13 +501,14 @@ __TALK__
 <div class="controls">
 <input type="search" id="pq" placeholder="search product, firm, custody, fees…" aria-label="Search products">
 <select id="pfr" aria-label="Region"><option value="">all regions</option>__REGOPTS__</select>
-<select id="pfc" aria-label="Country"><option value="">all countries</option>__PCTRYOPTS__</select>
+<select id="pfc" aria-label="Market"><option value="">all markets</option>__PCTRYOPTS__</select>
 <select id="pfs" aria-label="Segment"><option value="">any segment</option><option value="private">private-banking / HNW</option><option value="uhnw">UHNW / family office</option><option value="affluent">affluent / premier</option><option value="retail">retail</option></select>
 <select id="pfv" aria-label="Confidence"><option value="">any confidence</option><option value="verified">verified only</option></select>
 <button type="button" id="pclr">clear</button><span class="count" id="pcnt"></span>
 </div>
 <div class="boxes" id="ppt"><span class="mute">Type:</span>__PTYPEBOXES__</div>
 <div class="boxes" id="ppm"><span class="mute">Metal:</span>__PMETALBOXES__</div>
+<p class="empty" id="empty-prod" hidden>No product matches these filters. Clear one to widen the search.</p>
 <div class="tbl-wrap"><table id="prod-t"><thead>__PTHEAD__</thead><tbody>__PRODROWS__</tbody></table></div>
 </section>
 
@@ -421,6 +548,7 @@ __TALK__
 <button type="button" id="clr">clear</button><span class="count" id="cnt"></span>
 </div>
 <div class="boxes" id="pb"><span class="mute">Offers:</span>__PRODBOXES__</div>
+<p class="empty" id="empty-all" hidden>No firm matches these filters. Clear one to widen the search.</p>
 <div class="tbl-wrap"><table id="all-t"><thead>__THEAD__</thead><tbody>__ALLROWS__</tbody></table></div>
 </section>
 
@@ -440,10 +568,19 @@ __TALK__
 </section>
 </div>
 <script>
+function copyIdea(btn){
+  var a=btn.closest('.idea').querySelector('.cpy-src');
+  if(!a)return;
+  a.hidden=false; a.select(); a.setSelectionRange(0,999999);
+  try{document.execCommand('copy');}catch(e){}
+  a.hidden=true;
+  var t=btn.textContent; btn.textContent='Copied'; setTimeout(function(){btn.textContent=t;},1600);
+}
+
 (function(){
   function wire(tbl){
-    tbl.addEventListener('click',function(ev){var r=ev.target.closest('tr.r');if(!r||ev.target.closest('a'))return;var x=r.nextElementSibling;if(x&&x.classList.contains('x'))x.hidden=!x.hidden;});
-    tbl.addEventListener('keydown',function(ev){if(ev.key!=='Enter'&&ev.key!==' ')return;var r=ev.target.closest('tr.r');if(!r)return;ev.preventDefault();var x=r.nextElementSibling;if(x)x.hidden=!x.hidden;});
+    tbl.addEventListener('click',function(ev){var r=ev.target.closest('tr.r');if(!r||ev.target.closest('a'))return;var x=r.nextElementSibling;if(x&&x.classList.contains('x')){x.hidden=!x.hidden;r.setAttribute('aria-expanded',String(!x.hidden));}});
+    tbl.addEventListener('keydown',function(ev){if(ev.key!=='Enter'&&ev.key!==' ')return;var r=ev.target.closest('tr.r');if(!r)return;ev.preventDefault();var x=r.nextElementSibling;if(x){x.hidden=!x.hidden;r.setAttribute('aria-expanded',String(!x.hidden));}});
   }
   document.querySelectorAll('table').forEach(wire);
   var q=document.getElementById('q'),fr=document.getElementById('fr'),fc=document.getElementById('fc'),ft=document.getElementById('ft'),fci=document.getElementById('fci'),fs=document.getElementById('fs'),cnt=document.getElementById('cnt'),pb=document.getElementById('pb');
@@ -462,6 +599,7 @@ __TALK__
       if(ok)n++;
     });
     cnt.textContent=n+' of '+rows.length+' shown';
+    var em=document.getElementById('empty-all'); if(em) em.hidden = n!==0;
   }
   [q,fr,fc,ft,fci,fs,fpb].forEach(function(el){if(!el)return;el.addEventListener('input',apply);el.addEventListener('change',apply);});
   pb.addEventListener('change',apply);
@@ -486,6 +624,7 @@ __TALK__
       r.hidden=!ok; if(x&&!ok)x.hidden=true; if(ok)n++;
     });
     pcnt.textContent=n+' of '+prows.length+' shown';
+    var pem=document.getElementById('empty-prod'); if(pem) pem.hidden = n!==0;
   }
   if(pq){[pq,pfr,pfc,pfs,pfv].forEach(function(el){el.addEventListener('input',papply);el.addEventListener('change',papply);});ppt.addEventListener('change',papply);ppm.addEventListener('change',papply);
     document.getElementById('pclr').addEventListener('click',function(){pq.value='';pfr.value='';pfc.value='';pfs.value='';pfv.value='';ppt.querySelectorAll('input').forEach(function(b){b.checked=false;});ppm.querySelectorAll('input').forEach(function(b){b.checked=false;});papply();});
@@ -513,6 +652,8 @@ page = (page.replace('__GEN__', e(d['generated'])).replace('__N__', str(len(F)))
         .replace('__CONF__', e(', '.join('%s %d' % (k, v) for k, v in conf.most_common())))
         .replace('__NBOOK__', str(sum(1 for f in F if f.get('book')))).replace('__NCHAN__', str(len(F) - n_pb))
         .replace('__SELF__', e(os.path.basename(OUT)))
+        .replace('__NGRP__', str(n_grouped))
+        .replace('__IDEAS__', ideas_html()).replace('__IDEANOTE__', IDEANOTE)
         .replace('__NPB__', str(n_pb)).replace('__NPROD__', str(n_prod)).replace('__NPRODF__', str(n_prod_firms)).replace('__NPRODV__', str(n_prod_ver))
         .replace('__PCTRYOPTS__', ''.join('<option>%s</option>' % e(c) for c in pcountries)).replace('__PTYPEBOXES__', ptype_boxes).replace('__PMETALBOXES__', pmetal_boxes)
         .replace('__PTHEAD__', p_thead).replace('__PRODROWS__', ''.join(prow(x) for x in PRODS))
