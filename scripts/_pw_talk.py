@@ -176,7 +176,7 @@ S.append((5, 'Five competitor product designs', 'Each of these is live today.', 
  (72, 'Emirates NBD: a fully priced gram-gold account (2.1% arrangement under USD 250k, one-off 0.315% custody charge on early redemption) plus ENBD-branded bars in the app, with gold loans, leasing and repo listed in its bullion-service FAQ. The most complete shelf built by one bank in 18 months.', 'https://www.emiratesnbd.com/'),
  (73, 'China Merchants Bank 金生利 and Kuveyt Türk gold-to-gold accounts: the client\'s gold earns a yield paid in grams. The desk\'s lease book turned into a client product.', 'https://www.cmbchina.com/')], None))
 
-S.append((4, 'a global wealth franchise today, as the client sees it', 'What is on Citi\'s client pages across booking centres.', [
+S.append((4, 'One global franchise today, as the client sees it', 'What is on Citi\'s client pages across booking centres.', [
  (74, 'Citi\'s only advertised client gold product found anywhere is the Hong Kong "Gold Manager": cash-settled, loco-London-referenced paper gold, HKD 5,000 minimum, no delivery, plus a Gold Premium Investment deposit.', 'https://www.citibank.com.hk/'),
  (75, 'No comparable product is marketed on Citi\'s US, Singapore, UAE or UK client sites. Structured notes, OTC hedging and securities-backed lending exist but are not presented as metals products.', ''),
  (76, 'Peers in the same booking centres: HSBC HK (paper gold, token, ETF custody), DBS/UOB/OCBC SG (accounts, bars, token), Emirates NBD/FAB UAE (accounts, bars), JPMorgan/Morgan Stanley US (allocated and unallocated programmes), UBS/JB/Pictet CH (accounts, physical, Lombard).', ''),
@@ -187,7 +187,7 @@ S.append((3, 'How big could it be', 'Peers disclose the physical metal they carr
  (79, 'Applied to a wealth franchise in the hundreds of billions of client assets, a mature metal-account shelf is a low-single-digit-billion physical book, earning custody fees, dealing spread and a lease or funding margin on unallocated balances. (ESTIMATE.)', ''),
  (80, 'The retail signal in Asia is faster: Korean bank gold balances more than tripled from KRW 0.78trn at end-2024 to a KRW 2.44trn peak in January 2026, then fell 29% to KRW 1.73trn by July; Taiwan passbook volumes roughly doubled; Indonesia\'s bullion banks reached 153 t in about 17 months.', 'https://www.fnnews.com/news/202606161819598224')], None))
 
-S.append((4, 'A shelf a global wealth franchise could launch', 'Three tiers. Each maps to a competitor product that already exists.', [
+S.append((4, 'A potential shelf', 'Three tiers. Each maps to a competitor product that already exists.', [
  (81, 'Tier 1 (private bank, all booking centres): an allocated precious-metals account in the group\'s own London vault with physical delivery via a secure-logistics partner, plus Lombard lending against it. Template: JPMorgan PB vault claims; Julius Baer / LGT metal accounts.', ''),
  (82, 'Tier 2 (affluent and private-client tiers in SG, HK, UAE, UK): an unallocated gram-gold account with physical redemption in kilobars or 100 g, priced off loco-London and desk-hedged. Template: UOB Gold Savings, Emirates NBD gram gold, HSBC Wayfoong Statement Gold; an existing paper-gold product could be extended beyond one booking centre and given a delivery right.', ''),
  (83, 'Tier 3 (yield and structured): gold-linked deposits and a gold DCI where a lease book funds the client yield; a standing gold autocall/reverse-convertible programme; a house strategic-allocation view implemented via a physically backed vehicle. Templates: CMB, Kuveyt Türk, CIMB Gold Convertible, HSBC China structured deposits, ANZ Private gold fund.', ''),
@@ -245,9 +245,9 @@ ORDER = [
  ('What clients are buying',),
  ('The largest positions, by country',),
  ('HSBC, Standard Chartered and ANZ',),
- ('a global wealth franchise today, as the client sees it', 'One global franchise today, as the client sees it'),
+ ('One global franchise today, as the client sees it', 'One global franchise today, as the client sees it'),
  ('How big could it be',),
- ('A shelf a global wealth franchise could launch', 'A potential shelf — strategic idea'),
+ ('A potential shelf', 'A potential shelf — strategic idea'),
  ('Risks and constraints',),
 ]
 _rank = {t: i for i, grp in enumerate(ORDER) for t in grp}

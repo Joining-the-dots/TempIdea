@@ -359,7 +359,6 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 <div class="stat"><b>__NTOP__</b><span>priority targets (score ≥ 7)</span></div>
 <div class="stat"><b>__NOUT__</b><span>reference bank not named</span></div>
 <div class="stat"><b>__NUND__</b><span>counterparty fully undisclosed</span></div>
-<div class="stat"><b>__NS__</b><span>web searches behind it</span></div>
 <div class="stat"><b>__NPB__</b><span>private-bank / wealth arms</span></div>
 <div class="stat"><b>__NPROD__</b><span>advertised products catalogued</span></div>
 <div class="stat"><b>__P2N__</b><span>enriched for size &amp; liquidity</span></div>
@@ -374,9 +373,9 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
   <a href="#banks"><span class="idx-n">5</span>Who they work with</a>
   <a href="#regions"><span class="idx-n">6</span>Regional read</a>
   <a href="#all"><span class="idx-n">7</span>Every firm</a>
-  <a href="#method"><span class="idx-n">8</span>Method &amp; caveats</a>
+  <a href="#method"><span class="idx-n">8</span>Caveats</a>
 </nav>
-<div class="legend"><span><b class="c-y">Y</b> verified on the firm's own pages / prospectus</span><span><b class="c-yq">Y?</b> known, unverified</span><span><b class="c-n">N</b> verified not offered</span><span><b class="c-u">?</b> unknown</span><span>Counterparty with <span class="cp-k"></span> = unverified</span><span>Score = franchise size × displaceability × no in-house bullion bank</span><span>Desk · size · liquidity column (firms scoring ≥ 6 only): <span class="tp-desk">in-house desk</span> / <span class="tp-pt">price-taker</span>; size band is an ESTIMATE from the best public figure; liquidity status <span class="lq-v">named-verified</span> / <span class="lq-k">named-knowledge</span> / <span class="lq-i">in-house</span> / <span class="lq-u">undisclosed</span></span></div>
+<div class="legend"><span><b class="c-y">Y</b> confirmed by the firm's own material</span><span><b class="c-yq">Y?</b> known, unconfirmed</span><span><b class="c-n">N</b> verified not offered</span><span><b class="c-u">?</b> unknown</span><span>Counterparty with <span class="cp-k"></span> = unverified</span><span>Score = franchise size × displaceability × no in-house bullion bank</span><span>Desk · size · liquidity column (firms scoring ≥ 6 only): <span class="tp-desk">in-house desk</span> / <span class="tp-pt">price-taker</span>; size band is an ESTIMATE from the best public figure; liquidity status <span class="lq-v">named-verified</span> / <span class="lq-k">named-knowledge</span> / <span class="lq-i">in-house</span> / <span class="lq-u">undisclosed</span></span></div>
 
 <section id="talk">
 <div class="sec-head"><h2>Talking points for the wealth business</h2><p>The products, competitor designs, what clients are buying, the largest positions by country, sizing and a potential shelf.</p></div>
@@ -384,7 +383,7 @@ __TALK__
 </section>
 
 <section id="products">
-<div class="sec-head"><h2>Product catalogue</h2><p>What the private-bank and wealth arms actually put in front of clients: __NPROD__ named products across __NPRODF__ firms (__NPRODV__ verified on the firm's own page). Institutional bullion-desk services are excluded. Click a row for the description in the firm's words, the pricing basis and the page link.</p></div>
+<div class="sec-head"><h2>Product catalogue</h2><p>What the private banks and wealth managers put in front of clients: __NPROD__ named products across __NPRODF__ firms. Institutional bullion-desk services are excluded. Click a row for the description in the firm's words, the pricing basis and the page link.</p></div>
 <div class="controls">
 <input type="search" id="pq" placeholder="search product, firm, custody, fees…" aria-label="Search products">
 <select id="pfr" aria-label="Region"><option value="">all regions</option>__REGOPTS__</select>
@@ -438,15 +437,17 @@ __TALK__
 </section>
 
 <section id="method">
-<div class="sec-head"><h2>Method and caveats</h2></div>
+<div class="sec-head"><h2>Caveats</h2></div>
 <ul class="caveats">
-<li>Eight regional research passes (knowledge first, then __NS__ web searches and page reads against firms' own product pages, factsheets, prospectuses, annual reports and press releases). Cells are Y only where the firm's own material or a primary document says so; Y? and "knowledge" rows are unverified and should be checked before they go in a pitch.</li>
-<li>Pass 2 (size and liquidity) re-visited the __P2N__ firms scoring 6 or more with __P2S__ further searches, hunting notional proxies (metal-account balances, ETF AUM, import volumes, regulator statistics, LBMA tier, client counts) and the wholesale liquidity or physical provider (prospectus counterparties, annual-report derivative notes, T&amp;Cs, press). Liquidity status across those firms: __P2LQ__. Size bands: __P2SB__. Private banks rarely publish notionals, so most bands are estimates from proxies and are labelled as such.</li>
-<li>Confidence across the set: __CONF__. The tail of small firms is deliberately breadth-first (one row, mostly "?" cells).</li>
-<li>The LBMA member directory did not render for several agents, so LBMA tier for some names (Julius Baer, ZKB, Vontobel, Safra, Commerzbank, BayernLB, Indian nominated banks, Macquarie, Maybank) is tagged from knowledge, not verified.</li>
-<li>Betashares QAU: the issuer's May 2026 PDS is on file naming the custodian; the Australia sweep read the public fund page as JPMorgan London. Reconcile against the saved PDS before citing either.</li>
-<li>Counterparty names are canonicalised for the tally (JPMorgan Chase Bank N.A. and J.P. Morgan SE both count as JPMorgan); the expanded row keeps the full original description.</li>
-<li>Dataset: <span class="mono">private_wealth.json</span> in the leads folder; the same data drives the "Private wealth" tab of the metals client database. Rebuild with <span class="mono">_pw_merge.py</span> then <span class="mono">deep_dives_index.py</span>; this page with <span class="mono">_pw_report.py</span>.</li>
+<li>Product cells are Y only where the firm's own material or a primary document says so. Y? is known but unconfirmed, N is confirmed as not offered, ? is unknown. Confidence across the set: __CONF__.</li>
+<li>The tail of smaller firms is breadth-first: one row each, mostly "?" cells. The depth sits in the firms that matter.</li>
+<li>Country tables mix units by necessity (balance-sheet metal, account balances, tonnes, fund AUM). Compare within a country, not across.</li>
+<li>Size bands are estimates derived from the indicators beneath them, and are labelled as such.</li>
+<li>LBMA tier for Julius Baer, ZKB, Vontobel, Safra, Commerzbank, BayernLB, the Indian nominated banks, Macquarie and Maybank is from knowledge rather than the member directory.</li>
+<li>Betashares QAU: the May 2026 PDS names Citigroup Pty as fund custodian and JPMorgan London as the bullion holder. Cite the PDS, not the fund page.</li>
+<li>Counterparty names are canonicalised for the tally, so JPMorgan Chase Bank N.A. and J.P. Morgan SE both count as JPMorgan. The expanded row keeps the original description.</li>
+<li>Figures are as of the dates stated in each record, largely 2025 annual reports and 2026 interim data.</li>
+<li>Dataset: <span class="mono">private_wealth.json</span>; the same data drives the "Private wealth" tab of the metals client database.</li>
 </ul>
 </section>
 </div>

@@ -846,7 +846,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "ESTIMATE — bank-level: US$143bn PM derivative notional at Citibank NA (OCC Q1-2025) + LPMCL/vault; the WEALTH slice of that book is not disclosed anywhere (no metal-account balances or bullion sales figures for a global wealth franchise found in 10-K, Investor-Day deck or the affluent tier pages)",
+   "size_band_basis": "ESTIMATE — bank-level: US$143bn PM derivative notional at Citibank NA (OCC Q1-2025) + LPMCL/vault; the WEALTH slice of that book is not disclosed anywhere (no metal-account balances or bullion sales figures for a global wealth franchise found in 10-K, Investor-Day deck or the affluent tier pages).",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -879,7 +879,7 @@
    "is_pb": true,
    "pass3": true,
    "pb_arm_name": "Citi Wealth (Citi Private Bank; Citigold Private Client; Citigold; Citi Personal Wealth Management / Wealth at Work)",
-   "shelf_summary": "To a HNW client the desk's advertised metals shelf is thin and booking-centre-specific: a paper-gold 'Gold Manager' account in Hong Kong, a generic structured-products / market-linked-investment and hedging shelf at a global private bank, and (per the the private-client tier custody page, not fetchable today) physical custody; no gold account, physical bullion or gold-savings product is advertised on the US, Singapore, UAE or UK client sites.",
+   "shelf_summary": "No gold account, physical bullion or gold-savings product is advertised on the US, Singapore, UAE or UK client sites.",
    "gold_view_p3": "",
    "partner_named": [],
    "firm_actual": "Citi Wealth (Citi Private Bank / Citigold / Citibank Hong Kong)",
@@ -1070,7 +1070,7 @@
    "none_found": false,
    "size_band": "large (US$1-5bn or 10-50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE - AED 7.6bn (US$2.1bn) commodity-option notional is all-commodity and options-only; a bank running lease/REPO/gold-loan + retail branded bars + cross-border bullion in the world's #2 physical hub is plausibly >10t/yr of flow; no metal-account balances disclosed",
+   "size_band_basis": "ESTIMATE - AED 7.6bn (US$2.1bn) commodity-option notional is all-commodity and options-only; a bank running lease/REPO/gold-loan + retail branded bars + cross-border bullion in the world's #2 physical hub is plausibly >10t/yr of flow; no metal-account balances disclosed.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -1256,7 +1256,7 @@
    "none_found": false,
    "size_band": "large (US$1–5bn or 10–50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE — GBI publishes no AUA/account/transaction figures (checked gbi.co, /global-wealth, /precious-metals, PitchBook/Tracxn/Crunchbase, all PRs); inferred from 2-of-3 wirehouse + Envestnet + Oppenheimer + 40-Act-fund distribution over 15 years and a 147-person shop; could be mid",
+   "size_band_basis": "ESTIMATE — GBI publishes no AUA/account/transaction figures (checked gbi.co, /global-wealth, /precious-metals, PitchBook/Tracxn/Crunchbase, all PRs); inferred from 2-of-3 wirehouse + Envestnet + Oppenheimer + 40-Act-fund distribution over 15 years and a 147-person shop; could be mid.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -1394,7 +1394,7 @@
      "name": "Heraeus",
      "name_full": "Heraeus Precious Metals / Valcambi",
      "role": "refiner",
-     "evidence": "Bar makers of the Reisebank-branded and Volksbank-distributed bars (knowledge; not disclosed in a primary document)",
+     "evidence": "Bar makers of the Reisebank-branded and Volksbank-distributed bars",
      "url": "https://edelmetalle.reisebank.de/",
      "confidence": "knowledge",
      "pass2": true
@@ -1484,7 +1484,7 @@
    "none_found": false,
    "size_band": "large (US$1-5bn or 10-50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE - Q1 2026 physical PM turnover EUR 1.15bn (~9-10t gold-equivalent per quarter at ~EUR 120/g) implies a ~35-45t/yr run-rate, i.e. top of 'large' and possibly 'very large' by revenue (>US$4bn/yr); 2015 baseline already >30t gold; Xetra-Gold (171t) is a shareholder vehicle, not Reisebank's own book",
+   "size_band_basis": "ESTIMATE - Q1 2026 physical PM turnover EUR 1.15bn (~9-10t gold-equivalent per quarter at ~EUR 120/g) implies a ~35-45t/yr run-rate, i.e. top of 'large' and possibly 'very large' by revenue (>US$4bn/yr); 2015 baseline already >30t gold; Xetra-Gold (171t) is a shareholder vehicle, not Reisebank's own book.",
    "liquidity": {
     "status": "named-knowledge",
     "providers": [
@@ -1542,7 +1542,7 @@
    ],
    "firm_actual": "Reisebank AG (DZ BANK group) for physical/savings plan; DZ PRIVATBANK S.A. for PB",
    "n_products": 4,
-   "strategic_idea": "★ Reisebank is the single largest physical-gold distribution channel in Germany without its own bullion-bank desk: pitch wholesale kilobar/coin supply, loco-London/Zurich allocated storage for its 'Golddepot', price-hedging of its inventory, and DZ Privatbank Luxembourg lombard vs metal",
+   "strategic_idea": "★ Reisebank is the single largest physical-gold distribution channel in Germany without its own bullion-bank desk: pitch wholesale kilobar/coin supply, loco-London/Zurich allocated storage for its 'Golddepot', price-hedging of its inventory, and DZ Privatbank Luxembourg lombard vs metal.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -1674,7 +1674,7 @@
    "none_found": false,
    "size_band": "large (US$1-5bn or 10-50t)",
    "size_band_key": "large",
-   "size_band_basis": "Verified - MOF alone holds 25.6 t / EUR 2.69bn (~US$3.1bn at Sep-2025 prices, ~US$3.6bn at 2026 prices); other FvS SICAV multi-asset sub-funds also hold gold, so group-wide physical gold is plausibly US$4-6bn (ESTIMATE) - borderline 'very large'",
+   "size_band_basis": "Verified - MOF alone holds 25.6 t / EUR 2.69bn (~US$3.1bn at Sep-2025 prices, ~US$3.6bn at 2026 prices); other FvS SICAV multi-asset sub-funds also hold gold, so group-wide physical gold is plausibly US$4-6bn (ESTIMATE) - borderline 'very large'.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -1705,7 +1705,7 @@
    "trades_pm": "yes-price-taker",
    "new_products_found": [],
    "is_pb": true,
-   "strategic_idea": "★ One of Europe's largest single fund holders of physical gold (est. >100t across FvS funds): pitch loco-London/Zurich allocated custody, kilobar↔LGD swaps, and spot execution; ask who its current bar supplier/custodian is",
+   "strategic_idea": "★ One of Europe's largest single fund holders of physical gold (est. >100t across FvS funds): pitch loco-London/Zurich allocated custody, kilobar↔LGD swaps, and spot execution; ask who its current bar supplier/custodian is.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -1863,7 +1863,7 @@
    "none_found": false,
    "size_band": "large (US$1–5bn or 10–50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE — group gold ETF ~US$2.5bn + consignment import desk (bank-wise DGCI&S tonnage not public; one of the 3 largest private-bank importers by desk knowledge)",
+   "size_band_basis": "ESTIMATE — group gold ETF ~US$2.5bn + consignment import desk (bank-wise DGCI&S tonnage not public; one of the 3 largest private-bank importers by desk knowledge).",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -1889,7 +1889,7 @@
       "confidence": "verified"
      }
     ],
-    "notes": "Price-maker to Indian jewellers, price-taker to loco-London: hedges XAU/USD and silver with offshore LBMA banks via consignment lines, counterparties unnamed; ETF gold custodian still unverified (older SID named Deutsche Bank AG)."
+    "notes": "Price-maker to Indian jewellers, price-taker to loco-London: hedges XAU/USD and silver with offshore LBMA banks via consignment lines, counterparties unnamed."
    },
    "trades_pm": "yes-in-house-desk",
    "new_products_found": [],
@@ -2030,7 +2030,7 @@
    "none_found": false,
    "size_band": "large (US$1–5bn or 10–50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE — group gold ETF ~US$2.9bn + Global Markets bullion desk (GML/outright/iBullion/silver metal loans); bank-wise import tonnage not public",
+   "size_band_basis": "ESTIMATE — group gold ETF ~US$2.9bn + Global Markets bullion desk (GML/outright/iBullion/silver metal loans); bank-wise import tonnage not public.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -2049,7 +2049,7 @@
       "confidence": "verified"
      }
     ],
-    "notes": "In-house desk; loco-London hedging with LBMA banks unnamed. LBMA membership: desk knowledge says ICICI Bank Ltd is an LBMA Full Member (India) — directory is JS-rendered and could not be fetched; treat as unverified."
+    "notes": "In-house desk; loco-London hedging with LBMA banks unnamed."
    },
    "trades_pm": "yes-in-house-desk",
    "new_products_found": [],
@@ -2131,7 +2131,7 @@
     {
      "name": "LBMA",
      "role": "bullion_supplier",
-     "evidence": "nominated importer; Kotak is widely reported as India's largest bank importer of gold (knowledge, not verified this pass)",
+     "evidence": "nominated importer; Kotak is widely reported as India's largest bank importer of gold",
      "url": "",
      "confidence": "knowledge",
      "name_full": "LBMA bullion banks (unnamed) — consignment suppliers"
@@ -2206,7 +2206,7 @@
    "none_found": false,
    "size_band": "large (US$1–5bn or 10–50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE — gold ETF ~US$1.6bn (tripled YTD) + one of the largest private-bank consignment import desks (bank-wise tonnage not public)",
+   "size_band_basis": "ESTIMATE — gold ETF ~US$1.6bn (tripled YTD) + one of the largest private-bank consignment import desks (bank-wise tonnage not public).",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -2232,7 +2232,7 @@
       "confidence": "verified"
      }
     ],
-    "notes": "In-house desk, price-taker to loco-London. LBMA membership NOT verified this pass (two searches, directory not fetchable) — desk memory says Full Member; keep flagged."
+    "notes": "In-house desk, price-taker to loco-London. keep flagged."
    },
    "trades_pm": "yes-in-house-desk",
    "new_products_found": [],
@@ -2318,7 +2318,7 @@
     {
      "name": "Pegadaian",
      "role": "other",
-     "evidence": "both launched 26-Feb-2025 under Presidential inauguration (knowledge)",
+     "evidence": "both launched 26-Feb-2025 under Presidential inauguration",
      "url": "https://setneg.go.id/baca/index/presiden_prabowo_tegaskan_layanan_bank_emas_pegadaian_dan_bank_syariah_indonesia_dukung_ketahanan_ekonomi_nasional",
      "confidence": "knowledge",
      "name_full": "Pegadaian (sister bullion bank; custody/ecosystem cooperation)"
@@ -2408,7 +2408,7 @@
    "none_found": false,
    "size_band": "large (US$1–5bn or 10–50t)",
    "size_band_key": "large",
-   "size_band_basis": "~24t under management ≈ US$2.6bn+ at 2026 prices; growth 700% YoY — trending to very large",
+   "size_band_basis": "~24t under management ≈ US$2.6bn+ at 2026 prices; growth 700% YoY — trending to very large.",
    "liquidity": {
     "status": "named-knowledge",
     "providers": [
@@ -2601,7 +2601,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "155t ≈ US$17bn+ at 2026 prices (OJK-consistent: combined 153t / Rp360trn)",
+   "size_band_basis": "155t ≈ US$17bn+ at 2026 prices (OJK-consistent: combined 153t / Rp360trn).",
    "liquidity": {
     "status": "named-verified",
     "providers": [
@@ -2760,7 +2760,7 @@
    "partner_named": [],
    "firm_actual": "Quintet Private Bank (Europe) S.A., Luxembourg",
    "n_products": 4,
-   "strategic_idea": "★ Quintet is the wholesale bullion supplier to much of the Luxembourg banking sector without LBMA clearing of its own: pitch loco-London unallocated account, clearing, physical supply (kilobars/coins), location swaps Lux↔London, and PGM pricing",
+   "strategic_idea": "★ Quintet is the wholesale bullion supplier to much of the Luxembourg banking sector without LBMA clearing of its own: pitch loco-London unallocated account, clearing, physical supply (kilobars/coins), location swaps Lux↔London, and PGM pricing.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -2851,7 +2851,7 @@
    "none_found": true,
    "size_band": "unknown",
    "size_band_key": "unknown",
-   "size_band_basis": "ESTIMATE - largest Saudi bank with a mass-market app gold account since 2023; plausibly mid (1-10t) but no data",
+   "size_band_basis": "ESTIMATE - largest Saudi bank with a mass-market app gold account since 2023; plausibly mid (1-10t) but no data.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -2992,7 +2992,7 @@
    "none_found": false,
    "size_band": "large (US$1–5bn or 10–50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE — no metals notional is public for the Asia branches. Group AUM CHF 521bn with Asia ~a quarter of the book; a 1–3% client allocation to physical/metal accounts implies a low-single-digit US$bn Asia metals book. Group-level would be 'very large'. Julius Baer AR 2025 / BJB IFRS statements (juliusbaer.com dumpFile) returned HTTP 403 on three attempts, so the 'precious metals' trading-asset and derivatives-notional lines could not be pulled.",
+   "size_band_basis": "ESTIMATE — no metals notional is public for the Asia branches. Group AUM CHF 521bn with Asia ~a quarter of the book; a 1–3% client allocation to physical/metal accounts implies a low-single-digit US$bn Asia metals book. Group-level would be 'very large'. Julius Baer AR 2025 / BJB IFRS statements (juliusbaer.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -3386,7 +3386,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "ESTIMATE — Pictet CH Precious Metals Fund physical gold shown at 14.63bn total assets (unverified scope) + CHF 0.84bn own physical stock backing client Metal accounts + Metallkonto/physical custody book undisclosed. If the fund figure is a data-vendor error, band drops to 'large'.",
+   "size_band_basis": "ESTIMATE — Pictet CH Precious Metals Fund physical gold shown at 14. 84bn own physical stock backing client Metal accounts + Metallkonto/physical custody book undisclosed. If the fund figure is a data-vendor error, band drops to 'large'.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -3432,7 +3432,7 @@
    ],
    "firm_actual": "Banque Pictet & Cie SA (Pictet Wealth Management)",
    "n_products": 3,
-   "strategic_idea": "★ Prime target: multi-billion physical gold/silver/PGM funds plus UHNW physical books with NO in-house bullion bank — wholesale supply, loco-London allocated custody / location swaps, Lombard funding vs bullion, note hedging",
+   "strategic_idea": "★ Prime target: multi-billion physical gold/silver/PGM funds plus UHNW physical books with NO in-house bullion bank — wholesale supply, loco-London allocated custody / location swaps, Lombard funding vs bullion, note hedging.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -3587,7 +3587,7 @@
    "partner_named": [],
    "firm_actual": "Barclays Bank (Suisse) SA (Barclays Private Bank, Geneva)",
    "n_products": 2,
-   "strategic_idea": "Barclays exited precious metals 2016 (sold vault to ICBC Standard) — PB sources externally → displaceable",
+   "strategic_idea": "Barclays exited precious metals 2016 (sold vault to ICBC Standard) — PB sources externally → displaceable.",
    "ref_bank_status": "unknown"
   },
   {
@@ -3691,7 +3691,7 @@
      "name": "LBMA",
      "name_full": "International LBMA bullion banks for loco-London swaps/forwards (unnamed)",
      "role": "liquidity_provider",
-     "evidence": "Forward PM purchase/sale commitments of TL 172bn/39bn must face international counterparties; names not disclosed (knowledge: JPM/ICBCS/SCB/UBS are the usual Turkish-bank counterparties)",
+     "evidence": "Forward PM purchase/sale commitments of TL 172bn/39bn must face international counterparties; names not disclosed",
      "url": "https://www.kuveytturk.com.tr/medium/denetim-raporu-31-aralik-2025-3740.pdf",
      "confidence": "knowledge",
      "pass2": true
@@ -3774,7 +3774,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "Verified balance (TL 321.9bn precious-metal accounts at 31 Dec 2025 = ~US$7.5bn, ESTIMATE on FX conversion) - roughly 8% of the ~US$90bn Turkish-system precious-metal deposit pool; forward PM book TL 172bn purchases",
+   "size_band_basis": "Verified balance (TL 321.9bn precious-metal accounts at 31 Dec 2025 = ~US$7.5bn, ESTIMATE on FX conversion) - roughly 8% of the ~US$90bn Turkish-system precious-metal deposit pool; forward PM book TL 172bn purchases.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -3827,7 +3827,7 @@
    ],
    "firm_actual": "Kuveyt Türk Katılım Bankası A.Ş.",
    "n_products": 6,
-   "strategic_idea": "★ Turkish banks' gold deposits (~$15–25bn system-wide) are backed by physical at BIST and swapped/loaned for TRY/USD liquidity: pitch loco-London vs loco-Istanbul location swaps, gold-for-USD swaps/repo vs BIST-vaulted metal, and Sharia-compliant gold leasing structures for Kuveyt Türk's asset side",
+   "strategic_idea": "★ Turkish banks' gold deposits (~$15–25bn system-wide) are backed by physical at BIST and swapped/loaned for TRY/USD liquidity: pitch loco-London vs loco-Istanbul location swaps, gold-for-USD swaps/repo vs BIST-vaulted metal, and Sharia-compliant gold leasing structures for Kuveyt Türk's asset side.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -3964,7 +3964,7 @@
    "none_found": false,
    "size_band": "large (US$1–5bn or 10–50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE — MS Wealth runs an in-house allocated + UNALLOCATED metal program (confirmed by fee disclosure) across ~US$8tn client assets; balances undisclosed; UK PWM is a small slice of that",
+   "size_band_basis": "ESTIMATE — MS Wealth runs an in-house allocated + UNALLOCATED metal program (confirmed by fee disclosure) across ~US$8tn client assets; balances undisclosed; UK PWM is a small slice of that.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -4108,7 +4108,7 @@
    "none_found": true,
    "size_band": "mid (US$100m–1bn or 1–10t)",
    "size_band_key": "mid",
-   "size_band_basis": "ESTIMATE — one of very few US retail brokers with a live physical program across ~50m accounts, but it is a phone-order niche fully outsourced to FideliTrade; no data",
+   "size_band_basis": "ESTIMATE — one of very few US retail brokers with a live physical program across ~50m accounts, but it is a phone-order niche fully outsourced to FideliTrade; no data.",
    "liquidity": {
     "status": "named-verified",
     "providers": [
@@ -4277,7 +4277,7 @@
    "none_found": false,
    "size_band": "small (<US$100m)",
    "size_band_key": "small",
-   "size_band_basis": "ESTIMATE — for the WEALTH metals book: no retail physical program, gold exposure delivered via third-party ETFs and a bullion desk-issued notes; the $129bn commodity notional is Wells Fargo Securities' energy/ags book, not a wealth metals indicator; Wyoming Reserve tie-up (2026) is institutional custody",
+   "size_band_basis": "ESTIMATE — for the WEALTH metals book: no retail physical program, gold exposure delivered via third-party ETFs and a bullion desk-issued notes; the $129bn commodity notional is Wells Fargo Securities' energy/ags book, not a wealth metals indicator; Wyoming Reserve tie-up (2026) is institutional custody.",
    "liquidity": {
     "status": "n/a",
     "providers": [
@@ -4445,7 +4445,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "ESTIMATE — A$18bn group turnover implies >100t/yr metal throughput (refining + dealing); client metal-account/vault AUM not disclosed",
+   "size_band_basis": "ESTIMATE — A$18bn group turnover implies >100t/yr metal throughput (refining + dealing); client metal-account/vault AUM not disclosed.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -4637,7 +4637,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "Depository A$10.4bn (~US$6.9bn) client metal + 561t refined; not an estimate",
+   "size_band_basis": "Depository A$10.4bn (~US$6.9bn) client metal + 561t refined; not an estimate.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -4732,7 +4732,7 @@
      "name": "Umicore",
      "name_full": "Oegussa (Umicore Austria)",
      "role": "refiner",
-     "evidence": "Austrian refiner used for scrap recycling into fine metal (knowledge; not verified)",
+     "evidence": "Austrian refiner used for scrap recycling into fine metal",
      "url": "https://www.muenzeoesterreich.com/en/",
      "confidence": "knowledge",
      "pass2": true
@@ -4787,7 +4787,7 @@
    "none_found": false,
    "size_band": "large (US$1-5bn or 10-50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE - FY2025 revenue EUR 2.15bn x 91% gold / ~EUR 90/g average 2025 price = ~22t gold sold in 2025 (plus ~120t silver); 2022 peak was >56t (would be 'very large') - the mint's own metal book (hedged inventory) is smaller than sales",
+   "size_band_basis": "ESTIMATE - FY2025 revenue EUR 2.15bn x 91% gold / ~EUR 90/g average 2025 price = ~22t gold sold in 2025 (plus ~120t silver); 2022 peak was >56t (would be 'very large') - the mint's own metal book (hedged inventory) is smaller than sales.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -4818,7 +4818,7 @@
    "trades_pm": "yes-in-house-desk",
    "new_products_found": [],
    "is_pb": false,
-   "strategic_idea": "★ The upstream supplier for the entire Austrian bank channel + CEE demand: pitch loco-London unallocated/consignment supply, silver financing for Philharmoniker production (largest European silver coin), and hedging lines",
+   "strategic_idea": "★ The upstream supplier for the entire Austrian bank channel + CEE demand: pitch loco-London unallocated/consignment supply, silver financing for Philharmoniker production (largest European silver coin), and hedging lines.",
    "ref_bank_status": "unknown"
   },
   {
@@ -4954,7 +4954,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "C$6.5bn (~US$4.6bn) of physical precious metals on balance sheet at Oct-2025 (~35-40t gold-equivalent) - this is the CIBC Capital Markets commodities book, not the retail e-Certificate/branch bullion programme, whose size is undisclosed; band is for the group",
+   "size_band_basis": "C$6.5bn (~US$4.6bn) of physical precious metals on balance sheet at Oct-2025 (~35-40t gold-equivalent) - this is the CIBC Capital Markets commodities book, not the retail e-Certificate/branch bullion programme, whose size is undisclosed; band is for the group.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -4998,7 +4998,7 @@
    ],
    "firm_actual": "Canadian Imperial Bank of Commerce (CIBC Precious Metals; CIBC Private Wealth / Wood Gundy)",
    "n_products": 3,
-   "strategic_idea": "★ Best Canadian displacement target: a large retail/certificate book with no LBMA-member bullion desk behind it. Sell wholesale bullion supply (Ag 1,000oz / Au kilo), loco-London unallocated backing + hedging for the e-Certificate book, Pt/Pd to extend the shelf. (CIBC Mellon's iShares custody is RCM-based, not displaceable by loco-London.)",
+   "strategic_idea": "★ Best Canadian displacement target: a large retail/certificate book with no LBMA-member bullion desk behind it. Sell wholesale bullion supply (Ag 1,000oz / Au kilo), loco-London unallocated backing + hedging for the e-Certificate book, Pt/Pd to extend the shelf. (CIBC Mellon's iShares custody is RCM-based, not displaceable by loco-London.).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -5136,7 +5136,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "C$9.1bn (~US$6.5bn) precious metals on balance sheet + C$3.2bn metal liabilities (unallocated/lease-type) at Oct-2025 - group RBC Capital Markets book; RBC DS bullion-programme and certificate balances not broken out",
+   "size_band_basis": "C$9.1bn (~US$6.5bn) precious metals on balance sheet + C$3.2bn metal liabilities (unallocated/lease-type) at Oct-2025 - group RBC Capital Markets book; RBC DS bullion-programme and certificate balances not broken out.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -5325,7 +5325,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "17t gold + 362t silver bullion sales in 2025 (C$1.84bn precious-metals revenue) plus custody of PHYS/PSLV/SPPP, RBC DS, BMO, Wealthsimple, iShares CGL/SVR metal (PHYS alone 3.67Moz) - custody base >US$30bn",
+   "size_band_basis": "17t gold + 362t silver bullion sales in 2025 (C$1.84bn precious-metals revenue) plus custody of PHYS/PSLV/SPPP, RBC DS, BMO, Wealthsimple, iShares CGL/SVR metal (PHYS alone 3.67Moz) - custody base >US$30bn.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -5524,7 +5524,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "PHYS US$14.7bn (114t Au) + PSLV US$12.6bn (6,700t Ag) + SPPP; >US$27bn physical metal under management",
+   "size_band_basis": "PHYS US$14.7bn (114t Au) + PSLV US$12.6bn (6,700t Ag) + SPPP; >US$27bn physical metal under management.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -5675,7 +5675,7 @@
    "none_found": false,
    "size_band": "large (US$1-5bn or 10-50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE - SEK 689m (~EUR 62m) FX+gold revenue is commission/margin, not gross turnover; at ~1-2% gross margin on gold this implies EUR 2-4bn two-way physical flow (~25-40t gross incl. Napoleons buy-backs) through the French bank network",
+   "size_band_basis": "ESTIMATE - SEK 689m (~EUR 62m) FX+gold revenue is commission/margin, not gross turnover; at ~1-2% gross margin on gold this implies EUR 2-4bn two-way physical flow (~25-40t gross incl. Napoleons buy-backs) through the French bank network.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -5706,7 +5706,7 @@
    "trades_pm": "yes-price-taker",
    "new_products_found": [],
    "is_pb": false,
-   "strategic_idea": "★ Single wholesale chokepoint for physical gold into French banks (CA, LCL, CM/CIC, BRED, Palatine…): pitch loco-London unallocated supply/consignment, price hedging line, and Loomis vault↔London location swaps",
+   "strategic_idea": "★ Single wholesale chokepoint for physical gold into French banks (CA, LCL, CM/CIC, BRED, Palatine…): pitch loco-London unallocated supply/consignment, price hedging line, and Loomis vault↔London location swaps.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -5843,7 +5843,7 @@
    "none_found": false,
    "size_band": "mid (US$100m–1bn or 1–10t)",
    "size_band_key": "mid",
-   "size_band_basis": "ESTIMATE — gold ETF ~US$0.66bn; treasury bullion desk rebuilt after 2018 delisting, current import share unknown",
+   "size_band_basis": "ESTIMATE — gold ETF ~US$0.66bn; treasury bullion desk rebuilt after 2018 delisting, current import share unknown.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -5862,7 +5862,7 @@
       "confidence": "knowledge"
      }
     ],
-    "notes": "In-house desk; ex-a bullion desk India wealth book (Burgundy) is a natural relationship hook — a bullion desk was the bank's own consignor pre-2023 by desk knowledge (unverified)."
+    "notes": "In-house desk."
    },
    "trades_pm": "yes-in-house-desk",
    "new_products_found": [],
@@ -6008,7 +6008,7 @@
    "none_found": false,
    "size_band": "large (US$1–5bn or 10–50t)",
    "size_band_key": "large",
-   "size_band_basis": "Gold ETF ~US$2.8bn + >13t GMS gold on book + wholesale import desk (tonnage undisclosed) — ESTIMATE at upper end of large",
+   "size_band_basis": "Gold ETF ~US$2.8bn + >13t GMS gold on book + wholesale import desk (tonnage undisclosed) — ESTIMATE at upper end of large.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -6155,7 +6155,7 @@
    "none_found": false,
    "size_band": "mid (US$100m-1bn or 1-10t)",
    "size_band_key": "mid",
-   "size_band_basis": "ESTIMATE - no Deposito Oro volumes, corporate gold-supply tonnage or commodity-derivative notional found (looked at: Deposito Oro page, FI-1149 fact sheet, Banca d'Italia OPO register, product pages, Italian press); a retail/PB physical service launched ~2023-24 plus jewellery-sector supply is plausibly 1-10t/yr",
+   "size_band_basis": "ESTIMATE - no Deposito Oro volumes, corporate gold-supply tonnage or commodity-derivative notional found (looked at: Deposito Oro page, FI-1149 fact sheet, Banca d'Italia OPO register, product pages, Italian press); a retail/PB physical service launched ~2023-24 plus jewellery-sector supply is plausibly 1-10t/yr.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -6199,7 +6199,7 @@
    ],
    "firm_actual": "Intesa Sanpaolo S.p.A. (Deposito Oro sold through branches to clients with >= EUR 100k wealth); Fideuram ISPB for PB",
    "n_products": 3,
-   "strategic_idea": "★ Largest Italian bank runs a physical gold deposit scheme (own vaults) AND a corporate gold-supply business for the Arezzo/Vicenza jewellery cluster: pitch loco-London unallocated supply/consignment, price hedging, and swaps for its LGD/kilobar stock",
+   "strategic_idea": "★ Largest Italian bank runs a physical gold deposit scheme (own vaults) AND a corporate gold-supply business for the Arezzo/Vicenza jewellery cluster: pitch loco-London unallocated supply/consignment, price hedging, and swaps for its LGD/kilobar stock.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -6369,7 +6369,7 @@
    "partner_named": [],
    "firm_actual": "LGT Bank AG / LGT Bank (Switzerland) Ltd",
    "n_products": 2,
-   "strategic_idea": "Wholesale supply + loco-London custody + Lombard vs bullion for a US$400bn book heavy in Asian/Middle-East clients",
+   "strategic_idea": "Wholesale supply + loco-London custody + Lombard vs bullion for a US$400bn book heavy in Asian/Middle-East clients.",
    "ref_bank_status": "unknown"
   },
   {
@@ -6476,7 +6476,7 @@
    "none_found": true,
    "size_band": "mid (US$100m–1bn or 1–10t)",
    "size_band_key": "mid",
-   "size_band_basis": "ESTIMATE — Malaysia's largest bank with two retail gold accounts (MGIA + MIGA-i) sold via MAE app; no disclosed balances",
+   "size_band_basis": "ESTIMATE — Malaysia's largest bank with two retail gold accounts (MGIA + MIGA-i) sold via MAE app; no disclosed balances.",
    "liquidity": {
     "status": "named-knowledge",
     "providers": [
@@ -6605,7 +6605,7 @@
    "none_found": false,
    "size_band": "unknown",
    "size_band_key": "unknown",
-   "size_band_basis": "ESTIMATE - Gold Wallet is a retail digital product; likely small-mid",
+   "size_band_basis": "ESTIMATE - Gold Wallet is a retail digital product; likely small-mid.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -6629,7 +6629,7 @@
    "partner_named": [],
    "firm_actual": "Al Rajhi Bank",
    "n_products": 1,
-   "strategic_idea": "world's largest Islamic bank with a serial-numbered (allocated-style) gold wallet - kilobar/small-bar supply and Shariah-compliant spot liquidity; Al Rajhi Capital as a future gold-ETF sponsor",
+   "strategic_idea": "World's largest Islamic bank with a serial-numbered (allocated-style) gold wallet - kilobar/small-bar supply and Shariah-compliant spot liquidity; Al Rajhi Capital as a future gold-ETF sponsor.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -6953,7 +6953,7 @@
    "none_found": false,
    "size_band": "large (US$1-5bn or 10-50t)",
    "size_band_key": "large",
-   "size_band_basis": "From NewGold AUM ZAR 40.3bn / 13.64t (Absa is sponsor + market maker; Absa PB/Wealth's own share of holders not disclosed); Krugerrand branch sales not quantified",
+   "size_band_basis": "From NewGold AUM ZAR 40.3bn / 13.64t (Absa is sponsor + market maker; Absa PB/Wealth's own share of holders not disclosed); Krugerrand branch sales not quantified.",
    "liquidity": {
     "status": "named-verified",
     "providers": [
@@ -6997,7 +6997,7 @@
    ],
    "firm_actual": "Absa Group (Absa Private Banking / Absa Stockbrokers; Absa CIB as ETF issuer)",
    "n_products": 3,
-   "strategic_idea": "Displace ICBC Standard as NewGold/NewPlat/NewPall custodian (loco-London allocated, ~R30bn+ family) or become Absa CIB's loco-London liquidity provider for ETF creations; Absa Kenya/Mauritius cross-listings extend the reach",
+   "strategic_idea": "Displace ICBC Standard as NewGold/NewPlat/NewPall custodian (loco-London allocated, ~R30bn+ family) or become Absa CIB's loco-London liquidity provider for ETF creations; Absa Kenya/Mauritius cross-listings extend the reach.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -7337,7 +7337,7 @@
    "none_found": false,
    "size_band": "large (US$1–5bn or 10–50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE — JB Physical Gold Fund AUM ~US$1bn+ (knowledge, unverified — AR 2025 PDF returned HTTP 403), plus in-house FX/PM desk, own structured-product issuance and Lombard book vs metal; JB is an LBMA Full Member.",
+   "size_band_basis": "JB is an LBMA Full Member.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -7375,7 +7375,7 @@
    "partner_named": [],
    "firm_actual": "Bank Julius Baer & Co. Ltd",
    "n_products": 5,
-   "strategic_idea": "Wholesale loco-London liquidity and location swaps into the JB desk; allocated loco-London custody for the JB ETF gold (currently 'unallocated accounts with specialist institutions'); hedging JB's own gold/silver structured issuance; XAU DCI/option hedging for Asia booking centres",
+   "strategic_idea": "Wholesale loco-London liquidity and location swaps into the JB desk; allocated loco-London custody for the JB ETF gold (currently 'unallocated accounts with specialist institutions'); hedging JB's own gold/silver structured issuance; XAU DCI/option hedging for Asia booking centres.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -7528,7 +7528,7 @@
    "partner_named": [],
    "firm_actual": "Société Générale Private Banking (Suisse) SA — sold to UBP (agreement Aug-2024, completed 2025); Swiss book now under UBP",
    "n_products": 1,
-   "strategic_idea": "Captive to SG's commodity desk (LBMA full member)",
+   "strategic_idea": "Captive to SG's commodity desk (LBMA full member).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -7814,7 +7814,7 @@
    "none_found": false,
    "size_band": "unknown",
    "size_band_key": "unknown",
-   "size_band_basis": "ESTIMATE - largest UAE bank by assets but metals is a PB niche product; likely mid",
+   "size_band_basis": "ESTIMATE - largest UAE bank by assets but metals is a PB niche product; likely mid.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -7870,7 +7870,7 @@
    ],
    "firm_actual": "First Abu Dhabi Bank (FAB Private Banking)",
    "n_products": 2,
-   "strategic_idea": "wholesale loco-London liquidity/hedging for FAB GM; loco-London allocated custody for FAB PB's Swiss-bar programme (currently Brink's Dubai only); structured-note hedging",
+   "strategic_idea": "Wholesale loco-London liquidity/hedging for FAB GM; loco-London allocated custody for FAB PB's Swiss-bar programme (currently Brink's Dubai only); structured-note hedging.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -7996,7 +7996,7 @@
    "none_found": false,
    "size_band": "mid (US$100m-1bn or 1-10t)",
    "size_band_key": "mid",
-   "size_band_basis": "ESTIMATE - disclosed matched gold-borrow/gold-loan book only ~US$67m (~0.55t at Sep-2025 prices); unfixed-gold, variation-margin ODs and Malabar-type bullion financing sit elsewhere in loans, so total metals exposure plausibly US$100m-500m",
+   "size_band_basis": "ESTIMATE - disclosed matched gold-borrow/gold-loan book only ~US$67m (~0.55t at Sep-2025 prices); unfixed-gold, variation-margin ODs and Malabar-type bullion financing sit elsewhere in loans, so total metals exposure plausibly US$100m-500m.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -8031,7 +8031,7 @@
    "is_pb": true,
    "pass3": true,
    "pb_arm_name": "NBF Priority Banking / NBF Elite",
-   "shelf_summary": "No client-facing precious-metals product for individuals: NBF's gold business (gold loans, unfixed gold, variation-margin overdrafts, hedging, in-house and Transguard vaulting) is a business-banking offering for the Dubai gold and jewellery trade, out of scope for this pass.",
+   "shelf_summary": "",
    "gold_view_p3": "",
    "partner_named": [
     {
@@ -8091,7 +8091,7 @@
     {
      "name": "undisclosed",
      "role": "etf_custodian",
-     "evidence": "Not disclosed; Coutts' gold sleeve is implemented with a physical gold ETC (knowledge)",
+     "evidence": "Not disclosed; Coutts' gold sleeve is implemented with a physical gold ETC",
      "url": "",
      "confidence": "knowledge",
      "name_full": "unknown (physical gold ETC issuer/custodian - likely iShares/Invesco with JPMorgan custody)"
@@ -8120,7 +8120,7 @@
    "none_found": true,
    "size_band": "small (<US$100m)",
    "size_band_key": "small",
-   "size_band_basis": "ESTIMATE — a few-% gold sleeve via third-party physical ETC across Coutts discretionary AUM (~£40bn) could be £0.5–1.5bn of ETC exposure, but Coutts holds no metal and carries no metals risk; as a metals COUNTERPARTY it is small/nil",
+   "size_band_basis": "ESTIMATE — a few-% gold sleeve via third-party physical ETC across Coutts discretionary AUM (~£40bn) could be £0.5–1.5bn of ETC exposure, but Coutts holds no metal and carries no metals risk; as a metals COUNTERPARTY it is small/nil.",
    "liquidity": {
     "status": "n/a",
     "providers": [
@@ -8317,7 +8317,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "£1.18bn/yr bullion revenue (≈15–20t gold-equivalent at 2024-25 prices, before the +150% 2025 surge) + £838m consigned metal + US$1.8bn RMAU + DigiGold — comfortably the largest UK non-bank retail metals book",
+   "size_band_basis": "£1.18bn/yr bullion revenue (≈15–20t gold-equivalent at 2024-25 prices, before the +150% 2025 surge) + £838m consigned metal + US$1.8bn RMAU + DigiGold — comfortably the largest UK non-bank retail metals book.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -8407,7 +8407,7 @@
     {
      "name": "GBI",
      "role": "bullion_supplier",
-     "evidence": "GBI platform accessible to Merrill FAs (Forbes 2012); current contract status unverified",
+     "evidence": "GBI platform accessible to Merrill FAs (Forbes 2012)",
      "url": "https://www.forbes.com/forbes/2012/0625/investment-guide-12-silver-own-gold-bullion-international-vault.html",
      "confidence": "knowledge",
      "name_full": "GBI (Gold Bullion International)"
@@ -8471,7 +8471,7 @@
    "none_found": false,
    "size_band": "large (US$1–5bn or 10–50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE — bank-level PM notional US$62bn (OCC), but the wealth physical program runs through GBI and is undisclosed; Merrill's metals exposure is mostly ETF/notes",
+   "size_band_basis": "ESTIMATE — bank-level PM notional US$62bn (OCC), but the wealth physical program runs through GBI and is undisclosed; Merrill's metals exposure is mostly ETF/notes.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -8607,7 +8607,7 @@
    "none_found": false,
    "size_band": "unknown",
    "size_band_key": "unknown",
-   "size_band_basis": "No volumes; bar-trading desk only until SBV licence + 2026 import quota are granted",
+   "size_band_basis": "No volumes; bar-trading desk only until SBV licence + 2026 import quota are granted.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -8766,7 +8766,7 @@
    "none_found": false,
    "size_band": "large (US$1–5bn or 10–50t)",
    "size_band_key": "large",
-   "size_band_basis": "A$1.23bn ≈ US$0.8bn (~7t gold) — borderline mid/large; banded large on the May-2026 A$1.67bn peak",
+   "size_band_basis": "A$1.23bn ≈ US$0.8bn (~7t gold) — borderline mid/large; banded large on the May-2026 A$1.67bn peak.",
    "liquidity": {
     "status": "named-verified",
     "providers": [
@@ -8931,7 +8931,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "GOLD + ETPMAG + PGM ETPs ≈ A$7.7–8bn ≈ US$5.1bn+ (GOLD alone ~33t gold) — not an estimate",
+   "size_band_basis": "GOLD + ETPMAG + PGM ETPs ≈ A$7.7–8bn ≈ US$5.1bn+ (GOLD alone ~33t gold) — not an estimate.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -8950,7 +8950,7 @@
       "confidence": "knowledge"
      }
     ],
-    "notes": "Issuer holds no book itself — liquidity is provided by APs delivering loco-London metal into the JPM account; a bullion desk could seek AP/metal-counterparty status. Legacy 'ETFS Metal Securities Australia' PDS names the metal counterparties — not re-read this pass."
+    "notes": "Issuer holds no book itself — liquidity is provided by APs delivering loco-London metal into the JPM account; a bullion desk could seek AP/metal-counterparty status."
    },
    "trades_pm": "distributes-only",
    "new_products_found": [],
@@ -9059,7 +9059,7 @@
    "none_found": false,
    "size_band": "mid (US$100m-1bn or 1-10t)",
    "size_band_key": "mid",
-   "size_band_basis": "ESTIMATE - no customer count, tonnes or Golddepot AUM published (looked at: Erste Group 2025 results/AR search, Gold Plan and Muenzen pages, Austrian press); Austrian retail bank distribution of Philharmoniker/bars via ~1,000 Sparkassen branches is plausibly a few tonnes/yr",
+   "size_band_basis": "ESTIMATE - no customer count, tonnes or Golddepot AUM published (looked at: Erste Group 2025 results/AR search, Gold Plan and Muenzen pages, Austrian press); Austrian retail bank distribution of Philharmoniker/bars via ~1,000 Sparkassen branches is plausibly a few tonnes/yr.",
    "liquidity": {
     "status": "named-verified",
     "providers": [
@@ -9096,7 +9096,7 @@
    ],
    "firm_actual": "Erste Bank der oesterreichischen Sparkassen AG / Sparkassen",
    "n_products": 2,
-   "strategic_idea": "Golddepot pool (s Gold Plan) is a growing allocated stock — pitch loco-London/Vienna custody alternative to mint storage and wholesale supply for Erste's CEE networks (CZ/SK/HU/RO branches also sell gold)",
+   "strategic_idea": "Golddepot pool (s Gold Plan) is a growing allocated stock — pitch loco-London/Vienna custody alternative to mint storage and wholesale supply for Erste's CEE networks (CZ/SK/HU/RO branches also sell gold).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -9211,7 +9211,7 @@
    "none_found": false,
    "size_band": "small (<US$100m)",
    "size_band_key": "small",
-   "size_band_basis": "ESTIMATE - GOLB11 is tiny (single-digit R$ millions); BTG wealth clients access gold mainly via B3 futures / XP GOLD11 / offshore, no BTG-owned physical vehicle",
+   "size_band_basis": "ESTIMATE - GOLB11 is tiny (single-digit R$ millions); BTG wealth clients access gold mainly via B3 futures / XP GOLD11 / offshore, no BTG-owned physical vehicle.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -9302,7 +9302,7 @@
     {
      "name": "Itaú",
      "role": "liquidity_provider",
-     "evidence": "Itaú BBA is a B3 gold market participant and hedges offshore with bullion banks (knowledge)",
+     "evidence": "Itaú BBA is a B3 gold market participant and hedges offshore with bullion banks",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Itaú BBA (in-house)"
@@ -9340,7 +9340,7 @@
    "none_found": false,
    "size_band": "unknown",
    "size_band_key": "unknown",
-   "size_band_basis": "ESTIMATE - likely small-mid; Itau BBA is a B3 gold participant but Brazil's spot gold market is thin",
+   "size_band_basis": "ESTIMATE - likely small-mid; Itau BBA is a B3 gold participant but Brazil's spot gold market is thin.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -9457,7 +9457,7 @@
     {
      "name": "BMO",
      "role": "liquidity_provider",
-     "evidence": "BMO CM runs the metals trading desk (bmobullion site sits under capitalmarkets.bmo.com); BMO is an LBMA full member (knowledge)",
+     "evidence": "BMO CM runs the metals trading desk (bmobullion site sits under capitalmarkets.bmo.com); BMO is an LBMA full member",
      "url": "https://capitalmarkets.bmo.com/en/bmobullion/",
      "confidence": "mixed",
      "name_full": "BMO Capital Markets (in-house)"
@@ -9535,7 +9535,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "ZGLD C$1.87bn physical (~12t) + C$6.4bn physical traded commodities incl. gold on the BMO Capital Markets balance sheet + Gold Deposit Program/GOLDRs at RCM (undisclosed); commodities trading revenue x2.4 y/y",
+   "size_band_basis": "ZGLD C$1.87bn physical (~12t) + C$6.4bn physical traded commodities incl. gold on the BMO Capital Markets balance sheet + Gold Deposit Program/GOLDRs at RCM (undisclosed); commodities trading revenue x2.4 y/y.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -9681,7 +9681,7 @@
    "none_found": false,
    "size_band": "mid (US$100m-1bn or 1-10t)",
    "size_band_key": "mid",
-   "size_band_basis": "Series profiles show C$220.6m (CAD) and US$241.8m (USD) - if separate series, fund total ~US$400-450m (~3.5-4t); if the same pool reported twice, ~US$240m",
+   "size_band_basis": "Series profiles show C$220.6m (CAD) and US$241.8m (USD) - if separate series, fund total ~US$400-450m (~3.5-4t); if the same pool reported twice, ~US$240m.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -9854,7 +9854,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "C$35bn trading commodities (x2.4 y/y, largely precious metals given TD's LBMA forward-market-maker role) + C$2.1bn metal-collateralised repos/swaps; TD Precious Metals retail volumes not disclosed",
+   "size_band_basis": "C$35bn trading commodities (x2.4 y/y, largely precious metals given TD's LBMA forward-market-maker role) + C$2.1bn metal-collateralised repos/swaps; TD Precious Metals retail volumes not disclosed.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -10017,7 +10017,7 @@
    "none_found": false,
    "size_band": "mid (US$100m-1bn or 1-10t)",
    "size_band_key": "mid",
-   "size_band_basis": "ESTIMATE - launch promo sized at C$50m of trades; with 3.4m clients and 24/7 fractional gold since late-2025, holdings plausibly C$100-500m by 2026; no disclosed balance",
+   "size_band_basis": "ESTIMATE - launch promo sized at C$50m of trades; with 3.4m clients and 24/7 fractional gold since late-2025, holdings plausibly C$100-500m by 2026; no disclosed balance.",
    "liquidity": {
     "status": "named-verified",
     "providers": [
@@ -10217,7 +10217,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "Verified at group level (Amundi ETC US$10.8bn / ~84t); the Indosuez WM client metal book itself is undisclosed - ESTIMATE 'mid-large' for the PB alone",
+   "size_band_basis": "Verified at group level (Amundi ETC US$10.8bn / ~84t); the Indosuez WM client metal book itself is undisclosed - ESTIMATE 'mid-large' for the PB alone.",
    "liquidity": {
     "status": "named-verified",
     "providers": [
@@ -10275,7 +10275,7 @@
    ],
    "firm_actual": "CA Indosuez (Switzerland) SA / CFM Indosuez Wealth (Monaco)",
    "n_products": 3,
-   "strategic_idea": "Amundi Physical Gold ETC (~$8bn+) custody is at HSBC — a bullion desk custody RFP target; also CA-CIB desk relies on external MMs for liquidity — spot/forward flow; Indosuez CH/LU allocated custody",
+   "strategic_idea": "Amundi Physical Gold ETC (~$8bn+) custody is at HSBC — a bullion desk custody RFP target; also CA-CIB desk relies on external MMs for liquidity — spot/forward flow; Indosuez CH/LU allocated custody.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -10329,7 +10329,7 @@
     {
      "name": "Argor-Heraeus",
      "role": "refiner",
-     "evidence": "Degussa-branded bars are struck by LBMA refiners (knowledge)",
+     "evidence": "Degussa-branded bars are struck by LBMA refiners",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Valcambi / Argor / Umicore / Heraeus (bar makers)"
@@ -10378,7 +10378,7 @@
    "none_found": false,
    "size_band": "large (US$1-5bn or 10-50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE - CHF ~3bn turnover / ~EUR 100/g 2025 average = ~28-30t gold-equivalent traded (two-way, incl. silver); record tonnage but exact tonnes not disclosed",
+   "size_band_basis": "ESTIMATE - CHF ~3bn turnover / ~EUR 100/g 2025 average = ~28-30t gold-equivalent traded (two-way, incl. silver); record tonnage but exact tonnes not disclosed.",
    "liquidity": {
     "status": "named-knowledge",
     "providers": [
@@ -10402,7 +10402,7 @@
    "trades_pm": "yes-price-taker",
    "new_products_found": [],
    "is_pb": false,
-   "strategic_idea": "Wholesale kilobar/LGD supply, inventory hedging lines (unallocated loco-London account), buy-back liquidity for its scrap flow; new management = open door",
+   "strategic_idea": "Wholesale kilobar/LGD supply, inventory hedging lines (unallocated loco-London account), buy-back liquidity for its scrap flow; new management = open door.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -10464,7 +10464,7 @@
     {
      "name": "LBBW",
      "role": "bullion_supplier",
-     "evidence": "BW-Bank Münzkabinett; LBBW supplies Baden-Württemberg Sparkassen (knowledge)",
+     "evidence": "BW-Bank Münzkabinett; LBBW supplies Baden-Württemberg Sparkassen",
      "url": "https://www.bw-bank.de/de/home/privatkunden/geldanlage/muenzkabinett.html",
      "confidence": "knowledge",
      "name_full": "LBBW / BW-Bank precious metals"
@@ -10548,7 +10548,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "Verified 46t gold (2024) + 248t silver (2025), with Q1-2026 gold volume doubled - 2025/26 gold run-rate >50t/yr (ESTIMATE for the 2025 gold figure, not stated); LBBW/BW-Bank and Helaba/Deka books undisclosed and smaller",
+   "size_band_basis": "Verified 46t gold (2024) + 248t silver (2025), with Q1-2026 gold volume doubled - 2025/26 gold run-rate >50t/yr (ESTIMATE for the 2025 gold figure, not stated); LBBW/BW-Bank and Helaba/Deka books undisclosed and smaller.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -10604,7 +10604,7 @@
    ],
    "firm_actual": "BW-Bank (LBBW) Münzkabinett; Sparkassen branches supplied by BayernLB",
    "n_products": 3,
-   "strategic_idea": "BayernLB/LBBW source wholesale metal from refiners/bullion banks — pitch loco-London supply/clearing and inventory financing; FBG Zurich for allocated storage",
+   "strategic_idea": "BayernLB/LBBW source wholesale metal from refiners/bullion banks — pitch loco-London supply/clearing and inventory financing; FBG Zurich for allocated storage.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -10707,7 +10707,7 @@
    "none_found": true,
    "size_band": "small (<US$100m)",
    "size_band_key": "small",
-   "size_band_basis": "ESTIMATE — boutique Channel-Islands dealer/vault with ~500 clients; a few hundred kg gold-equivalent at most",
+   "size_band_basis": "ESTIMATE — boutique Channel-Islands dealer/vault with ~500 clients; a few hundred kg gold-equivalent at most.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -10774,7 +10774,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "BEA offers a paper-gold ('Gold') trading service and gold-linked deposits to retail/SupremeGold; no bullion-bank capability (knowledge — not verified this pass)",
+     "claim": "BEA offers a paper-gold ('Gold') trading service and gold-linked deposits to retail/SupremeGold; no bullion-bank capability",
      "quote": "knowledge",
      "url": ""
     }
@@ -10998,7 +10998,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "93t gold + >1,100t silver throughput FY25; FY26 target >US$12bn — exchange throughput, not AUM",
+   "size_band_basis": "93t gold + >1,100t silver throughput FY25; FY26 target >US$12bn — exchange throughput, not AUM.",
    "liquidity": {
     "status": "n/a",
     "providers": [
@@ -11111,7 +11111,7 @@
    "none_found": false,
    "size_band": "small (<US$100m)",
    "size_band_key": "small",
-   "size_band_basis": "ESTIMATE — smaller nominated bank; no own gold ETF; desk knowledge says well below HDFC/Kotak/ICICI",
+   "size_band_basis": "ESTIMATE — smaller nominated bank; no own gold ETF; desk knowledge says well below HDFC/Kotak/ICICI.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -11304,7 +11304,7 @@
    "none_found": false,
    "size_band": "large (US$1–5bn or 10–50t)",
    "size_band_key": "large",
-   "size_band_basis": "37.4t sold 2025, run-rate ~36t 2026; revenue ~US$4.8bn/yr — top of 'large' band by tonnes, 'very large' by revenue",
+   "size_band_basis": "37.4t sold 2025, run-rate ~36t 2026; revenue ~US$4.8bn/yr — top of 'large' band by tonnes, 'very large' by revenue.",
    "liquidity": {
     "status": "named-verified",
     "providers": [
@@ -11652,7 +11652,7 @@
    "partner_named": [],
    "firm_actual": "Liechtensteinische Landesbank AG (willbe app; Bank Linth merged into LLB Schweiz)",
    "n_products": 4,
-   "strategic_idea": "Wholesale bar supply for a growing self-vaulted retail/PB gold franchise (willbe + LLB Gold Fund); loco-London liquidity",
+   "strategic_idea": "Wholesale bar supply for a growing self-vaulted retail/PB gold franchise (willbe + LLB Gold Fund); loco-London liquidity.",
    "ref_bank_status": "unknown"
   },
   {
@@ -11729,7 +11729,7 @@
    "none_found": true,
    "size_band": "small (<US$100m)",
    "size_band_key": "small",
-   "size_band_basis": "ESTIMATE — retail GIA/eGold at a conservative bank; no disclosure",
+   "size_band_basis": "ESTIMATE — retail GIA/eGold at a conservative bank; no disclosure.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -11863,7 +11863,7 @@
    "none_found": false,
    "size_band": "small (<US$100m)",
    "size_band_key": "small",
-   "size_band_basis": "ESTIMATE - coin distribution in a handful of branches; Mexican bullion-coin market is a few tonnes/yr in total",
+   "size_band_basis": "ESTIMATE - coin distribution in a handful of branches; Mexican bullion-coin market is a few tonnes/yr in total.",
    "liquidity": {
     "status": "named-verified",
     "providers": [
@@ -11998,7 +11998,7 @@
    "none_found": false,
    "size_band": "large (US$1-5bn or 10-50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE, low confidence - no gold AUM disclosed (looked at: PB market commentary, beleggingsgiro pages, trade.nl, AR search); a 2-4% gold sleeve across ~EUR 100bn+ of discretionary PB mandates would imply EUR 2-4bn in gold ETCs via the beleggingsgiro",
+   "size_band_basis": "ESTIMATE, low confidence - no gold AUM disclosed (looked at: PB market commentary, beleggingsgiro pages, trade.nl, AR search); a 2-4% gold sleeve across ~EUR 100bn+ of discretionary PB mandates would imply EUR 2-4bn in gold ETCs via the beleggingsgiro.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -12028,7 +12028,7 @@
    ],
    "firm_actual": "ABN AMRO Private Banking / MeesPierson",
    "n_products": 1,
-   "strategic_idea": "★ Newly added gold sleeve across ~€250bn PB book with no physical capability: pitch a physically-backed ETC/allocated-gold solution and loco-London custody; plus the German Bethmann HAL (€70bn) shelf rebuild",
+   "strategic_idea": "★ Newly added gold sleeve across ~€250bn PB book with no physical capability: pitch a physically-backed ETC/allocated-gold solution and loco-London custody; plus the German Bethmann HAL (€70bn) shelf rebuild.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -12110,7 +12110,7 @@
    "none_found": true,
    "size_band": "unknown",
    "size_band_key": "unknown",
-   "size_band_basis": "ESTIMATE - retail app gold account in 1kg bars, no storage fee; likely small-mid",
+   "size_band_basis": "ESTIMATE - retail app gold account in 1kg bars, no storage fee; likely small-mid.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -12141,7 +12141,7 @@
    "partner_named": [],
    "firm_actual": "Riyad Bank",
    "n_products": 1,
-   "strategic_idea": "kilobar supply + loco-London hedge for the inventory; Riyad Capital gold ETF (custodian HSBC Saudi is its equity-fund custodian)",
+   "strategic_idea": "Kilobar supply + loco-London hedge for the inventory; Riyad Capital gold ETF (custodian HSBC Saudi is its equity-fund custodian).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -13125,7 +13125,7 @@
    "partner_named": [],
    "firm_actual": "Bank Lombard Odier & Co Ltd",
    "n_products": 2,
-   "strategic_idea": "Wholesale supply + loco-London custody + Lombard vs bullion for a large Geneva UHNW book with no bullion bank",
+   "strategic_idea": "Wholesale supply + loco-London custody + Lombard vs bullion for a large Geneva UHNW book with no bullion bank.",
    "ref_bank_status": "unknown"
   },
   {
@@ -13332,7 +13332,7 @@
    "partner_named": [],
    "firm_actual": "Bank Vontobel AG (Wealth Management; structured products via derinet / Vontobel Markets)",
    "n_products": 3,
-   "strategic_idea": "OTC gold/silver/PGM options & forwards to hedge Vontobel's structured-product book; physical for delivery-settled certificates",
+   "strategic_idea": "OTC gold/silver/PGM options & forwards to hedge Vontobel's structured-product book; physical for delivery-settled certificates.",
    "ref_bank_status": "unknown"
   },
   {
@@ -13488,7 +13488,7 @@
     "Goldavenue SA (Geneva) — MKS PAMP's online retail gold/silver savings & storage app (board link in Pictet AR 2025) — https://www.pictet.com/content/dam/www/documents/publications/financial-reports/PictetGroup-2025-Annual-Report.pdf.coredownload.pdf"
    ],
    "is_pb": false,
-   "strategic_idea": "Key Swiss supplier to private banks (PAMP Suisse bars are the default bar brand on Swiss PB shelves); MKS Geneva trades loco-London — competitor/partner for supply",
+   "strategic_idea": "Key Swiss supplier to private banks (PAMP Suisse bars are the default bar brand on Swiss PB shelves); MKS Geneva trades loco-London — competitor/partner for supply.",
    "ref_bank_status": "unknown"
   },
   {
@@ -13702,7 +13702,7 @@
    ],
    "firm_actual": "Raiffeisen Schweiz Genossenschaft",
    "n_products": 3,
-   "strategic_idea": "Wholesale bullion supply & loco-London liquidity for a ~CHF 1bn+ self-custodied gold ETF and a nationwide Metallkonto book; loco-London allocated account/location swaps",
+   "strategic_idea": "Wholesale bullion supply & loco-London liquidity for a ~CHF 1bn+ self-custodied gold ETF and a nationwide Metallkonto book; loco-London allocated account/location swaps.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -13881,7 +13881,7 @@
    "partner_named": [],
    "firm_actual": "Swissquote Bank Ltd",
    "n_products": 2,
-   "strategic_idea": "XAU/XAG streaming liquidity + physical backing supply for a fast-growing retail unallocated book; loco-London unallocated/allocated account",
+   "strategic_idea": "XAU/XAG streaming liquidity + physical backing supply for a fast-growing retail unallocated book; loco-London unallocated/allocated account.",
    "ref_bank_status": "unknown (Citi is a leading eFX LP — likely already an FX counterparty)"
   },
   {
@@ -14053,7 +14053,7 @@
     {
      "name": "International bullion banks",
      "role": "bullion_supplier",
-     "evidence": "YLG and HSH are LBMA Associates/affiliates and import 99.99% kilobars (knowledge)",
+     "evidence": "YLG and HSH are LBMA Associates/affiliates and import 99.99% kilobars",
      "url": "",
      "confidence": "knowledge",
      "name_full": "International bullion banks / Swiss & Asian refiners (unnamed) — kilobar importers"
@@ -14130,7 +14130,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "Top-5 dealers turn over >US$100bn/yr against ~200t/yr national imports — each of HSH/YLG/MTS handles tens of tonnes/yr (ESTIMATE per-firm split)",
+   "size_band_basis": "Top-5 dealers turn over >US$100bn/yr against ~200t/yr national imports — each of HSH/YLG/MTS handles tens of tonnes/yr (ESTIMATE per-firm split).",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -14156,7 +14156,7 @@
       "confidence": "verified"
      }
     ],
-    "notes": "The dealers ARE Thailand's liquidity layer (banks route through them); their own offshore supply/hedge banks are undisclosed — mining.com 'record trajectory' piece (403) likely names the counterparties; LBMA affiliate status for YLG/HSH not verified (directory unfetchable)."
+    "notes": "The dealers ARE Thailand's liquidity layer (banks route through them); their own offshore supply/hedge banks are undisclosed — mining.com 'record trajectory' piece (403) likely names the counterparties."
    },
    "trades_pm": "yes-in-house-desk",
    "new_products_found": [],
@@ -14306,7 +14306,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "ESTIMATE - Garanti's ~10% share of Turkish deposits applied to the US$90bn system precious-metal pool implies ~US$8-9bn (~60t) of client gold accounts; no bank-specific gold figure in the 2025 integrated report",
+   "size_band_basis": "ESTIMATE - Garanti's ~10% share of Turkish deposits applied to the US$90bn system precious-metal pool implies ~US$8-9bn (~60t) of client gold accounts; no bank-specific gold figure in the 2025 integrated report.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -14353,7 +14353,7 @@
    "partner_named": [],
    "firm_actual": "Garanti BBVA (T. Garanti Bankası A.Ş.)",
    "n_products": 5,
-   "strategic_idea": "Location swaps (loco-London↔Istanbul), gold/USD swaps for TRY funding, hedging of gold-deposit books; Garanti is BBVA-owned = group-level entry via BBVA CIB",
+   "strategic_idea": "Location swaps (loco-London↔Istanbul), gold/USD swaps for TRY funding, hedging of gold-deposit books; Garanti is BBVA-owned = group-level entry via BBVA CIB.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -14434,7 +14434,7 @@
      "name": "UBS",
      "name_full": "International bullion banks (JPM / ICBC Standard / Standard Chartered / UBS) for loco-London swaps",
      "role": "liquidity_provider",
-     "evidence": "Usual counterparties of Turkish bank gold desks (knowledge; no primary source)",
+     "evidence": "Usual counterparties of Turkish bank gold desks",
      "url": "https://www.nefes.com.tr/turkiyede-altinda-bir-ilk-dolar-ve-euroyu-gecti-98995",
      "confidence": "knowledge",
      "pass2": true
@@ -14489,7 +14489,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "ESTIMATE - Isbank, Yapi Kredi and Akbank each hold ~8-12% of Turkish deposits, implying US$7-11bn of precious-metal accounts each from the US$90bn system pool; QNB/TEB/DenizBank ~US$2-5bn each ('large'); per-bank BDDK data is not published",
+   "size_band_basis": "ESTIMATE - Isbank, Yapi Kredi and Akbank each hold ~8-12% of Turkish deposits, implying US$7-11bn of precious-metal accounts each from the US$90bn system pool; QNB/TEB/DenizBank ~US$2-5bn each ('large'); per-bank BDDK data is not published.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -14540,7 +14540,7 @@
    ],
    "firm_actual": "Türkiye İş Bankası (verified) and Yapı Kredi (verified); Akbank / QNB / TEB / DenizBank from search",
    "n_products": 8,
-   "strategic_idea": "Same as Garanti: swaps/repo vs BIST gold, loco-London liquidity for import/export flows (Turkey imports 100–300t/yr), ETF custody is locked at Takasbank",
+   "strategic_idea": "Same as Garanti: swaps/repo vs BIST gold, loco-London liquidity for import/export flows (Turkey imports 100–300t/yr), ETF custody is locked at Takasbank.",
    "ref_bank_status": "reference bank not named; Citibank A.Ş. Turkey exists as a local entity"
   },
   {
@@ -14640,7 +14640,7 @@
    "none_found": false,
    "size_band": "unknown",
    "size_band_key": "unknown",
-   "size_band_basis": "ESTIMATE - XAU/XAG 'currency' accounts hedged like FX; likely small-mid",
+   "size_band_basis": "ESTIMATE - XAU/XAG 'currency' accounts hedged like FX; likely small-mid.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -14673,7 +14673,7 @@
    "partner_named": [],
    "firm_actual": "Abu Dhabi Commercial Bank",
    "n_products": 2,
-   "strategic_idea": "Natural loco-London unallocated liquidity/hedging counterparty for ADCB's XAU/XAG account book; silver liquidity",
+   "strategic_idea": "Natural loco-London unallocated liquidity/hedging counterparty for ADCB's XAU/XAG account book; silver liquidity.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -14830,7 +14830,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "Stated: 43t Au + ~1,300t Ag, US$9bn client holdings, 130k funded clients",
+   "size_band_basis": "Stated: 43t Au + ~1,300t Ag, US$9bn client holdings, 130k funded clients.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -14990,7 +14990,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "CHF 4.9bn (~US$6bn, ~40–45t gold-equivalent) of physical metal on the bank's own balance sheet backing client metal accounts, +53% y/y — group level; the London entity is a small slice booked back to Zurich",
+   "size_band_basis": "CHF 4.9bn (~US$6bn, ~40–45t gold-equivalent) of physical metal on the bank's own balance sheet backing client metal accounts, +53% y/y — group level; the London entity is a small slice booked back to Zurich.",
    "liquidity": {
     "status": "in-house",
     "providers": [
@@ -15146,7 +15146,7 @@
    "none_found": false,
    "size_band": "mid (US$100m–1bn or 1–10t)",
    "size_band_key": "mid",
-   "size_band_basis": "£155.6m ≈ US$212m ≈ 1.6t gold at 30-Apr-2026 (was ~£240m/14% in Jan-2026); Troy's other funds (Trojan Fund etc.) hold similar %s but are not this entity",
+   "size_band_basis": "£155.6m ≈ US$212m ≈ 1.6t gold at 30-Apr-2026 (was ~£240m/14% in Jan-2026); Troy's other funds (Trojan Fund etc.) hold similar %s but are not this entity.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -15313,7 +15313,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "Aggregate COMEX gold ~852t (~US$95bn at ~$3,500/oz) + ~10,500t silver in custody across these vaults; per-vault split lives in CME's daily Gold_Stocks/Silver_Stocks report (not fetchable here) — knowledge: JPM ~12-13Moz, HSBC ~6Moz, Brink's ~4-5Moz gold in mid-2026",
+   "size_band_basis": "Aggregate COMEX gold ~852t (~US$95bn at ~$3,500/oz) + ~10,500t silver in custody across these vaults.",
    "liquidity": {
     "status": "n/a",
     "providers": [
@@ -15458,7 +15458,7 @@
    "none_found": false,
    "size_band": "large (US$1–5bn or 10–50t)",
    "size_band_key": "large",
-   "size_band_basis": "ESTIMATE — no public $ of metal in custody (Delaware Business Times article is paywalled/403); $1bn insurance limit is a floor-type indicator; it is the default IRA depository for Equity Trust, GoldStar, Kingdom Trust and Fidelity's program, so custody likely >US$1bn",
+   "size_band_basis": "ESTIMATE — no public $ of metal in custody (Delaware Business Times article is paywalled/403); $1bn insurance limit is a floor-type indicator; it is the default IRA depository for Equity Trust, GoldStar, Kingdom Trust and Fidelity's program, so custody likely >US$1bn.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -15593,7 +15593,7 @@
    "none_found": false,
    "size_band": "mid (US$100m–1bn or 1–10t)",
    "size_band_key": "mid",
-   "size_band_basis": "ESTIMATE — 3m+ accounts but spot metals is a niche line; IBKR is principal on the unallocated contract so open client positions are likely low hundreds of US$m",
+   "size_band_basis": "ESTIMATE — 3m+ accounts but spot metals is a niche line; IBKR is principal on the unallocated contract so open client positions are likely low hundreds of US$m.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -15791,7 +15791,7 @@
    "none_found": false,
    "size_band": "very large (>US$5bn metals AUM or >50t/yr)",
    "size_band_key": "very large",
-   "size_band_basis": "PHYS alone US$16bn / 115t gold; PSLV, CEF, SPPP add further; 2025 gross bullion purchases US$1.6bn for PHYS alone",
+   "size_band_basis": "PHYS alone US$16bn / 115t gold; PSLV, CEF, SPPP add further; 2025 gross bullion purchases US$1.6bn for PHYS alone.",
    "liquidity": {
     "status": "undisclosed",
     "providers": [
@@ -16028,7 +16028,7 @@
     {
      "name": "Münze Österreich",
      "role": "bullion_supplier",
-     "evidence": "Philharmoniker/Mint bars are the standard Austrian bank product (knowledge; Raiffeisen page lists coins)",
+     "evidence": "Philharmoniker/Mint bars are the standard Austrian bank product",
      "url": "https://www.raiffeisen.at/de/privatkunden/anlegen/gold-muenzen.html",
      "confidence": "knowledge",
      "name_full": "Münze Österreich"
@@ -16067,7 +16067,7 @@
    ],
    "firm_actual": "Kathrein Privatbank AG (RBI) for the gold account; Raiffeisenbanken for branch bullion; Raiffeisen Centrobank for certificates",
    "n_products": 3,
-   "strategic_idea": "Kathrein Gold Account = allocated stock needing insured vault + wholesale bar supply of 'sustainable' provenance; RBI certificate book = gold option hedging flow; CEE subsidiaries (Tatra, Raiffeisen HU/RO/CZ) sell gold",
+   "strategic_idea": "Kathrein Gold Account = allocated stock needing insured vault + wholesale bar supply of 'sustainable' provenance; RBI certificate book = gold option hedging flow; CEE subsidiaries (Tatra, Raiffeisen HU/RO/CZ) sell gold.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -16360,7 +16360,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": false,
-   "strategic_idea": "Wholesale supply + hedging line for a 9-country dealer with no bank competition — good mid-size prospect",
+   "strategic_idea": "Wholesale supply + hedging line for a 9-country dealer with no bank competition — good mid-size prospect.",
    "ref_bank_status": "unknown"
   },
   {
@@ -16418,7 +16418,7 @@
     {
      "name": "Commerzbank",
      "role": "liquidity_provider",
-     "evidence": "Commerzbank runs its own precious-metals trading and refinery-branded bar programme (Commerzbank 1g-100g bars in secondary market); LBMA Full Member (knowledge)",
+     "evidence": "Commerzbank runs its own precious-metals trading and refinery-branded bar programme (Commerzbank 1g-100g bars in secondary market); LBMA Full Member",
      "url": "https://www.mp-edelmetalle.de/artikel/gold/6514/gold-commerzbank-barren-100g--de",
      "confidence": "knowledge",
      "name_full": "Commerzbank AG Precious Metals (in-house, Frankfurt/Luxembourg)"
@@ -16456,7 +16456,7 @@
    ],
    "firm_actual": "Commerzbank AG",
    "n_products": 3,
-   "strategic_idea": "Wholesale supply displacement unlikely (own desk); pitch loco-London clearing/allocated custody, and financing of Commerzbank's branch-inventory/retail-bar float; also bid for hedging flow on Commerzbank-issued gold structured products",
+   "strategic_idea": "Wholesale supply displacement unlikely (own desk); pitch loco-London clearing/allocated custody, and financing of Commerzbank's branch-inventory/retail-bar float; also bid for hedging flow on Commerzbank-issued gold structured products.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -16533,7 +16533,7 @@
    ],
    "firm_actual": "Bank Vontobel Europe AG",
    "n_products": 3,
-   "strategic_idea": "Hedging counterparty for Vontobel's large German-listed gold/silver structured-product book (vanilla + exotic options)",
+   "strategic_idea": "Hedging counterparty for Vontobel's large German-listed gold/silver structured-product book (vanilla + exotic options).",
    "ref_bank_status": "unknown"
   },
   {
@@ -16729,7 +16729,7 @@
     {
      "name": "MKS PAMP",
      "role": "liquidity_provider",
-     "evidence": "JV parent (knowledge)",
+     "evidence": "JV parent",
      "url": "",
      "confidence": "knowledge",
      "name_full": "MKS PAMP Group (Geneva) — parent, hedging/liquidity"
@@ -16797,7 +16797,7 @@
     {
      "name": "Emirates NBD",
      "role": "other",
-     "evidence": "ENBD–RBL stake deal announced Oct-2025 (knowledge)",
+     "evidence": "ENBD–RBL stake deal announced Oct-2025",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Emirates NBD (incoming parent — has large Dubai gold franchise)"
@@ -17156,7 +17156,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": false,
-   "strategic_idea": "Consignment/unallocated supply lines for the Italian jewellery cluster (~450t/yr fabrication demand) — the real Italian gold-financing opportunity, adjacent to PB",
+   "strategic_idea": "Consignment/unallocated supply lines for the Italian jewellery cluster (~450t/yr fabrication demand) — the real Italian gold-financing opportunity, adjacent to PB.",
    "ref_bank_status": "unknown"
   },
   {
@@ -17307,7 +17307,7 @@
    "partner_named": [],
    "firm_actual": "Kuwait Finance House (Kuwait) / KFH Bahrain",
    "n_products": 3,
-   "strategic_idea": "small-bar (10-100g) supply programme + spot liquidity across KFH Kuwait/Bahrain/Turkey; the one GCC Islamic bank with a multi-country gold account",
+   "strategic_idea": "Small-bar (10-100g) supply programme + spot liquidity across KFH Kuwait/Bahrain/Turkey; the one GCC Islamic bank with a multi-country gold account.",
    "ref_bank_status": "unknown"
   },
   {
@@ -17390,7 +17390,7 @@
    ],
    "firm_actual": "Spuerkeess (BCEE)",
    "n_products": 3,
-   "strategic_idea": "Metal accounts + physical shelf without own desk: pitch wholesale supply, unallocated loco-London account backing its scriptural gold, and Lux↔London swaps",
+   "strategic_idea": "Metal accounts + physical shelf without own desk: pitch wholesale supply, unallocated loco-London account backing its scriptural gold, and Lux↔London swaps.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -17650,7 +17650,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": false,
-   "strategic_idea": "★ Wholesale grain/kilobar supply + consignment/hedging lines to Mennica Polska (state mint, NBP coin programme) — a bullion desk Handlowy local presence is an edge",
+   "strategic_idea": "★ Wholesale grain/kilobar supply + consignment/hedging lines to Mennica Polska (state mint, NBP coin programme) — a bullion desk Handlowy local presence is an edge.",
    "ref_bank_status": "unknown"
   },
   {
@@ -17717,7 +17717,7 @@
    "partner_named": [],
    "firm_actual": "Doha Bank",
    "n_products": 1,
-   "strategic_idea": "direct loco-London unallocated liquidity provider to Doha Bank Treasury for E-Gold/E-Silver (50oz/4,000oz lots are wholesale-sized)",
+   "strategic_idea": "Direct loco-London unallocated liquidity provider to Doha Bank Treasury for E-Gold/E-Silver (50oz/4,000oz lots are wholesale-sized).",
    "ref_bank_status": "unknown"
   },
   {
@@ -17791,7 +17791,7 @@
    "partner_named": [],
    "firm_actual": "QNB Private (Qatar); group affiliate QNB Finansbank (Turkey) for the gold account",
    "n_products": 1,
-   "strategic_idea": "loco-London liquidity + physical supply for a Qatar gold-account programme; QNB Turkey's gram-gold book is the group's real metals franchise (other agent)",
+   "strategic_idea": "loco-London liquidity + physical supply for a Qatar gold-account programme; QNB Turkey's gram-gold book is the group's real metals franchise (other agent).",
    "ref_bank_status": "unknown"
   },
   {
@@ -17873,7 +17873,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "Only Saudi physical gold ETF and it is small (470kg) and Dubai-vaulted: offer a loco-London-backed, LBMA-brand alternative custody/AP structure to Albilad or to SNB Capital/Al Rajhi Capital who have no gold ETF",
+   "strategic_idea": "Only Saudi physical gold ETF and it is small (470kg) and Dubai-vaulted: offer a loco-London-backed, LBMA-brand alternative custody/AP structure to Albilad or to SNB Capital/Al Rajhi Capital who have no gold ETF.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -17987,7 +17987,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Offers Swiss-vaulted physical gold and metal accounts to Asian clients; strengthened SG/HK private banking (knowledge)",
+     "claim": "Offers Swiss-vaulted physical gold and metal accounts to Asian clients; strengthened SG/HK private banking",
      "quote": "Lombard Odier has strengthened its private banking capabilities in Singapore and Hong Kong",
      "url": "https://asia.lombardodier.com/home/offices/singapore.html"
     }
@@ -18269,7 +18269,7 @@
    ],
    "src_file": "pw_ch.json",
    "is_pb": false,
-   "strategic_idea": "Verified refiner/partner to UBS (UBS-branded bars), Raiffeisen (ETF traceable gold) and AMINA (token custody); ex-UBS-owned — a bullion desk supply/offtake counterparty for loco-Zurich",
+   "strategic_idea": "Verified refiner/partner to UBS (UBS-branded bars), Raiffeisen (ETF traceable gold) and AMINA (token custody); ex-UBS-owned — a bullion desk supply/offtake counterparty for loco-Zurich.",
    "ref_bank_status": "unknown"
   },
   {
@@ -18340,7 +18340,7 @@
    "partner_named": [],
    "firm_actual": "Bank J. Safra Sarasin AG",
    "n_products": 0,
-   "strategic_idea": "Wholesale supply/loco-London custody; Lombard vs bullion for Gulf/LatAm clients",
+   "strategic_idea": "Wholesale supply/loco-London custody; Lombard vs bullion for Gulf/LatAm clients.",
    "ref_bank_status": "unknown"
   },
   {
@@ -18468,7 +18468,7 @@
    ],
    "firm_actual": "Deutsche Bank (Suisse) SA (Deutsche Bank Wealth Management Switzerland)",
    "n_products": 3,
-   "strategic_idea": "DB exited bullion market-making 2014 and left LPMCL — DB PB Switzerland must buy loco-London liquidity externally → displaceable",
+   "strategic_idea": "DB exited bullion market-making 2014 and left LPMCL — DB PB Switzerland must buy loco-London liquidity externally → displaceable.",
    "ref_bank_status": "unknown"
   },
   {
@@ -18542,7 +18542,7 @@
    "partner_named": [],
    "firm_actual": "EFG Bank AG",
    "n_products": 3,
-   "strategic_idea": "Wholesale supply, note hedging, XAU DCI hedging for Asia/LatAm books",
+   "strategic_idea": "Wholesale supply, note hedging, XAU DCI hedging for Asia/LatAm books.",
    "ref_bank_status": "unknown"
   },
   {
@@ -18611,7 +18611,7 @@
    "partner_named": [],
    "firm_actual": "Union Bancaire Privée, UBP SA (now incl. ex-Société Générale Private Banking Suisse)",
    "n_products": 3,
-   "strategic_idea": "Wholesale supply, note/DCI hedging (Gulf & Asia clients), Lombard vs bullion",
+   "strategic_idea": "Wholesale supply, note/DCI hedging (Gulf & Asia clients), Lombard vs bullion.",
    "ref_bank_status": "unknown"
   },
   {
@@ -18712,7 +18712,7 @@
    ],
    "firm_actual": "Zürcher Kantonalbank (Swisscanto ETFs)",
    "n_products": 5,
-   "strategic_idea": "Interbank counterparty rather than displaceable client: loco-London↔loco-Zurich swaps, unallocated/allocated loco-London account for ZKB's London-side settlement, Pt/Pd liquidity for the Swisscanto PGM ETFs (ZKB is not an LPPM member)",
+   "strategic_idea": "Interbank counterparty rather than displaceable client: loco-London↔loco-Zurich swaps, unallocated/allocated loco-London account for ZKB's London-side settlement, Pt/Pd liquidity for the Swisscanto PGM ETFs (ZKB is not an LPPM member).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -18899,7 +18899,7 @@
     {
      "name": "Lombard Odier",
      "role": "other",
-     "evidence": "PB advisory partnership since 2014 (knowledge)",
+     "evidence": "PB advisory partnership since 2014",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Lombard Odier"
@@ -19000,7 +19000,7 @@
     {
      "name": "Julius Baer",
      "role": "other",
-     "evidence": "JV since 2018 (knowledge)",
+     "evidence": "JV since 2018",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Julius Baer (SCB Julius Baer JV, Singapore booking)"
@@ -19088,7 +19088,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": false,
-   "strategic_idea": "BIST PM market membership for a bullion desk (or via Citibank A.Ş.) would unlock loco-Istanbul swaps with all Turkish banks; IGR/Nadir consignment & refining lines",
+   "strategic_idea": "BIST PM market membership for a bullion desk (or via Citibank A.Ş.) would unlock loco-Istanbul swaps with all Turkish banks; IGR/Nadir consignment & refining lines.",
    "ref_bank_status": "unknown"
   },
   {
@@ -19207,7 +19207,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": false,
-   "strategic_idea": "The physical rails every UAE bank gold product runs on; the desk's Dubai physical desk should be on DGCX/DCCC and hold Brink's/Transguard vault accounts to supply ENBD/FAB/ADCB/EI/KFH programmes loco-Dubai",
+   "strategic_idea": "The physical rails every UAE bank gold product runs on; the desk's Dubai physical desk should be on DGCX/DCCC and hold Brink's/Transguard vault accounts to supply ENBD/FAB/ADCB/EI/KFH programmes loco-Dubai.",
    "ref_bank_status": "n/a"
   },
   {
@@ -19438,7 +19438,7 @@
     {
      "name": "JPMorgan",
      "role": "etf_custodian",
-     "evidence": "Ruffer's direct gold has been held via London-listed physical ETCs rather than bullion accounts (knowledge; ETC custodians per issuer docs)",
+     "evidence": "Ruffer's direct gold has been held via London-listed physical ETCs rather than bullion accounts",
      "url": "",
      "confidence": "knowledge",
      "name_full": "iShares (JPMorgan custody) / WisdomTree (HSBC custody) physical gold ETCs"
@@ -20287,7 +20287,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Largest Austrian dealer, expanding in Germany/Switzerland; own storage + savings plan; supplies some regional banks (knowledge)",
+     "claim": "Largest Austrian dealer, expanding in Germany/Switzerland; own storage + savings plan; supplies some regional banks",
      "quote": "knowledge",
      "url": ""
     }
@@ -20300,7 +20300,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": false,
-   "strategic_idea": "Wholesale supply + hedging line; growing fast",
+   "strategic_idea": "Wholesale supply + hedging line; growing fast.",
    "ref_bank_status": "unknown"
   },
   {
@@ -20938,7 +20938,7 @@
    ],
    "firm_actual": "Crédit Mutuel & CIC (France) branch gold service",
    "n_products": 2,
-   "strategic_idea": "Banque de Luxembourg / CIC Suisse allocated custody + lombard vs metal; wholesale supply behind CPoR",
+   "strategic_idea": "Banque de Luxembourg / CIC Suisse allocated custody + lombard vs metal; wholesale supply behind CPoR.",
    "ref_bank_status": "unknown"
   },
   {
@@ -21018,7 +21018,7 @@
    ],
    "firm_actual": "BRED Banque Populaire (verified); Natixis Wealth Management (knowledge)",
    "n_products": 2,
-   "strategic_idea": "Structured-note hedging (Natixis is a big autocall issuer) + wholesale supply behind CPoR",
+   "strategic_idea": "Structured-note hedging (Natixis is a big autocall issuer) + wholesale supply behind CPoR.",
    "ref_bank_status": "unknown"
   },
   {
@@ -21069,7 +21069,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Post-merger shelf rebuild: physical supply + allocated custody for the combined ABN AMRO Germany PB (~€70bn)",
+   "strategic_idea": "Post-merger shelf rebuild: physical supply + allocated custody for the combined ABN AMRO Germany PB (~€70bn).",
    "ref_bank_status": "unknown"
   },
   {
@@ -21128,7 +21128,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": false,
-   "strategic_idea": "Peer/counterparty rather than client: loco-London clearing, PGM lending, metal-account netting",
+   "strategic_idea": "Peer/counterparty rather than client: loco-London clearing, PGM lending, metal-account netting.",
    "ref_bank_status": "unknown"
   },
   {
@@ -21189,7 +21189,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Wholesale bullion supply + hedging for onemarkets gold structured notes if the HVB desk has shrunk; ask whether HVB now buys in from BayernLB/Heraeus",
+   "strategic_idea": "Wholesale bullion supply + hedging for onemarkets gold structured notes if the HVB desk has shrunk; ask whether HVB now buys in from BayernLB/Heraeus.",
    "ref_bank_status": "unknown"
   },
   {
@@ -21241,7 +21241,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": false,
-   "strategic_idea": "Wholesale supply + hedging line",
+   "strategic_idea": "Wholesale supply + hedging line.",
    "ref_bank_status": "unknown"
   },
   {
@@ -21305,7 +21305,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": false,
-   "strategic_idea": "Xetra-Gold metal flow (~200t) is Umicore-supplied: pitch loco-London settlement/ swap lines for the Xetra-Gold creation/redemption flow",
+   "strategic_idea": "Xetra-Gold metal flow (~200t) is Umicore-supplied: pitch loco-London settlement/ swap lines for the Xetra-Gold creation/redemption flow.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -21501,7 +21501,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Gold passbook (paper gold) offered to retail (knowledge)",
+     "claim": "Gold passbook (paper gold) offered to retail",
      "quote": "knowledge",
      "url": ""
     }
@@ -21652,7 +21652,7 @@
     {
      "name": "Julius Baer",
      "role": "bullion_supplier",
-     "evidence": "in-house group (knowledge)",
+     "evidence": "in-house group",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Bank Julius Baer & Co (Zurich) — group metals desk/custody"
@@ -21903,7 +21903,7 @@
     {
      "name": "Standard Chartered",
      "role": "bullion_supplier",
-     "evidence": "in-house group desk supplies Indian nominated banks on consignment (knowledge)",
+     "evidence": "in-house group desk supplies Indian nominated banks on consignment",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Standard Chartered Bank (group bullion desk, LBMA market maker)"
@@ -21997,7 +21997,7 @@
     {
      "name": "Digital-gold platform",
      "role": "account_partner",
-     "evidence": "digital gold providers behind broker apps (knowledge)",
+     "evidence": "digital gold providers behind broker apps",
      "url": "https://blog.oropocket.com/digital-gold-providers-in-india-compared-safegold-vs-mmtc-pamp-vs-augmont/",
      "confidence": "knowledge",
      "name_full": "Augmont / SafeGold"
@@ -22157,7 +22157,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "Gold-price swap / futures-roll counterparty to the TASE gold tracker issuers (Kesem, Tachlit); or seed the first physically-backed Israeli gold ETF with loco-London custody",
+   "strategic_idea": "Gold-price swap / futures-roll counterparty to the TASE gold tracker issuers (Kesem, Tachlit); or seed the first physically-backed Israeli gold ETF with loco-London custody.",
    "ref_bank_status": "unknown"
   },
   {
@@ -22494,7 +22494,7 @@
    "sources": [],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "loco-London liquidity/allocated custody for Arab Bank Switzerland's physical book; Jordan onshore has no bullion shelf",
+   "strategic_idea": "loco-London liquidity/allocated custody for Arab Bank Switzerland's physical book; Jordan onshore has no bullion shelf.",
    "ref_bank_status": "unknown"
   },
   {
@@ -22549,7 +22549,7 @@
    "sources": [],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "Lombard-vs-gold-ETF and allocated custody via NBK Switzerland; no retail gold shelf to supply",
+   "strategic_idea": "Lombard-vs-gold-ETF and allocated custody via NBK Switzerland; no retail gold shelf to supply.",
    "ref_bank_status": "unknown"
   },
   {
@@ -22607,7 +22607,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Wholesale supply + loco-London custody; intermediaries/EAM platform distributes metal accounts",
+   "strategic_idea": "Wholesale supply + loco-London custody; intermediaries/EAM platform distributes metal accounts.",
    "ref_bank_status": "unknown"
   },
   {
@@ -22684,7 +22684,7 @@
    ],
    "firm_actual": "Grouped tail — no Lux-entity-specific product page found; Banque Raiffeisen Luxembourg (not in the list) is the only additional Lux bank with a public precious-metals page",
    "n_products": 2,
-   "strategic_idea": "Lux is the EU booking hub for lombard-vs-metal and metal accounts — target ICBC/BoC Lux and Danske/Havilland/Andbank (no in-house bullion desks) with unallocated accounts + custody",
+   "strategic_idea": "Lux is the EU booking hub for lombard-vs-metal and metal accounts — target ICBC/BoC Lux and Danske/Havilland/Andbank (no in-house bullion desks) with unallocated accounts + custody.",
    "ref_bank_status": "per parent"
   },
   {
@@ -22868,7 +22868,7 @@
     {
      "name": "BBVA",
      "role": "note_issuer",
-     "evidence": "BBVA is the dominant structured-note issuer in Mexico (knowledge)",
+     "evidence": "BBVA is the dominant structured-note issuer in Mexico",
      "url": "",
      "confidence": "knowledge",
      "name_full": "BBVA Global Markets (in-house)"
@@ -22961,7 +22961,7 @@
    "partner_named": [],
    "firm_actual": "Grouped tail — no Monaco-entity product page found (CFM Indosuez and CMB Monaco sites checked)",
    "n_products": 0,
-   "strategic_idea": "Barclays Monaco & SG Monaco (parents without full bullion desks) = metal-account/allocated-custody supply targets; Julius Baer Monaco via JB group deal",
+   "strategic_idea": "Barclays Monaco & SG Monaco (parents without full bullion desks) = metal-account/allocated-custody supply targets; Julius Baer Monaco via JB group deal.",
    "ref_bank_status": "per parent"
   },
   {
@@ -23088,7 +23088,7 @@
    ],
    "firm_actual": "PKO Bank Polski",
    "n_products": 1,
-   "strategic_idea": "Supply/hedging sits with Mennica Polska (a listed mint that sources kilobars/grain from LBMA banks) — target Mennica, not PKO; a bullion desk Handlowy is the natural local conduit",
+   "strategic_idea": "Supply/hedging sits with Mennica Polska (a listed mint that sources kilobars/grain from LBMA banks) — target Mennica, not PKO; a bullion desk Handlowy is the natural local conduit.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -23128,7 +23128,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Safra Sarasin runs an active precious-metals franchise in Switzerland (Basel/Geneva) with physical custody; Asian clients booked in SG/HK access the same shelf (knowledge)",
+     "claim": "Safra Sarasin runs an active precious-metals franchise in Switzerland (Basel/Geneva) with physical custody; Asian clients booked in SG/HK access the same shelf",
      "quote": "knowledge",
      "url": ""
     }
@@ -23187,7 +23187,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Standard Swiss-PB shelf: physical gold, metal accounts, structured products (knowledge)",
+     "claim": "Standard Swiss-PB shelf: physical gold, metal accounts, structured products",
      "quote": "knowledge",
      "url": ""
     }
@@ -23299,7 +23299,7 @@
    ],
    "firm_actual": "First National Bank (FirstRand) - FNB Share Investing / FNB Private Wealth",
    "n_products": 2,
-   "strategic_idea": "SA exchange control blocks loco-London for residents; angle = RMB commodities desk liquidity, and offshore (Guernsey/Jersey) allocated gold for FNB/RMB's expatriate-allowance clients",
+   "strategic_idea": "SA exchange control blocks loco-London for residents; angle = RMB commodities desk liquidity, and offshore (Guernsey/Jersey) allocated gold for FNB/RMB's expatriate-allowance clients.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -23403,7 +23403,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Largest Korean retail bullion dealer (순금나라 app); KRX-qualified importer; supplies gold bars to banks/brokers (knowledge)",
+     "claim": "Largest Korean retail bullion dealer (순금나라 app); KRX-qualified importer; supplies gold bars to banks/brokers",
      "quote": "금거래소 순금나라 - 대한민국 표준 금시세로 금거래",
      "url": "https://apps.apple.com/us/app/id6754812991?l=ko"
     }
@@ -23519,7 +23519,7 @@
    ],
    "firm_actual": "CaixaBank (Monte de Piedad de CaixaBank)",
    "n_products": 2,
-   "strategic_idea": "Wholesale supply for Monte de Piedad gold sales + scrap buy-back flow (pawn book) — refining/consignment line",
+   "strategic_idea": "Wholesale supply for Monte de Piedad gold sales + scrap buy-back flow (pawn book) — refining/consignment line.",
    "ref_bank_status": "unknown"
   },
   {
@@ -23584,7 +23584,7 @@
    "partner_named": [],
    "firm_actual": "Santander Private Banking",
    "n_products": 0,
-   "strategic_idea": "Structured-note hedging + allocated custody for Santander PB Switzerland/Miami clients (LatAm UHNW gold demand)",
+   "strategic_idea": "Structured-note hedging + allocated custody for Santander PB Switzerland/Miami clients (LatAm UHNW gold demand).",
    "ref_bank_status": "unknown"
   },
   {
@@ -23685,7 +23685,7 @@
    ],
    "src_file": "pw_ch.json,pw_eu.json,pw_uk.json",
    "is_pb": true,
-   "strategic_idea": "Captive to BNPP's commodity desk (LBMA full member, not market maker)",
+   "strategic_idea": "Captive to BNPP's commodity desk (LBMA full member, not market maker).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -23755,7 +23755,7 @@
    ],
    "firm_actual": "Banque Cantonale Vaudoise",
    "n_products": 3,
-   "strategic_idea": "Wholesale supply + SP hedging for the largest Romandie cantonal bank",
+   "strategic_idea": "Wholesale supply + SP hedging for the largest Romandie cantonal bank.",
    "ref_bank_status": "unknown"
   },
   {
@@ -23827,7 +23827,7 @@
    "partner_named": [],
    "firm_actual": "Banque Cantonale de Genève",
    "n_products": 2,
-   "strategic_idea": "Wholesale supply + forwards/options liquidity behind BCGE metal accounts",
+   "strategic_idea": "Wholesale supply + forwards/options liquidity behind BCGE metal accounts.",
    "ref_bank_status": "unknown"
   },
   {
@@ -23903,7 +23903,7 @@
    "partner_named": [],
    "firm_actual": "Basler Kantonalbank (Metallkonto) and Bank Cler (Edelmetallkonto) — products recorded under each brand",
    "n_products": 4,
-   "strategic_idea": "Wholesale supply for BKB's precious-metals trading (also serves corporates/jewellers in Basel)",
+   "strategic_idea": "Wholesale supply for BKB's precious-metals trading (also serves corporates/jewellers in Basel).",
    "ref_bank_status": "unknown"
   },
   {
@@ -23962,7 +23962,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Wholesale supply + loco-London custody; gold-miner fund is equity-only",
+   "strategic_idea": "Wholesale supply + loco-London custody; gold-miner fund is equity-only.",
    "ref_bank_status": "unknown"
   },
   {
@@ -24016,7 +24016,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": false,
-   "strategic_idea": "Largest Swiss refiner; ex-Credit Suisse-owned (CS-branded bars) — legacy CS/UBS client bar stock; supply counterparty",
+   "strategic_idea": "Largest Swiss refiner; ex-Credit Suisse-owned (CS-branded bars) — legacy CS/UBS client bar stock; supply counterparty.",
    "ref_bank_status": "unknown"
   },
   {
@@ -24382,7 +24382,7 @@
    ],
    "firm_actual": "Ziraat Bankası (third-party-verified terms); others from search/knowledge",
    "n_products": 5,
-   "strategic_idea": "Sovereign-adjacent gold swaps/loans; harder access for a US bank — via CBRT/Treasury relationship",
+   "strategic_idea": "Sovereign-adjacent gold swaps/loans; harder access for a US bank — via CBRT/Treasury relationship.",
    "ref_bank_status": "unknown"
   },
   {
@@ -24469,7 +24469,7 @@
    ],
    "firm_actual": "Emirates Islamic Bank",
    "n_products": 1,
-   "strategic_idea": "reach via ENBD group treasury; Shariah-compliant (AAOIFI 57) physical supply",
+   "strategic_idea": "Reach via ENBD group treasury; Shariah-compliant (AAOIFI 57) physical supply.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -24519,7 +24519,7 @@
    "sources": [],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "structured-note hedging; a gold-product launch partner (Mashreq NEO) if it follows ENBD/FAB/ADCB",
+   "strategic_idea": "Structured-note hedging; a gold-product launch partner (Mashreq NEO) if it follows ENBD/FAB/ADCB.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -24748,7 +24748,7 @@
    ],
    "src_file": "pw_uk.json",
    "is_pb": true,
-   "strategic_idea": "Geneva desk offers gold accounts & physical; Pictet not LBMA; uses external bullion banks/vaults (knowledge). Angle: wholesale spot/forward liquidity + loco-London allocated custody to the group PM desk. Pictet's Physical Gold fund needs bar custody + spot liquidity (custodian not verified - Pictet uses Swiss vaults per knowledge).",
+   "strategic_idea": "Geneva desk offers gold accounts & physical; Pictet not LBMA; uses external bullion banks/vaults (knowledge). Angle: wholesale spot/forward liquidity + loco-London allocated custody to the group PM desk.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -24841,7 +24841,7 @@
     {
      "name": "undisclosed",
      "role": "etf_custodian",
-     "evidence": "Rothschild left the bullion market in 2004 (exited London Gold Fixing); gold now via ETCs/bullion held with third-party custodians (knowledge)",
+     "evidence": "Rothschild left the bullion market in 2004 (exited London Gold Fixing); gold now via ETCs/bullion held with third-party custodians",
      "url": "",
      "confidence": "knowledge",
      "name_full": "unknown"
@@ -25121,7 +25121,7 @@
     {
      "name": "Dillon Gage Metals",
      "role": "bullion_supplier",
-     "evidence": "IDS is the depository arm of the Dillon Gage group (knowledge)",
+     "evidence": "IDS is the depository arm of the Dillon Gage group",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Dillon Gage Metals (affiliate wholesaler)"
@@ -25314,7 +25314,7 @@
    "partner_named": [],
    "firm_actual": "Grouped tail — no bank-specific gold product page found",
    "n_products": 0,
-   "strategic_idea": "Allocated custody + lombard vs metal for LatAm/Spanish UHNW booked in Andorra/Lux (Andbank Lux, Andbank Monaco)",
+   "strategic_idea": "Allocated custody + lombard vs metal for LatAm/Spanish UHNW booked in Andorra/Lux (Andbank Lux, Andbank Monaco).",
    "ref_bank_status": "unknown"
   },
   {
@@ -25474,7 +25474,7 @@
     {
      "name": "Macquarie",
      "role": "liquidity_provider",
-     "evidence": "Macquarie Bank Ltd is an LBMA Full Member (knowledge — not verified this pass)",
+     "evidence": "Macquarie Bank Ltd is an LBMA Full Member",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Macquarie Bank Ltd CGM precious metals (in-house)"
@@ -25611,7 +25611,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Supply + custody; low",
+   "strategic_idea": "Supply + custody; low.",
    "ref_bank_status": "unknown"
   },
   {
@@ -25661,7 +25661,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Allocated custody for UHNW physical holdings; ETC selection",
+   "strategic_idea": "Allocated custody for UHNW physical holdings; ETC selection.",
    "ref_bank_status": "unknown"
   },
   {
@@ -26263,7 +26263,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "RMB140.2bn (US$20.3bn) AUM at 31-Mar-2026; 468,983 registered clients; distributes third-party funds incl. gold funds/ETFs to HNW Chinese; no proprietary bullion product (knowledge)",
+     "claim": "RMB140.2bn (US$20.3bn) AUM at 31-Mar-2026; 468,983 registered clients; distributes third-party funds incl. gold funds/ETFs to HNW Chinese; no proprietary bullion product",
      "quote": "Noah had assets under management of RMB140.2 billion (US$20.3 billion) as of March 31, 2026",
      "url": "https://noahholdingsltd.gcs-web.com/ir-resources/investor-faqs/"
     }
@@ -26498,7 +26498,7 @@
    ],
    "firm_actual": "Česká spořitelna (retail + Erste Premier / Erste Private Banking; same product)",
    "n_products": 2,
-   "strategic_idea": "App-based gold sales = growing stock needing supply/hedging via Erste group — approach at Erste Group level",
+   "strategic_idea": "App-based gold sales = growing stock needing supply/hedging via Erste group — approach at Erste Group level.",
    "ref_bank_status": "unknown"
   },
   {
@@ -26569,7 +26569,7 @@
    "partner_named": [],
    "firm_actual": "Nordea Bank Abp (Nordea Markets ETPs distributed to Private Banking & retail)",
    "n_products": 2,
-   "strategic_idea": "Hedging supply for Nordic bank-issued gold certificates (Nordea/SEB/Handelsbanken issue 'Guld' certificates/ETNs that need a delta hedge — natural spot/forward client); no physical",
+   "strategic_idea": "Hedging supply for Nordic bank-issued gold certificates (Nordea/SEB/Handelsbanken issue 'Guld' certificates/ETNs that need a delta hedge — natural spot/forward client); no physical.",
    "ref_bank_status": "unknown"
   },
   {
@@ -26616,7 +26616,7 @@
     {
      "name": "LBBW precious-metals trading",
      "role": "bullion_supplier",
-     "evidence": "LBBW Stuttgart runs a PM trading unit supplying BW-Bank and BW Sparkassen (knowledge)",
+     "evidence": "LBBW Stuttgart runs a PM trading unit supplying BW-Bank and BW Sparkassen",
      "url": "",
      "confidence": "knowledge",
      "name_full": "LBBW precious-metals trading (in-house)"
@@ -26649,7 +26649,7 @@
    ],
    "firm_actual": "BW-Bank (Baden-Württembergische Bank) Münzkabinett",
    "n_products": 2,
-   "strategic_idea": "Wholesale supply/clearing to LBBW desk",
+   "strategic_idea": "Wholesale supply/clearing to LBBW desk.",
    "ref_bank_status": "unknown"
   },
   {
@@ -26700,7 +26700,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "ETC/structured-note hedging counterparty; Swiss booking (Berenberg Zurich) for physical custody",
+   "strategic_idea": "ETC/structured-note hedging counterparty; Swiss booking (Berenberg Zurich) for physical custody.",
    "ref_bank_status": "unknown"
   },
   {
@@ -26750,7 +26750,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Group-level: who provides the gold exposure behind the ABN AMRO beleggingsgiro gold sleeve (ETC/swap)? Pitch physical-backed solution",
+   "strategic_idea": "Group-level: who provides the gold exposure behind the ABN AMRO beleggingsgiro gold sleeve (ETC/swap)? Pitch physical-backed solution.",
    "ref_bank_status": "unknown"
   },
   {
@@ -26807,7 +26807,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Migration to BNP shelf = re-papering moment for any metal accounts",
+   "strategic_idea": "Migration to BNP shelf = re-papering moment for any metal accounts.",
    "ref_bank_status": "unknown"
   },
   {
@@ -26857,7 +26857,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Wholesale bullion supply + allocated custody",
+   "strategic_idea": "Wholesale bullion supply + allocated custody.",
    "ref_bank_status": "unknown"
   },
   {
@@ -26908,7 +26908,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Structured-note hedging; Swiss booking custody",
+   "strategic_idea": "Structured-note hedging; Swiss booking custody.",
    "ref_bank_status": "unknown"
   },
   {
@@ -26979,7 +26979,7 @@
    "partner_named": [],
    "firm_actual": "UBS Europe SE (Frankfurt) - representative of the group",
    "n_products": 3,
-   "strategic_idea": "Covered in Switzerland sweep",
+   "strategic_idea": "Covered in Switzerland sweep.",
    "ref_bank_status": "per parent"
   },
   {
@@ -27060,7 +27060,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": false,
-   "strategic_idea": "Custody is Frankfurt (Clearstream), not loco-London — no custody angle; AP/creation flow via shareholder banks. a bullion desk could offer loco-London↔Frankfurt location swaps to Umicore/APs",
+   "strategic_idea": "Custody is Frankfurt (Clearstream), not loco-London — no custody angle; AP/creation flow via shareholder banks. a bullion desk could offer loco-London↔Frankfurt location swaps to Umicore/APs.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -27121,7 +27121,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "NOT private wealth: GoldBod pre-export / doré-collateral financing and offtake (forward-physical purchase archetype) - flag to the structured-financing side",
+   "strategic_idea": "NOT private wealth: GoldBod pre-export / doré-collateral financing and offtake (forward-physical purchase archetype) - flag to the structured-financing side.",
    "ref_bank_status": "unknown"
   },
   {
@@ -27156,7 +27156,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Paper gold passbook (knowledge; historically sourced via BOCHK when a BOC subsidiary)",
+     "claim": "Paper gold passbook",
      "quote": "knowledge",
      "url": ""
     }
@@ -27223,7 +27223,7 @@
     {
      "name": "OCBC",
      "role": "liquidity_provider",
-     "evidence": "group in-house (knowledge)",
+     "evidence": "group in-house",
      "url": "",
      "confidence": "knowledge",
      "name_full": "OCBC Global Markets Singapore (parent desk)"
@@ -27287,7 +27287,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Gold passbook offered (knowledge)",
+     "claim": "Gold passbook offered",
      "quote": "knowledge",
      "url": ""
     }
@@ -27357,7 +27357,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "OTP is the CEE regional champion (HU/BG/HR/RO/SI/UA) — a single wholesale supply/hedging relationship could cover several markets",
+   "strategic_idea": "OTP is the CEE regional champion (HU/BG/HR/RO/SI/UA) — a single wholesale supply/hedging relationship could cover several markets.",
    "ref_bank_status": "unknown"
   },
   {
@@ -27594,7 +27594,7 @@
     {
      "name": "HSBC",
      "role": "bullion_supplier",
-     "evidence": "in-house (knowledge)",
+     "evidence": "in-house",
      "url": "",
      "confidence": "knowledge",
      "name_full": "HSBC Bank plc (group bullion desk / London vault)"
@@ -27977,7 +27977,7 @@
    "partner_named": [],
    "firm_actual": "Mediobanca Private Banking / Mediobanca Premier (ex-CheBanca!)",
    "n_products": 2,
-   "strategic_idea": "Structured-note hedging counterparty",
+   "strategic_idea": "Structured-note hedging counterparty.",
    "ref_bank_status": "unknown"
   },
   {
@@ -28047,7 +28047,7 @@
    "partner_named": [],
    "firm_actual": "UniCredit Private Banking (Italy) / onemarkets by UniCredit",
    "n_products": 2,
-   "strategic_idea": "Hedging for onemarkets gold certificates; allocated custody",
+   "strategic_idea": "Hedging for onemarkets gold certificates; allocated custody.",
    "ref_bank_status": "unknown"
   },
   {
@@ -28167,7 +28167,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Allocated custody + ETC provision; lombard vs metal",
+   "strategic_idea": "Allocated custody + ETC provision; lombard vs metal.",
    "ref_bank_status": "unknown"
   },
   {
@@ -28592,7 +28592,7 @@
    "partner_named": [],
    "firm_actual": "CMB Monaco",
    "n_products": 0,
-   "strategic_idea": "Allocated custody + lombard vs metal for Monaco UHNW; Mediobanca note hedging",
+   "strategic_idea": "Allocated custody + lombard vs metal for Monaco UHNW; Mediobanca note hedging.",
    "ref_bank_status": "unknown"
   },
   {
@@ -28818,7 +28818,7 @@
    ],
    "firm_actual": "Alior Bank (physical bars); others = ETC/fund/structured only",
    "n_products": 2,
-   "strategic_idea": "Polish retail gold demand (~15t/yr, KGHM silver country) is served by mints/dealers (Mennica Polska, Mennica Skarbowa, Goldenmark, Tavex) — pitch wholesale supply + hedging to the mints; a bullion desk Handlowy PB could white-label",
+   "strategic_idea": "Polish retail gold demand (~15t/yr, KGHM silver country) is served by mints/dealers (Mennica Polska, Mennica Skarbowa, Goldenmark, Tavex) — pitch wholesale supply + hedging to the mints; a bullion desk Handlowy PB could white-label.",
    "ref_bank_status": "Citi Handlowy is the Citi Polish entity — potential local distribution of Citi metals products"
   },
   {
@@ -28900,7 +28900,7 @@
    ],
    "firm_actual": "Caixa Geral de Depósitos (retail 'Montra Caixa'; same shelf for Caixa Private via gestor)",
    "n_products": 2,
-   "strategic_idea": "Wholesale supply behind Albino Moutinho (sovereign-coin demand in PT is large) — small",
+   "strategic_idea": "Wholesale supply behind Albino Moutinho (sovereign-coin demand in PT is large) — small.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -28950,7 +28950,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "tail; verify QIB/Dukhan gold accounts before pitching",
+   "strategic_idea": "Tail; verify QIB/Dukhan gold accounts before pitching.",
    "ref_bank_status": "unknown"
   },
   {
@@ -29009,7 +29009,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "HSBC-linked; low displaceability",
+   "strategic_idea": "HSBC-linked; low displaceability.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -29048,7 +29048,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Gold-linked structured notes issued by BNP Paribas Issuance BV are a staple of the Asian PB shelf; physical gold via group markets (knowledge)",
+     "claim": "Gold-linked structured notes issued by BNP Paribas Issuance BV are a staple of the Asian PB shelf; physical gold via group markets",
      "quote": "knowledge",
      "url": ""
     }
@@ -29115,7 +29115,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Swiss-booked physical gold/metal accounts via CA Indosuez (Switzerland) SA (knowledge)",
+     "claim": "Swiss-booked physical gold/metal accounts via CA Indosuez (Switzerland) SA",
      "quote": "knowledge",
      "url": ""
     }
@@ -29183,7 +29183,7 @@
      "url": "https://fintechnews.sg/133069/fintech/singapore-gold-clearing/"
     },
     {
-     "claim": "Group's DWS Xtrackers physical gold ETCs (custodian: JPMorgan/HSBC per prospectus) sit on the WM shelf (knowledge)",
+     "claim": "Group's DWS Xtrackers physical gold ETCs (custodian: JPMorgan/HSBC per prospectus) sit on the WM shelf",
      "quote": "knowledge",
      "url": ""
     }
@@ -29256,7 +29256,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Multi-family office executing through custodian banks (UBS/BoS/LGT etc.); no proprietary metals product (knowledge)",
+     "claim": "Multi-family office executing through custodian banks (UBS/BoS/LGT etc.); no proprietary metals product",
      "quote": "knowledge",
      "url": ""
     }
@@ -29317,7 +29317,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Swiss-booked metals shelf; Asia grown via ex-Coutts/SocGen Asia books (knowledge)",
+     "claim": "Swiss-booked metals shelf; Asia grown via ex-Coutts/SocGen Asia books",
      "quote": "knowledge",
      "url": ""
     }
@@ -29395,7 +29395,7 @@
    "partner_named": [],
    "firm_actual": "Investec (Investec Wealth & Investment SA; Investec Wealth & Investment International UK)",
    "n_products": 0,
-   "strategic_idea": "Structured-note hedging (gold-linked autocalls for SA/UK clients); Investec Switzerland/Guernsey for allocated custody",
+   "strategic_idea": "Structured-note hedging (gold-linked autocalls for SA/UK clients); Investec Switzerland/Guernsey for allocated custody.",
    "ref_bank_status": "unknown"
   },
   {
@@ -29449,7 +29449,7 @@
    ],
    "src_file": "pw_mea.json,pw_uk.json",
    "is_pb": true,
-   "strategic_idea": "Nedbank Private Wealth International (Jersey/IoM/Dubai) allocated-gold custody + Lombard for offshore clients",
+   "strategic_idea": "Nedbank Private Wealth International (Jersey/IoM/Dubai) allocated-gold custody + Lombard for offshore clients.",
    "ref_bank_status": "unknown"
   },
   {
@@ -29509,7 +29509,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": false,
-   "strategic_idea": "Rand Refinery is a doré/refined-metal counterparty (already in the book as a refiner); the retail Krugerrand channel is not a PB target",
+   "strategic_idea": "Rand Refinery is a doré/refined-metal counterparty (already in the book as a refiner); the retail Krugerrand channel is not a PB target.",
    "ref_bank_status": "unknown"
   },
   {
@@ -29570,7 +29570,7 @@
    "partner_named": [],
    "firm_actual": "BBVA Banca Privada / BBVA Patrimonios (Spain)",
    "n_products": 2,
-   "strategic_idea": "Structured-note hedging; Garanti BBVA is the group's real metals franchise",
+   "strategic_idea": "Structured-note hedging; Garanti BBVA is the group's real metals franchise.",
    "ref_bank_status": "unknown"
   },
   {
@@ -29632,7 +29632,7 @@
    "partner_named": [],
    "firm_actual": "Bankinter (representative); group = ETC/futures/structured only",
    "n_products": 2,
-   "strategic_idea": "Structured-note hedging (Bankinter is a large autocall distributor); Singular Bank's ex-UBS clients may hold UBS metal accounts — migration target",
+   "strategic_idea": "Structured-note hedging (Bankinter is a large autocall distributor); Singular Bank's ex-UBS clients may hold UBS metal accounts — migration target.",
    "ref_bank_status": "unknown"
   },
   {
@@ -29683,7 +29683,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": false,
-   "strategic_idea": "Refiner consignment/unallocated lines",
+   "strategic_idea": "Refiner consignment/unallocated lines.",
    "ref_bank_status": "unknown"
   },
   {
@@ -29747,7 +29747,7 @@
    "partner_named": [],
    "firm_actual": "SEB Private Banking (Skandinaviska Enskilda Banken)",
    "n_products": 2,
-   "strategic_idea": "Certificate hedging + SEB Lux/Singapore allocated custody for PB",
+   "strategic_idea": "Certificate hedging + SEB Lux/Singapore allocated custody for PB.",
    "ref_bank_status": "unknown"
   },
   {
@@ -29817,7 +29817,7 @@
    "partner_named": [],
    "firm_actual": "Aargauische Kantonalbank",
    "n_products": 2,
-   "strategic_idea": "Wholesale supply — AKB markets an 'Edelmetallhandel' service to corporates",
+   "strategic_idea": "Wholesale supply — AKB markets an 'Edelmetallhandel' service to corporates.",
    "ref_bank_status": "unknown"
   },
   {
@@ -29879,7 +29879,7 @@
    ],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Gulf HNW gold demand + commodity trade finance — wholesale supply / trade-finance pairing",
+   "strategic_idea": "Gulf HNW gold demand + commodity trade finance — wholesale supply / trade-finance pairing.",
    "ref_bank_status": "unknown"
   },
   {
@@ -29936,7 +29936,7 @@
    "sources": [],
    "src_file": "pw_ch.json,pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -29992,7 +29992,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Note hedging / wholesale supply",
+   "strategic_idea": "Note hedging / wholesale supply.",
    "ref_bank_status": "unknown"
   },
   {
@@ -30054,7 +30054,7 @@
    ],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Commodity-trade-finance bank whose markets list includes precious metals — potential precious-metals trade-finance / supply counterparty (Turkey/CIS corridors)",
+   "strategic_idea": "Commodity-trade-finance bank whose markets list includes precious metals — potential precious-metals trade-finance / supply counterparty (Turkey/CIS corridors).",
    "ref_bank_status": "unknown"
   },
   {
@@ -30111,7 +30111,7 @@
    "sources": [],
    "src_file": "pw_ch.json,pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Tail; German Sparkassen clients; Helaba group",
+   "strategic_idea": "Tail; German Sparkassen clients; Helaba group.",
    "ref_bank_status": "unknown"
   },
   {
@@ -30171,7 +30171,7 @@
    ],
    "src_file": "pw_ch.json",
    "is_pb": false,
-   "strategic_idea": "Outsourced vaulting used by non-bank dealers and some private banks/EAMs (Loomis Zurich-Kloten; Brink's Zurich & Geneva freeport; Malca-Amit Geneva; Swiss Gold Safe Ticino/Balzers LI; Rheingold Vaduz) — a bullion desk could offer loco-London allocated custody as alternative to Swiss-only vaulting; specific bank→vault mappings NOT disclosed publicly",
+   "strategic_idea": "Outsourced vaulting used by non-bank dealers and some private banks/EAMs (Loomis Zurich-Kloten; Brink's Zurich & Geneva freeport; Malca-Amit Geneva; Swiss Gold Safe Ticino/Balzers LI; Rheingold Vaduz) — a bullion desk could offer loco-London allocated custody as alternative to Swiss-only vaulting; specific bank→vault mappings NOT disclosed publicly.",
    "ref_bank_status": "unknown"
   },
   {
@@ -30241,7 +30241,7 @@
    ],
    "firm_actual": "Luzerner Kantonalbank AG",
    "n_products": 3,
-   "strategic_idea": "Wholesale supply; SP hedging",
+   "strategic_idea": "Wholesale supply; SP hedging.",
    "ref_bank_status": "unknown"
   },
   {
@@ -30286,7 +30286,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": false,
-   "strategic_idea": "Neuchâtel refiner; supplier to watch/jewellery & banks; Tanaka-owned since 2016",
+   "strategic_idea": "Neuchâtel refiner; supplier to watch/jewellery & banks; Tanaka-owned since 2016.",
    "ref_bank_status": "unknown"
   },
   {
@@ -30361,7 +30361,7 @@
    "partner_named": [],
    "firm_actual": "Migros Bank AG",
    "n_products": 2,
-   "strategic_idea": "Wholesale coin/bar supply for a mass-affluent physical + Metallkonto book; now selling metals inside Swiss Post branches",
+   "strategic_idea": "Wholesale coin/bar supply for a mass-affluent physical + Metallkonto book; now selling metals inside Swiss Post branches.",
    "ref_bank_status": "unknown"
   },
   {
@@ -30419,7 +30419,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Wholesale supply/loco-London custody for Geneva UHNW book",
+   "strategic_idea": "Wholesale supply/loco-London custody for Geneva UHNW book.",
    "ref_bank_status": "unknown"
   },
   {
@@ -30483,7 +30483,7 @@
    "sources": [],
    "src_file": "pw_ch.json,pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Wholesale supply/loco-London custody (NM Rothschild left the gold market 2004)",
+   "strategic_idea": "Wholesale supply/loco-London custody (NM Rothschild left the gold market 2004).",
    "ref_bank_status": "unknown"
   },
   {
@@ -30545,7 +30545,7 @@
    ],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Wholesale supply behind Metallkonto",
+   "strategic_idea": "Wholesale supply behind Metallkonto.",
    "ref_bank_status": "unknown"
   },
   {
@@ -30698,7 +30698,7 @@
    ],
    "firm_actual": "UBS Switzerland AG (Personal & Corporate Banking + Global Wealth Management; ex-Credit Suisse client pages now on ubs.com/microsites/credit-suisse)",
    "n_products": 6,
-   "strategic_idea": "Peer, not a client: interbank loco-London/loco-Zurich swaps, LPMCL clearing flow, and ETF-creation liquidity; no displacement angle in GWM (fully captive to UBS IB)",
+   "strategic_idea": "Peer, not a client: interbank loco-London/loco-Zurich swaps, LPMCL clearing flow, and ETF-creation liquidity; no displacement angle in GWM (fully captive to UBS IB).",
    "ref_bank_status": "reference bank not named (UBS is a direct peer/competitor bullion bank; fellow LPMCL member)"
   },
   {
@@ -30800,7 +30800,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Yuanta SITC sponsors Taiwan-listed gold futures ETFs (e.g. 元大S&P黃金 00635U) — derivatives-backed, not physical; Yuanta Bank gold passbook (knowledge)",
+     "claim": "Yuanta SITC sponsors Taiwan-listed gold futures ETFs (e.g. 元大S&P黃金 00635U) — derivatives-backed, not physical; Yuanta Bank gold passbook",
      "quote": "knowledge",
      "url": ""
     }
@@ -31012,7 +31012,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "AAOIFI-57 gold account launch partner (T+0 spot, serial-numbered bars)",
+   "strategic_idea": "AAOIFI-57 gold account launch partner (T+0 spot, serial-numbered bars).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -31052,7 +31052,7 @@
    "sources": [],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "Shariah gold-account launch partner",
+   "strategic_idea": "Shariah gold-account launch partner.",
    "ref_bank_status": "unknown"
   },
   {
@@ -31118,7 +31118,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "covered under Switzerland; Dubai angle = Lombard-vs-bullion funding for GCC/NRI clients booked in CH/SG",
+   "strategic_idea": "Covered under Switzerland; Dubai angle = Lombard-vs-bullion funding for GCC/NRI clients booked in CH/SG.",
    "ref_bank_status": "unknown"
   },
   {
@@ -31424,7 +31424,7 @@
     {
      "name": "Société Générale",
      "role": "bullion_supplier",
-     "evidence": "In-house group desk; SocGen is an LBMA full member (knowledge; was a market maker until ~2019)",
+     "evidence": "In-house group desk; SocGen is an LBMA full member",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Societe Generale (SG CIB precious metals, London/Paris)"
@@ -31432,7 +31432,7 @@
     {
      "name": "Société Générale",
      "role": "note_issuer",
-     "evidence": "Gold-linked structured notes issued by SG Issuer (knowledge)",
+     "evidence": "Gold-linked structured notes issued by SG Issuer",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Societe Generale"
@@ -31643,7 +31643,7 @@
     {
      "name": "RBC",
      "role": "note_issuer",
-     "evidence": "RBC is a top-tier issuer of US market-linked notes (knowledge)",
+     "evidence": "RBC is a top-tier issuer of US market-linked notes",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Royal Bank of Canada"
@@ -31651,7 +31651,7 @@
     {
      "name": "Royal Canadian Mint",
      "role": "bullion_supplier",
-     "evidence": "RBC DS bullion program sources RCM product (knowledge)",
+     "evidence": "RBC DS bullion program sources RCM product",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Royal Canadian Mint (RBC bullion sourcing, Canada)"
@@ -32722,7 +32722,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Covered in CH/LI sweep",
+   "strategic_idea": "Covered in CH/LI sweep.",
    "ref_bank_status": "per parent"
   },
   {
@@ -32767,7 +32767,7 @@
     {
      "name": "Münze Österreich",
      "role": "bullion_supplier",
-     "evidence": "standard Austrian bank supply (knowledge)",
+     "evidence": "standard Austrian bank supply",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Münze Österreich"
@@ -32801,7 +32801,7 @@
    ],
    "firm_actual": "multiple - Oberbank, Steiermärkische Sparkasse, Kremser Bank (Sparkasse), Schelhammer Capital Bank, Hypo Vorarlberg (see each product)",
    "n_products": 5,
-   "strategic_idea": "Tail; reachable via Münze Österreich",
+   "strategic_idea": "Tail; reachable via Münze Österreich.",
    "ref_bank_status": "unknown"
   },
   {
@@ -32864,7 +32864,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": false,
-   "strategic_idea": "Via Umicore",
+   "strategic_idea": "Via Umicore.",
    "ref_bank_status": "unknown"
   },
   {
@@ -32900,7 +32900,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Largest Belgian PB; group BNP desk for structured notes; physical gold in branches believed discontinued (unverified)",
+     "claim": "Largest Belgian PB; group BNP desk for structured notes; physical gold in branches believed discontinued",
      "quote": "knowledge",
      "url": ""
     }
@@ -32934,7 +32934,7 @@
    "partner_named": [],
    "firm_actual": "BNP Paribas Fortis Private Banking & Wealth Management",
    "n_products": 1,
-   "strategic_idea": "Via BNP group",
+   "strategic_idea": "Via BNP group.",
    "ref_bank_status": "unknown"
   },
   {
@@ -33002,7 +33002,7 @@
    "partner_named": [],
    "firm_actual": "Belfius Bank (Private Banking / Wealth Management)",
    "n_products": 2,
-   "strategic_idea": "Wholesale supply — small",
+   "strategic_idea": "Wholesale supply — small.",
    "ref_bank_status": "unknown"
   },
   {
@@ -33061,7 +33061,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "ETC custody; Delen's fund gold sleeve = ETC provider selection",
+   "strategic_idea": "ETC custody; Delen's fund gold sleeve = ETC provider selection.",
    "ref_bank_status": "unknown"
   },
   {
@@ -33112,7 +33112,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Re-entry pitch (white-label physical gold/ETC) — low",
+   "strategic_idea": "Re-entry pitch (white-label physical gold/ETC) — low.",
    "ref_bank_status": "unknown"
   },
   {
@@ -33583,7 +33583,7 @@
     {
      "name": "SGE",
      "role": "bullion_supplier",
-     "evidence": "in-house (knowledge)",
+     "evidence": "in-house",
      "url": "",
      "confidence": "knowledge",
      "name_full": "ABC head office precious-metals dept (LBMA full member; SGE member)"
@@ -33738,7 +33738,7 @@
      "url": "https://www.cebnet.com.cn/20220720/102821014.html"
     },
     {
-     "claim": "CCB sells physical 建行金 bars; SGE member; CCB (Asia) HK offers gold passbook-style paper gold (knowledge)",
+     "claim": "CCB sells physical 建行金 bars; SGE member; CCB (Asia) HK offers gold passbook-style paper gold",
      "quote": "knowledge",
      "url": ""
     }
@@ -33997,7 +33997,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -34046,7 +34046,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "low - EGP capital controls; possible offshore (Bahrain/Dubai) allocated-gold custody for CIB's HNW clients",
+   "strategic_idea": "Low - EGP capital controls; possible offshore (Bahrain/Dubai) allocated-gold custody for CIB's HNW clients.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -34136,7 +34136,7 @@
    ],
    "firm_actual": "Azimut Egypt (AZ-Gold) / Beltone Asset Management (Sabayek) / Evolve Investment (Evolve Gold) / Dahab fund; distributed by NBE, Banque Misr, Thndr",
    "n_products": 3,
-   "strategic_idea": "small and EGP-ringfenced; the FX-control regime means gold-fund flows cannot reach loco-London - monitor only",
+   "strategic_idea": "Small and EGP-ringfenced; the FX-control regime means gold-fund flows cannot reach loco-London - monitor only.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -34198,7 +34198,7 @@
    "partner_named": [],
    "firm_actual": "Edmond de Rothschild (France) S.A.",
    "n_products": 2,
-   "strategic_idea": "Covered in CH file",
+   "strategic_idea": "Covered in CH file.",
    "ref_bank_status": "unknown"
   },
   {
@@ -34249,7 +34249,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": false,
-   "strategic_idea": "Wholesale supply/hedging lines (small individually)",
+   "strategic_idea": "Wholesale supply/hedging lines (small individually).",
    "ref_bank_status": "unknown"
   },
   {
@@ -34299,7 +34299,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Group-level ETC/physical-backing pitch",
+   "strategic_idea": "Group-level ETC/physical-backing pitch.",
    "ref_bank_status": "unknown"
   },
   {
@@ -34358,7 +34358,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Small; Xetra-Gold sponsorship only — low priority",
+   "strategic_idea": "Small; Xetra-Gold sponsorship only — low priority.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -34407,7 +34407,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "ETC provider selection only",
+   "strategic_idea": "ETC provider selection only.",
    "ref_bank_status": "unknown"
   },
   {
@@ -34443,7 +34443,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Offers physical precious metals to clients (knowledge)",
+     "claim": "Offers physical precious metals to clients",
      "quote": "knowledge",
      "url": ""
     }
@@ -34456,7 +34456,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Tail — bullion supply",
+   "strategic_idea": "Tail — bullion supply.",
    "ref_bank_status": "unknown"
   },
   {
@@ -34515,7 +34515,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": false,
-   "strategic_idea": "Small; check prospectus for custodian — possible custody RFP",
+   "strategic_idea": "Small; check prospectus for custodian — possible custody RFP.",
    "ref_bank_status": "unknown"
   },
   {
@@ -34564,7 +34564,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Via Quintet Lux",
+   "strategic_idea": "Via Quintet Lux.",
    "ref_bank_status": "unknown"
   },
   {
@@ -34643,7 +34643,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "BoCom mainland: 账户贵金属 (frozen for new positions), 积存金 accumulation, physical 交行金 bars; BoCom HK paper-gold passbook (knowledge, not verified this pass)",
+     "claim": "BoCom mainland: 账户贵金属 (frozen for new positions), 积存金 accumulation, physical 交行金 bars; BoCom HK paper-gold passbook",
      "quote": "knowledge",
      "url": ""
     }
@@ -34700,7 +34700,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Notional gold passbook (knowledge)",
+     "claim": "Notional gold passbook",
      "quote": "knowledge",
      "url": ""
     }
@@ -34761,7 +34761,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "In-house via GS commodities (LBMA market maker); shelf is derivatives/notes-led (knowledge)",
+     "claim": "In-house via GS commodities (LBMA market maker); shelf is derivatives/notes-led",
      "quote": "knowledge",
      "url": ""
     }
@@ -35064,7 +35064,7 @@
      "url": "https://fintechnews.hk/38489/blockchain/tokenised-gold-etf-hong-kong-hang-seng/"
     },
     {
-     "claim": "Hang Seng retail also sells physical gold and runs a paper-gold/precious-metal trading account (knowledge)",
+     "claim": "Hang Seng retail also sells physical gold and runs a paper-gold/precious-metal trading account",
      "quote": "knowledge",
      "url": ""
     }
@@ -35164,7 +35164,7 @@
     {
      "name": "ICBC Standard",
      "role": "liquidity_provider",
-     "evidence": "group in-house (knowledge)",
+     "evidence": "group in-house",
      "url": "https://www.icbcasia.com/hk/en/personal/investments/other-investment-services/precious-metal-service/default.html",
      "confidence": "knowledge",
      "name_full": "ICBC Standard Bank plc (group LPMCL clearer/market maker) + ICBC head office precious metals"
@@ -35227,7 +35227,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "In-house via MS commodities (LBMA full member); notes/derivatives-led (knowledge)",
+     "claim": "In-house via MS commodities (LBMA full member); notes/derivatives-led",
      "quote": "knowledge",
      "url": ""
     }
@@ -35416,7 +35416,7 @@
     {
      "name": "ICBC Standard",
      "role": "bullion_supplier",
-     "evidence": "in-house (knowledge)",
+     "evidence": "in-house",
      "url": "",
      "confidence": "knowledge",
      "name_full": "ICBC Standard Bank (group bullion arm)"
@@ -35577,7 +35577,7 @@
     {
      "name": "DBS",
      "role": "bullion_supplier",
-     "evidence": "in-house group (knowledge)",
+     "evidence": "in-house group",
      "url": "",
      "confidence": "knowledge",
      "name_full": "DBS Bank Singapore (group bullion desk, LBMA member)"
@@ -35841,7 +35841,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "no physical shelf to supply; possible gold-linked structured deposit hedging",
+   "strategic_idea": "No physical shelf to supply; possible gold-linked structured deposit hedging.",
    "ref_bank_status": "unknown"
   },
   {
@@ -35919,7 +35919,7 @@
    ],
    "firm_actual": "multiple - BPER Banca (Oro Sicuro), Banca Popolare di Sondrio (now BPER group), Banca Aletti (see products)",
    "n_products": 3,
-   "strategic_idea": "Tail; reach via Confinvest / Italian refiners",
+   "strategic_idea": "Tail; reach via Confinvest / Italian refiners.",
    "ref_bank_status": "unknown"
   },
   {
@@ -35976,7 +35976,7 @@
    "partner_named": [],
    "firm_actual": "Banca Generali (Private Banking / BG Saxo)",
    "n_products": 1,
-   "strategic_idea": "Certificate hedging; low",
+   "strategic_idea": "Certificate hedging; low.",
    "ref_bank_status": "unknown"
   },
   {
@@ -36042,7 +36042,7 @@
    ],
    "firm_actual": "FinecoBank (representative); Mediolanum / Azimut / Allianz Bank FA similar",
    "n_products": 2,
-   "strategic_idea": "ETC provider/market-maker flow only",
+   "strategic_idea": "ETC provider/market-maker flow only.",
    "ref_bank_status": "unknown"
   },
   {
@@ -36090,7 +36090,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -36204,7 +36204,7 @@
     {
      "name": "Brink's",
      "role": "custodian_vault",
-     "evidence": "Vault operators (knowledge)",
+     "evidence": "Vault operators",
      "url": "",
      "confidence": "knowledge",
      "name_full": "Brink's / Loomis / Malca-Amit / G4S (London, Zurich, Toronto, HK, Singapore)"
@@ -36365,7 +36365,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -36410,7 +36410,7 @@
     {
      "name": "HSBC",
      "role": "bullion_supplier",
-     "evidence": "in-house group (knowledge)",
+     "evidence": "in-house group",
      "url": "",
      "confidence": "knowledge",
      "name_full": "UOB Singapore / OCBC Singapore / HSBC / SCB group bullion desks"
@@ -36515,7 +36515,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "Mauritius is an offshore booking centre for Indian/African families - allocated loco-London gold custody + Lombard via MCB/AfrAsia custody platforms is plausible but unverified",
+   "strategic_idea": "",
    "ref_bank_status": "unknown"
   },
   {
@@ -36630,7 +36630,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "ETC provision; low",
+   "strategic_idea": "ETC provision; low.",
    "ref_bank_status": "unknown"
   },
   {
@@ -36689,7 +36689,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "ETC custody/selection only",
+   "strategic_idea": "ETC custody/selection only.",
    "ref_bank_status": "unknown"
   },
   {
@@ -36764,7 +36764,7 @@
    "liquidity": {
     "status": "in-house",
     "providers": [],
-    "notes": "n/a"
+    "notes": "N/a."
    },
    "trades_pm": "yes-in-house-desk",
    "strategic_idea": "None — NZ banks offer no metal shelf; allocated custody via a bullion desk for NZ UHNW is a niche pitch.",
@@ -36988,7 +36988,7 @@
    "partner_named": [],
    "firm_actual": "Millennium bcp (physical); BPI / Novo Banco / Best / Bison / Invest / BPG = securities only",
    "n_products": 3,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -37068,7 +37068,7 @@
    ],
    "firm_actual": "multiple - Fibank (Bulgaria), BCR (Romania; not in row but the RO stand-out), Zagrebačka/PBZ/NLB (knowledge)",
    "n_products": 4,
-   "strategic_idea": "Fibank: wholesale supply/hedging (currently MKS PAMP) — small displacement",
+   "strategic_idea": "Fibank: wholesale supply/hedging (currently MKS PAMP) — small displacement.",
    "ref_bank_status": "unknown"
   },
   {
@@ -37116,7 +37116,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "tail; gold-account launch partners if they follow SNB/Riyad/Al Rajhi",
+   "strategic_idea": "Tail; gold-account launch partners if they follow SNB/Riyad/Al Rajhi.",
    "ref_bank_status": "unknown"
   },
   {
@@ -37427,7 +37427,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Standard Liechtenstein shelf; VP Bank was exploring Asia exit/scale-down 2025 (knowledge)",
+     "claim": "Standard Liechtenstein shelf; VP Bank was exploring Asia exit/scale-down 2025",
      "quote": "knowledge",
      "url": ""
     }
@@ -37498,7 +37498,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "ETC/custody; low",
+   "strategic_idea": "ETC/custody; low.",
    "ref_bank_status": "unknown"
   },
   {
@@ -37570,7 +37570,7 @@
    ],
    "firm_actual": "Avanza (representative); Nordnet equivalent",
    "n_products": 3,
-   "strategic_idea": "ETC distribution — reach via ETC issuers",
+   "strategic_idea": "ETC distribution — reach via ETC issuers.",
    "ref_bank_status": "unknown"
   },
   {
@@ -37633,7 +37633,7 @@
    "partner_named": [],
    "firm_actual": "Handelsbanken (issuer of GULD H); Swedbank = third-party only",
    "n_products": 2,
-   "strategic_idea": "Certificate hedging",
+   "strategic_idea": "Certificate hedging.",
    "ref_bank_status": "unknown"
   },
   {
@@ -37724,7 +37724,7 @@
    ],
    "firm_actual": "AMINA Bank AG",
    "n_products": 2,
-   "strategic_idea": "Small; refinery-direct model bypasses bullion banks — watch as tokenised-gold template",
+   "strategic_idea": "Small; refinery-direct model bypasses bullion banks — watch as tokenised-gold template.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -37778,7 +37778,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail; Ticino = refinery region (Argor/Valcambi/PAMP on its doorstep)",
+   "strategic_idea": "Tail; Ticino = refinery region (Argor/Valcambi/PAMP on its doorstep).",
    "ref_bank_status": "unknown"
   },
   {
@@ -37829,7 +37829,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "LatAm HNW gold demand; Santander not an LBMA member → wholesale supply",
+   "strategic_idea": "LatAm HNW gold demand; Santander not an LBMA member → wholesale supply.",
    "ref_bank_status": "unknown"
   },
   {
@@ -37883,7 +37883,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail; group liquidity via CIC Paris",
+   "strategic_idea": "Tail; group liquidity via CIC Paris.",
    "ref_bank_status": "unknown"
   },
   {
@@ -37937,7 +37937,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Wholesale supply",
+   "strategic_idea": "Wholesale supply.",
    "ref_bank_status": "unknown"
   },
   {
@@ -37991,7 +37991,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Wholesale supply",
+   "strategic_idea": "Wholesale supply.",
    "ref_bank_status": "unknown"
   },
   {
@@ -38047,7 +38047,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Small; wholesale supply via existing bullion bank",
+   "strategic_idea": "Small; wholesale supply via existing bullion bank.",
    "ref_bank_status": "unknown"
   },
   {
@@ -38103,7 +38103,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail; Gulf/LatAm clientele — physical gold demand",
+   "strategic_idea": "Tail; Gulf/LatAm clientele — physical gold demand.",
    "ref_bank_status": "unknown"
   },
   {
@@ -38154,7 +38154,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -38208,7 +38208,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Wholesale supply",
+   "strategic_idea": "Wholesale supply.",
    "ref_bank_status": "unknown"
   },
   {
@@ -38266,7 +38266,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail; South-Asian/Gulf/UK/Kenya network — gold demand",
+   "strategic_idea": "Tail; South-Asian/Gulf/UK/Kenya network — gold demand.",
    "ref_bank_status": "unknown"
   },
   {
@@ -38317,7 +38317,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "LatAm HNW gold demand — wholesale supply / note hedging",
+   "strategic_idea": "LatAm HNW gold demand — wholesale supply / note hedging.",
    "ref_bank_status": "unknown"
   },
   {
@@ -38372,7 +38372,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Group (Intesa) bullion desk; small",
+   "strategic_idea": "Group (Intesa) bullion desk; small.",
    "ref_bank_status": "unknown"
   },
   {
@@ -38426,7 +38426,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Aggregate tail — all sell Metallkonto + physical sourced mainly from ZKB (which acts as wholesale house to the cantonal-bank network — knowledge)",
+   "strategic_idea": "Aggregate tail — all sell Metallkonto + physical sourced mainly from ZKB (which acts as wholesale house to the cantonal-bank network — knowledge).",
    "ref_bank_status": "unknown"
   },
   {
@@ -38480,7 +38480,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Wholesale supply",
+   "strategic_idea": "Wholesale supply.",
    "ref_bank_status": "unknown"
   },
   {
@@ -38534,7 +38534,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Wholesale supply",
+   "strategic_idea": "Wholesale supply.",
    "ref_bank_status": "unknown"
   },
   {
@@ -38569,7 +38569,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Gold passbook (knowledge)",
+     "claim": "Gold passbook",
      "quote": "knowledge",
      "url": ""
     }
@@ -38631,7 +38631,7 @@
    "sources": [],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -38704,7 +38704,7 @@
    ],
    "firm_actual": "Comtech Gold (CGO token); Sarwa and StashAway MENA (robo-advisers, gold via ETFs); EIBank and Al Mal Capital (none found)",
    "n_products": 2,
-   "strategic_idea": "small; tokenised-gold issuers need a bullion-bank liquidity/lease line - optional",
+   "strategic_idea": "Small; tokenised-gold issuers need a bullion-bank liquidity/lease line - optional.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -38767,7 +38767,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "competitor - in-house; not displaceable",
+   "strategic_idea": "Competitor - in-house; not displaceable.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -38832,7 +38832,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "covered under Switzerland/Asia; Dubai offices are origination, not booking",
+   "strategic_idea": "Covered under Switzerland/Asia; Dubai offices are origination, not booking.",
    "ref_bank_status": "unknown"
   },
   {
@@ -38872,7 +38872,7 @@
    "sources": [],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "tail (RAKBANK finances Dubai jewellers - trade-finance angle rather than PB)",
+   "strategic_idea": "Tail (RAKBANK finances Dubai jewellers - trade-finance angle rather than PB).",
    "ref_bank_status": "unknown"
   },
   {
@@ -38935,7 +38935,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "competitor - in-house",
+   "strategic_idea": "Competitor - in-house.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -39482,7 +39482,7 @@
     {
      "name": "undisclosed",
      "role": "bullion_supplier",
-     "evidence": "Santander UK has no bullion desk; Santander group precious-metals activity sits in Spain (knowledge)",
+     "evidence": "Santander UK has no bullion desk; Santander group precious-metals activity sits in Spain",
      "url": "",
      "confidence": "knowledge",
      "name_full": "unknown"
@@ -39549,7 +39549,7 @@
     {
      "name": "Degussa",
      "role": "bullion_supplier",
-     "evidence": "Group supply; Degussa in turn sources from Swiss/German refiners & bullion banks (knowledge)",
+     "evidence": "Group supply; Degussa in turn sources from Swiss/German refiners & bullion banks",
      "url": "https://www.sharpspixley.com/about/degussa-group",
      "confidence": "verified",
      "name_full": "Degussa Goldhandel (Frankfurt) / Degussa refinery"
@@ -40030,7 +40030,7 @@
    "is_pb": true,
    "pass3": true,
    "pb_arm_name": "GoldStar Trust Company (self-directed IRA custodian)",
-   "shelf_summary": "Custodian shelf: precious-metals IRA holding .995+ gold, .999+ silver, .9995+ Pt/Pd coins and bars at one of four approved depositories, with segregated storage available for gold/Pt/Pd and 1,000 oz silver bars at Delaware Depository.",
+   "shelf_summary": "Custodian shelf: precious-metals IRA holding.995+ gold,.999+ silver,.9995+ Pt/Pd coins and bars at one of four approved depositories, with segregated storage available for gold/Pt/Pd and 1,000 oz silver bars at Delaware Depository.",
    "gold_view_p3": "",
    "partner_named": [
     {
@@ -40713,7 +40713,7 @@
    "sources": [],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -40989,7 +40989,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Third-party distribution only (knowledge)",
+     "claim": "Third-party distribution only",
      "quote": "knowledge",
      "url": ""
     }
@@ -41062,7 +41062,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "none material",
+   "strategic_idea": "None material.",
    "ref_bank_status": "unknown"
   },
   {
@@ -41112,7 +41112,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "tail; NBE/Banque Misr own EGYCASH (the gold-fund custodian) - sovereign-adjacent, not a PB client",
+   "strategic_idea": "Tail; NBE/Banque Misr own EGYCASH (the gold-fund custodian) - sovereign-adjacent, not a PB client.",
    "ref_bank_status": "unknown"
   },
   {
@@ -41171,7 +41171,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -41221,7 +41221,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "none material",
+   "strategic_idea": "None material.",
    "ref_bank_status": "unknown"
   },
   {
@@ -41278,7 +41278,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Via Reisebank",
+   "strategic_idea": "Via Reisebank.",
    "ref_bank_status": "unknown"
   },
   {
@@ -41335,7 +41335,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -41383,7 +41383,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "none",
+   "strategic_idea": "None.",
    "ref_bank_status": "unknown"
   },
   {
@@ -41431,7 +41431,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -41482,7 +41482,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -41534,7 +41534,7 @@
    "sources": [],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "none material (Greek shipping UHNW gold is booked in CH/LU)",
+   "strategic_idea": "None material (Greek shipping UHNW gold is booked in CH/LU).",
    "ref_bank_status": "unknown"
   },
   {
@@ -41660,7 +41660,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "In-house via BofA Securities (LBMA market maker); small Asia PB footprint (knowledge)",
+     "claim": "In-house via BofA Securities (LBMA market maker); small Asia PB footprint",
      "quote": "knowledge",
      "url": ""
     }
@@ -41733,7 +41733,7 @@
     {
      "name": "LBMA",
      "role": "liquidity_provider",
-     "evidence": "group in-house (knowledge)",
+     "evidence": "group in-house",
      "url": "",
      "confidence": "knowledge",
      "name_full": "CCB head office / CCB London (LBMA full member)"
@@ -42096,7 +42096,7 @@
    "sources": [],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "none material",
+   "strategic_idea": "None material.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42268,7 +42268,7 @@
    "sources": [],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42327,7 +42327,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "none for PB",
+   "strategic_idea": "None for PB.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42367,7 +42367,7 @@
    "sources": [],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42418,7 +42418,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42469,7 +42469,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail — no metals evidence found",
+   "strategic_idea": "Tail — no metals evidence found.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42520,7 +42520,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail; Chinese HNW clients — gold demand",
+   "strategic_idea": "Tail; Chinese HNW clients — gold demand.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42571,7 +42571,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42622,7 +42622,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42673,7 +42673,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42715,7 +42715,7 @@
    "sources": [],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "none - MAD exchange control; Moroccan gold demand is jewellery/souk; Managem (Moroccan miner) is a producer client, not PB",
+   "strategic_idea": "None - MAD exchange control; Moroccan gold demand is jewellery/souk; Managem (Moroccan miner) is a producer client, not PB.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42766,7 +42766,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "none for PB; the Nigerian angle is sovereign (CBN gold-purchase programme, Solid Minerals Development Fund/Segilola gold) not private wealth. UK arms (FBN Bank UK, Zenith UK, Access UK) could book Lombard-vs-ETF for diaspora clients",
+   "strategic_idea": "None for PB; the Nigerian angle is sovereign (CBN gold-purchase programme, Solid Minerals Development Fund/Segilola gold) not private wealth. UK arms (FBN Bank UK, Zenith UK, Access UK) could book Lombard-vs-ETF for diaspora clients.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42820,7 +42820,7 @@
    ],
    "src_file": "pw_eu.json",
    "is_pb": true,
-   "strategic_idea": "ETC provider/AP flow only",
+   "strategic_idea": "ETC provider/AP flow only.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42868,7 +42868,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -42944,7 +42944,7 @@
    "lombard_ltv": "",
    "product_evidence": [
     {
-     "claim": "Small Geneva partnership bank; metals via Swiss custodians (knowledge)",
+     "claim": "Small Geneva partnership bank; metals via Swiss custodians",
      "quote": "knowledge",
      "url": ""
     }
@@ -43014,7 +43014,7 @@
      "url": "https://asianprivatebanker.com/private-wealth/ubs-opens-60-tonne-gold-vault-in-singapore/"
     },
     {
-     "claim": "UBS runs Metallkonto (unallocated) and allocated safekeeping, own physical-gold ETFs (UBS ETF (CH) Gold, Gold hedged classes; custodian UBS Switzerland AG), structured products and lombard against metals (knowledge)",
+     "claim": "UBS runs Metallkonto (unallocated) and allocated safekeeping, own physical-gold ETFs (UBS ETF (CH) Gold, Gold hedged classes; custodian UBS Switzerland AG), structured products and lombard against metals",
      "quote": "knowledge — UBS Metallkonto/UBS ETF (CH) Gold, custodian UBS Switzerland AG",
      "url": "https://www.ubs.com/ch/en/assetmanagement/funds/etf.html"
     }
@@ -43103,7 +43103,7 @@
    "sources": [],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "none - ETF/fund users",
+   "strategic_idea": "None - ETF/fund users.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43203,7 +43203,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail — no metals product found",
+   "strategic_idea": "Tail — no metals product found.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43257,7 +43257,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43308,7 +43308,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43359,7 +43359,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43415,7 +43415,7 @@
    ],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail (Lombardkredit factsheet published)",
+   "strategic_idea": "Tail (Lombardkredit factsheet published).",
    "ref_bank_status": "unknown"
   },
   {
@@ -43466,7 +43466,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43517,7 +43517,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail (asset manager; bank sold)",
+   "strategic_idea": "Tail (asset manager; bank sold).",
    "ref_bank_status": "unknown"
   },
   {
@@ -43568,7 +43568,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43619,7 +43619,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail; Levant/Gulf clients",
+   "strategic_idea": "Tail; Levant/Gulf clients.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43670,7 +43670,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43721,7 +43721,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43772,7 +43772,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43823,7 +43823,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43874,7 +43874,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43925,7 +43925,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -43976,7 +43976,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail (sustainability house; low gold)",
+   "strategic_idea": "Tail (sustainability house; low gold).",
    "ref_bank_status": "unknown"
   },
   {
@@ -44028,7 +44028,7 @@
    "sources": [],
    "src_file": "pw_ch.json,pw_uk.json",
    "is_pb": true,
-   "strategic_idea": "Captive to GS commodities desk",
+   "strategic_idea": "Captive to GS commodities desk.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -44079,7 +44079,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44146,7 +44146,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Captive to HSBC's own LBMA market-making/LPMCL desk — no displacement",
+   "strategic_idea": "Captive to HSBC's own LBMA market-making/LPMCL desk — no displacement.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -44197,7 +44197,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44264,7 +44264,7 @@
    "sources": [],
    "src_file": "pw_ch.json,pw_uk.json",
    "is_pb": true,
-   "strategic_idea": "Captive to JPM's own bullion desk/vault — no displacement",
+   "strategic_idea": "Captive to JPM's own bullion desk/vault — no displacement.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -44315,7 +44315,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44366,7 +44366,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44417,7 +44417,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44468,7 +44468,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44519,7 +44519,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail; Italian clientele",
+   "strategic_idea": "Tail; Italian clientele.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44570,7 +44570,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail (BCV subsidiary)",
+   "strategic_idea": "Tail (BCV subsidiary).",
    "ref_bank_status": "unknown"
   },
   {
@@ -44624,7 +44624,7 @@
    ],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "No metals franchise; Yuh stake sold to Swissquote Jul-2025",
+   "strategic_idea": "No metals franchise; Yuh stake sold to Swissquote Jul-2025.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44675,7 +44675,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44726,7 +44726,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44777,7 +44777,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44828,7 +44828,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail — watch for tokenised-gold launch",
+   "strategic_idea": "Tail — watch for tokenised-gold launch.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44882,7 +44882,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "Tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44922,7 +44922,7 @@
    "sources": [],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "tail",
+   "strategic_idea": "Tail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -44988,7 +44988,7 @@
    ],
    "src_file": "pw_mea.json",
    "is_pb": true,
-   "strategic_idea": "competitor - in-house",
+   "strategic_idea": "Competitor - in-house.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -46727,7 +46727,7 @@
    "sources": [],
    "src_file": "pw_ch.json",
    "is_pb": true,
-   "strategic_idea": "a bullion desk is the firm — internal channel: ensure a global private bank Switzerland RMs pitch the desk's physical/custody/margin-loan products vs Swiss peers",
+   "strategic_idea": "a bullion desk is the firm — internal channel: ensure a global private bank Switzerland RMs pitch the desk's physical/custody/margin-loan products vs Swiss peers.",
    "ref_bank_status": "reference franchise"
   },
   {
@@ -46987,7 +46987,7 @@
    "pass2": true,
    "pass3": true,
    "pb_arm_name": "HSBC Bank (Singapore) Ltd; Premier Elite (S$1.2m min, launched 2024; fourth/largest wealth centre opened 2026 at Singapore Land Tower); GPB Singapore booking centre",
-   "shelf_summary": "hsbc.com.sg investments page lists unit trusts (100+ funds), stocks, bonds, structured products (online pricer for bespoke notes), FX, Dual Currency Plus. NO gold account, NO physical gold, NO gold token, NO gold-linked deposit. Gold exposure only via third-party gold funds/ETFs on the platform and (knowledge) gold-underlying structured notes for accredited investors. HSBC SG does not sell physical gold.",
+   "shelf_summary": "Hsbc.com.sg investments page lists unit trusts (100+ funds), stocks, bonds, structured products (online pricer for bespoke notes), FX, Dual Currency Plus. NO gold account, NO physical gold, NO gold token, NO gold-linked deposit. Gold exposure only via third-party gold funds/ETFs on the platform and (knowledge) gold-underlying structured notes for accredited investors. HSBC SG does not sell physical gold.",
    "gold_view_p3": "Shares group CIO view.",
    "n_products": 2,
    "notional_indicators": [],

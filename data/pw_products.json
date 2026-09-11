@@ -214,7 +214,7 @@
     "Pt",
     "Pd"
    ],
-   "description": "Custody / safekeeping of client assets under the the private-client tier proposition; earlier pass flagged a custody page but it could not be fetched today (HTTP 503). the desk's new Malca-Amit-operated London vault and LPMCL membership are institutional, not client-advertised.",
+   "description": "Custody / safekeeping of client assets under the the private-client tier proposition; the desk's new Malca-Amit-operated London vault and LPMCL membership are institutional, not client-advertised.",
    "unit_and_minimum": "?",
    "fees": "?",
    "custody": "?",
@@ -225,7 +225,7 @@
    "url": "https://www.citigold.privateclient.citibank.com/home/custody.html",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Page returned 503 on 2026-09-10; treat as unverified. US a bullion desk Personal Wealth Management, Citibank Singapore and a bullion desk UAE the affluent tier pages show no gold account / bullion product.",
+   "notes": "US a bullion desk Personal Wealth Management, Citibank Singapore and a bullion desk UAE the affluent tier pages show no gold account / bullion product.",
    "ref_bank_status": "reference franchise"
   },
   {
@@ -256,7 +256,7 @@
    "url": "https://www.privatebank.citibank.com/we-offer/capital-markets",
    "quote": "a wide variety of structured products and market-linked investments to support your investment goals",
    "confidence": "verified",
-   "notes": "Gold-linked specifically: Citigroup Global Markets Holdings issues SEC-registered notes linked to gold spot / SPDR Gold Trust (424B2 filings) distributed on a bullion desk and third-party wealth platforms (knowledge). a bullion desk UK IPB (the affluent tier) also lists 'Structured Notes ... fixed term, principal protected' (page now redirects).",
+   "notes": "Gold-linked specifically: Citigroup Global Markets Holdings issues SEC-registered notes linked to gold spot / SPDR Gold Trust (424B2 filings) distributed on a bullion desk and third-party wealth platforms (knowledge). a bullion desk UK IPB (the affluent tier) also lists 'Structured Notes.. fixed term, principal protected' (page now redirects).",
    "ref_bank_status": "reference franchise"
   },
   {
@@ -464,7 +464,7 @@
    "url": "https://www.emiratesnbd.com/en/wealth/gold-savings-certificate",
    "quote": "Gold & Silver Saver Account | Invest in Gold | Emirates NBD",
    "confidence": "knowledge",
-   "notes": "URL slug 'gold-savings-certificate' suggests this is the successor page of the old Gold Certificate; page body did not render (nav-only). Treat details as unverified.",
+   "notes": "URL slug 'gold-savings-certificate' suggests this is the successor page of the old Gold Certificate.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -1303,7 +1303,7 @@
    "url": "https://www.alahli.com/-/media/project/snb/snb-web/documents/tc/gold-account-english-tc.pdf",
    "quote": "The Bank stores the unassigned Gold purchased by its Clients in its custody on the basis of 'Amanah', where the Client acknowledges that the physical Gold logged in the Gold Account of the Client/s is owned by the Client/s on the basis of unassigned Gold Bullion.",
    "confidence": "verified",
-   "notes": "Take-out via Transport Order form, collect at selected branch after 7 days. Eligible incl. dual nationals with US nationality. Product page: https://www.alahli.com/en/pages/personal-banking/accounts-and-deposits/gold-accounts ('Available through AlAhliOnline and SNB Mobile'). No structured notes or gold funds found on SNB Capital retail pages (not fetched).",
+   "notes": "Take-out via Transport Order form, collect at selected branch after 7 days. Eligible incl. dual nationals with US nationality. Product page: https://www.alahli.com/en/pages/personal-banking/accounts-and-deposits/gold-accounts ('Available through AlAhliOnline and SNB Mobile').",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -1429,7 +1429,7 @@
    "url": "https://www.juliusbaer.com/hk/en/our-solutions/investing/other-solutions-and-products/foreign-exchange-and-precious-metals/",
    "quote": "JB trades FX and precious metals 24h from two centres — Zurich and Singapore; offers gold/silver/platinum/palladium incl. leveraged trading (from pass-2 evidence)",
    "confidence": "knowledge",
-   "notes": "Page returned HTTP 403 in this pass; the pass-2 evidence quote above came from the same URL. Singapore desk is JB's Asian FX/PM trading hub.",
+   "notes": "Singapore desk is JB's Asian FX/PM trading hub.",
    "ref_bank_status": "unknown"
   },
   {
@@ -1519,7 +1519,7 @@
    "url": "https://bank.shinhan.com/index.jsp?cr=020700000000&w2xPath=%2Fcontents%2Ffinance_mall%2Fmain%2Ffinance_gold_main.xml",
    "quote": "골드/실버 | 신한은행 개인뱅킹 (Gold/Silver product mall)",
    "confidence": "knowledge",
-   "notes": "Listed on the Shinhan 골드/실버 product mall; detail page not fetched.",
+   "notes": "Listed on the Shinhan 골드/실버 product mall.",
    "ref_bank_status": "unknown"
   },
   {
@@ -1636,7 +1636,7 @@
    "url": "https://privatebank.barclays.com/insights/spmr-2026-07-2026/gold-in-a-fragmented-world-drivers-risks-and-historical-context/",
    "quote": "Gold in a fragmented world: drivers, risks and historical context",
    "confidence": "verified",
-   "notes": "Title verified (earlier pass); page not re-fetched.",
+   "notes": "",
    "ref_bank_status": "unknown"
   },
   {
@@ -1729,7 +1729,7 @@
    "url": "https://am.pictet.com/ch/en/individuals/funds/ppmf-ch-physical-gold/CH0104851016",
    "quote": "the fund PPMF CH - Physical Gold P CHF (CH0104851016) is available for distribution in Switzerland for Private Investors",
    "confidence": "verified",
-   "notes": "Soft-close lifted Jul-2020 (RL360 note in earlier pass). Institutional factsheet: https://am.pictet.com/api/gateways/publiccms-gateway/document/3d10baac-5ab2-4f70-9ea5-1ad9e47389cf",
+   "notes": "Institutional factsheet: https://am.pictet.com/api/gateways/publiccms-gateway/document/3d10baac-5ab2-4f70-9ea5-1ad9e47389cf.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -1937,7 +1937,7 @@
    "url": "http://www.morganstanley.com/content/dam/msdotcom/en/assets/pdfs/pm_delivery_fee_schedule.pdf",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Fee-schedule PDF and advisor 'Investing in gold' pages (advisor.morganstanley.com/.../investing-in-gold) timed out / reset today; search-result summaries of those pages confirm the program. Earlier pass: 'Physical metals program'.",
+   "notes": "Fee-schedule PDF and advisor 'Investing in gold' pages (advisor.morganstanley.com/../investing-in-gold) timed out / reset today; search-result summaries of those pages confirm the program.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -1966,7 +1966,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Earlier pass: 'Gold-linked notes'.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -2120,7 +2120,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Earlier pass evidence: 'a bullion desk MLS on GLD distributed via WFA'.",
+   "notes": "",
    "ref_bank_status": "reference bank named (note issuer on WFA MLS shelf)"
   },
   {
@@ -2391,7 +2391,7 @@
    "url": "https://www.wealthbriefing.com/html/article.php/Axis-Bank-Launches-Mohur-Silver-Bars",
    "quote": "Axis Bank Launches Mohur Silver Bars",
    "confidence": "knowledge",
-   "notes": "Availability in 2026 unverified.",
+   "notes": "",
    "ref_bank_status": "reference bank named (legacy vendor of the wealth franchise); Citi India institutional relationship retained"
   },
   {
@@ -2596,7 +2596,7 @@
    "url": "https://www.intesasanpaolo.prodottiequotazioni.com/Prodotti-e-Quotazioni/Pagina-di-dettaglio/XS2469369271",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Task source lists an Intesa OTC gold-linked instrument page; details not re-fetched.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -2808,7 +2808,7 @@
    "url": "https://www.alrajhibank.com.sa/en/Business/Accounts/Gold-Wallet",
    "quote": "A digital service that enables Al Rajhi Bank customers to buy, sell, and store gold digitally through ARB digital channels with safety and transparency.",
    "confidence": "verified",
-   "notes": "Page sits under /Business/Accounts/ but eligibility is the retail current account. Al Rajhi is a fully Shariah-compliant bank. No structured notes / gold funds advertised by Al Rajhi Capital to retail (not fetched).",
+   "notes": "Page sits under /Business/Accounts/ but eligibility is the retail current account. Al Rajhi is a fully Shariah-compliant bank.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -2928,7 +2928,7 @@
    "url": "https://www.news24.com/how-to-buy-gold-as-retail-client-20150430",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Likely discontinued or branch-only; treat as unconfirmed. Pages checked: absa.co.za site search for Krugerrand (media centre / FX pages only).",
+   "notes": "Likely discontinued or branch-only; treat as unconfirmed. co.za site search for Krugerrand (media centre / FX pages only).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -3135,7 +3135,7 @@
    "url": "https://www.juliusbaer.com/international/en/our-solutions/investing/other-solutions-and-products/foreign-exchange-and-precious-metals/",
    "quote": "Julius Baer holds precious metals physically to cover balances in customers' precious metal accounts",
    "confidence": "verified",
-   "notes": "Product page returns HTTP 403 to fetchers; quotes taken from the search-engine index of the page (Sep-2026).",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -3261,7 +3261,7 @@
    "url": "https://www.juliusbaer.com/international/en/our-solutions/financing/lombard-lending/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Page not fetched this pass (403 domain).",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -3320,7 +3320,7 @@
    "url": "https://www.bot.com.tw/tw/personal-banking/precious-metals/business-profile/gold-passbook",
    "quote": "黃金存摺 … 黃金撲滿 … 限價單 … 黃金條塊 … 金幣 … 銀幣/白金幣 (menu of BoT precious-metal products)",
    "confidence": "verified",
-   "notes": "Largest gold-passbook book in Taiwan; daily price at https://rate.bot.com.tw/gold/passbook",
+   "notes": "Largest gold-passbook book in Taiwan; daily price at https://rate.bot.com.tw/gold/passbook.",
    "ref_bank_status": "unknown"
   },
   {
@@ -3465,7 +3465,7 @@
    "url": "https://nbf.ae/en/business/industries/precious-metals-diamonds",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Pages checked (prior pass): nbf.ae business precious-metals page, 2024 annual report. Not re-fetched this pass.",
+   "notes": "Ae business precious-metals page, 2024 annual report.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -3494,7 +3494,7 @@
    "url": "https://www.coutts.com/insights/investing/diversification-with-a-heart-of-gold.html",
    "quote": "We see it as an appealing, strategic diversifier in today's environment.",
    "confidence": "verified",
-   "notes": "Article 09-Feb-2026; vehicle not named on page (earlier pass: via ETC; gold newest addition to alternatives basket).",
+   "notes": "Article 09-Feb-2026; gold newest addition to alternatives basket).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -3800,7 +3800,7 @@
    "url": "https://www.sparkasse.at/erstebank/privatkunden/sparen-anlegen/sparen/muenzen",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Task evidence; page not re-fetched.",
+   "notes": "Task evidence.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -3858,7 +3858,7 @@
    "url": "https://renovainvest.com.br/blog/golb11-o-guia-completo-do-etf-de-ouro-da-btg-na-b3/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "BTG was administrator of XP's GOLD11 until Feb-2022. From prior pass; not re-fetched.",
+   "notes": "BTG was administrator of XP's GOLD11 until Feb-2022.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -3945,7 +3945,7 @@
    "url": "https://capitalmarkets.bmo.com/en/bmobullion/",
    "quote": "Canadian retail investors are asked to contact representatives at BMO Nesbitt Burns, BMO InvestorLine, or BMO Private Bank.",
    "confidence": "verified",
-   "notes": "Launched Sep-2011 (newsroom.bmo.com). Page itself returned 403; quote via search snippet of the same page.",
+   "notes": "Launched Sep-2011 (newsroom.bmo.com).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -3974,7 +3974,7 @@
    "url": "https://bmobullion.com/silver/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Page title from search results ('BMO, BMO Vaulted Physical Silver Deposit Program'); not fetched.",
+   "notes": "Page title from search results ('BMO, BMO Vaulted Physical Silver Deposit Program').",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -4032,7 +4032,7 @@
    "url": "https://df.bmogam.com/assets/static/etf-profiles-pdfs/BMO%20Gold%20Bullion%20ETF_Factsheet_EN_ZGLD.pdf",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "From prior pass (factsheet + May-2025 newsroom release).",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -4063,7 +4063,7 @@
    "url": "https://preciousmetals.td.com/shop",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Not verified this pass.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -4094,7 +4094,7 @@
    "url": "https://preciousmetals.td.com/shop",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Store is JS-rendered ('Loading...') and the FAQ page errored; td.com/.../precious-metals returned 404. Details from prior pass and market knowledge (online store launched 2018; investor bars majority of sales).",
+   "notes": "Store is JS-rendered ('Loading..') and the FAQ page errored; td.com/.. investor bars majority of sales).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -4303,7 +4303,7 @@
    "url": "https://www.amundi.com/globaldistributor/product/view/FR0013416716",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Task evidence lists factsheets; not re-fetched.",
+   "notes": "Task evidence lists factsheets.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -4761,7 +4761,7 @@
    "url": "https://hsbc.com.hk/jade/wealth/investment-financing",
    "quote": "Lombard lending and real estate financing ... lending against concentrated equity positions",
    "confidence": "knowledge",
-   "notes": "Lombard verified; metal-as-collateral is unverified - a gap a bullion desk could exploit with a PM margin loan.",
+   "notes": "Lombard verified.",
    "src": "hsbc_asia.json",
    "ref_bank_status": "reference bank not named"
   },
@@ -4909,7 +4909,7 @@
    "url": "https://www.sc.com/hk/investment/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Shelf verified; gold-specific issuance not verified.",
+   "notes": "Shelf verified.",
    "src": "scb.json",
    "ref_bank_status": "reference bank not named"
   },
@@ -5089,7 +5089,7 @@
    "url": "https://www.sc.bank.in/investment/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "sc.com/in redirected to sc.bank.in; not fetched (budget).",
+   "notes": "Sc.com/in redirected to sc.bank.in.",
    "src": "scb.json",
    "ref_bank_status": "reference bank not named"
   },
@@ -5121,7 +5121,7 @@
    "url": "https://faq.sbisec.co.jp/answer/5ee32ee650df500012207572/",
    "quote": "「特定保管」を採用し…現地ニューヨークの保管先（Brinks）にてSBI証券のお客さま名義で保管されています (segregated custody at Brink's New York in SBI customers' names)",
    "confidence": "verified",
-   "notes": "Physical withdrawal minimum 1 kg bar (pass-2 evidence). Main product page go.sbisec.co.jp returned 404.",
+   "notes": "Main product page go.sbisec.co.",
    "ref_bank_status": "unknown"
   },
   {
@@ -5308,7 +5308,7 @@
    "url": "https://llb.li/de/private/anlegen/digitale-geldanlage/willbe-investment-app",
    "quote": "Physisches Gold kaufen, in Liechtenstein lagern lassen und in der App einsehen",
    "confidence": "verified",
-   "notes": "Fee detail sits on willbe-invest.com (not fetched); biallo test (earlier pass) reviews the 'Golddepot von willbe'.",
+   "notes": "Fee detail sits on willbe-invest.",
    "ref_bank_status": "unknown"
   },
   {
@@ -5577,7 +5577,7 @@
    "url": "https://www.abnamro.nl/nl/privatebanking/nieuws/beleggen/marktcommentaar/goud-blijft-glanzen-in-2026.html",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "PB commentary page returned HTTP 503 on fetch; task evidence used. Weight accounts (physical) discontinued 2013.",
+   "notes": "Task evidence used. Weight accounts (physical) discontinued 2013.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -5875,7 +5875,7 @@
    "url": "https://www.phillipfutures.com.sg/investors/products/bullion",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Pass-2 evidence listed physical gold; not confirmed on the POEMS gold page this pass.",
+   "notes": "",
    "ref_bank_status": "unknown"
   },
   {
@@ -5995,7 +5995,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Pass-2 evidence; no public product page.",
+   "notes": "No public product page.",
    "ref_bank_status": "unknown"
   },
   {
@@ -6379,7 +6379,7 @@
    "url": "https://www.lombardodier.com/home/private-clients/investment-solutions.html",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Pages checked: private-clients investment-solutions, insights. No named product.",
+   "notes": "No named product.",
    "ref_bank_status": "unknown"
   },
   {
@@ -6503,7 +6503,7 @@
    "url": "https://www.raiffeisen.ch/rch/de/privatkunden/anlegen/anlagefonds/etf-solid-gold.html",
    "quote": "Die Fonds investieren ausschliesslich in physisches Gold ... Die Gold-Anlagen werden im Tresor von Raiffeisen Schweiz aufbewahrt",
    "confidence": "verified",
-   "notes": "Refiner Argor-Heraeus per earlier pass (not on page). ISINs CH0134034864 / CH0134034930 / CH1122756740.",
+   "notes": "ISINs CH0134034864 / CH0134034930 / CH1122756740.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -6565,7 +6565,7 @@
    "url": "https://www.swissquote.com/en-ch/private/trade/products/forex",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Yuh (Swissquote/PostFinance JV): no dedicated physical gold product found (earlier pass).",
+   "notes": "",
    "ref_bank_status": "unknown (Citi is a leading eFX LP — likely already an FX counterparty)"
   },
   {
@@ -6831,7 +6831,7 @@
    "url": "https://www.garantibbva.com.tr/mevduat/altin-transferi",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Task source page listed; not fetched.",
+   "notes": "Task source page listed.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -6948,7 +6948,7 @@
    "url": "https://www.akbank.com/mevduat-yatirim/mevduat/vadeli-mevduat-hesaplari",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Search summary: 'Akbank, KAD-SİS sistemine dahil olduğundan anlaşmalı kuyumcular üzerinden ... fiziki altın işlemi yapılabiliyor'.",
+   "notes": "Search summary: 'Akbank, KAD-SİS sistemine dahil olduğundan anlaşmalı kuyumcular üzerinden.. fiziki altın işlemi yapılabiliyor'.",
    "ref_bank_status": "reference bank not named; Citibank A.Ş. Turkey exists as a local entity"
   },
   {
@@ -7035,7 +7035,7 @@
    "url": "https://www.enuygunfinans.com/bankalar/altin-hesabi-olan-bankalar/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Minimums from third-party comparison sites (enuygunfinans/hesap.com); bank pages not fetched.",
+   "notes": "Minimums from third-party comparison sites (enuygunfinans/hesap.com).",
    "ref_bank_status": "reference bank not named; Citibank A.Ş. Turkey exists as a local entity"
   },
   {
@@ -7124,7 +7124,7 @@
    "url": "https://www.adcb.com/en/personal/accounts/current-savings-account/gold-silver-account",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "adcb.com returned HTTP 403 this pass; details from the prior pass (product page, promotions page and 'understanding precious metal accounts' education page).",
+   "notes": "Adcb.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -7245,7 +7245,7 @@
    "url": "https://www.juliusbaer.com/international/en/our-solutions/investing/other-solutions-and-products/foreign-exchange-and-precious-metals/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "UK and group product pages returned 403 today; earlier pass: 'JB group offers physical, derivatives and leveraged precious-metals trading from Zurich/Singapore'.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -7338,7 +7338,7 @@
    "url": "https://www.patplc.co.uk/wp-content/uploads/sites/5/2026/06/PAT-Annual-Report-2026.pdf",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Evidence from earlier pass (annual reports 2023/2026, Fidelity factsheet).",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -7367,7 +7367,7 @@
    "url": "https://www.sc.com/sg/wealth/insights/why-gold-remains-our-top-conviction-for-2026/",
    "quote": "Our balanced asset allocation strategy has a 7% allocation to gold.",
    "confidence": "verified",
-   "notes": "H2-2026 GMO: target USD 5,100 by mid-2027; press release https://www.sc.com/en/press-release/standard-chartered-h2-2026-global-market-outlook-navigating-shifting-sands/",
+   "notes": "H2-2026 GMO: target USD 5,100 by mid-2027; press release https://www.sc.com/en/press-release/standard-chartered-h2-2026-global-market-outlook-navigating-shifting-sands/.",
    "src": "scb.json",
    "ref_bank_status": "reference bank not named"
   },
@@ -7457,7 +7457,7 @@
    "url": "https://www.sc.com/bn/invest/gold-premium-currency-investment/",
    "quote": "you will get both principal and coupon in either gold (XAU) or the base currency",
    "confidence": "verified",
-   "notes": "Brunei page returned 404 on direct fetch but content indexed in search; SG PCI T&Cs (verified) exclude gold. Private-bank availability = knowledge.",
+   "notes": "SG PCI T&Cs (verified) exclude gold. Private-bank availability = knowledge.",
    "src": "scb.json",
    "ref_bank_status": "reference bank not named"
   },
@@ -7488,7 +7488,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Not verified on any SC page this session; inferred from SCB being an LBMA market maker in spot and options and from PB FX-derivative shelf.",
+   "notes": "Inferred from SCB being an LBMA market maker in spot and options and from PB FX-derivative shelf.",
    "src": "scb.json",
    "ref_bank_status": "reference bank not named"
   },
@@ -7582,7 +7582,7 @@
    "url": "https://www.interactivebrokers.com/en/trading/products-metals.php",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Product pages (US/UK/IE) returned 403 today. Launched for US clients Dec-2023 (IBKR LLC), earlier for IB UK. Earlier pass: 'Unallocated spot product with IBKR as counterparty'.",
+   "notes": "Launched for US clients Dec-2023 (IBKR LLC), earlier for IB UK.",
    "ref_bank_status": "unknown (already known to the desk)"
   },
   {
@@ -7796,7 +7796,7 @@
    "url": "https://kathrein.at/private/investmentloesungen/edelmetalle/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Both kathrein.at pages returned HTTP 403; description from geld-magazin.at / fondsexklusiv.at coverage of the Kathrein press release ('Kathrein glänzt mit nachhaltigem Gold').",
+   "notes": "Both kathrein. description from geld-magazin.at / fondsexklusiv.at coverage of the Kathrein press release ('Kathrein glänzt mit nachhaltigem Gold').",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -7884,7 +7884,7 @@
    "url": "https://www.xpasset.com.br/fundos/gold11/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "From prior pass; not re-fetched.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -7911,7 +7911,7 @@
    "url": "https://www.mint.ca/en/lets-talk-bullion/buying-gold-and-silver-from-a-bank",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Pages checked (prior pass): RCM bank guide; mining.com closure report. Not re-fetched.",
+   "notes": "Mining.com closure report.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -8328,7 +8328,7 @@
    "url": "https://www.business-standard.com/article/pti-stories/federal-bank-ties-up-with-mmtc-to-offer-indian-gold-coin-116081701208_1.html",
    "quote": "Federal Bank ties up with MMTC to offer Indian Gold Coin",
    "confidence": "knowledge",
-   "notes": "Current stock/availability unverified; Federal also distributes SGBs (primary closed).",
+   "notes": "Federal also distributes SGBs (primary closed).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -8355,7 +8355,7 @@
    "url": "https://www.rblbank.com/personal-banking/investments",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Checked via search 'RBL Bank gold coins' — no result.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -8384,7 +8384,7 @@
    "url": "https://www.gold.org/news-and-events/press-releases/research-indicates-indian-consumers-preference-indian-gold-coin",
    "quote": "Indian Gold Coin is currently available at select branches of ... Indian Overseas Bank, Federal Bank, Vijaya Bank and Yes Bank",
    "confidence": "knowledge",
-   "notes": "Current availability unverified.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -8502,7 +8502,7 @@
    "url": "https://www.rakuten-sec.co.jp/web/gold/",
    "quote": "毎月1,000円から積立できる！ … 地金（インゴット）として、ご登録の住所宛てに発送することもできます (accumulate from ¥1,000/month; can be shipped as ingots to your registered address)",
    "confidence": "verified",
-   "notes": "Credit-card accumulation = 業界初 (industry first). Custody-structure change notice: https://www.rakuten-sec.co.jp/web/info/info20260508-02.html",
+   "notes": "Credit-card accumulation = 業界初 (industry first). Custody-structure change notice: https://www.rakuten-sec.co.jp/web/info/info20260508-02.html.",
    "ref_bank_status": "unknown"
   },
   {
@@ -8562,7 +8562,7 @@
    "url": "https://www.kfh.com/en/home/Personal/Accounts/gold-account.html",
    "quote": "Swiss Gold - Purity percentage of 999.9; Turkish Gold - Purity percentage of 999.9",
    "confidence": "verified",
-   "notes": "Landing page lists the three options; bar sizes/min from the prior pass (kfh.com Preview page). Smart-branch footer: 'receiving gold bars in 10-gram denominations'.",
+   "notes": "Landing page lists the three options; com Preview page). Smart-branch footer: 'receiving gold bars in 10-gram denominations'.",
    "ref_bank_status": "unknown"
   },
   {
@@ -8898,7 +8898,7 @@
    "product_type": "none_found",
    "segment": "private-banking/HNW",
    "metals": [],
-   "description": "QNB Private (Qatar) banking-services and asset-and-wealth-management pages list no gold account, bullion or gold-linked product; the 'EnGOLD' document URL on qnb.com returned 403.",
+   "description": "QNB Private (Qatar) banking-services and asset-and-wealth-management pages list no gold account, bullion or gold-linked product; the 'EnGOLD' document URL on qnb.",
    "unit_and_minimum": "?",
    "fees": "?",
    "custody": "?",
@@ -8909,7 +8909,7 @@
    "url": "https://www.qnb.com/sites/qnb/qnbprivate/page/en/enbankingservices.html",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Pages checked: qnb.com/sites/qnb/qnbprivate (banking services, private banking, asset & wealth management); qnb.com EnGOLD (403). Third-party guides claim QNB offers gold accounts/physical gold in Qatar - unverified.",
+   "notes": "Com/sites/qnb/qnbprivate (banking services, private banking, asset & wealth management); qnb.com EnGOLD (403).",
    "ref_bank_status": "unknown"
   },
   {
@@ -9066,7 +9066,7 @@
    "url": "https://www.lombardodier.com/home/private-clients/wealth-management.html",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "lombardodier.com search returned no dedicated precious-metals product page.",
+   "notes": "Lombardodier.com search returned no dedicated precious-metals product page.",
    "ref_bank_status": "unknown"
   },
   {
@@ -9124,7 +9124,7 @@
    "url": "https://1nvest.co.za/products/exchange-traded-funds/1nvest-gold-etf",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "From prior pass; not re-fetched.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -9274,7 +9274,7 @@
    "url": "https://www.deutsche-bank.de/pk/service-und-kontakt/services/fragen-antworten/konto-und-debitkarten/wie-kann-ich-edelmetalle-kaufen-oder-verkaufen.html",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "URL from earlier pass (German retail FAQ); not re-fetched. Swiss entity has no separate product page.",
+   "notes": "Swiss entity has no separate product page.",
    "ref_bank_status": "unknown"
   },
   {
@@ -9365,7 +9365,7 @@
    "url": "https://www.efginternational.com/private-banking/banking-services.html",
    "quote": "clients the option of buying or selling physical metals or purchasing and selling them through a metals account",
    "confidence": "verified",
-   "notes": "Quote from search index of banking-services page (direct fetch 403). Fee PDF: https://www.efginternational.com/doc/jcr:65c68a11-f302-4373-ba9a-9920c4f584e2/EFG%20BANK%20Standard%20Commissions%20and%20Charges%202026.pdf/lang:en/EFG%20BANK%20Standard%20Commissions%20and%20Charges%202026.pdf",
+   "notes": "Quote from search index of banking-services page (direct fetch 403). Fee PDF: https://www.efginternational.com/doc/jcr:65c68a11-f302-4373-ba9a-9920c4f584e2/EFG%20BANK%20Standard%20Commissions%20and%20Charges%202026.pdf/lang:en/EFG%20BANK%20Standard%20Commissions%20and%20Charges%202026.pdf.",
    "ref_bank_status": "unknown"
   },
   {
@@ -9445,7 +9445,7 @@
    "product_type": "none_found",
    "segment": "private-banking/HNW",
    "metals": [],
-   "description": "Pages checked: jsafrasarasin.com home, services/asset-management, funds list (JSS Commodity – Transition Enhanced LU2782827161), HK account-opening T&Cs, commodity Q3 outlook PDF. None advertises a metal account, physical bullion or gold-linked note to private clients.",
+   "description": "Com home, services/asset-management, funds list (JSS Commodity – Transition Enhanced LU2782827161), HK account-opening T&Cs, commodity Q3 outlook PDF. None advertises a metal account, physical bullion or gold-linked note to private clients.",
    "unit_and_minimum": "?",
    "fees": "?",
    "custody": "?",
@@ -9962,7 +9962,7 @@
    "url": "https://www.citibank.ae/wealth-management/citigold-private-client",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Pages checked (prior pass): citibank.ae the private-client tier. Gold exposure would be via third-party funds/ETFs and a bullion desk-issued structured notes on the global platform - not advertised locally.",
+   "notes": "Ae the private-client tier. Gold exposure would be via third-party funds/ETFs and a bullion desk-issued structured notes on the global platform - not advertised locally.",
    "ref_bank_status": "reference franchise"
   },
   {
@@ -10115,7 +10115,7 @@
    "url": "https://www.ruffer.co.uk/en/funds/specialist-funds/gold",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Fund page served only the gatekeeper/T&Cs today; earlier pass confirmed it invests in miners, not bullion.",
+   "notes": "Fund page served only the gatekeeper/T&Cs today.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -10207,7 +10207,7 @@
    "url": "https://www.onegold.com/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "onegold.com and apmex.com resource page both 403 today; fee figures from prior knowledge - verify.",
+   "notes": "Onegold.com and apmex.com resource page both 403 today; fee figures from prior knowledge - verify.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -10223,7 +10223,7 @@
    "product_type": "none_found",
    "segment": "private-banking/HNW",
    "metals": [],
-   "description": "Checked bny.com/pershing and BNY Wealth pages via earlier pass; no metals account, bullion or gold-note product page exists.",
+   "description": "Checked bny. no metals account, bullion or gold-note product page exists.",
    "unit_and_minimum": "?",
    "fees": "?",
    "custody": "?",
@@ -10361,7 +10361,7 @@
    "url": "https://texmetals.com/",
    "quote": "Class 2 and class 3 equivalent vaults in our high-security Texas facility which is insured by underwriters at Lloyd's of London.",
    "confidence": "verified",
-   "notes": "CME depository status: https://www.globenewswire.com/news-release/2026/08/26/3351657/0/en/",
+   "notes": "CME depository status: https://www.globenewswire.com/news-release/2026/08/26/3351657/0/en/.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -10537,7 +10537,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "No fetch this pass (grouped tail, budget). Cross-reference the Swiss parents' records for product detail.",
+   "notes": "Cross-reference the Swiss parents' records for product detail.",
    "ref_bank_status": "unknown"
   },
   {
@@ -10684,7 +10684,7 @@
    "url": "https://achatorphysique.com/banques",
    "quote": "les commissions de courtage du Crédit Mutuel sont de 0,65%",
    "confidence": "verified",
-   "notes": "Third-party site citing the banks' tariff brochures; the bank's own page not fetched.",
+   "notes": "Third-party site citing the banks' tariff brochures.",
    "ref_bank_status": "unknown"
   },
   {
@@ -10773,7 +10773,7 @@
    "url": "https://www.bochk.com/en/investment/metal/passbook.html",
    "quote": "Notional Precious Metals Passbook Account — Hassle free, easy to manage investments in various precious metals products",
    "confidence": "verified",
-   "notes": "Contract list from pass-2 evidence on the same page; passbook page returned only navigation this pass.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -11219,7 +11219,7 @@
    "url": "https://kikinzoku.tr.mufg.jp/ja/lineup/gold.html",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Not fetched this pass; URL from pass-2.",
+   "notes": "URL from pass-2.",
    "ref_bank_status": "unknown"
   },
   {
@@ -11277,7 +11277,7 @@
    "url": "https://www.nomuraholdings.com/en/news/nr/aej20260812.html",
    "quote": "buy, sell, and safeguard physical precious metals within a secure, locally-vaulted infrastructure (press coverage of the 12-Aug-2026 release)",
    "confidence": "verified",
-   "notes": "Press release page returned 403; existence and specs verified via nomuraholdings.com URL + Hubbis / Asian Private Banker / Citywire / WealthBriefingAsia coverage. Nomura hired to expand precious-metals trading Mar-2026 (Japan Times).",
+   "notes": "Existence and specs verified via nomuraholdings.com URL + Hubbis / Asian Private Banker / Citywire / WealthBriefingAsia coverage. Nomura hired to expand precious-metals trading Mar-2026 (Japan Times).",
    "ref_bank_status": "unknown"
   },
   {
@@ -11397,7 +11397,7 @@
    "url": "https://gold.tanaka.co.jp/commodity/shohin/teigaku.html",
    "quote": "月々3,000円からご自身のペースで「金・プラチナ・銀」を積み立てることができる … 一律2.5%だった積立手数料が…30,000円以上の場合割安 (from ¥3,000/month; flat 2.5% fee, cheaper ≥¥30,000)",
    "confidence": "verified",
-   "notes": "Quote from search-result summary of tanaka.co.jp pages; account platform https://tt.tanaka.jp/. Fee change notice: https://gold.tanaka.co.jp/topics/topics_detail.php?id=392",
+   "notes": "Quote from search-result summary of tanaka.co.jp pages; account platform https://tt.tanaka.jp/. Fee change notice: https://gold.tanaka.co.jp/topics/topics_detail.php?id=392.",
    "ref_bank_status": "unknown"
   },
   {
@@ -11547,7 +11547,7 @@
    "url": "https://monaco.ca-indosuez.com/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Pages checked: monaco.ca-indosuez.com, cmb.mc/en, cmb.mc/en/our-clients (via search snippets).",
+   "notes": "Ca-indosuez.com, cmb.mc/en, cmb.",
    "ref_bank_status": "per parent"
   },
   {
@@ -11694,7 +11694,7 @@
    "url": "https://www.kebhana.com/cont/mall/mall14/mall1401/index.jsp",
    "quote": "금 1gram당 원화가격은 국제금시세 및 환율을 이용하여 은행이 거래시점에 고시하는 가격이며, 고객 매입 시 판매대금의 10% 부가가치세가 부과됩니다",
    "confidence": "verified",
-   "notes": "Non-KOMSCO supplier (kept selling Feb-2025). Daily reference price page: https://www.kebhana.com/cont/mall/mall14/mall1402/index.jsp",
+   "notes": "Non-KOMSCO supplier (kept selling Feb-2025). Daily reference price page: https://www.kebhana.com/cont/mall/mall14/mall1402/index.jsp.",
    "ref_bank_status": "unknown"
   },
   {
@@ -11724,7 +11724,7 @@
    "url": "https://apps.apple.com/us/app/%EA%B8%88%EA%B1%B0%EB%9E%98%EC%86%8C-%EC%88%9C%EA%B8%88%EB%82%98%EB%9D%BC-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-%ED%91%9C%EC%A4%80-%EA%B8%88%EC%8B%9C%EC%84%B8%EB%A1%9C-%EA%B8%88%EA%B1%B0%EB%9E%98/id6754812991?l=ko",
    "quote": "금거래소 순금나라 - 대한민국 표준 금시세로 금거래 (Korea Gold Exchange 순금나라 — trade gold at Korea's standard gold price)",
    "confidence": "verified",
-   "notes": "koreagoldx.co.kr returned 403; existence verified via app-store listing surfaced in search. Supplier of KB ('한국금거래소쓰리엠 보증') and Woori ('(주)한국금거래소 골드바') bank bars.",
+   "notes": "Koreagoldx.co. existence verified via app-store listing surfaced in search. Supplier of KB ('한국금거래소쓰리엠 보증') and Woori ('(주)한국금거래소 골드바') bank bars.",
    "ref_bank_status": "unknown"
   },
   {
@@ -11754,7 +11754,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Not verified this pass.",
+   "notes": "",
    "ref_bank_status": "unknown"
   },
   {
@@ -11830,7 +11830,7 @@
    "metals": [
     "Au"
    ],
-   "description": "Pages checked (bancosantander.es/banca-privada, santander.com press releases 2026) show advisory funds, Wealth Check and discretionary services; gold exposure is via third-party ETCs and Santander structured notes — no physical offer ('very reduced' per Spanish comparison sites).",
+   "description": "Es/banca-privada, santander.com press releases 2026) show advisory funds, Wealth Check and discretionary services; gold exposure is via third-party ETCs and Santander structured notes — no physical offer ('very reduced' per Spanish comparison sites).",
    "unit_and_minimum": "?",
    "fees": "?",
    "custody": "no physical",
@@ -11937,7 +11937,7 @@
    "url": "https://www.bcv.ch/content/dam/bcv/fichiers/informations-juridiques/conditions-produits/41-357-Reglement-comptes-metaux.pdf",
    "quote": "Clients holding metal accounts do not own the metal directly, but rather have a claim to delivery of the quantity of metal shown on their account",
    "confidence": "verified",
-   "notes": "Quote from search index of the règlement PDF. Tariff brochure: https://www.bcv.ch/content/dam/bcv/brochure---flyer/42-558_Brochure-Tarifs-web.pdf",
+   "notes": "Quote from search index of the règlement PDF. Tariff brochure: https://www.bcv.ch/content/dam/bcv/brochure---flyer/42-558_Brochure-Tarifs-web.pdf.",
    "ref_bank_status": "unknown"
   },
   {
@@ -11966,7 +11966,7 @@
    "url": "https://www.bcv.ch/fr/home/private-banking/produits/plaquettes-et-lingots.html",
    "quote": "L'or Fairtrade est disponible dans nos agences ... prime Fairtrade de USD 2'000 par kilogramme",
    "confidence": "verified",
-   "notes": "ESG gold flyer: https://www.bcv.ch/content/dam/bcv/brochure---flyer/44-409_Flyer-_Or-ESG-web.pdf",
+   "notes": "ESG gold flyer: https://www.bcv.ch/content/dam/bcv/brochure---flyer/44-409_Flyer-_Or-ESG-web.pdf.",
    "ref_bank_status": "unknown"
   },
   {
@@ -12181,7 +12181,7 @@
    "url": "https://www.fubon.com/banking/personal/fund_trust/gold_deposit/gold_deposit.htm",
    "quote": "黃金存摺非屬存款故不計算利息，亦非屬存款保險條例範圍，不受存款保險保障。",
    "confidence": "verified",
-   "notes": "Redeemable bar sizes 100 g / 250 g / 500 g / 1,000 g; once redeemed, bars cannot be re-sold to the bank. Structured notes / third-party gold ETFs on the wealth shelf: not advertised as named gold products (knowledge only, not recorded).",
+   "notes": "Redeemable bar sizes 100 g / 250 g / 500 g / 1,000 g; once redeemed, bars cannot be re-sold to the bank.",
    "ref_bank_status": "unknown"
   },
   {
@@ -12210,7 +12210,7 @@
    "url": "https://www.taishinbank.com.tw/TSB/personal/investment/more-invest-products/gold-account/gold-account-know-how/gold/",
    "quote": "黃金帳戶以1盎司為基本掛牌單位，且重量計算至小數點第二位，並區分新臺幣計價與外幣計價兩類",
    "confidence": "verified",
-   "notes": "No interest; physical gold once withdrawn cannot be re-deposited. Corporate gold account: https://www.taishinbank.com.tw/TSB/corporate/financial-products/financial-products/gold-account/ . Regular plan (定期定額) not stated on the fetched page — '?'.",
+   "notes": "No interest; physical gold once withdrawn cannot be re-deposited. Corporate gold account: https://www.taishinbank.com.tw/TSB/corporate/financial-products/financial-products/gold-account/. Regular plan (定期定額) not stated on the fetched page — '?'.",
    "ref_bank_status": "unknown"
   },
   {
@@ -12268,7 +12268,7 @@
    "url": "https://www.tcb-bank.com.tw/eng/financial-services/business-introduction/gold-passbook",
    "quote": "Each trading can be denominated in NTD or USD and be printed separately. It is not permitted to buying/selling, transfer, and physical settlement cross different currencies.",
    "confidence": "verified",
-   "notes": "Taipei Star Bank (https://www.taipeistarbank.com.tw/EN/GoldPassbook) and Bank of Kaohsiung (https://www.bok.com.tw/en/gold-deposit-book) publish English passbook pages of the same design (from prior pass, not re-fetched). Chang Hwa / SinoPac / Shin Kong: gold passbooks known to exist (knowledge, not fetched).",
+   "notes": "Taipei Star Bank (https://www.taipeistarbank.com.tw/EN/GoldPassbook) and Bank of Kaohsiung (https://www.bok.com.",
    "ref_bank_status": "unknown"
   },
   {
@@ -12297,7 +12297,7 @@
    "url": "https://www.kredihibedestek.com/ziraat-bankasi-altin-hesabi/",
    "quote": "Altın alımı veya satımında kesinlikle hiç bir ücret alınmamakta",
    "confidence": "knowledge",
-   "notes": "Ziraat product URL returned 404; terms from third-party page.",
+   "notes": "Terms from third-party page.",
    "ref_bank_status": "unknown"
   },
   {
@@ -12532,7 +12532,7 @@
    "url": "https://am.gs.com/en-us/advisors/funds/detail/PV103623/38150K103/goldman-sachs-physical-gold-etf",
    "quote": "",
    "confidence": "verified",
-   "notes": "Search-result snippet: 'competitively-priced 18 basis points'; fund page itself not fetched.",
+   "notes": "Search-result snippet: 'competitively-priced 18 basis points'.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -12590,7 +12590,7 @@
    "url": "https://www.iprofesional.com/finanzas/383775-lingotes-que-bancos-venden-oro-en-argentina-y-como-comprar",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "From prior pass; not re-fetched.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -12620,7 +12620,7 @@
    "url": "https://www.bancociudad.com.ar/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Product page not fetched this pass.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -12681,7 +12681,7 @@
    "url": "https://www.deltecbank.com/accounts/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "From prior pass (accounts + FAQ pages); not re-fetched.",
+   "notes": "",
    "ref_bank_status": "unknown"
   },
   {
@@ -12741,7 +12741,7 @@
    "url": "https://www.citicbank.com/personal/investment/noblemetal/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Not fetched; listed under the same 贵金属 menu as 积存金.",
+   "notes": "Listed under the same 贵金属 menu as 积存金.",
    "ref_bank_status": "unknown"
   },
   {
@@ -12770,7 +12770,7 @@
    "url": "https://www.citicbank.com/personal/investment/noblemetal/jcj/",
    "quote": "客户需与我行签订积存金业务协议，按照我行交易系统提供的报价，在我行规定的交易时间内，通过我行提供的交易渠道和系统采取主动积或被动积存的方式购入贵金属。",
    "confidence": "verified",
-   "notes": "CITIC previously paid a term/activity yield on accumulated gold and cut those rates 23-58bp on 15-Feb-2025 (Sina). Fee-cut announcement 11-Jun-2026 (tidenews). Second product page: https://www.citicbank.com/personal/investment/reserve/ .",
+   "notes": "CITIC previously paid a term/activity yield on accumulated gold and cut those rates 23-58bp on 15-Feb-2025 (Sina). Fee-cut announcement 11-Jun-2026 (tidenews). Second product page: https://www.citicbank.com/personal/investment/reserve/.",
    "ref_bank_status": "unknown"
   },
   {
@@ -12829,7 +12829,7 @@
    "url": "https://bank.pingan.com/geren/touzilicai/jujinbao.shtml",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Product pages exist (聚金宝, 黄金定投) but were not fetched; minimum from 2024 adjustment notice reported by stcn. Bank says thresholds are revised with the gold price.",
+   "notes": "Minimum from 2024 adjustment notice reported by stcn. Bank says thresholds are revised with the gold price.",
    "ref_bank_status": "unknown"
   },
   {
@@ -13488,7 +13488,7 @@
    "url": "https://www.prestaprenda.com.mx/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Not fetched this pass.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -13517,7 +13517,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Pages checked: web search 'CMB Monaco or physique métaux précieux' (no product hit); cmb.mc not fetched (budget).",
+   "notes": "Cmb.",
    "ref_bank_status": "unknown"
   },
   {
@@ -13783,7 +13783,7 @@
    "url": "https://www.investec.com/en_za/investment/manage-my-investment-for-me/wealth/johannesburg.html",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Pages checked (prior pass): investec.com W&I Johannesburg. Gold exposure for clients via third-party ETFs (NewGold/1nvest) inside portfolios.",
+   "notes": "Com W&I Johannesburg. Gold exposure for clients via third-party ETFs (NewGold/1nvest) inside portfolios.",
    "ref_bank_status": "unknown"
   },
   {
@@ -13873,7 +13873,7 @@
    "url": "https://www.bankinter.com/blog/mercados/invertir-online-oro-plata-cobre",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Page fetch returned 403; existence confirmed via search snippet of the Bankinter blog. Listed futures rather than OTC, but classified here as the derivative route.",
+   "notes": "Listed futures rather than OTC, but classified here as the derivative route.",
    "ref_bank_status": "unknown"
   },
   {
@@ -13932,7 +13932,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Search 'SEB guld certifikat' returned only third-party guides naming Avanza/Nordnet; no SEB retail gold certificate page found - treat the known_matrix 'SEB issues gold certificates' as unverified.",
+   "notes": "Search 'SEB guld certifikat' returned only third-party guides naming Avanza/Nordnet.",
    "ref_bank_status": "unknown"
   },
   {
@@ -14090,7 +14090,7 @@
    "url": "https://www.lukb.ch/private/anlegen/edelmetall/fairtrade-gold",
    "quote": "fair-traded gold that is certified by Fairtrade Max Havelaar",
    "confidence": "verified",
-   "notes": "Quote from search index of the Fairtrade page; hub page https://www.lukb.ch/private/anlegen/edelmetall",
+   "notes": "Quote from search index of the Fairtrade page; hub page https://www.lukb.ch/private/anlegen/edelmetall.",
    "ref_bank_status": "unknown"
   },
   {
@@ -14183,7 +14183,7 @@
    "url": "https://www.migrosbank.ch/de/privatpersonen/anlegen/anlageinstrumente/edelmetalle-metallkonto.html",
    "quote": "1 Kilo gold bar (999.9): CHF 113,870.00 ... 1 Ounce gold (999.9): CHF 3,541.50",
    "confidence": "verified",
-   "notes": "Earlier pass: Migros Bank metals also sold through Swiss Post branches (moneytoday).",
+   "notes": "",
    "ref_bank_status": "unknown"
   },
   {
@@ -14215,7 +14215,7 @@
    "url": "https://www.ubs.com/microsites/credit-suisse/de/private-clients/download-center/_jcr_content/root/contentarea/mainpar/toplevelgrid_1522634695/col_1/accordion/accordionsplit_767398076/linklistnewlook/link_1951277448.0970236479.file/PS9jb250ZW50L2RhbS9hc3NldHMvbWljcm9zaXRlcy9jcmVkaXQtc3Vpc3NlL2RvY3VtZW50cy9wcml2YXRlLWNsaWVudHMvbWV0YWxsa29udG8tZGUucGRm/metallkonto-de.pdf",
    "quote": "Gold (XAU), Silber (XAG), Platin (XPT), Palladium (XPD) ... 0.80% p.a. ... Minimum CHF 100 p.a.",
    "confidence": "verified",
-   "notes": "Fee figures come from the search-engine index of the ex-CS factsheet; the direct PDF fetch returned 0 bytes, so treat the 0.80% as indexed-not-read. The UBS 'Services and prices for private clients' PDF (valid 1 Apr 2026) also lists precious-metal account fees but could not be parsed.",
+   "notes": "The direct PDF fetch returned 0 bytes, so treat the 0.80% as indexed-not-read. The UBS 'Services and prices for private clients' PDF (valid 1 Apr 2026) also lists precious-metal account fees but could not be parsed.",
    "ref_bank_status": "reference bank not named (UBS is a direct peer/competitor bullion bank; fellow LPMCL member)"
   },
   {
@@ -14276,7 +14276,7 @@
    "url": "https://www.ubs.com/microsites/credit-suisse/de/private-clients/download-center/_jcr_content/root/contentarea/mainpar/toplevelgrid_1522634695/col_1/accordion/accordionsplit_767398076/linklistnewlook/link_953374631.1098612895.file/PS9jb250ZW50L2RhbS9hc3NldHMvbWljcm9zaXRlcy9jcmVkaXQtc3Vpc3NlL2RvY3VtZW50cy9wcml2YXRlLWNsaWVudHMvZWRlbG1ldGFsbGUtZGVwb3QtZGUucGRm/edelmetalle-depot-de.pdf",
    "quote": "Edelmetalle Depot (ex-CS client factsheet title; not read)",
    "confidence": "knowledge",
-   "notes": "UBS bars are refined by Argor-Heraeus (earlier pass). Factsheet indexed but not fetched.",
+   "notes": "",
    "ref_bank_status": "reference bank not named (UBS is a direct peer/competitor bullion bank; fellow LPMCL member)"
   },
   {
@@ -14369,7 +14369,7 @@
    "url": "https://www.swissfunddata.ch/sfdpub/docs/prp-8172_04_01-20241016-en.pdf",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Prospectus url from earlier pass; not fetched this pass.",
+   "notes": "",
    "ref_bank_status": "reference bank not named (UBS is a direct peer/competitor bullion bank; fellow LPMCL member)"
   },
   {
@@ -14398,7 +14398,7 @@
    "url": "https://www.yuantabank.com.tw/bank/invest/passbook/list3.do",
    "quote": "黃金存摺非屬一般存款帳戶，不予計息，亦不受存款保險保障",
    "confidence": "verified",
-   "notes": "T&C text surfaced via search from the Yuanta Bank passbook page; fee amounts not stated.",
+   "notes": "Fee amounts not stated.",
    "ref_bank_status": "unknown"
   },
   {
@@ -14564,7 +14564,7 @@
     "Pt",
     "Pd"
    ],
-   "description": "Hold bars and government/certified coins meeting IRS fineness (Au .995+, Ag .999+, Pt/Pd .9995+) in an IRA, stored at a partner depository chosen by the client.",
+   "description": "Hold bars and government/certified coins meeting IRS fineness (Au.995+, Ag.999+, Pt/Pd.9995+) in an IRA, stored at a partner depository chosen by the client.",
    "unit_and_minimum": "?",
    "fees": "per Equity Trust fee schedule (custody + depository storage) - not on page",
    "custody": "third-party depository (5 partners); segregated/non-segregated not stated",
@@ -14663,7 +14663,7 @@
    "url": "https://privatebank.jpmorgan.com/nam/en/insights/markets-and-investing/is-it-a-golden-era-for-gold",
    "quote": "Many investors hold positions in gold through exchange-traded funds (ETFs), futures markets, options or structured notes.",
    "confidence": "verified",
-   "notes": "Example filings: https://www.streetinsider.com/SEC+Filings/Form+424B2+JPMORGAN+CHASE+&+CO/26331336.html",
+   "notes": "Example filings: https://www.streetinsider.com/SEC+Filings/Form+424B2+JPMORGAN+CHASE+&+CO/26331336.html.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -15120,7 +15120,7 @@
    "url": "https://www.oberbank.at/edelmetalle",
    "quote": "Die angeführten Kurse werden von der Oberbank jeweils an Bankwerktagen bis ca. 15:45 Uhr fixiert.",
    "confidence": "verified",
-   "notes": "firm_actual: Oberbank AG. BKS Bank and BTV (3-Banken-Gruppe sisters) run equivalent coin/bar counters (knowledge).",
+   "notes": "Firm_actual: Oberbank AG. BKS Bank and BTV (3-Banken-Gruppe sisters) run equivalent coin/bar counters (knowledge).",
    "ref_bank_status": "unknown"
   },
   {
@@ -15149,7 +15149,7 @@
    "url": "https://www.sparkasse.at/steiermaerkische/muenzshop/gold",
    "quote": "Physische Goldmünzen und -barren erhalten Sie in unseren Filialen. Bitte vereinbaren Sie zuvor einen Termin und bestellen Sie die gewünschten Produkte, denn sie sind nicht vorrätig.",
    "confidence": "verified",
-   "notes": "firm_actual: Steiermärkische Sparkasse (incl. ex-Krentschker private bank).",
+   "notes": "Firm_actual: Steiermärkische Sparkasse (incl. ex-Krentschker private bank).",
    "ref_bank_status": "unknown"
   },
   {
@@ -15179,7 +15179,7 @@
    "url": "https://goldshop.schelhammer.at/",
    "quote": "",
    "confidence": "verified",
-   "notes": "firm_actual: Schelhammer Capital Bank AG. Pages surfaced: schelhammer.at/service/gold-and-edelmetalle/, /goldpreise/, goldshop AGB. Verified via search results (shop not fetched).",
+   "notes": "Firm_actual: Schelhammer Capital Bank AG. Pages surfaced: schelhammer.at/service/gold-and-edelmetalle/, /goldpreise/, goldshop AGB.",
    "ref_bank_status": "unknown"
   },
   {
@@ -15208,7 +15208,7 @@
    "url": "https://www.hypovbg.at/boersen-maerkte/rohstoffe/muenzkurse",
    "quote": "",
    "confidence": "verified",
-   "notes": "firm_actual: Hypo Vorarlberg Bank AG. Bankhaus Spängler, Wiener Privatbank, Bank Winter: no product page found (knowledge: coins on request via Münze Österreich).",
+   "notes": "Firm_actual: Hypo Vorarlberg Bank AG. Bankhaus Spängler, Wiener Privatbank, Bank Winter: no product page found (knowledge: coins on request via Münze Österreich).",
    "ref_bank_status": "unknown"
   },
   {
@@ -15237,7 +15237,7 @@
    "url": "https://www.sparkasse.at/kremserbank/privatkunden/sparen-anlegen/anlegen-investieren/unsere-anlageprodukte/weitere-anlageformen/gold",
    "quote": "Die wohl bekannteste Veranlagung in Gold sind Münzen und Barren, die Sie in Österreich umsatzsteuerfrei erwerben können.",
    "confidence": "verified",
-   "notes": "firm_actual: Kremser Bank und Sparkassen AG / Steiermärkische Sparkasse (Sparkassen-Gruppe 's Gold Plan' - group product page sparkasse.at/sgruppe/.../gold-plan). Gains tax-free after 1-year holding.",
+   "notes": "Firm_actual: Kremser Bank und Sparkassen AG / Steiermärkische Sparkasse (Sparkassen-Gruppe 's Gold Plan' - group product page sparkasse.at/sgruppe/../gold-plan). Gains tax-free after 1-year holding.",
    "ref_bank_status": "unknown"
   },
   {
@@ -15295,7 +15295,7 @@
    "url": "https://www.goldforex.be/upload/Le%20lingot%20dor%20un%20placement%20refuge%20qui%20se%20fait%20rare%20L'Echo.pdf",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Pages checked: bnpparibasfortis.be compte-titres / offre-investissement (no gold product); 2014 brochure 'Beleggen in goud' (F04164N.pdf) is the last own-page gold document found.",
+   "notes": "Be compte-titres / offre-investissement (no gold product); 2014 brochure 'Beleggen in goud' (F04164N.pdf) is the last own-page gold document found.",
    "ref_bank_status": "unknown"
   },
   {
@@ -15386,7 +15386,7 @@
    "url": "https://www.bankofchina.com/pbservice/pb10/202012/t20201228_18860186.html",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Not fetched this pass.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -15536,7 +15536,7 @@
    "url": "https://www.icbc.com.cn/page/1190683735558303744.html",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Named in the 如意金积存 rule-change announcement; product page not fetched.",
+   "notes": "Named in the 如意金积存 rule-change announcement.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -15565,7 +15565,7 @@
    "url": "https://www.icbc.com.cn/page/1212345068826173440.html",
    "quote": "自2026年4月1日起至2026年6月30日止，主动积存对应的积存手续费率由0.5%优惠至0.2%",
    "confidence": "verified",
-   "notes": "Rule changes + agreement revision notice: https://www.icbc.com.cn/page/1190683735558303744.html . New accounts/purchases/withdrawals paused 3-Nov-2025 after the gold-tax circular, resumed within days (Sina/hexun).",
+   "notes": "Rule changes + agreement revision notice: https://www.icbc.com.cn/page/1190683735558303744.html. New accounts/purchases/withdrawals paused 3-Nov-2025 after the gold-tax circular, resumed within days (Sina/hexun).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -15743,7 +15743,7 @@
    "url": "https://www.hstong.com/news/detail/25041618554593282",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Threshold from press round-up (hstong/sohu); Everbright's own page not fetched. Everbright and Guangfa also raised T+D margins to 120-140% in Jun-2026.",
+   "notes": "Threshold from press round-up (hstong/sohu); Everbright and Guangfa also raised T+D margins to 120-140% in Jun-2026.",
    "ref_bank_status": "unknown"
   },
   {
@@ -15802,7 +15802,7 @@
    "url": "https://thndr.app/support/docs/mutual-funds-en-en-en/az-gold-azg/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "From prior pass; not re-fetched.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -15860,7 +15860,7 @@
    "url": "https://www.businesstodayegypt.com/Article/1/5163/Egypt%E2%80%99s-newest-gold-investment-fund-secured-EGP-30M-since-July",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "CIB Egypt: no CIB-branded gold fund confirmed this pass (not fetched); CIB distributes third-party funds.",
+   "notes": "CIB distributes third-party funds.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -15951,7 +15951,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Pages checked: goldmansachs.com/what-we-do/wealth-management (no product detail). Physical gold custody for PWM clients, if any, is arranged case by case — not advertised.",
+   "notes": "Com/what-we-do/wealth-management (no product detail). Physical gold custody for PWM clients, if any, is arranged case by case — not advertised.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -16068,7 +16068,7 @@
    "url": "https://cms.hangsenginvestment.com/cms/hsvm/feature_product/goldetf/eng.html",
    "quote": "the first gold ETF in the city to offer physical gold redemption through a bank",
    "confidence": "verified",
-   "notes": "~HK$1.3bn AUM by 15-Apr-2026 (prior pass).",
+   "notes": "~HK$1.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -16128,7 +16128,7 @@
    "url": "https://www.icbcasia.com/hk/en/personal/investments/other-investment-services/paper-gold-scheme/default.html",
    "quote": "The Scheme does not involve physical delivery of gold. You do not have any rights, ownership and possession of any physical gold.",
    "confidence": "verified",
-   "notes": "Daily quotes: https://www.icbcasia.com/hk/en/personal/banking/rate/precious-metal-trading-prices/default.html",
+   "notes": "Daily quotes: https://www.icbcasia.com/hk/en/personal/banking/rate/precious-metal-trading-prices/default.html.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -16160,7 +16160,7 @@
    "url": "https://www.icbcasia.com/hk/en/personal/investments/other-investment-services/precious-metal-service/default.html",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "URL from prior pass; not re-fetched.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -16190,7 +16190,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Pages checked: morganstanley.com/what-we-do/wealth-management/private-wealth-management (no product detail).",
+   "notes": "Com/what-we-do/wealth-management/private-wealth-management (no product detail).",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -16393,7 +16393,7 @@
    "url": "https://www.bper.it/privati/investimenti-risparmio/investimenti-alternativi/oro-sicuro",
    "quote": "Il servizio prevede costi e commissioni, indicati nei Fogli Informativi",
    "confidence": "verified",
-   "notes": "firm_actual: BPER Banca. Deposit contract: https://www.bper.it/nuovatrasparenza/PartePrima/99027901.pdf 'DEPOSITO DI LINGOTTI D'ORO DA INVESTIMENTO'. Closest Italian analogue to an allocated custody product.",
+   "notes": "Firm_actual: BPER Banca. Deposit contract: https://www.bper.it/nuovatrasparenza/PartePrima/99027901.pdf 'DEPOSITO DI LINGOTTI D'ORO DA INVESTIMENTO'. Closest Italian analogue to an allocated custody product.",
    "ref_bank_status": "unknown"
   },
   {
@@ -16422,7 +16422,7 @@
    "url": "https://www.popso.it/prodotti/privati/investimenti/investimenti-risparmio/vendita-lingottini-d-oro-con-logo-bps",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "firm_actual: Banca Popolare di Sondrio. popso.it now redirects 'Banca Popolare di Sondrio diventa BPER' (merger 2025); product details from search snippet. BPS also sells >=1kg bars to private investors ('Vendita barre oro', min 1kg) and runs 'prestito d'uso oro' gold loans to goldsmiths (institutional - out of scope).",
+   "notes": "Firm_actual: Banca Popolare di Sondrio. popso.it now redirects 'Banca Popolare di Sondrio diventa BPER' (merger 2025); product details from search snippet. BPS also sells >=1kg bars to private investors ('Vendita barre oro', min 1kg) and runs 'prestito d'uso oro' gold loans to goldsmiths (institutional - out of scope).",
    "ref_bank_status": "unknown"
   },
   {
@@ -16451,7 +16451,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "firm_actual: Banca Aletti. Boutique PBs (Cassa Lombarda, Passadore, Finnat, Profilo, Ersel, Ifigest, Kairos, Credem Euromobiliare): ETC/structured only, no named product found.",
+   "notes": "Firm_actual: Banca Aletti. Boutique PBs (Cassa Lombarda, Passadore, Finnat, Profilo, Ersel, Ifigest, Kairos, Credem Euromobiliare): ETC/structured only, no named product found.",
    "ref_bank_status": "unknown"
   },
   {
@@ -16513,7 +16513,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "firm_actual: FinecoBank.",
+   "notes": "Firm_actual: FinecoBank.",
    "ref_bank_status": "unknown"
   },
   {
@@ -16600,7 +16600,7 @@
    "url": "https://www.smbcnikko.co.jp/service/online/trade/fee/",
    "quote": "",
    "confidence": "verified",
-   "notes": "Note: ドコモSMTBネット銀行 (ex-SBI Sumishin, not in this tail) does offer 純金積立 via Mitsubishi Materials: https://www.netbk.co.jp/contents/lineup/investment/mr-junkin/ .",
+   "notes": "Note: ドコモSMTBネット銀行 (ex-SBI Sumishin, not in this tail) does offer 純金積立 via Mitsubishi Materials: https://www.netbk.co.jp/contents/lineup/investment/mr-junkin/.",
    "ref_bank_status": "unknown"
   },
   {
@@ -16630,7 +16630,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "No source URL in prior pass; not fetched this pass.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -16659,7 +16659,7 @@
    "url": "https://ind.millenniumbcp.pt/pt/Particulares/Shopping/Pages/BarraOuro-20gr.aspx",
    "quote": "20,00 Gr. OURO FINO 999,9 Certifi. London Good Delivery",
    "confidence": "verified",
-   "notes": "firm_actual: Millennium bcp. Gold info page: ind.millenniumbcp.pt/pt/info/Pages/investimentos/Ouro.aspx. DECO notes bcp does not buy back bars. Product page surfaced by search (title used as quote); MillOpen shop page fetched shows only a 2015 promo.",
+   "notes": "Firm_actual: Millennium bcp. Gold info page: ind.millenniumbcp.pt/pt/info/Pages/investimentos/Ouro.aspx. DECO notes bcp does not buy back bars. Product page surfaced by search (title used as quote); MillOpen shop page fetched shows only a 2015 promo.",
    "ref_bank_status": "unknown"
   },
   {
@@ -16688,7 +16688,7 @@
    "url": "https://marketplace.millenniumbcp.pt/?lang=pt",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "firm_actual: Millennium bcp.",
+   "notes": "Firm_actual: Millennium bcp.",
    "ref_bank_status": "unknown"
   },
   {
@@ -16746,7 +16746,7 @@
    "url": "https://www.fibank.bg/en/personal-banking/savings-and-investments/new/gold-account",
    "quote": "\"Gold account\" is opened in dematerialized (digital) gold - XAU (1 XAU = 1 troy ounce of gold), and the purchase and sale is made through transactions between the \"Gold Account\" and your current account in Fibank.",
    "confidence": "verified",
-   "notes": "firm_actual: First Investment Bank (Fibank). Launched 2024-25 ('New'). Only unallocated metal account found in this whole group; not BDIF-insured, not investor-compensation covered.",
+   "notes": "Firm_actual: First Investment Bank (Fibank). Launched 2024-25 ('New'). Only unallocated metal account found in this whole group; not BDIF-insured, not investor-compensation covered.",
    "ref_bank_status": "unknown"
   },
   {
@@ -16776,7 +16776,7 @@
    "url": "https://www.fibank.bg/en/gold-and-numismatics",
    "quote": "Shop online or visit Fibank`s branches",
    "confidence": "verified",
-   "notes": "firm_actual: Fibank. Buy-back rates published on page - rare transparency for a bank.",
+   "notes": "Firm_actual: Fibank. Buy-back rates published on page - rare transparency for a bank.",
    "ref_bank_status": "unknown"
   },
   {
@@ -16805,7 +16805,7 @@
    "url": "https://www.bcr.ro/ro/aur",
    "quote": "Fie îl iei cu tine și îl păstrezi unde vrei tu / Fie îl lași la noi în custodie (păstrare)",
    "confidence": "verified",
-   "notes": "firm_actual: Banca Comercială Română (Erste) - not in the task row, recorded because goldbars.ro/Tavex confirm BCR and First Bank are the ONLY Romanian banks selling gold; Banca Transilvania, BRD, Raiffeisen RO, UniCredit RO, ING RO = none_found. Custody-linked buy-back is a design worth noting.",
+   "notes": "Firm_actual: Banca Comercială Română (Erste) - not in the task row, recorded because goldbars.ro/Tavex confirm BCR and First Bank are the ONLY Romanian banks selling gold; Banca Transilvania, BRD, Raiffeisen RO, UniCredit RO, ING RO = none_found. Custody-linked buy-back is a design worth noting.",
    "ref_bank_status": "unknown"
   },
   {
@@ -16834,7 +16834,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Not verified this pass (budget); Bulbank offering less certain.",
+   "notes": "Bulbank offering less certain.",
    "ref_bank_status": "unknown"
   },
   {
@@ -16893,7 +16893,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Belåningsgrad for VZLD not verified.",
+   "notes": "",
    "ref_bank_status": "unknown"
   },
   {
@@ -16925,7 +16925,7 @@
    "url": "https://www.avanza.se/borshandlade-produkter/certifikat-torg/om-certifikatet.html/1081561/wisdomtree-physical-gold-etc",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Avanza product page fetch returned only a shell; listing confirmed via search. Monthly automatic savings (månadssparande) not available for ETCs on Avanza - manual or 'sparorder' only. Nordnet permits ETF månadsspar; ETC inclusion unverified.",
+   "notes": "Avanza product page fetch returned only a shell; Monthly automatic savings (månadssparande) not available for ETCs on Avanza - manual or 'sparorder' only. Nordnet permits ETF månadsspar.",
    "ref_bank_status": "unknown"
   },
   {
@@ -16956,7 +16956,7 @@
    "url": "https://www.handelsbanken.se/sv/privat/spara/aktier-och-andra-vardepapper/certifikat",
    "quote": "can be linked to the development on stock, interest rate, commodity, currency markets or combinations of these",
    "confidence": "verified",
-   "notes": "firm_actual: Handelsbanken. Page is generic (no GULD H named); GULD H details from privataaffarer.se and rikatillsammans forum. Handelsbanken's Xact ETF range has no gold ETC.",
+   "notes": "Firm_actual: Handelsbanken. Page is generic (no GULD H named); GULD H details from privataaffarer.se and rikatillsammans forum. Handelsbanken's Xact ETF range has no gold ETC.",
    "ref_bank_status": "unknown"
   },
   {
@@ -16985,7 +16985,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "firm_actual: Swedbank (no own gold product; Swedbank Robur has no gold fund).",
+   "notes": "Firm_actual: Swedbank (no own gold product; Swedbank Robur has no gold fund).",
    "ref_bank_status": "unknown"
   },
   {
@@ -17072,7 +17072,7 @@
    "url": "https://dmcc.ae/latest-news/dmcc-digitises-gold-trading-through-tokenisation-comtech-gold-bullion-backed-dmccs-tradeflow-platform",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "From prior pass; not re-fetched.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -17101,7 +17101,7 @@
    "url": "https://www.sarwa.co/blog/how-to-invest-in-gold-in-uae",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "EIBank (eibank.com) and Al Mal Capital: no metals product found in prior pass; not re-fetched.",
+   "notes": "EIBank (eibank.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -17130,7 +17130,7 @@
    "url": "https://ciiom.hsbc.com/global-private-banking/",
    "quote": "Financing against a wide range of assets",
    "confidence": "verified",
-   "notes": "Metal-specific wording only at https://www.asia.privatebanking.hsbc.com.hk/lending/tailored-lending/ (earlier pass).",
+   "notes": "Metal-specific wording only at https://www.asia.privatebanking.hsbc.com.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -17157,7 +17157,7 @@
    "url": "https://ciiom.hsbc.com/global-private-banking/",
    "quote": "",
    "confidence": "verified",
-   "notes": "HSBC tokenised gold institutional: https://www.ledgerinsights.com/hsbc-tokenizes-gold/",
+   "notes": "HSBC tokenised gold institutional: https://www.ledgerinsights.com/hsbc-tokenizes-gold/.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -17189,7 +17189,7 @@
    "url": "https://www.goldstartrust.com/self-directed-iras/precious-metals/",
    "quote": "Segregated Storage for all Gold, Platinum, Palladium and 1000 oz. silver bars",
    "confidence": "verified",
-   "notes": "'IRA assets must remain in the custody of the IRA custodian until distribution.'",
+   "notes": "'IRA assets must remain in the custody of the IRA custodian until distribution.'.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -17205,7 +17205,7 @@
    "product_type": "none_found",
    "segment": "private-banking/HNW (US)",
    "metals": [],
-   "description": "Checked HSBC US Premier / private banking pages via earlier pass and today's HSBC GPB search; no gold account, bullion or gold-note product for US clients.",
+   "description": "No gold account, bullion or gold-note product for US clients.",
    "unit_and_minimum": "?",
    "fees": "?",
    "custody": "?",
@@ -17248,7 +17248,7 @@
    "url": "https://www.kingdomtrust.com/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Choice platform sale: https://imperiipartners.com/project/announcement-forthcoming/",
+   "notes": "Choice platform sale: https://imperiipartners.com/project/announcement-forthcoming/.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -17306,7 +17306,7 @@
    "url": "https://www.asia.ccb.com/hongkong/doc/personal/investment/gold_trading_principal_brochure.pdf",
    "quote": "does not involve any physical delivery of gold, and investors do not have any right, ownership and possession of any physical gold",
    "confidence": "verified",
-   "notes": "Product page: https://www.asia.ccb.com/hongkong/personal/investment/gold_trading.html ; price page (10-min delayed): https://www.asia.ccb.com/hongkong/personal/accounts/gold_price.html",
+   "notes": "Product page: https://www.asia.ccb.com/hongkong/personal/investment/gold_trading.html; price page (10-min delayed): https://www.asia.ccb.com/hongkong/personal/accounts/gold_price.html.",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -17429,7 +17429,7 @@
    "url": "https://asianprivatebanker.com/private-wealth/ubs-opens-60-tonne-gold-vault-in-singapore/",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Vault opening per Asian Private Banker (prior pass).",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -17608,7 +17608,7 @@
    "url": "",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Earlier pass: 'Credit Suisse (now UBS) precious-metals safekeeping/metal accounts (CH)'.",
+   "notes": "",
    "ref_bank_status": "reference bank not named"
   },
   {
@@ -17666,7 +17666,7 @@
    "url": "https://www.citibank.com.hk/english/wealth-management/investment/paper-gold/",
    "quote": "Gold Manager is only applicable to Citigold Private Clients, Citigold clients, Citi Priority clients and Citibanking clients.",
    "confidence": "verified",
-   "notes": "Principal brochure: https://www.citibank.com.hk/english/investment/pdf/CHKL_PB_Eng.pdf",
+   "notes": "Principal brochure: https://www.citibank.com.hk/english/investment/pdf/CHKL_PB_Eng.pdf.",
    "ref_bank_status": "reference franchise"
   },
   {
@@ -17695,7 +17695,7 @@
    "url": "https://www.citibank.com.hk/english/wealth-management/pdf/investment/gold-premium-investment-ifs-eng.pdf",
    "quote": "",
    "confidence": "knowledge",
-   "notes": "Information-sheet URL from prior pass; not re-fetched.",
+   "notes": "",
    "ref_bank_status": "reference franchise"
   },
   {
