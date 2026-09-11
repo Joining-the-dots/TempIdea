@@ -1,0 +1,142 @@
+{
+ "batch": "A",
+ "search_count": 45,
+ "search_note": "45 WebFetch/WebSearch tool calls plus 4 direct curl downloads of primary PDFs (OCC Q4-2025, Pictet AR-2025, LGT Bank AR-2025, Julius Baer AR-2025 [blocked 403]) parsed locally; Kuveyt Turk and OCC Q1-2026 PDFs parsed locally from the WebFetch download.",
+ "results": [
+  {
+   "id": 1,
+   "verdict": "confirmed",
+   "checked_url": "traders/_leads/private_wealth.json (generated 2026-09-10)",
+   "primary_url": "traders/_leads/private_wealth.json",
+   "found_quote": "stats.total 601; is_pb true = 528; pass3.products 521; firms with n_products>0 = 217; pass3.verified 247; search_count 310 + pass2_searches 243 + pass3.search_count 319 = 872",
+   "correction": "",
+   "notes": "Internal dataset, recomputed directly from the JSON: 601 firms, 528 flagged is_pb, 521 products across 217 firms, 247 verified, 872 total searches across the three passes. All six numbers reconcile."
+  },
+  {
+   "id": 2,
+   "verdict": "corrected",
+   "checked_url": "https://www.occ.gov/publications-and-resources/publications/quarterly-report-on-bank-trading-and-derivatives-activities/files/pub-derivatives-quarterly-qtr1-2026.pdf",
+   "primary_url": "https://www.occ.gov/publications-and-resources/publications/quarterly-report-on-bank-trading-and-derivatives-activities/files/pub-derivatives-quarterly-qtr4-2025.pdf ; https://www.citigroup.com/global/news/press-release/2026/citi-clearing-member-london-precious-metals-clearing-limited ; https://www.lbma.org.uk/market-standards/vaulting/custodians-offering-vaulting-services-in-london",
+   "found_quote": "Table 21 ... March 31, 2026: JPMORGAN CHASE BANK NA ... $509,407; CITIBANK NATIONAL ASSN ... 235,555. December 31, 2025: CITIBANK 217,248; JPMORGAN 479,363; BANK OF AMERICA NA 120,736 (millions of dollars, precious metals all maturities)",
+   "correction": "The desk's plumbing already exists: Citi is a full LBMA market maker, was admitted as the fifth LPMCL clearing member on 6 July 2026, appears on the LBMA list of custodians offering vaulting services in London, and carries the second-largest US precious-metals derivative book (US$236bn notional at 31 Mar 2026 vs JPMorgan US$509bn; at 31 Dec 2025: Citi US$217bn, JPMorgan US$479bn, Bank of America US$121bn - OCC Table 21).",
+   "notes": "LBMA market maker: confirmed (Citibank N.A. is one of the full market makers quoting spot/forwards/options). LPMCL: confirmed - Citi press release 6 Jul 2026, 'fifth bank to become an LPMCL clearing member'. Vault list: confirmed - LBMA custodians page lists Citi, Citigroup Centre, 33 Canada Square. DERIVATIVE FIGURES DO NOT MATCH the OCC source: the claim's US$323bn/US$143bn/US$62bn appear in neither the latest (Q1 2026) nor the Q4 2025 Table 21; they look like an older quarter. Ranking (Citi #2 behind JPM, BofA #3) is right. Note the OCC caveat that since 2022 SA-CCR counts gold derivatives as precious metals. The claim's URL is the OCC index page (secondary); the figures live in the quarterly PDF Table 21."
+  },
+  {
+   "id": 3,
+   "verdict": "confirmed",
+   "checked_url": "",
+   "primary_url": "",
+   "found_quote": "",
+   "correction": "",
+   "notes": "Agenda/framing statement with no external fact to verify; nothing to check beyond claims 1 and 2."
+  },
+  {
+   "id": 4,
+   "verdict": "corrected",
+   "checked_url": "https://e.vnexpress.net/news/business/markets/uob-singapore-s-only-bank-selling-physical-gold-extends-hours-and-shifts-to-appointment-only-service-5039409.html",
+   "primary_url": "https://e.vnexpress.net/news/business/markets/uob-singapore-s-only-bank-selling-physical-gold-extends-hours-and-shifts-to-appointment-only-service-5039409.html (WGC Gold Demand Trends FY2025 for the 9.6 t figure)",
+   "found_quote": "the bank's physical gold business last year recorded a 59% jump in total transacted volume ... Singapore's investment demand for gold hit a record 9.6 tonnes. The figure marked a 48% year-on-year increase",
+   "correction": "Singapore: UOB's physical gold business recorded a 59% jump in total transacted volume in 2025; Singapore investment demand hit a record 9.6 t (+48%); from 13 Feb 2026 UOB's gold purchase counters went appointment-only (no walk-in purchases or conversions).",
+   "notes": "The claim's URL (article id 4998031) resolves to an unrelated VnExpress story; the correct article is id 5039409 (9 Feb 2026). Source says '59% jump in total transacted volume' - it does not say 'by weight', so drop that qualifier. 9.6 t / +48% and appointment-only confirmed. Selling back to the bank still walk-in."
+  },
+  {
+   "id": 5,
+   "verdict": "confirmed",
+   "checked_url": "https://www.ocbc.com/group/media/release/2026/ocbc-sees-gold-and-silver-emerge-as-first-time-investors-choice.page",
+   "primary_url": "https://www.ocbc.com/group/media/release/2026/ocbc-sees-gold-and-silver-emerge-as-first-time-investors-choice.page",
+   "found_quote": "the number of OCBC precious metals investors expanding 2.5 times year-on-year in 2025 ... two in three retail customers in 2025 chose gold or silver to begin their investment journey ... tripling month-on-month as at end-January 2026",
+   "correction": "",
+   "notes": "All three figures confirmed on OCBC's own release (16 Feb 2026). The claim's URL slug is wrong (…-first-time-investment-of-choice.page returns 404); use …-first-time-investors-choice.page. Precise wording: '2.5 times' refers to the number of precious-metals investors, and the tripling is 'the number of new investors ... month-on-month as at end-January 2026'."
+  },
+  {
+   "id": 6,
+   "verdict": "partly",
+   "checked_url": "https://www.dbs.com/newsroom/DBS_expands_gold_offerings_with_market_first_tokenised_physical_gold_for_customers_in_Singapore",
+   "primary_url": "https://www.dbs.com/newsroom/DBS_expands_gold_offerings_with_market_first_tokenised_physical_gold_for_customers_in_Singapore",
+   "found_quote": "Each token is backed by one gram (~SGD 200) of physical gold held by DBS in a dedicated vault in Singapore ... DBS has offered physical gold investments to wealth clients since 2013",
+   "correction": "DBS: launched (11 Jun 2026) a tokenised physical-gold product, each token backed by 1 g of gold in DBS's own dedicated Singapore vault, extending to retail via digibank in H2 2026; DBS has offered physical gold to wealth clients since 2013.",
+   "notes": "CONFIRMED: 1 g token, own dedicated vault in Singapore, release dated 11 Jun 2026. NOT SUPPORTED: 'physical gold held by Treasures and Private Bank clients more than doubled in three years' - the words 'doubled', 'Treasures', 'Private Bank', 'three years' do not appear in the release body (only in footer nav). Remove or find the source before use. Claim's URL is truncated (…tokenised_physical_gold) and returns a template page; the full slug ends …_for_customers_in_Singapore."
+  },
+  {
+   "id": 7,
+   "verdict": "corrected",
+   "checked_url": "https://www.fnnews.com/news/202606161819598224",
+   "primary_url": "https://www.newsis.com/view/NISX20251226_0003455435 (balance/accounts, 24 Dec 2025); https://www.fnnews.com/news/202606161819598224 (Jan 2026 peak); https://www.smartfn.co.kr/news/articleView.html?idxno=130845 (3,745 kg)",
+   "found_quote": "KB국민·신한·우리 등 3개 시중은행의 해당 계좌 잔액은 24일 기준 1조9769억원 ... 33만1519 [Newsis]; 올해 1월 2조4434억원까지 증가하며 사상 최대 수준 [fnnews]; 골드바 판매 중량은 총 3745kg [smartfn]",
+   "correction": "Korea: the three banks' (KB Kookmin, Shinhan, Woori) gold-banking balances stood at KRW 1.98 trn (331,519 accounts) on 24 Dec 2025 (KRW 1.93 trn at year-end) and peaked at KRW 2.44 trn in January 2026; the five major banks sold 3,745 kg of gold bars in 2025 (vs 1,412 kg in 2024).",
+   "notes": "Every number is supported but by three different articles, and the claim's own URL (fnnews, 16 Jun 2026) supports only the Jan-2026 peak (2.4434 trn) - and gives a DIFFERENT year-end figure (1.9296 trn at end-2025). KRW 1.98 trn / 331,519 accounts is the 24-Dec-2025 Newsis snapshot; say '24 Dec 2025' not 'Dec 2025'. Note the fnnews piece also says balances fell back to 1.96 trn by 15 Jun 2026 (headline: gold's popularity cooled) - be ready for that if the slide is challenged."
+  },
+  {
+   "id": 8,
+   "verdict": "corrected",
+   "checked_url": "https://www.setn.com/News.aspx?NewsID=1787681",
+   "primary_url": "https://www.ctee.com.tw/news/20251020700272-439901 (for the volume figure)",
+   "found_quote": "全台黃金存摺開戶數已突破500萬大關 ... 光是台銀自家的黃金存摺客戶就超過70萬戶 [SETN 28 Jan 2026]; 今年1～9月黃金存摺單筆交易量，相較2024年同期成長約1倍 [CTEE 20 Oct 2025]",
+   "correction": "Taiwan: over 5 million gold passbook accounts nationwide; Bank of Taiwan alone has over 700,000, and its single-transaction passbook volume roughly doubled year on year in January-September 2025 (regular fixed-amount plans +40%).",
+   "notes": "5 m and 700 k confirmed on the SETN article (28 Jan 2026). 'Single-trade volume doubled in 2025' is not in the SETN article; the CTEE article (20 Oct 2025) gives ~2x for Jan-Sep 2025 vs same period 2024 - restrict the period. Both are press reports quoting Bank of Taiwan; no BoT primary page found."
+  },
+  {
+   "id": 9,
+   "verdict": "corrected",
+   "checked_url": "https://www.kuveytturk.com.tr/medium/denetim-raporu-31-aralik-2025-3740.pdf",
+   "primary_url": "https://www.kuveytturk.com.tr/medium/denetim-raporu-31-aralik-2025-3740.pdf (Kuveyt Turk, notes pp.100-101); https://www.bddk.org.tr/BultenGunluk (BDDK weekly data behind the US$90.4bn / 56.4%)",
+   "found_quote": "IX. Kıymetli maden DH ... 321,900,265 [31.12.2025] ... 133,341,123 [31.12.2024] (Bin TL); 90,4 milyar dolarlık da kıymetli madeni ... kıymetli maden payı, 16 Ocak 2026 tarihi itibarıyla yüzde 56,4",
+   "correction": "Turkey: residents' precious-metal deposits reached US$90.4bn (16 Jan 2026), a record 56.4% of resident individuals' (real persons') FX-denominated deposits; Kuveyt Türk's precious-metal deposit accounts went from TL 133.3bn (31 Dec 2024) to TL 321.9bn (31 Dec 2025).",
+   "notes": "Kuveyt Turk figures confirmed from the audited unconsolidated FY2025 statements (TL thousand: 321,900,265 vs 133,341,123 = +141%). US$90.4bn and 56.4% confirmed in press (nefes.com.tr) citing BDDK/TCMB as at 16 Jan 2026 - but the 56% is the metal share of RESIDENT REAL PERSONS' FX deposits, not 'all resident FX deposits' (the same article gives residents' FX at US$132.2bn, so metals are ~41% of all resident FX+metal deposits). Fix the denominator and add the date."
+  },
+  {
+   "id": 10,
+   "verdict": "partly",
+   "checked_url": "https://www.antaranews.com/berita/5693923/prabowo-bank-emas-kelola-153-ton-emas-dalam-setahun-nilainya-rp360-t",
+   "primary_url": "https://www.antaranews.com/berita/5693923/prabowo-bank-emas-kelola-153-ton-emas-dalam-setahun-nilainya-rp360-t (Presidential address, 14 Aug 2026)",
+   "found_quote": "153 ton emas dengan nilai sekitar Rp360 triliun atau sekitar 20 miliar dolar Amerika Serikat ... [BSI] Nasabah tabungan emas meningkat menjadi 766.742 (dari 531.329 pada Desember 2025)",
+   "correction": "Indonesia: the two newly licensed bullion banks (Pegadaian, BSI) manage 153 t of gold, about Rp360 trn (~US$20bn), roughly 18 months after their Feb-2025 licensing (President Prabowo, 14 Aug 2026); BSI's gold-savings customers reached 766,742 by Feb 2026 (Pegadaian's customer base 5.6 million).",
+   "notes": "153 t and Rp360 trn confirmed. USD: source says 'sekitar 20 miliar dolar' - use US$20bn, not US$22bn (22 is a spot-rate recomputation, not in the source). Timing: Prabowo says 'dalam setahun' (in a year); Feb 2025 licensing to Aug 2026 is 18 months - phrase carefully. 'BSI has 1.3 million gold-savings customers' NOT FOUND: Antara gives 766,742 BSI gold-savings customers (Feb 2026); the Kompas article the claim cites returned 403 and the 1.3 m figure could not be verified - drop or re-source. Kompas URL in the claim is truncated (full slug ends …-segini-porsi-bsi-dan-holding-ultra)."
+  },
+  {
+   "id": 11,
+   "verdict": "confirmed",
+   "checked_url": "https://www.boerse-online.de/nachrichten/rohstoffe/reisebank-meldet-goldboom-massive-goldverkaeufe-in-deutschland-20401570.html ; https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Half-year-results-2026-Xetra-Gold-grows-significantly-year-on-year--5363708",
+   "primary_url": "https://www.bloomberg.com/news/articles/2026-05-18/gold-und-silber-bei-dz-bank-tochter-schnellt-edelmetallhandel-um-uber-70-hoch (Reisebank/BayernLB interviews, paywalled); https://www.deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Half-year-results-2026-Xetra-Gold-grows-significantly-year-on-year--5363708 (Xetra-Gold)",
+   "found_quote": "Rekordumsatz von rund 1,15 Milliarden Euro ... Plus von mehr als 70 Prozent [Reisebank Q1 2026]; Im Vergleich zu den ersten drei Monaten 2025 habe sich das Volumen verdoppelt [BayernLB]; 171 tons ... €19.4 billion [Xetra-Gold, mid-2026]",
+   "correction": "",
+   "notes": "All three elements confirmed. Reisebank ~EUR 1.15bn Q1-2026, >70% up (Bloomberg 18 May 2026, reproduced by Boerse Online); BayernLB Q1-2026 volume doubled vs Q1-2025 (Michael Eubel interview, Bloomberg via Yahoo); Xetra-Gold 171 t / EUR 19.4bn at 30 Jun 2026 (Deutsche Boerse release 2 Jul 2026). Caveat worth knowing: Deutsche Boerse's release also says Xetra-Gold assets under custody FELL from EUR 20.8bn (mid-2025) to EUR 19.4bn, i.e. the 171 t is a record in tonnes but not in value. The claim's Bloomberg URL slug is slightly wrong (…schiessen-in-die-hoehe vs …schnellt-edelmetallhandel-um-uber-70-hoch)."
+  },
+  {
+   "id": 12,
+   "verdict": "corrected",
+   "checked_url": "https://www.royalmint.com/aboutus/press-centre/royal-mint-reports-record-year-for-precious-metals-investments-as-silver-demand-soars/ ; https://www.bullionvault.com/gold-news/gold-investor-index/gold-silver-investing-popular-030320261",
+   "primary_url": "https://www.royalmint.com/aboutus/press-centre/royal-mint-reports-record-year-for-precious-metals-investments-as-silver-demand-soars/ ; https://www.bullionvault.com/",
+   "found_quote": "Gold bullion purchases from royalmint.com were up 142%, while silver bullion soared 253% during the calendar year 2025 ... 43 tonnes of gold ... $9 billion ... 130,000 funded clients",
+   "correction": "UK: the Royal Mint's online gold bullion purchases rose 142% in calendar 2025 (silver +253%, total customer spend +150%); BullionVault holds 43 t of client gold and about US$9bn of client metal for more than 130,000 funded clients.",
+   "notes": "142% is specifically GOLD bullion purchased via royalmint.com (online sales), not all bullion - silver was +253%. The claim's Royal Mint URL is a shortened slug that 404s; correct slug ends …-precious-metals-investments-as-silver-demand-soars/. BullionVault 43 t / $9bn / 130,000 confirmed on BullionVault's own site (its standard boilerplate, current Sep 2026)."
+  },
+  {
+   "id": 13,
+   "verdict": "confirmed",
+   "checked_url": "https://www.perthmint.com/news/media-announcements/corporate/annual-report-2024-25/ ; https://www.mint.ca/en/company/media-room/2026-05-04-royal-canadian-mint-reports-profits-and-performance-for-2025",
+   "primary_url": "https://www.mint.ca/globalassets/about/company/reports/2025/q4-2025/2025-annual-report-en.pdf ; https://www.perthmint.com/news/media-announcements/corporate/annual-report-2024-25/",
+   "found_quote": "Revenue from the Precious Metals business increased to $1,841.7 million in 2025 (compared to $1,148.1 million in 2024) ... $10.4 billion of client metal on deposit at June 30, 2025 ... 40% increase",
+   "correction": "",
+   "notes": "RCM: C$1,841.7m vs C$1,148.1m = +60.4% (release 4 May 2026) - matches. Perth Mint: depository A$10.4bn at 30 Jun 2025, +40% (FY2024-25 annual report) - matches. Consider adding the period labels (RCM calendar 2025; Perth Mint FY to June 2025) since they differ."
+  },
+  {
+   "id": 14,
+   "verdict": "partly",
+   "checked_url": "https://www.tickertape.in/etfs/icici-prudential-gold-etf-IPEG",
+   "primary_url": "AMC factsheets / AMFI (e.g. https://www.icicipruamc.com, https://www.sbimf.com, https://www.hdfcfund.com, https://www.kotakmf.com) - not fetched",
+   "found_quote": "₹ 25,821.80cr as of 11th September 2026 [ICICI Prudential Gold ETF, Tickertape]",
+   "correction": "India: the bank-group gold ETFs are now large single funds - ICICI Prudential Gold ETF ~₹25.8k cr (Sep 2026); SBI Gold ETF ~₹24.5k cr and HDFC Gold ETF ~₹23.2k cr (2026 third-party snapshots); Kotak Gold ETF ~₹12.8k cr (date the figures and cite the AMC factsheets).",
+   "notes": "ICICI ₹25.8k cr confirmed (Tickertape, 11 Sep 2026 - a secondary aggregator; use the ICICI Pru factsheet). SBI: search snapshots show ₹24,549 cr (May 2026) / ₹21,472 cr (other date) - consistent with ₹24.4k cr but date-dependent. HDFC: ₹23,239 cr found vs ₹22.0k cr claimed - same order but not the same number. Kotak: ₹12,814 cr found vs ₹14k cr claimed; the '₹5.2k cr to ₹14k cr in seven months' trajectory was NOT found in any source. AUMs move daily with the gold price - every figure needs an as-of date and an AMC/AMFI source before it goes on a slide."
+  },
+  {
+   "id": 15,
+   "verdict": "partly",
+   "checked_url": "https://www.pictet.com/content/dam/www/documents/publications/financial-reports/PictetGroup-2025-Annual-Report.pdf.coredownload.pdf ; https://vpr.hkma.gov.hk/statics/assets/doc/100305/ar_25/ar_25_eng.pdf",
+   "primary_url": "https://www.pictet.com/content/dam/www/documents/publications/financial-reports/PictetGroup-2025-Annual-Report.pdf.coredownload.pdf ; https://vpr.hkma.gov.hk/statics/assets/doc/100305/ar_25/ar_25_eng.pdf (LGT Bank Ltd, Vaduz AR 2025); https://www.juliusbaer.com/index.php?eID=dumpFile&t=f&f=107287&token=524fb1640b12ee2313be6d55cdd0c488e6220c15 (Julius Baer AR 2025 - blocked, not verified)",
+   "found_quote": "Precious metals 843 066 585 627 [Pictet, CHF thousand, 2025 vs 2024]; Physical holdings of precious metals 1 731 260 1 002 469 [LGT Bank Ltd, CHF thousand, 2025 vs 2024]",
+   "correction": "Swiss balance sheets show it too: LGT Bank Ltd's physical precious-metal holdings rose 73% to CHF 1.73bn and Pictet Group's precious metals rose 44% to CHF 843m at end-2025; Julius Baer [CHF 4.9bn, +53% - verify against the 2025 annual report before use].",
+   "notes": "Pictet: CHF 843.1m vs 585.6m = +44.0% - confirmed from the Pictet Group 2025 Annual Report balance sheet. LGT: CHF 1,731.3m vs 1,002.5m = +72.7% - confirmed, but the document is the LGT BANK LTD (Vaduz) annual report, not LGT Group; label the entity. Julius Baer CHF 4.9bn / +53%: could NOT be verified - juliusbaer.com blocks fetches (403 on the AR PDF, the extract and the results page) and no search result carries the figure. Treat as unverified until someone opens the AR 2025 balance sheet ('Precious metals' line) manually."
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.bak
+*.tmp
+# Working copies of the datasets produced by a local rebuild
+*.pre_*.bak

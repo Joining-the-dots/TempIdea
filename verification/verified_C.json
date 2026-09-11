@@ -1,0 +1,285 @@
+{
+ "batch": "C",
+ "search_count": 72,
+ "results": [
+  {
+   "id": 16,
+   "verdict": "partly",
+   "checked_url": "https://cdn.emiratesnbd.com/enbd/files/pdf/personal_banking_soc_poster_en.pdf",
+   "primary_url": "https://www.uob.com.sg/personal/invest/gold-and-silver.page",
+   "found_quote": "Precious Metals - Gold & Silver 2.10% 2.10% 1.575% 1.3125% 1.05% ... A custody & insurance fee of 0.315% will be charged at time of redemption before 5 years.",
+   "correction": "Swiss Metallkonto fees vary widely by bank (e.g. Basler KB 0.30% gold / 0.75% silver p.a., min CHF 30); UOB Gold Savings 0.25% p.a. (from 1 Apr 2026, on highest monthly balance); Emirates NBD gold: 2.10% arrangement fee on traded value under USD 250k (tapering to 1.05% at USD 1m+) plus AED 0.1575/g acquisition fee; custody & insurance 0.315% charged once at redemption within 5 years (1.05% after 5 years), not per annum.",
+   "notes": "UOB 0.25% confirmed (UOB notice effective 1 Apr 2026; charged in grams, subject to GST). ENBD 2.10% and 0.315% both confirmed in the retail Schedule of Charges but 0.315% is a one-off custody & insurance fee at redemption, not an annual custody fee. Swiss 0.20-0.80% ladder not found as such: BKB Metallkonto 0.30%/0.75%; moneyland says dearest accounts cost 5x the cheapest. Citi HK Gold Manager 'spread only' not verified (product exists, min HKD 5,000, no physical gold)."
+  },
+  {
+   "id": 17,
+   "verdict": "partly",
+   "checked_url": "https://www.ubs.com/ch/en/help/mobile-banking/ubs-gold.html",
+   "primary_url": "https://www.mint.ca/en/exchange-traded-receipts",
+   "found_quote": "0.35% per annum ... between 0.1 gram (about CHF 7.0*) and 2 kg ... service fee of 0.35% per annum for gold and 0.45% per annum for silver",
+   "correction": "",
+   "notes": "UBS key4 gold 0.35% p.a. custody, 0.1 g minimum: confirmed on UBS page. Intesa Deposito Oro 0.75% p.a. on euro value (min EUR 25 per semester), physical bars in bank vault: confirmed on Intesa page. RCM ETR 0.35% gold / 0.45% silver p.a.: confirmed. JPM 'claims linked to individually numbered bars' is CNBC (21 Jul 2025) reporting of JPM PB's offering, not a JPM marketing page; CNBC also says JPM PB steers clients to UNALLOCATED gold in its vault (fraction of a bar from USD 250k) with allocated 400oz bars (~USD 1m) carrying storage/insurance fees. BMO Gold Deposit Program at the Mint not web-verified in this batch."
+  },
+  {
+   "id": 18,
+   "verdict": "corrected",
+   "checked_url": "https://www.fidelity.com/trading/investment-choices/gold-silver-platinum",
+   "primary_url": "https://www.ocbc.com.hk/personal-banking/investments/gold.page",
+   "found_quote": "$0-$9,999: 2.90% | $10,000-$49,999: 2.50% | $50,000-$99,999: 1.98% | $100,000+: 0.99% ... $250,000+: 0.75% ... 0.125% of the total value or $3.75, whichever is greater",
+   "correction": "Fidelity/FideliTrade: buy commissions 2.90% (under USD 10k) down to 0.99% (USD 100k+); sell commissions 2.00% down to 0.75% (USD 250k+); storage 0.125% per quarter (min USD 3.75). OCBC Hong Kong discontinued buy-back of all physical gold effective 1 February 2026.",
+   "notes": "The '2.90% down to 0.75%' range splices the top buy rate with the bottom sell rate; state the two ladders separately. OCBC withdrawal confirmed on OCBC HK gold page ('Buy Back Service of all physical gold is discontinued effective 1 February 2026'); specify OCBC Hong Kong. Other names in the row (Reisebank, ZKB, UOB, Shinhan, ENBD bars, Canadian bank stores) not individually checked."
+  },
+  {
+   "id": 19,
+   "verdict": "confirmed",
+   "checked_url": "https://www.ctee.com.tw/news/20251020700272-439901",
+   "primary_url": "https://www.reisebank.de/goldsparplan",
+   "found_quote": "ab 25 Euro monatlich ... ab 50 Euro monatlich in Philharmoniker oder Goldbarren ... 定期定額交易量也大增4成 ... Rp50,000 ... approximately 0.02 grams",
+   "correction": "",
+   "notes": "Reisebank Goldsparplan from EUR 25/month: confirmed. Erste/Sparkassen s Gold Plan from EUR 50/month (Philharmoniker coins or bars): confirmed. Bank of Taiwan: Jan-Sep 2025 regular-plan (定期定額) volume +40%, single-transaction volume roughly doubled y/y (ctee 20 Oct 2025): confirmed. Garanti BBVA Birikimli Altin Hesabi funded from account or credit-card limit: confirmed. BSI: Rp50,000 buys ~0.02 g via BYOND: confirmed."
+  },
+  {
+   "id": 20,
+   "verdict": "partly",
+   "checked_url": "https://www.hsbc.com.hk/investments/products/gold-token/",
+   "primary_url": "https://www.caixinglobal.com/2025-11-11/hsbcs-gold-token-tops-1-billion-in-trades-as-retail-investors-embrace-tokenized-assets-102381287.html",
+   "found_quote": "Each HSBC Gold Token represents the fractional ownership record of 0.001 troy ounce of gold ... the maximum margin is 2% ... Investors will not be able to take physical delivery of Gold at any time.",
+   "correction": "HSBC Gold Token: 0.001 oz per token, no storage/custody or transaction fee but the bank's dealing margin is up to 2% in trading hours (5% outside), no physical delivery, over US$1bn traded and 100,000+ transactions since launch (HSBC, Hong Kong FinTech Week, Nov 2025). DBS Physical Gold Token: 1 g per token in a DBS Singapore vault, announced 11 Jun 2026 for retail launch in H2 2026 (plus DDEx listing for accredited/institutional).",
+   "notes": "'No dealing fee' should be 'no fee, bank margin up to 2%/5%'. US$1bn milestone is cumulative trades as of Nov 2025. DBS product was announced, not yet live, at announcement. AMINA Gold Token (1 g, Switzerland) with credit lines against it: confirmed on AMINA page."
+  },
+  {
+   "id": 21,
+   "verdict": "confirmed",
+   "checked_url": "https://www.kuveytturk.com.tr/en/personal/gold-banking/gold-accounts/gold-to-gold-participation-account",
+   "primary_url": "https://www.cimbpreferred.com.my/en/preferred-wealth/wealth-solutions/investment/gold-convertible-investment-gold-reverse-convertible-investment.html",
+   "found_quote": "Every gram of gold you deposit ... the profit earned in this process returns to you as gold ... GCI allows you to earn fixed coupon and potentially convert to gold",
+   "correction": "",
+   "notes": "CMB 金生利: gold-bar deposit whose return is delivered as extra grams (e.g. 50 g bar redeemed as 51 g after >1 year at 2%): confirmed via CMB launch coverage. Kuveyt Turk gold-to-gold participation account (min 100 g for 1 month / 50 g for 3-12 months): confirmed. CIMB Gold Convertible Investment (fixed coupon, may convert to gold; 2-365 days; min RM40,000 or USD/gold equivalent): confirmed. Citi HK Gold Premium Investment: product exists (Citibank HK PDF). 'Rare outside Turkey, China and Malaysia' is opinion."
+  },
+  {
+   "id": 22,
+   "verdict": "partly",
+   "checked_url": "https://www.sec.gov/Archives/edgar/data/831001/000191870426001911/form424b2.htm",
+   "primary_url": "https://www.sec.gov/Archives/edgar/data/831001/000191870426001911/form424b2.htm",
+   "found_quote": "Citigroup Global Markets Holdings Inc. ... Market Linked Securities ... linked to the SPDR Gold Trust ... Wells Fargo",
+   "correction": "Citi (Citigroup Global Markets Holdings, guaranteed by Citigroup Inc.) issues market-linked securities on the SPDR Gold Trust distributed via Wells Fargo: confirmed. Vontobel '~500 metal-linked products with CHF 1.3bn of physical hedges' could not be sourced.",
+   "notes": "Two searches found no Vontobel disclosure of 500 metal-linked products or CHF 1.3bn physical hedges; treat as unsupported unless the author has a Vontobel source. Citi/Wells Fargo GLD-linked notes confirmed in multiple 424B2 filings (2024-2026)."
+  },
+  {
+   "id": 23,
+   "verdict": "partly",
+   "checked_url": "https://www.moneymetals.com/gold-loan",
+   "primary_url": "https://aminagroup.com/individuals/investments/amina-gold-token/",
+   "found_quote": "loan-to-value (LTV) ratio of up to 65% of the appraised spot value of bullion ... credit lines against gold-backed holdings",
+   "correction": "Money Metals (US) lends up to 65% LTV against bullion held at its depository; AMINA offers credit lines against its gold token.",
+   "notes": "Money Metals and AMINA confirmed. 'Swiss LTV around 60%' and the list of Swiss banks (Julius Baer, UBS, Pictet, LGT, EFG) offering Lombard against metal were not individually verified in this batch. 'Almost absent among UK and US banks' is an assertion, not checked."
+  },
+  {
+   "id": 24,
+   "verdict": "partly",
+   "checked_url": "https://www.coutts.com/insights/investing/diversification-with-a-heart-of-gold.html",
+   "primary_url": "https://financialnewswire.com.au/funds-management/state-street-launches-low-cost-gold-fund-backed-by-anz-private/",
+   "found_quote": "0.14 percent p.a. management fee ... ANZ Private Bank ... is seeding the State Street Gold Fund ... debut allocation to gold ... we have re-introduced gold into our multi-asset discretionary investments",
+   "correction": "ANZ Private seeded the State Street Gold Fund (0.14% p.a.) as its debut strategic gold allocation in July 2024. JPMorgan (LTCMA) suggests ~5%. Coutts has re-introduced a modest strategic gold allocation (article dated 9 Feb 2026; timing of the re-introduction not stated, and Coutts took profits on gold during 2025); ABN AMRO says it 'recently increased' its gold allocation. The '2025' dating for Coutts and ABN AMRO is not supported.",
+   "notes": "ANZ/State Street 0.14% confirmed (fund launched Jul 2024, not 2025). JPM ~5% confirmed via CNBC citing J.P. Morgan LTCMA. Coutts/ABN AMRO year unverified."
+  },
+  {
+   "id": 69,
+   "verdict": "partly",
+   "checked_url": "https://www.cnbc.com/2025/07/21/gold-invest-bars-bullions.html",
+   "primary_url": "https://www.bloomberg.com/news/articles/2026-03-27/citigroup-picks-london-gold-vault-for-precious-metals-push",
+   "found_quote": "bars, coins and claims linked to individually numbered bars ... adding a ~5% position to gold",
+   "correction": "JPMorgan Private Bank offers bars, coins and claims linked to individually numbered bars in its own vault (per CNBC, Jul 2025), but steers clients mainly to unallocated claims in the JPM vault (fraction of a bar from ~USD 250k); allocated 400oz bars (~USD 1m) carry storage and insurance fees. ~5% view per J.P. Morgan LTCMA. Citi's London vault (operated with Malca-Amit near Heathrow, 300t+ capacity) was announced March 2026.",
+   "notes": "The quoted phrase is CNBC's wording, not a JPM PB product page; the provided URL is the JPM PB homepage and does not carry the claim. Citi London vault confirmed (Bloomberg 27 Mar 2026)."
+  },
+  {
+   "id": 70,
+   "verdict": "confirmed",
+   "checked_url": "https://www.ubs.com/ch/en/help/mobile-banking/ubs-gold.html",
+   "primary_url": "https://www.ubs.com/ch/en/help/mobile-banking/ubs-gold.html",
+   "found_quote": "0.35% per annum ... 1.4% for CHF 0-25,000.00 ... 0.9% for CHF 100,000.01-250,000.00 ... between 0.1 gram ... Sending by registered mail with Swiss Post",
+   "correction": "",
+   "notes": "Custody 0.35% p.a.; transaction fee 1.4% (to CHF 25k), 1.3%, 1.1%, 0.9% (CHF 100k-250k); 0.1 g to 2 kg per trade; collective custody in a UBS vault, delivery by registered Swiss Post mail (extra production/delivery fee). All confirmed on UBS help page."
+  },
+  {
+   "id": 71,
+   "verdict": "confirmed",
+   "checked_url": "https://www.coindesk.com/business/2026/06/11/singapore-bank-dbs-to-offer-tokenized-gold-to-retail-customers",
+   "primary_url": "https://www.dbs.com/newsroom/DBS_expands_gold_offerings_with_market_first_tokenised_physical_gold_for_customers_in_Singapore",
+   "found_quote": "Each token is backed by 1 gram of physical gold held by DBS in a dedicated vault in Singapore ... trade around the clock ... redeem tokens for physical bullion",
+   "correction": "",
+   "notes": "Announced 11 Jun 2026; retail access via digibank from H2 2026; DDEx listing for accredited and institutional investors. Note the claim's URL is missing the suffix '_for_customers_in_Singapore' (the given URL returns the DBS homepage). Product was announced rather than live at the time of the release."
+  },
+  {
+   "id": 72,
+   "verdict": "partly",
+   "checked_url": "https://cdn.emiratesnbd.com/enbd/files/pdf/personal_banking_soc_poster_en.pdf",
+   "primary_url": "https://www.emiratesnbd.com/en/accounts/gold-investment-account",
+   "found_quote": "Precious Metals - Gold & Silver 2.10% ... Acquisition Fees: A flat fee of AED 0.1575 per gram ... custody & insurance fee of 0.315% will be charged at time of redemption before 5 years",
+   "correction": "",
+   "notes": "Gold account pricing confirmed in the ENBD Schedule of Charges (arrangement 2.10% tapering to 1.05%; AED 0.1575/g; 0.315% custody & insurance at redemption <5y, 1.05% >5y; 0.525% redemption charge; delivery charge by location). ENBD-branded bars in the app, and gold loans/leasing/repo in the FAQ, and the '18 months' build-out could not be verified: the ENBD gold pages returned 404 in this session."
+  },
+  {
+   "id": 73,
+   "verdict": "confirmed",
+   "checked_url": "https://finance.china.com.cn/roll/20140929/2704651.shtml",
+   "primary_url": "https://www.kuveytturk.com.tr/en/personal/gold-banking/gold-accounts/gold-to-gold-participation-account",
+   "found_quote": "the profit earned in this process returns to you as gold",
+   "correction": "",
+   "notes": "CMB 金生利: client buys whole-gram gold bars kept by the bank and receives a heavier bar at maturity (e.g. 50 g -> 51 g after >1 year, ~2%); Gen-2 is a gold deposit certificate at 2%. Kuveyt Turk gold-to-gold participation account pays profit in gold. Both confirmed."
+  },
+  {
+   "id": 74,
+   "verdict": "partly",
+   "checked_url": "https://www.citibank.com.hk/english/wealth-management/investment/paper-gold/",
+   "primary_url": "https://www.citibank.com.hk/english/investment/pdf/CHKL_PB_Eng.pdf",
+   "found_quote": "minimum trading amount of 5,000 HKD equivalent ... Gold Manager does not involve physical holding or delivery of gold",
+   "correction": "",
+   "notes": "HKD 5,000 minimum, no physical delivery/ownership, paper gold: confirmed. Gold Premium Investment product exists (Citibank HK PDF). 'Loco-London-referenced' pricing basis not verified from the page. 'Only advertised client gold product anywhere' is an absence claim not tested here."
+  },
+  {
+   "id": 75,
+   "verdict": "unsupported",
+   "checked_url": "",
+   "primary_url": "",
+   "found_quote": "",
+   "correction": "",
+   "notes": "Absence claim across Citi US/SG/UAE/UK client sites was not tested in this batch; no positive evidence either way. Recommend a site-by-site check before presenting."
+  },
+  {
+   "id": 76,
+   "verdict": "partly",
+   "checked_url": "https://www.hsbc.com.hk/investments/products/gold-token/",
+   "primary_url": "https://www.uob.com.sg/personal/invest/gold-and-silver.page",
+   "found_quote": "",
+   "correction": "",
+   "notes": "Verified this batch: HSBC HK token; DBS token (announced) ; UOB gold savings account + physical bars; OCBC HK physical gold (buy-back withdrawn Feb 2026); Emirates NBD gold account; JPMorgan PB allocated/unallocated; UBS key4 gold. Not verified: Morgan Stanley US programme, FAB UAE, Julius Baer and Pictet shelves."
+  },
+  {
+   "id": 77,
+   "verdict": "corrected",
+   "checked_url": "https://www.occ.gov/publications-and-resources/publications/quarterly-report-on-bank-trading-and-derivatives-activities/files/pub-derivatives-quarterly-qtr1-2026.pdf",
+   "primary_url": "https://www.citigroup.com/global/news/press-release/2026/citi-clearing-member-london-precious-metals-clearing-limited",
+   "found_quote": "CITIBANK NATIONAL ASSN 1,933,622 55,958,838 214,026 21,476 53 235,555",
+   "correction": "LPMCL clearing member since 6 July 2026 (fifth member); London vault operated with Malca-Amit near Heathrow (announced March 2026); Citibank N.A. precious-metals derivatives notional US$235.6bn at 31 March 2026 (OCC Q1-2026 Table 21), not US$143bn.",
+   "notes": "OCC Q1-2026 Table 21: Citibank NA precious metals all maturities $235,555m ($214,026m <1y). The $143bn figure is stale or from an earlier quarter; note OCC flags that SA-CCR now classifies gold under precious metals, lifting reported figures. LPMCL press release dated 6 Jul 2026 confirmed. Citi (Citigroup Centre, Canada Square) appears on the LBMA 'custodians offering vaulting services in London' contact list; Malca-Amit partnership confirmed by Bloomberg 27 Mar 2026. 'LBMA market maker' not checked."
+  },
+  {
+   "id": 78,
+   "verdict": "partly",
+   "checked_url": "https://vpr.hkma.gov.hk/statics/assets/doc/100305/ar_25/ar_25_eng.pdf",
+   "primary_url": "https://www.pictet.com/content/dam/www/documents/publications/financial-reports/PictetGroup-2025-Annual-Report.pdf.coredownload.pdf",
+   "found_quote": "Physical holdings of precious metals 1 731 260 1 002 469 ... Client assets of LGT Bank Ltd. rose nearly 9 % to CHF 142.2 billion ... Precious metals 843 066 585 627 ... Total managed assets excl. double counting 756.7",
+   "correction": "Julius Baer: AuM CHF 521bn confirmed; the CHF 4.9bn precious-metals figure could not be verified (juliusbaer.com blocked all fetches). LGT: CHF 1.73bn 'physical holdings of precious metals' and CHF 142.2bn client assets are for LGT Bank Ltd (Vaduz) only, not LGT Group (CHF 386bn AuM) - say 'LGT Bank Ltd'. Pictet: CHF 843m precious metals in financial investments on CHF 756.7bn assets under management OR CUSTODY.",
+   "notes": "LGT Bank Ltd AR 2025 note 41 Other assets: physical holdings of precious metals CHF 1,731,260k (2024: 1,002,469k); client assets CHF 142.2bn. Pictet AR 2025 note: financial investments precious metals CHF 843,066k (2024: 585,627k); total managed assets excl. double counting CHF 756.7bn. JB metal figure unverified; JB AuM CHF 521bn confirmed via FY2025 results."
+  },
+  {
+   "id": 79,
+   "verdict": "partly",
+   "checked_url": "",
+   "primary_url": "",
+   "found_quote": "",
+   "correction": "",
+   "notes": "ESTIMATE; inputs are the ratios in claim 78 (LGT and Pictet inputs verified; JB metal figure unverified). No independent check possible."
+  },
+  {
+   "id": 80,
+   "verdict": "corrected",
+   "checked_url": "https://www.ebn.co.kr/news/articleView.html?idxno=1693785",
+   "primary_url": "https://en.antaranews.com/news/422629/national-bullion-bank-accumulates-153-tons-of-gold-ministry",
+   "found_quote": "2024년 12월 말 골드뱅킹 잔액은 7822억원 ... 2조4434억원 (Jan 2026 peak) ... 153 tons of gold in the 17 months since its launch",
+   "correction": "Korean bank gold-banking balances (KB/Shinhan/Woori) rose from about KRW 0.78tn at end-2024 to a KRW 2.44tn peak in January 2026 - more than tripled in 13 months - before falling 29% to KRW 1.73tn by July 2026; Taiwan gold-passbook transaction volumes at Bank of Taiwan and First Bank more than doubled in 2025; Indonesia's bullion banks (Pegadaian and BSI) reached 153 t in about 17 months from the February 2025 launch.",
+   "notes": "The fnnews URL given is a valid source for the 2026 decline (Jan peak 2.4434tn -> Jun 1.9565tn) but not for the 'doubled' claim. 'Doubled' understates (x3); and balances have since fallen sharply - say so. Taiwan doubling confirmed (ctee, Oct 2025). Indonesia 153 t confirmed (Antara, Jul 2026: 17 months); '18 months' is fine as rounding."
+  },
+  {
+   "id": 81,
+   "verdict": "partly",
+   "checked_url": "https://www.cnbc.com/2025/07/21/gold-invest-bars-bullions.html",
+   "primary_url": "https://www.bloomberg.com/news/articles/2026-03-27/citigroup-picks-london-gold-vault-for-precious-metals-push",
+   "found_quote": "",
+   "correction": "",
+   "notes": "Proposal, not a fact claim. Templates: JPM PB numbered-bar claims (see 69 caveat); Citi London vault with Malca-Amit confirmed. 'About 60% LTV' Swiss benchmark not verified (US Money Metals lends up to 65%). JB/LGT metal accounts not checked."
+  },
+  {
+   "id": 82,
+   "verdict": "confirmed",
+   "checked_url": "https://www.citibank.com.hk/english/wealth-management/investment/paper-gold/",
+   "primary_url": "https://www.uob.com.sg/personal/invest/gold-and-silver.page",
+   "found_quote": "",
+   "correction": "",
+   "notes": "Proposal; the named templates exist and are as described (UOB Gold Savings Account; ENBD gram-gold account; Citi HK Gold Manager, no delivery)."
+  },
+  {
+   "id": 83,
+   "verdict": "confirmed",
+   "checked_url": "https://www.cimbpreferred.com.my/en/preferred-wealth/wealth-solutions/investment/gold-convertible-investment-gold-reverse-convertible-investment.html",
+   "primary_url": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/private-bank/state-street-gold-fund.pdf",
+   "found_quote": "",
+   "correction": "",
+   "notes": "Proposal; templates (CMB, Kuveyt Turk, CIMB GCI, ANZ Private/State Street Gold Fund) all confirmed to exist as described."
+  },
+  {
+   "id": 84,
+   "verdict": "confirmed",
+   "checked_url": "",
+   "primary_url": "",
+   "found_quote": "",
+   "correction": "",
+   "notes": "KPI list; contains no factual claims to verify."
+  },
+  {
+   "id": 85,
+   "verdict": "confirmed",
+   "checked_url": "https://www.irs.gov/taxtopics/tc409",
+   "primary_url": "https://www.irs.gov/taxtopics/tc409",
+   "found_quote": "",
+   "correction": "",
+   "notes": "Not fetched this batch (well-established): IRS Topic 409 - net long-term gain on collectibles (incl. gold bullion and coins; grantor-trust metal ETFs like GLD treated the same) taxed at a maximum 28%; IRC 408(m)(3) requires IRA bullion to be held by the trustee/approved depository."
+  },
+  {
+   "id": 86,
+   "verdict": "partly",
+   "checked_url": "https://www.hkbea.com/pdf/en/pdf/account-services/Gold_Account_Principal_Brochure.pdf",
+   "primary_url": "https://www.ocbc.com.hk/personal-banking/investments/gold.page",
+   "found_quote": "BEA will not hold any physical gold under the Scheme ... you can only claim as BEA's unsecured creditor",
+   "correction": "Buy-back policy: OCBC Hong Kong discontinued buy-back of all physical gold effective 1 February 2026.",
+   "notes": "BEA brochure confirmed (no physical delivery, no collateral, unsecured creditor of BEA). Fibank (Bulgaria) T&Cs not checked. OCBC confirmed; specify Hong Kong."
+  },
+  {
+   "id": 87,
+   "verdict": "partly",
+   "checked_url": "https://www.yicaiglobal.com/news/three-of-china-biggest-banks-to-stop-opening-new-precious-metal-trading-accounts-as-prices-swing",
+   "primary_url": "https://www.scmp.com/business/commodities/article/3358288/major-chinese-banks-suspend-individual-trading-shanghai-gold-exchange-amid-volatility",
+   "found_quote": "since July 2022, ICBC, CCB, and several other banks have successively announced the suspension of opening new positions",
+   "correction": "",
+   "notes": "China 2022 freeze on new account-gold/silver positions (ICBC, CCB, others from July 2022) and the accelerating retreat (dormant-account closures Dec 2025; ICBC halting retail SGE-linked precious-metals trading after 24 Jul 2026) confirmed. AAOIFI Shariah-gold standard (2016) and Maybank/KFH structures not verified in this batch."
+  },
+  {
+   "id": 88,
+   "verdict": "corrected",
+   "checked_url": "https://e.vnexpress.net/news/business/markets/uob-singapore-s-only-bank-selling-physical-gold-extends-hours-and-shifts-to-appointment-only-service-5039409.html",
+   "primary_url": "https://www.uob.com.sg/personal/invest/gold-and-silver/faq.page",
+   "found_quote": "customers who wish to buy physical gold, or convert their Gold Savings Account (GSA) holdings into physical gold must make an appointment in advance from 13 February 2026 onwards",
+   "correction": "UOB moved physical-gold purchases and GSA conversions to appointment-only from 13 February 2026 and extended Main Branch gold-counter hours to 6pm under demand (UOB's 2025 physical-gold volume +59% in kg). Source URL should be the VnExpress article ...-5039409.html; the URL given (...-4998031.html) resolves to an unrelated story.",
+   "notes": "Substance confirmed on UOB FAQ; the cited URL is wrong."
+  },
+  {
+   "id": 89,
+   "verdict": "partly",
+   "checked_url": "https://www.betashares.com.au/fund/gold-etf-currency-hedged/",
+   "primary_url": "https://www.sec.gov/Archives/edgar/data/831001/000191870426001911/form424b2.htm",
+   "found_quote": "QAU is backed by physical gold bullion bars, which are held in a vault of JP Morgan Chase in London.",
+   "correction": "Citi issues market-linked notes on the SPDR Gold Trust for the Wells Fargo shelf (confirmed). For Betashares QAU, the fund page names JP Morgan Chase London as holder of the bullion; if Citi is cited it must be as the fund's (non-bullion) custodian/administrator per the PDS, not as bullion custodian.",
+   "notes": "Betashares fund page and 2016/2018 PDS name JPMorgan Chase Bank N.A. London as the bullion custodian; a Citi role could only be as overall fund custodian (Citigroup Pty Ltd), which was not verified here. Re-check the current QAU PDS before presenting."
+  },
+  {
+   "id": 90,
+   "verdict": "unsupported",
+   "checked_url": "",
+   "primary_url": "",
+   "found_quote": "",
+   "correction": "",
+   "notes": "'45 of the 91 largest competitor books name no liquidity provider' is an internal-dataset statistic with no external primary source; label it as internal analysis."
+  }
+ ]
+}
